@@ -1,0 +1,24 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Turkish language data (last modified: 2020.06.12).
+##/
+
+PrivacyPolicy: "Gizlilik Politikası"
+denied: "Yükleme Reddedildi!"
+denied_reason: "Yükleme aşağıda belirtilen nedenlerle engellendi:"
+scan_unauthorised_upload: "Yetkisiz dosya yükleme işi algılandı"
+scan_unauthorised_upload_or_misconfig: "Yetkisiz dosya yükleme manipülasyonu veya yanlış yapılandırma algılandı! "
+upload_error_1: "Dosya boyutu upload_max_filesize yönergesini aşıyor. "
+upload_error_2: "Dosya boyutu form tanımlı dosya boyutu sınırını aşıyor. "
+upload_error_34: "Yükleme hatası! Lütfen yardım için hostmaster ile iletişime geçin! "
+upload_error_6: "Yükleme dizini eksik! Lütfen yardım için hostmaster ile iletişime geçin! "
+upload_error_7: "Disk yazma hatası! Lütfen yardım için hostmaster ile iletişime geçin! "
+upload_error_8: "PHP yanlış yapılandırması tespit edildi! Lütfen yardım için hostmaster ile iletişime geçin! "
+upload_limit_exceeded: "Yükleme sınırı aşıldı"

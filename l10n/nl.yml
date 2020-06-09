@@ -1,0 +1,24 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Dutch language data (last modified: 2020.06.12).
+##/
+
+PrivacyPolicy: "Privacybeleid"
+denied: "Upload Geweigerd!"
+denied_reason: "De upload poging werd geblokkeerd voor de hieronder vermelde redenen:"
+scan_unauthorised_upload: "Ongeautoriseerde bestand uploaden manipulatie gedetecteerd"
+scan_unauthorised_upload_or_misconfig: "Ongeautoriseerde bestand uploaden manipulatie of misconfiguratie gedetecteerd! "
+upload_error_1: "Bestandsgrootte overschrijdt de upload_max_filesize richtlijn. "
+upload_error_2: "Bestandsgrootte overschrijdt de vorm gespecificeerde bestandsgrootte limiet. "
+upload_error_34: "Upload mislukking! Contact op met de hostmaster voor hulp! "
+upload_error_6: "Uploadmap ontbreekt! Contact op met de hostmaster voor hulp! "
+upload_error_7: "Disc-schrijffout! Contact op met de hostmaster voor hulp! "
+upload_error_8: "PHP misconfiguratie gedetecteerd! Contact op met de hostmaster voor hulp! "
+upload_limit_exceeded: "Uploadlimiet overschreden"

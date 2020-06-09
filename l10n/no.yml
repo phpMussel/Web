@@ -1,0 +1,24 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Norwegian language data (last modified: 2020.06.12).
+##/
+
+PrivacyPolicy: "Personvernpolicy"
+denied: "Opplastingen Nektet!"
+denied_reason: "Opplastingen din ble blokkert av grunnene nedenfor:"
+scan_unauthorised_upload: "Uautorisert manipulering av filopplasting oppdaget"
+scan_unauthorised_upload_or_misconfig: "Uautorisert manipulering av filopplasting eller feilkonfigurasjon oppdaget! "
+upload_error_1: "Filstørrelse overstiger direktivet upload_max_filesize. "
+upload_error_2: "Filstørrelse overskrider formspesifisert filstørrelsesgrense. "
+upload_error_34: "Opplasting feil! Vennligst kontakt vertsmesteren for å få hjelp! "
+upload_error_6: "Opplastingskatalog mangler! Vennligst kontakt vertsmesteren for å få hjelp! "
+upload_error_7: "Disk-skrive feil! Vennligst kontakt vertsmesteren for å få hjelp! "
+upload_error_8: "PHP-feilkonfigurasjon oppdaget! Vennligst kontakt vertsmesteren for å få hjelp! "
+upload_limit_exceeded: "Opplastingsgrensen overskredet"

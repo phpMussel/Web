@@ -1,0 +1,24 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Chinese (simplified) language data (last modified: 2020.06.12).
+##/
+
+PrivacyPolicy: "隐私政策"
+denied: "上传是否认！"
+denied_reason: "您的上传被拒绝由于这些原因:"
+scan_unauthorised_upload: "未经授权的文件上传操控是检测"
+scan_unauthorised_upload_or_misconfig: "未经授权的文件上传操控或配置错误是检测！"
+upload_error_1: "文件大小超过upload_max_filesize指令。"
+upload_error_2: "文件大小超过文件大小限制指定由文件上传信息。"
+upload_error_34: "上传失败！​请联系网站管理员或网站托管服务！"
+upload_error_6: "上传文件夹是失踪！​请联系网站管理员或网站托管服务！"
+upload_error_7: "硬盘写入错误！​请联系网站管理员或网站托管服务！"
+upload_error_8: "PHP配置错误是检测！​请联系网站管理员或网站托管服务！"
+upload_limit_exceeded: "超过上传限制"

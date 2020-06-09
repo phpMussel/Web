@@ -1,0 +1,24 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Urdu language data (last modified: 2020.06.12).
+##/
+
+PrivacyPolicy: "رازداری کی پالیسی"
+denied: "اپ لوڈ کریں تردید!"
+denied_reason: "آپ کا اپ لوڈ ذیل میں درج وجوہات کی بنا پر بلاک کر دیا گیا:"
+scan_unauthorised_upload: "غیر مجاز فائل اپ ہیرا پھیری کے پتہ"
+scan_unauthorised_upload_or_misconfig: "غیر مجاز فائل اپ ہیرا پھیری یا غلط کنفیگریشن کے پتہ! "
+upload_error_1: "فائل upload_max_filesize ہدایت سے تجاوز. "
+upload_error_2: "فائل فارم مخصوص فائل کی حد سے متجاوز. "
+upload_error_34: "ناکامی اپ لوڈ کریں! امداد کے لیے میزبان ماسٹر سے رابطہ کریں! "
+upload_error_6: "ڈائریکٹری لاپتہ اپ لوڈ کریں! امداد کے لیے میزبان ماسٹر سے رابطہ کریں! "
+upload_error_7: "غلطی کو ڈسک لکھنے! امداد کے لیے میزبان ماسٹر سے رابطہ کریں! "
+upload_error_8: "PHP کی غلط کنفیگریشن کے پتہ! امداد کے لیے میزبان ماسٹر سے رابطہ کریں! "
+upload_limit_exceeded: "اپ لوڈ کی حد سے تجاوز کر گئی"

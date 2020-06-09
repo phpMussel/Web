@@ -1,0 +1,24 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: French language data (last modified: 2020.06.12).
+##/
+
+PrivacyPolicy: "Politique de Confidentialité"
+denied: "Téléchargement Refusé !"
+denied_reason: "Votre tentative de téléchargement a été bloquée pour les raisons énumérées ci-dessous :"
+scan_unauthorised_upload: "Non autorisée manipulation de téléchargement de fichiers détecté"
+scan_unauthorised_upload_or_misconfig: "Manipulation de téléchargement de fichiers non autorisée ou mauvaise configuration détectée ! "
+upload_error_1: "La taille du fichier dépasse la directive upload_max_filesize. "
+upload_error_2: "La taille du fichier dépasse la limite spécifiée dans le formulaire taille limite. "
+upload_error_34: "Échec du téléchargement ! S'il vous plaît contacter le hostmaster pour obtenir de l'aide ! "
+upload_error_6: "Répertoire de téléchargement manquant ! Veuillez contacter le hostmaster pour obtenir de l'aide ! "
+upload_error_7: "Erreur d'écriture disque ! Veuillez contacter le hostmaster pour obtenir de l'aide ! "
+upload_error_8: "Mauvaise configuration PHP détectée ! Veuillez contacter le hostmaster pour obtenir de l'aide ! "
+upload_limit_exceeded: "Limite de téléchargement dépassée"

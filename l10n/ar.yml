@@ -1,0 +1,24 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Arabic language data (last modified: 2020.06.12).
+##/
+
+PrivacyPolicy: "سياسة الخصوصية"
+denied: "رفض تحميل!"
+denied_reason: "تم حجب التحميل للأسباب الواردة أدناه:"
+scan_unauthorised_upload: "الكشف تلاعب تحميل الملف غير مصرح"
+scan_unauthorised_upload_or_misconfig: "تلاعب تحميل الملف غير مصرح أو تكوين الخطأ الكشف! "
+upload_error_1: "حجم الملف تجاوز توجيهات upload_max_filesize. "
+upload_error_2: "حجم الملف تجاوز الحد حجم الملف التي يحددها شكل. "
+upload_error_34: "إخفاق تحميل! يرجى الاتصال على المشرف الخادم للحصول على المساعدة! "
+upload_error_6: "مفقود مجلد تحميل! يرجى الاتصال على المشرف الخادم للحصول على المساعدة! "
+upload_error_7: "خطأ القرص الكتابة! يرجى الاتصال على المشرف الخادم للحصول على المساعدة! "
+upload_error_8: "الكشف تكوين الخطأ PHP! يرجى الاتصال على المشرف الخادم للحصول على المساعدة! "
+upload_limit_exceeded: "تجاوزت الحد تحميل"
