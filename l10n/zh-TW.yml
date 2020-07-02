@@ -7,10 +7,16 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data (last modified: 2020.06.12).
+# This file: Chinese (traditional) language data (last modified: 2020.07.02).
 ##/
 
 PrivacyPolicy: "隱私政策"
+config_web_forbid_on_block: "phpMussel應該發送<code>403</code>頭隨著文件上傳受阻信息，​或堅持標準<code>200 OK</code>？​False（假）=發送<code>200</code>；True（真）=發送<code>403</code>【標準】。"
+config_web_ignore_upload_errors: "這個指令按說應會關閉除非它是需要為對功能的phpMussel在您的具體系統。​按說，​當是關閉，​當phpMussel檢測存在元素在<code>$_FILES</code>數組，​它將嘗試引發一個掃描的文件代表通過那些元素，​和，​如果他們是空或空白，​phpMussel將回報一個錯誤信息。​這個是正確行為為phpMussel。​然而，​為某些CMS，​空元素在<code>$_FILES</code>可以發生因之的自然的行為的那些CMS，​或錯誤可能會報告當沒有任何，​在這種情況，​正常行為為phpMussel將會使乾擾為正常行為的那些CMS。​如果這樣的一個情況發生為您，​激活這個指令將指示phpMussel不嘗試引發掃描為這樣的空元素，​忽略他們當發現和不回報任何關聯錯誤信息，​從而允許延續的頁面請求。​False（假）=不忽略；True（真）=忽略。"
+config_web_magnification: "字體放大。​標準 = 1。"
+config_web_max_uploads: "最大允許數值的文件為掃描當文件上傳掃描之前中止掃描和告訴用戶他們是上傳太多在同一時間！​提供保護針對一個理論攻擊哪裡一個攻擊者嘗試DDoS您的系統或CMS通過超載phpMussel以減速PHP進程到一個停止。​推薦：10。​您可能想增加或減少這個數值，​根據速度的您的硬件。​注意這個數值不交待為或包括存檔內容。"
+config_web_theme: "用於phpMussel的默認主題。"
+config_web_uploads_log: "應該記錄所有阻止的上傳的位置。​指定一個文件名，​或留空以關閉。"
 denied: "上傳是否認！"
 denied_reason: "您的上傳被拒绝由于这些原因:"
 scan_unauthorised_upload: "未經授權的文件上傳操控是檢測"

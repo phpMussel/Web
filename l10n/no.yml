@@ -7,10 +7,16 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2020.06.12).
+# This file: Norwegian language data (last modified: 2020.07.02).
 ##/
 
 PrivacyPolicy: "Personvernpolicy"
+config_web_forbid_on_block: "Bør phpMussel sende 403 overskrifter med filen lastet opp blokkert melding, eller holde seg til de vanlige 200 OK? False = Nei (200); True = Ja (403) [Standardverdi]."
+config_web_ignore_upload_errors: "Dette direktivet bør vanligvis deaktiveres med mindre det er nødvendig for riktig funksjonalitet av phpMussel på ditt spesifikke system. Normalt, når deaktivert, når phpMussel oppdager tilstedeværelsen av elementer i array() <code>$_FILES</code>, den vil prøve å starte en skanning av filene som elementene representerer, og hvis elementene er tomme, vil phpMussel returnere en feilmelding. Dette er riktig oppførsel for phpMussel. Imidlertid kan tomme elementer i <code>$_FILES</code> for noen CMS oppstå som et resultat av den naturlige oppførselen til disse CMS, eller feil kan rapporteres når det ikke er noen, og i så fall vil den normale oppførselen for phpMussel forstyrre den normale oppførselen til disse CMS. Hvis en slik situasjon oppstår for deg, aktivering av dette alternativet instruere phpMussel til ikke å prøve å skanninger etter slike tomme elementer, å ignorere dem når de blir funnet og ikke returnere relaterte feilmeldinger, derfor som tillater videreføring av sideforespørselen. False = Av; True = På."
+config_web_magnification: "Font forstørrelse. Standardverdi = 1."
+config_web_max_uploads: "Maksimalt antall filer som phpMussel har lov til å skanne når den skannes opplastinger før de avbryter skanningen og informerer brukeren om at de laster opp for mye på en gang! Gir beskyttelse mot et teoretisk angrep der en angriper forsøker å DDoS systemet eller CMS ved å overbelaste phpMussel for å bremse PHP-prosessen til en stansing. Anbefalt: 10. Det kan være lurt å heve eller senke dette tallet, avhengig av maskinvarens hastighet. Merk at dette nummeret ikke står for eller inkluderer innholdet i arkiver."
+config_web_theme: "Standard tema som skal brukes til phpMussel."
+config_web_uploads_log: "Hvor alle blokkerte opplastinger skal logges. Spesifiser et filnavn, eller la være tomt for å deaktivere."
 denied: "Opplastingen Nektet!"
 denied_reason: "Opplastingen din ble blokkert av grunnene nedenfor:"
 scan_unauthorised_upload: "Uautorisert manipulering av filopplasting oppdaget"

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2020.06.22).
+ * This file: Upload handler (last modified: 2020.07.02).
  */
 
 namespace phpMussel\Web;
@@ -68,8 +68,12 @@ class Web
             $this->Loader->YAML->process($Configuration, $Defaults);
             if (isset($Defaults)) {
                 $this->Loader->fallback($Defaults);
+                $this->Loader->ConfigurationDefaults = array_merge_recursive($this->Loader->ConfigurationDefaults, $Defaults);
             }
         }
+
+        /** Register log paths. */
+        $this->Loader->InstanceCache['LogPaths'][] = $this->Loader->Configuration['web']['uploads_log'];
 
         /** Load phpMussel upload handler L10N data. */
         $this->Loader->loadL10N($this->L10NPath);
@@ -245,7 +249,7 @@ class Web
                     $this->Uploads > $this->Loader->Configuration['web']['max_uploads']
                 ) {
                     $this->Loader->HashReference .=
-                        '-UPLOAD-LIMIT-EXCEEDED--NO-HASH-:' .
+                        str_repeat('-', 64) . ':' .
                         $FilesData['FileSet']['size'][$Iterator] . ':' .
                         $FilesData['FileSet']['name'][$Iterator] . "\n";
                     $this->Loader->WhyFlagged .= sprintf($this->Loader->L10N->getString('_exclamation'),
