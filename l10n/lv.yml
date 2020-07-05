@@ -11,6 +11,7 @@
 ##/
 
 PrivacyPolicy: "Privātuma Politika"
+config_web: "Augšupielādes apstrādātāja konfigurācija."
 config_web_forbid_on_block: "Vai phpMussel vajadzētu nosūtīt 403 galvenes ar failu augšupielādētu bloķētu ziņojumu, vai pieturēties pie parastiem 200 OK? False (Nepatiess) = Nē (200); True (Patiess) = Jā (403) [Noklusējuma]."
 config_web_ignore_upload_errors: "Parasti jums tas jāiespējo tikai tad, ja tas ir nepieciešams pareizai phpMussel funkcionalitātei jūsu konkrētajā sistēmā. Parasti, kad tas ir atspējots, kad phpMussel atklāts elementi, kas atrodas <code>$_FILES</code> array(), tas mēģinās sākt skenēt failus, kurus šie elementi attēlo, un, ja šie elementi ir tukši, phpMussel atgriezīs kļūdas ziņojumu. Tā ir pareiza phpMussel rīcība. Tomēr dažās CMS, šo CMS dabiskā izturēšanās var izraisīt tukšus elementus (iekšpusē <code>$_FILES</code>), vai kļūdas var tikt paziņotas kļūdaini, tādā gadījumā phpMussel normāla izturēšanās var traucēs šo CMS normālu izturēšanos. Ja šāda situācija rodas jums, iespējot šo opciju, phpMussel tiks uzdots neskenēt ar tukšiem elementiem, ignorēt tos, kad tie ir atrasti, un neatgriezt visus saistītos kļūdu ziņojumus, tādējādi ļaujot turpināt lapas pieprasījumu. False (Nepatiess) = Atspējots; True (Patiess) = Iespējots."
 config_web_magnification: "Fonta palielinājums. Noklusējuma = 1."

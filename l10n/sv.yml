@@ -11,6 +11,7 @@
 ##/
 
 PrivacyPolicy: "Integritetspolicy"
+config_web: "Konfiguration för uppladdningshanteraren."
 config_web_forbid_on_block: "Ska phpMussel skicka 403 rubriker med uppladdning blockerat meddelande, eller hålla fast vid de vanliga 200 OK? False = Nej (200); True = Ja (403) [Standard]."
 config_web_ignore_upload_errors: "Detta direktiv bör i allmänhet inaktiveras såvida det krävs för korrekt funktion av phpMussel på ditt specifika system. Normalt, när avaktiverat, när phpMussel upptäcker närvaron av element i <code>$_FILES</code> array(), det kommer att försöka initiera en skanning av filerna som dessa element representerar, och om dessa element är tomma, phpMussel returnerar ett felmeddelande. Detta är korrekt beteende för phpMussel. Men för vissa CMS kan emellertid tomma element i <code>$_FILES</code> uppstå som ett resultat av det naturliga beteendet hos dessa CMS, eller fel kan rapporteras när det inte finns några, i vilket fall kommer det normala beteendet för phpMussel att störa det normala beteendet hos dessa CMS. Om en sådan situation uppstår för dig, att aktivera detta alternativ kommer att instruera phpMussel att inte försöka initiera skanningar för sådana tomma element, ignorera dem när de hittas och att inte returnera relaterade felmeddelanden, vilket möjliggör fortsättning av sidbegäran. False = Av; True = På."
 config_web_magnification: "Font förstoring. Standard = 1."

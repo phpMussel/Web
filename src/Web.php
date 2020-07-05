@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2020.07.02).
+ * This file: Upload handler (last modified: 2020.07.04).
  */
 
 namespace phpMussel\Web;
@@ -118,9 +118,7 @@ class Web
             $Stream = fopen($File, $WriteMode);
             fwrite($Stream, $Data);
             fclose($Stream);
-            if ($WriteMode === 'wb') {
-                $this->Loader->logRotation($this->Loader->Configuration['web']['uploads_log']);
-            }
+            $this->Loader->logRotation($this->Loader->Configuration['web']['uploads_log']);
             return true;
         });
     }
@@ -377,7 +375,7 @@ class Web
             );
 
             /** Before output event. */
-            $this->Loader->Events->fireEvent('beforeOutput', $Output);
+            $this->Loader->Events->fireEvent('beforeOutput', '', $Output);
 
             /** Send HTML output and the kill the script. */
             die($Output);
