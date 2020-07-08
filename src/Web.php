@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2020.07.04).
+ * This file: Upload handler (last modified: 2020.07.07).
  */
 
 namespace phpMussel\Web;
@@ -26,12 +26,12 @@ class Web
     private $Scanner;
 
     /**
-     * @var string The path to the core asset files.
+     * @var string The path to the upload handler's asset files.
      */
     private $AssetsPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR;
 
     /**
-     * @var string The path to the core L10N files.
+     * @var string The path to the upload handler's L10N files.
      */
     private $L10NPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'l10n' . DIRECTORY_SEPARATOR;
 

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2020.07.02).
+# This file: Indonesian language data (last modified: 2020.07.07).
 ##/
 
 PrivacyPolicy: "Kebijakan Privasi"
@@ -16,7 +16,7 @@ config_web_forbid_on_block: "Seharusnya phpMussel mengirimkan 403 headers dengan
 config_web_ignore_upload_errors: "Direktif ini umumnya harus DINONAKTIFKAN kecuali diharuskan untuk fungsi yang benar dari phpMussel pada sistem tertentu. Biasanya, ketika DINONAKTIFKAN, ketika phpMussel mendeteksi adanya elemen dalam <code>$_FILES</code> array(), itu akan mencoba untuk memulai scan file yang mewakili elemen, dan, jika elemen yang kosong, phpMussel akan mengembalikan pesan kesalahan. Ini adalah perilaku yang tepat untuk phpMussel. Namun, untuk beberapa CMS, elemen kosong di <code>$_FILES</code> dapat terjadi sebagai akibat dari perilaku alami itu CMS, atau kesalahan dapat dilaporkan bila tidak ada, dalam kasus seperti itu, perilaku normal untuk phpMussel akan mengganggu untuk perilaku normal itu CMS. Jika situasi seperti itu terjadi untuk Anda, MENGAKTIFKAN direktif ini akan menginstruksikan phpMussel untuk tidak mencoba untuk memulai scan untuk elemen kosong, mengabaikan saat ditemui dan untuk tidak kembali terkait pesan kesalahan, sehingga memungkinkan kelanjutan dari halaman permintaan. False = DINONAKTIFKAN; True = DIAKTIFKAN."
 config_web_magnification: "Perbesaran font. Default = 1."
 config_web_max_uploads: "Maksimum jumla file-file yang diizinkan untuk dipindai selama pemindaian upload file sebelum menghentikan pemindaian dan menginformasikan pengguna bahwa pengguna mengupload terlalu banyak! Menyediakan perlindungan pada serangan teoritis dimana penyerang mencoba DDoS pada sistem Anda atau CMS ada dengan overloading phpMussel supaya berjalan lambat. Proses PHP ke penghentian keras. Recommendasi: 10. Anda dapat menaikkan atau menurunkan angka ini bergantung dari kecepatan hardware Anda. Catat itu nomor ini tidak mengakuntabilitas atau mengikutkan konten dari file terkompres."
-config_web_theme: "Tema default untuk phpMussel."
+config_web_theme: "Estetika yang digunakan untuk halaman "Upload Ditolak"."
 config_web_uploads_log: "Dimana semua upload yang diblokir harus dicatat. Spesifikan nama atau biarkan kosong untuk menonaktifkan."
 denied: "Upload Ditolak!"
 denied_reason: "Upload diblokir karena alasan yang tercantum dibawah:"

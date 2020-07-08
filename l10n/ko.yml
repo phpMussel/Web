@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2020.07.02).
+# This file: Korean language data (last modified: 2020.07.07).
 ##/
 
 PrivacyPolicy: "개인 정보 정책"
@@ -16,7 +16,7 @@ config_web_forbid_on_block: "업로드 파일이 차단 된 메시지와 함께 
 config_web_ignore_upload_errors: "시스템에서 phpMussel의 기능에 수정이 필요한 경우가 아니면이 지시문은 일반적으로 사용할 수 없습니다. 비활성화하면 <code>$_FILES</code> array()요소를 감지했을 때, 그 요소가 나타내는 파일의 스캔이 시작됩니다, 요소가 비어 있거나없는 경우 phpMussel는 오류 메시지를 반환합니다. 이것은 본래 phpMussel가 있어야 할 모습입니다. 그러나 CMS에서는 $_FILES 하늘 요소는 일반적으로 발생하는 것이며, 정상적인 phpMussel의 행동이 정상적인 CMS의 거동을 저해 할 우려가 있습니다. 이러한 경우에는 본 옵션을 사용하여 phpMussel 빈 요소를 검사하고 오류 메시지를 반환을 피하고 요청한 페이지로 원활하게 진행할 수 있도록합니다. <code>false</code> = OFF (해제입니다); <code>true</code> = ON (온입니다)."
 config_web_magnification: "글꼴 배율. Default (기본 설정) = 1."
 config_web_max_uploads: "한 번에 스캔 할 수있는 업로드 파일 수 제한으로이를 초과하면 스캔을 중단하고 사용자에게 그 사실을 알리고 논리적 공격으로부터 보호 역할을합니다. 시스템과 CMS가 DDoS 공격을 만나 phpMussel가 오버로드하여 PHP 프로세스에 지장을 초래하는 일이 없도록하기 위해서입니다. 권장 수는 10이지만, 하드웨어의 속도에 따라 더 이상 / 이하이 좋은 것도있을 것입니다. 이 숫자는 아카이브의 내용을 포함하지 않는 것을 기억하십시오."
-config_web_theme: "phpMussel에 사용할 기본 테마."
+config_web_theme: ""업로드 거부"페이지에 사용할 미학."
 config_web_uploads_log: "차단된 모든 업로드를 기록해야 하는 위치. 파일 이름을 지정하십시오. 비활성화하려면 비워 둡니다."
 denied: "업로드 거부!"
 denied_reason: "다음과 같은 이유로 업로드가 거부되었습니다 :"
