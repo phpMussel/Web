@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2020.07.07).
+ * This file: Upload handler (last modified: 2020.07.11).
  */
 
 namespace phpMussel\Web;
@@ -99,7 +99,7 @@ class Web
         $this->Loader->Events->addHandler('writeToUploadsLog', function (string $Data): bool {
             /** Guard. */
             if (
-                empty($this->Loader->HashReference) ||
+                strlen($this->Loader->HashReference) === 0 ||
                 !($File = $this->Loader->buildPath($this->Loader->Configuration['web']['uploads_log']))
             ) {
                 return false;
@@ -136,18 +136,17 @@ class Web
             return;
         }
 
-        /** File upload scan start time. */
-        $this->Loader->InstanceCache['StartTime'] = time() + ($this->Loader->Configuration['core']['time_offset'] * 60);
-
         /** Create empty handle array. */
         $Handle = [];
 
         /** Create an array for normalising the $_FILES data. */
         $FilesData = [];
 
+        /** Create an array to designate the scan targets. */
+        $FilesToScan = [];
+
         /** Iterate through $_FILES array and scan as necessary. */
         foreach ($_FILES as $FileKey => $FileData) {
-
             /** Guard. */
             if (!isset($FileData['error'])) {
                 continue;
@@ -167,7 +166,8 @@ class Web
             }
             $FilesCount = count($FilesData['FileSet']['error']);
 
-            for ($Iterator = 0, $this->Loader->InstanceCache['SkipSerial'] = true; $Iterator < $FilesCount; $Iterator++) {
+            /** Iterate through fileset. */
+            for ($Iterator = 0; $Iterator < $FilesCount; $Iterator++) {
                 if (!isset($FilesData['FileSet']['name'][$Iterator])) {
                     $FilesData['FileSet']['name'][$Iterator] = '';
                 }
@@ -189,22 +189,13 @@ class Web
 
                 /** Handle upload errors. */
                 if ($ThisError > 0) {
-                    if (
-                        $this->Loader->Configuration['compatibility']['ignore_upload_errors'] ||
-                        $ThisError > 8 ||
-                        $ThisError === 5
-                    ) {
+                    if ($this->Loader->Configuration['compatibility']['ignore_upload_errors'] || $ThisError > 8 || $ThisError === 5) {
                         continue;
                     }
-                    $this->Loader->HashReference .= sprintf(
-                        "---------UPLOAD-ERROR-%d---------:%d:%s\n",
-                        $ThisError,
-                        $FilesData['FileSet']['size'][$Iterator],
-                        $FilesData['FileSet']['name'][$Iterator]
-                    );
-                    $this->Loader->WhyFlagged .= $this->Loader->L10N->getString((
-                        $ThisError === 3 || $ThisError === 4
-                    ) ? 'upload_error_34' : 'upload_error_' . $ThisError);
+                    $this->Loader->atHit('', -1, '', sprintf(
+                        $this->Loader->L10N->getString('grammar_exclamation_mark'),
+                        $this->Loader->L10N->getString('upload_error_' . (($ThisError === 3 || $ThisError === 4) ? '34' : $ThisError))
+                    ), -5, -1);
                     if (
                         ($ThisError === 1 || $ThisError === 2) &&
                         $this->Loader->Configuration['core']['delete_on_sight'] &&
@@ -221,23 +212,23 @@ class Web
                     !$FilesData['FileSet']['name'][$Iterator] ||
                     !$FilesData['FileSet']['tmp_name'][$Iterator]
                 ) {
-                    $this->Loader->HashReference .= "-UNAUTHORISED-UPLOAD-MISCONFIG-:?:?\n";
-                    $this->Loader->WhyFlagged .= $this->Loader->L10N->getString('scan_unauthorised_upload_or_misconfig');
+                    $this->Loader->atHit('', -1, '', sprintf(
+                        $this->Loader->L10N->getString('grammar_exclamation_mark'),
+                        $this->Loader->L10N->getString('scan_unauthorised_upload_or_misconfig')
+                    ), -5, -1);
                     continue;
                 }
 
                 /** Protection against upload spoofing (2/2). */
                 if (!is_uploaded_file($FilesData['FileSet']['tmp_name'][$Iterator])) {
-                    $this->Loader->HashReference .= sprintf(
-                        "UNAUTHORISED-FILE-UPLOAD-NO-HASH:%d:%s\n",
-                        $FilesData['FileSet']['size'][$Iterator],
-                        $FilesData['FileSet']['name'][$Iterator]
-                    );
-                    $this->Loader->WhyFlagged .= sprintf($this->Loader->L10N->getString('_exclamation'), sprintf(
-                        '%s (%s)',
-                        $this->Loader->L10N->getString('scan_unauthorised_upload'),
-                        $FilesData['FileSet']['name'][$Iterator]
-                    ));
+                    $this->Loader->atHit('', $FilesData['FileSet']['size'][$Iterator], $FilesData['FileSet']['name'][$Iterator], sprintf(
+                        $this->Loader->L10N->getString('grammar_exclamation_mark'),
+                        sprintf(
+                            $this->Loader->L10N->getString('grammar_brackets'),
+                            $this->Loader->L10N->getString('scan_unauthorised_upload'),
+                            $FilesData['FileSet']['name'][$Iterator]
+                        )
+                    ), -5, -1);
                     continue;
                 }
 
@@ -246,14 +237,14 @@ class Web
                     $this->Loader->Configuration['web']['max_uploads'] >= 1 &&
                     $this->Uploads > $this->Loader->Configuration['web']['max_uploads']
                 ) {
-                    $this->Loader->HashReference .=
-                        str_repeat('-', 64) . ':' .
-                        $FilesData['FileSet']['size'][$Iterator] . ':' .
-                        $FilesData['FileSet']['name'][$Iterator] . "\n";
-                    $this->Loader->WhyFlagged .= sprintf($this->Loader->L10N->getString('_exclamation'),
-                        $this->Loader->L10N->getString('upload_limit_exceeded') .
-                        ' (' . $FilesData['FileSet']['name'][$Iterator] . ')'
-                    );
+                    $this->Loader->atHit('', $FilesData['FileSet']['size'][$Iterator], $FilesData['FileSet']['name'][$Iterator], sprintf(
+                        $this->Loader->L10N->getString('grammar_exclamation_mark'),
+                        sprintf(
+                            $this->Loader->L10N->getString('grammar_brackets'),
+                            $this->Loader->L10N->getString('upload_limit_exceeded'),
+                            $FilesData['FileSet']['name'][$Iterator]
+                        )
+                    ), -5, -1);
                     if (
                         $this->Loader->Configuration['core']['delete_on_sight'] &&
                         is_uploaded_file($FilesData['FileSet']['tmp_name'][$Iterator]) &&
@@ -264,30 +255,20 @@ class Web
                     continue;
                 }
 
-                /** Used for serialised logging. */
-                if ($Iterator === ($FilesCount - 1)) {
-                    unset($this->Loader->InstanceCache['SkipSerial']);
-                }
-
-                /** Execute the scan! */
-                $this->Scanner->scan(
-                    $FilesData['FileSet']['tmp_name'][$Iterator],
-                    true,
-                    true,
-                    0,
-                    $FilesData['FileSet']['name'][$Iterator]
-                );
+                /** Designate as scan target. */
+                $FilesToScan[$FilesData['FileSet']['name'][$Iterator]] = $FilesData['FileSet']['tmp_name'][$Iterator];
             }
         }
 
-        /** File upload scan finish time. */
-        $this->Loader->InstanceCache['EndTime'] = time() + ($this->Loader->Configuration['core']['time_offset'] * 60);
-
-        /** Trim trailing whitespace. */
-        $this->Loader->WhyFlagged = trim($this->Loader->WhyFlagged);
+        /** Check these first, because they'll reset otherwise, then execute the scan. */
+        if (!count($this->Loader->ScanResultsText) && count($FilesToScan)) {
+            $this->Scanner->scan($FilesToScan, 4);
+        }
 
         /** Begin processing file upload detections. */
-        if ($this->Loader->WhyFlagged) {
+        if (count($this->Loader->ScanResultsText)) {
+            /** Build detections. */
+            $Detections = implode($this->Loader->L10N->getString('grammar_spacer'), $this->Loader->ScanResultsText);
 
             /** A fix for correctly displaying LTR/RTL text. */
             if ($this->Loader->L10N->getString('Text Direction') !== 'rtl') {
@@ -298,7 +279,7 @@ class Web
             $TemplateData = [
                 'magnification' => $this->Loader->Configuration['web']['magnification'],
                 'Attache' => $this->Attache,
-                'detected' => $this->Loader->WhyFlagged,
+                'detected' => $Detections,
                 'phpmusselversion' => $this->Loader->ScriptIdent,
                 'favicon' => base64_encode($this->Loader->getFavicon()),
                 'xmlLang' => $this->Loader->Configuration['core']['lang']
@@ -324,7 +305,7 @@ class Web
             }
 
             /** Log "uploads_log" data. */
-            if (!empty($this->Loader->HashReference)) {
+            if (strlen($this->Loader->HashReference) !== 0) {
                 $Handle['Data'] = sprintf(
                     "%s: %s\n%s: %s\n== %s ==\n%s\n== %s ==\n%s",
                     $this->Loader->L10N->getString('field_date'),
@@ -334,7 +315,7 @@ class Web
                         $_SERVER[$this->Loader->Configuration['core']['ipaddr']]
                     ) : $_SERVER[$this->Loader->Configuration['core']['ipaddr']]),
                     $this->Loader->L10N->getString('field_header_scan_results_why_flagged'),
-                    $this->Loader->WhyFlagged,
+                    $Detections,
                     $this->Loader->L10N->getString('field_header_hash_reconstruction'),
                     $this->Loader->HashReference
                 );
