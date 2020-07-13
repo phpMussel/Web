@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2020.07.07).
+# This file: Spanish language data (last modified: 2020.07.13).
 ##/
 
 PrivacyPolicy: "Política de Privacidad"
@@ -20,12 +20,24 @@ config_web_theme: "La estética a utilizar para la página "Subida Denegada"."
 config_web_uploads_log: "Donde se deben registrar todas las subidas bloqueadas. Especifique un archivo nombre, o dejar en blanco para desactivar."
 denied: "¡Subida Denegada!"
 denied_reason: "La subida de archivo fue bloqueada por las razones que se indican a continuación:"
-scan_unauthorised_upload: "No autorizado archivos manipulación detectado"
-scan_unauthorised_upload_or_misconfig: "¡No autorizado archivos manipulación o malo configuración detectado! "
-upload_error_1: "Fichero tamaño excede la directiva upload_max_filesize. "
-upload_error_2: "Fichero tamaño excede la forma especificada fichero tamaño límite. "
-upload_error_34: "¡Subir fracaso! Contacto el hostmaster para ayuda! "
-upload_error_6: "¡Subir directorio desaparecido! Contacto el hostmaster para ayuda! "
-upload_error_7: "¡Error en el disco contra escritura! Contacto el hostmaster para ayuda! "
-upload_error_8: "¡PHP mala configuración detectado! Contacto el hostmaster para ayuda! "
+scan_unauthorised_upload: "No autorizado archivos manipulación detectado!"
+scan_unauthorised_upload_or_misconfig: "¡No autorizado archivos manipulación o malo configuración detectado!"
+upload_error_1:"Fichero tamaño excede la directiva upload_max_filesize."
+upload_error_2:"Fichero tamaño excede la forma especificada fichero tamaño límite."
+upload_error_34:"¡Subir fracaso! Contacto el hostmaster para ayuda!"
+upload_error_6:"¡Subir directorio desaparecido! Contacto el hostmaster para ayuda!"
+upload_error_7:"¡Error en el disco contra escritura! Contacto el hostmaster para ayuda!"
+upload_error_8:"¡PHP mala configuración detectado! Contacto el hostmaster para ayuda!"
 upload_limit_exceeded: "Subir límite excedido"
+
+notifications_message: |
+ <center>
+ <p><strong>Hola.</strong></p>
+ <p><strong>Este correo electrónico es para notificarle que se bloquearon las siguientes subidas de archivos:</strong></p>
+ <p>%s</p>
+ <p><strong>Por qué esto pasó:</strong></p>
+ <p>%s</p>
+ <p><strong>Cuando esto pasó:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Notificación de subida bloqueada"

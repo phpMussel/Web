@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2020.07.07).
+# This file: Japanese language data (last modified: 2020.07.13).
 ##/
 
 PrivacyPolicy: "プライバシー・ポリシー"
@@ -20,12 +20,24 @@ config_web_theme: "「アップロード拒否」ページで使用する美学�
 config_web_uploads_log: "ブロックされたすべてのアップロードを記録する場所。​ファイル名指定するか、​無効にしたい場合は空白のままにして下さい。"
 denied: "アップロード拒否！"
 denied_reason: "以下の理由でアップロードは拒否されました："
-scan_unauthorised_upload: "不正ファイルアップロード改ざんが検出されました"
+scan_unauthorised_upload: "不正ファイルアップロード改ざんが検出されました！"
 scan_unauthorised_upload_or_misconfig: "不正ファイルアップロード改ざんまたはミスコンフィギュレーションが検出されました！"
-upload_error_1: "指示された最大アップロードファイルサイズを超えています。"
-upload_error_2: "フォームのファイルサイズ上限を超えています。"
-upload_error_34: "アップロード失敗！​ホスト責任者に相談して下さい！"
-upload_error_6: "アップロードディレクトリがありません！​ホスト責任者に相談して下さい！"
-upload_error_7: "ディスクに書き込めません！​ホスト責任者に相談して下さい！"
-upload_error_8: "不適切なＰＨＰ設定が検出されました！​ホスト責任者に相談して下さい！"
+upload_error_1:"指示された最大アップロードファイルサイズを超えています。"
+upload_error_2:"フォームのファイルサイズ上限を超えています。"
+upload_error_34:"アップロード失敗！​ホスト責任者に相談して下さい！"
+upload_error_6:"アップロードディレクトリがありません！​ホスト責任者に相談して下さい！"
+upload_error_7:"ディスクに書き込めません！​ホスト責任者に相談して下さい！"
+upload_error_8:"不適切なＰＨＰ設定が検出されました！​ホスト責任者に相談して下さい！"
 upload_limit_exceeded: "アップロードの制限を超えています。"
+
+notifications_message: |
+ <center>
+ <p><strong>こんにちは。</strong></p>
+ <p><strong>このＥメールは、ファイル・アップロードがブロックされたことを通知するためのものです。</strong></p>
+ <p>%s</p>
+ <p><strong>これが起こったなぜ：</strong></p>
+ <p>%s</p>
+ <p><strong>これが起こったとき：</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "ブロックされたアップロードの通知"

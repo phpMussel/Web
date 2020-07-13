@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2020.07.07).
+# This file: French language data (last modified: 2020.07.13).
 ##/
 
 PrivacyPolicy: "Politique de Confidentialité"
@@ -20,12 +20,24 @@ config_web_theme: "L'esthétique à utiliser pour la page « Téléchargement R
 config_web_uploads_log: "Où tous les téléchargements bloqués doivent être enregistrés. Spécifiez un nom de fichier, ou laisser vide à désactiver."
 denied: "Téléchargement Refusé !"
 denied_reason: "Votre tentative de téléchargement a été bloquée pour les raisons énumérées ci-dessous :"
-scan_unauthorised_upload: "Non autorisée manipulation de téléchargement de fichiers détecté"
-scan_unauthorised_upload_or_misconfig: "Manipulation de téléchargement de fichiers non autorisée ou mauvaise configuration détectée ! "
-upload_error_1: "La taille du fichier dépasse la directive upload_max_filesize. "
-upload_error_2: "La taille du fichier dépasse la limite spécifiée dans le formulaire taille limite. "
-upload_error_34: "Échec du téléchargement ! S'il vous plaît contacter le hostmaster pour obtenir de l'aide ! "
-upload_error_6: "Répertoire de téléchargement manquant ! Veuillez contacter le hostmaster pour obtenir de l'aide ! "
-upload_error_7: "Erreur d'écriture disque ! Veuillez contacter le hostmaster pour obtenir de l'aide ! "
-upload_error_8: "Mauvaise configuration PHP détectée ! Veuillez contacter le hostmaster pour obtenir de l'aide ! "
+scan_unauthorised_upload: "Non autorisée manipulation de téléchargement de fichiers détecté !"
+scan_unauthorised_upload_or_misconfig: "Manipulation de téléchargement de fichiers non autorisée ou mauvaise configuration détectée !"
+upload_error_1:"La taille du fichier dépasse la directive upload_max_filesize."
+upload_error_2:"La taille du fichier dépasse la limite spécifiée dans le formulaire taille limite."
+upload_error_34:"Échec du téléchargement ! S'il vous plaît contacter le hostmaster pour obtenir de l'aide !"
+upload_error_6:"Répertoire de téléchargement manquant ! Veuillez contacter le hostmaster pour obtenir de l'aide !"
+upload_error_7:"Erreur d'écriture disque ! Veuillez contacter le hostmaster pour obtenir de l'aide !"
+upload_error_8:"Mauvaise configuration PHP détectée ! Veuillez contacter le hostmaster pour obtenir de l'aide !"
 upload_limit_exceeded: "Limite de téléchargement dépassée"
+
+notifications_message: |
+ <center>
+ <p><strong>Bonjour.</strong></p>
+ <p><strong>Cet e-mail vous informe que les téléchargements de fichiers suivants ont été bloqués :</strong></p>
+ <p>%s</p>
+ <p><strong>Pourquoi cela s'est passé :</strong></p>
+ <p>%s</p>
+ <p><strong>Quand ça s'est passé :</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Notification de téléchargement bloqué"

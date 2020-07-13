@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2020.07.07).
+# This file: Dutch language data (last modified: 2020.07.13).
 ##/
 
 PrivacyPolicy: "Privacybeleid"
@@ -20,12 +20,24 @@ config_web_theme: "De esthetiek die moet worden gebruikt voor de pagina "Upload 
 config_web_uploads_log: "Waar alle geblokkeerde uploads moeten worden geregistreerd. Geef een bestandsnaam of laat leeg om te uitschakelen."
 denied: "Upload Geweigerd!"
 denied_reason: "De upload poging werd geblokkeerd voor de hieronder vermelde redenen:"
-scan_unauthorised_upload: "Ongeautoriseerde bestand uploaden manipulatie gedetecteerd"
-scan_unauthorised_upload_or_misconfig: "Ongeautoriseerde bestand uploaden manipulatie of misconfiguratie gedetecteerd! "
-upload_error_1: "Bestandsgrootte overschrijdt de upload_max_filesize richtlijn. "
-upload_error_2: "Bestandsgrootte overschrijdt de vorm gespecificeerde bestandsgrootte limiet. "
-upload_error_34: "Upload mislukking! Contact op met de hostmaster voor hulp! "
-upload_error_6: "Uploadmap ontbreekt! Contact op met de hostmaster voor hulp! "
-upload_error_7: "Disc-schrijffout! Contact op met de hostmaster voor hulp! "
-upload_error_8: "PHP misconfiguratie gedetecteerd! Contact op met de hostmaster voor hulp! "
+scan_unauthorised_upload: "Ongeautoriseerde bestand uploaden manipulatie gedetecteerd!"
+scan_unauthorised_upload_or_misconfig: "Ongeautoriseerde bestand uploaden manipulatie of misconfiguratie gedetecteerd!"
+upload_error_1:"Bestandsgrootte overschrijdt de upload_max_filesize richtlijn."
+upload_error_2:"Bestandsgrootte overschrijdt de vorm gespecificeerde bestandsgrootte limiet."
+upload_error_34:"Upload mislukking! Contact op met de hostmaster voor hulp!"
+upload_error_6:"Uploadmap ontbreekt! Contact op met de hostmaster voor hulp!"
+upload_error_7:"Disc-schrijffout! Contact op met de hostmaster voor hulp!"
+upload_error_8:"PHP misconfiguratie gedetecteerd! Contact op met de hostmaster voor hulp!"
 upload_limit_exceeded: "Uploadlimiet overschreden"
+
+notifications_message: |
+ <center>
+ <p><strong>Hallo.</strong></p>
+ <p><strong>Deze e-mail is om u te laten weten dat de volgende bestandsuploads zijn geblokkeerd:</strong></p>
+ <p>%s</p>
+ <p><strong>Waarom dit gebeurde:</strong></p>
+ <p>%s</p>
+ <p><strong>Wanneer dit gebeurde:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Melding over geblokkeerde upload"

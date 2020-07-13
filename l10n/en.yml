@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2020.07.07).
+# This file: English language data (last modified: 2020.07.13).
 ##/
 
 PrivacyPolicy: "Privacy Policy"
@@ -20,12 +20,24 @@ config_web_theme: "The aesthetic to use for the "Upload Denied" page."
 config_web_uploads_log: "Where all blocked uploads should be logged. Specify a filename, or leave blank to disable."
 denied: "Upload Denied!"
 denied_reason: "Your upload was blocked for the reasons listed below:"
-scan_unauthorised_upload: "Unauthorised file upload manipulation detected"
-scan_unauthorised_upload_or_misconfig: "Unauthorised file upload manipulation or misconfiguration detected! "
-upload_error_1: "Filesize exceeds the upload_max_filesize directive. "
-upload_error_2: "Filesize exceeds form-specified filesize limit. "
-upload_error_34: "Upload failure! Please contact the hostmaster for assistance! "
-upload_error_6: "Upload directory missing! Please contact the hostmaster for assistance! "
-upload_error_7: "Disc-write error! Please contact the hostmaster for assistance! "
-upload_error_8: "PHP misconfiguration detected! Please contact the hostmaster for assistance! "
+scan_unauthorised_upload: "Unauthorised file upload manipulation detected!"
+scan_unauthorised_upload_or_misconfig: "Unauthorised file upload manipulation or misconfiguration detected!"
+upload_error_1:"Filesize exceeds the upload_max_filesize directive."
+upload_error_2:"Filesize exceeds form-specified filesize limit."
+upload_error_34:"Upload failure! Please contact the hostmaster for assistance!"
+upload_error_6:"Upload directory missing! Please contact the hostmaster for assistance!"
+upload_error_7:"Disc-write error! Please contact the hostmaster for assistance!"
+upload_error_8:"PHP misconfiguration detected! Please contact the hostmaster for assistance!"
 upload_limit_exceeded: "Upload limit exceeded"
+
+notifications_message: |
+ <center>
+ <p><strong>Hello.</strong></p>
+ <p><strong>This email is to notify you that the following file uploads were blocked:</strong></p>
+ <p>%s</p>
+ <p><strong>Why this happened:</strong></p>
+ <p>%s</p>
+ <p><strong>When this happened:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Blocked upload notification"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2020.07.07).
+# This file: German language data (last modified: 2020.07.13).
 ##/
 
 PrivacyPolicy: "Datenschutz-Bestimmungen"
@@ -20,12 +20,24 @@ config_web_theme: "Die Ästhetik für die Seite "Upload verweigert"."
 config_web_uploads_log: "Wo sollen alle blockierten Uploads protokolliert werden. Geben Sie einen Dateinamen an oder lassen Sie die Option zum Deaktivieren leer."
 denied: "Upload verweigert!"
 denied_reason: "Der Upload wurde aus den unten aufgeführten Gründen blockiert:"
-scan_unauthorised_upload: "Unerlaubte Upload-Manipulation erkannt"
-scan_unauthorised_upload_or_misconfig: "Unerlaubte Upload-Manipulation oder Fehlkonfiguration erkannt! "
-upload_error_1: "Dateigröße überschreitet die Richtlinie upload_max_filesize. "
-upload_error_2: "Dateigröße überschreitet die im Formular angegebene Dateigröße. "
-upload_error_34: "Upload gescheitert! Bitte kontaktieren Sie den Hostmaster für Unterstützung! "
-upload_error_6: "Fehlendes Uploadverzeichnis! Bitte kontaktieren Sie den Hostmaster für Unterstützung! "
-upload_error_7: "Festplatten-Schreibfehler! Bitte kontaktieren Sie den Hostmaster für Unterstützung! "
-upload_error_8: "PHP-Fehlkonfiguration erkannt! Bitte kontaktieren Sie den Hostmaster für Unterstützung! "
+scan_unauthorised_upload: "Unerlaubte Upload-Manipulation erkannt!"
+scan_unauthorised_upload_or_misconfig: "Unerlaubte Upload-Manipulation oder Fehlkonfiguration erkannt!"
+upload_error_1:"Dateigröße überschreitet die Richtlinie upload_max_filesize."
+upload_error_2:"Dateigröße überschreitet die im Formular angegebene Dateigröße."
+upload_error_34:"Upload gescheitert! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
+upload_error_6:"Fehlendes Uploadverzeichnis! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
+upload_error_7:"Festplatten-Schreibfehler! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
+upload_error_8:"PHP-Fehlkonfiguration erkannt! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
 upload_limit_exceeded: "Uploadlimit überschritten"
+
+notifications_message: |
+ <center>
+ <p><strong>Hallo.</strong></p>
+ <p><strong>Diese E-Mail informiert Sie darüber, dass die folgenden Datei-Uploads blockiert wurden:</strong></p>
+ <p>%s</p>
+ <p><strong>Warum es passiert ist:</strong></p>
+ <p>%s</p>
+ <p><strong>Wann es passiert ist:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Blockierte Upload"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2020.07.07).
+# This file: Italian language data (last modified: 2020.07.13).
 ##/
 
 PrivacyPolicy: "Politica sulla Privacy"
@@ -20,12 +20,24 @@ config_web_theme: "L'estetica da utilizzare per la pagina "Caricamento Negato"."
 config_web_uploads_log: "Dove devono essere registrati tutti i caricamenti bloccati. Specificare un nome del file, o lasciare vuoto per disattivarlo."
 denied: "Caricamento Negato!"
 denied_reason: "Il tentativo di caricamento è stato bloccato per i motivi elencati di seguito:"
-scan_unauthorised_upload: "Rilevata manipolazione non autorizzata del caricamento del file"
-scan_unauthorised_upload_or_misconfig: "Rilevata manipolazione non autorizzata del caricamento del file o malconfigurazione! "
-upload_error_1: "La dimensione del file supera la direttiva upload_max_filesize. "
-upload_error_2: "La dimensione del file supera la dimensione limite specificata dal modulo. "
-upload_error_34: "Caricamento fallito! Contatta l'hostmaster per assistenza! "
-upload_error_6: "Cartella per il caricamento mancante! Contatta l'hostmaster per assistenza! "
-upload_error_7: "Errore nella scrittura del disco! Contatta l'hostmaster per assistenza! "
-upload_error_8: "Rilevata una malconfigurazione di PHP! Contatta l'hostmaster per assistenza! "
+scan_unauthorised_upload: "Rilevata manipolazione non autorizzata del caricamento del file!"
+scan_unauthorised_upload_or_misconfig: "Rilevata manipolazione non autorizzata del caricamento del file o malconfigurazione!"
+upload_error_1:"La dimensione del file supera la direttiva upload_max_filesize."
+upload_error_2:"La dimensione del file supera la dimensione limite specificata dal modulo."
+upload_error_34:"Caricamento fallito! Contatta l'hostmaster per assistenza!"
+upload_error_6:"Cartella per il caricamento mancante! Contatta l'hostmaster per assistenza!"
+upload_error_7:"Errore nella scrittura del disco! Contatta l'hostmaster per assistenza!"
+upload_error_8:"Rilevata una malconfigurazione di PHP! Contatta l'hostmaster per assistenza!"
 upload_limit_exceeded: "Limite di caricamento superato"
+
+notifications_message: |
+ <center>
+ <p><strong>Salve.</strong></p>
+ <p><strong>Questa email ti informa che i seguenti caricamenti di file sono stati bloccati:</strong></p>
+ <p>%s</p>
+ <p><strong>Perché è successo:</strong></p>
+ <p>%s</p>
+ <p><strong>Quando è successo:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Notifica di caricamento bloccata"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2020.07.07).
+# This file: Turkish language data (last modified: 2020.07.13).
 ##/
 
 PrivacyPolicy: "Gizlilik Politikası"
@@ -20,12 +20,24 @@ config_web_theme: ""Yükleme Reddedildi" sayfası için kullanılacak estetik."
 config_web_uploads_log: "Engellenen tüm yüklemelerin nereye kaydedileceği. Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."
 denied: "Yükleme Reddedildi!"
 denied_reason: "Yükleme aşağıda belirtilen nedenlerle engellendi:"
-scan_unauthorised_upload: "Yetkisiz dosya yükleme işi algılandı"
-scan_unauthorised_upload_or_misconfig: "Yetkisiz dosya yükleme manipülasyonu veya yanlış yapılandırma algılandı! "
-upload_error_1: "Dosya boyutu upload_max_filesize yönergesini aşıyor. "
-upload_error_2: "Dosya boyutu form tanımlı dosya boyutu sınırını aşıyor. "
-upload_error_34: "Yükleme hatası! Lütfen yardım için hostmaster ile iletişime geçin! "
-upload_error_6: "Yükleme dizini eksik! Lütfen yardım için hostmaster ile iletişime geçin! "
-upload_error_7: "Disk yazma hatası! Lütfen yardım için hostmaster ile iletişime geçin! "
-upload_error_8: "PHP yanlış yapılandırması tespit edildi! Lütfen yardım için hostmaster ile iletişime geçin! "
+scan_unauthorised_upload: "Yetkisiz dosya yükleme işi algılandı!"
+scan_unauthorised_upload_or_misconfig: "Yetkisiz dosya yükleme manipülasyonu veya yanlış yapılandırma algılandı!"
+upload_error_1:"Dosya boyutu upload_max_filesize yönergesini aşıyor."
+upload_error_2:"Dosya boyutu form tanımlı dosya boyutu sınırını aşıyor."
+upload_error_34:"Yükleme hatası! Lütfen yardım için hostmaster ile iletişime geçin!"
+upload_error_6:"Yükleme dizini eksik! Lütfen yardım için hostmaster ile iletişime geçin!"
+upload_error_7:"Disk yazma hatası! Lütfen yardım için hostmaster ile iletişime geçin!"
+upload_error_8:"PHP yanlış yapılandırması tespit edildi! Lütfen yardım için hostmaster ile iletişime geçin!"
 upload_limit_exceeded: "Yükleme sınırı aşıldı"
+
+notifications_message: |
+ <center>
+ <p><strong>Merhaba.</strong></p>
+ <p><strong>Bu e-posta, size aşağıdaki dosya yüklemelerinin engellendiğini bildirmek içindir:</strong></p>
+ <p>%s</p>
+ <p><strong>Bu neden oldu:</strong></p>
+ <p>%s</p>
+ <p><strong>Bu ne zaman oldu:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Engellenen yükleme bildirimi"

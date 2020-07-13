@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2020.07.11).
+ * This file: Upload handler (last modified: 2020.07.13).
  */
 
 namespace phpMussel\Web;
@@ -212,23 +212,20 @@ class Web
                     !$FilesData['FileSet']['name'][$Iterator] ||
                     !$FilesData['FileSet']['tmp_name'][$Iterator]
                 ) {
-                    $this->Loader->atHit('', -1, '', sprintf(
-                        $this->Loader->L10N->getString('grammar_exclamation_mark'),
-                        $this->Loader->L10N->getString('scan_unauthorised_upload_or_misconfig')
-                    ), -5, -1);
+                    $this->Loader->atHit('', -1, '', $this->Loader->L10N->getString('scan_unauthorised_upload_or_misconfig'), -5, -1);
                     continue;
                 }
 
                 /** Protection against upload spoofing (2/2). */
                 if (!is_uploaded_file($FilesData['FileSet']['tmp_name'][$Iterator])) {
-                    $this->Loader->atHit('', $FilesData['FileSet']['size'][$Iterator], $FilesData['FileSet']['name'][$Iterator], sprintf(
-                        $this->Loader->L10N->getString('grammar_exclamation_mark'),
-                        sprintf(
-                            $this->Loader->L10N->getString('grammar_brackets'),
-                            $this->Loader->L10N->getString('scan_unauthorised_upload'),
-                            $FilesData['FileSet']['name'][$Iterator]
-                        )
-                    ), -5, -1);
+                    $this->Loader->atHit(
+                        '',
+                        $FilesData['FileSet']['size'][$Iterator],
+                        $FilesData['FileSet']['name'][$Iterator],
+                        $this->Loader->L10N->getString('scan_unauthorised_upload'),
+                        -5,
+                        -1
+                    );
                     continue;
                 }
 
@@ -265,101 +262,141 @@ class Web
             $this->Scanner->scan($FilesToScan, 4);
         }
 
-        /** Begin processing file upload detections. */
-        if (count($this->Loader->ScanResultsText)) {
-            /** Build detections. */
-            $Detections = implode($this->Loader->L10N->getString('grammar_spacer'), $this->Loader->ScanResultsText);
+        /** Exit here if there aren't any file upload detections. */
+        if (count($this->Loader->ScanResultsText) < 1) {
+            return;
+        }
 
-            /** A fix for correctly displaying LTR/RTL text. */
-            if ($this->Loader->L10N->getString('Text Direction') !== 'rtl') {
-                $this->Loader->L10N->Data['Text Direction'] = 'ltr';
-            }
+        /** Build detections. */
+        $Detections = implode($this->Loader->L10N->getString('grammar_spacer'), $this->Loader->ScanResultsText);
 
-            /** Merging parsable variables for the template data. */
-            $TemplateData = [
-                'magnification' => $this->Loader->Configuration['web']['magnification'],
-                'Attache' => $this->Attache,
-                'detected' => $Detections,
-                'phpmusselversion' => $this->Loader->ScriptIdent,
-                'favicon' => base64_encode($this->Loader->getFavicon()),
-                'xmlLang' => $this->Loader->Configuration['core']['lang']
-            ];
+        /** A fix for correctly displaying LTR/RTL text. */
+        if ($this->Loader->L10N->getString('Text Direction') !== 'rtl') {
+            $this->Loader->L10N->Data['Text Direction'] = 'ltr';
+        }
 
-            /** Pull relevant client-specified L10N data. */
-            if (!empty($this->Attache)) {
-                foreach (['denied', 'denied_reason'] as $Pull) {
-                    if (isset($this->ClientL10N->Data[$Pull])) {
-                        $TemplateData[$Pull] = $this->ClientL10N->Data[$Pull];
-                    }
+        /** Merging parsable variables for the template data. */
+        $TemplateData = [
+            'magnification' => $this->Loader->Configuration['web']['magnification'],
+            'Attache' => $this->Attache,
+            'detected' => $Detections,
+            'phpmusselversion' => $this->Loader->ScriptIdent,
+            'favicon' => base64_encode($this->Loader->getFavicon()),
+            'xmlLang' => $this->Loader->Configuration['core']['lang']
+        ];
+
+        /** Pull relevant client-specified L10N data. */
+        if (!empty($this->Attache)) {
+            foreach (['denied', 'denied_reason'] as $Pull) {
+                if (isset($this->ClientL10N->Data[$Pull])) {
+                    $TemplateData[$Pull] = $this->ClientL10N->Data[$Pull];
                 }
-                unset($Pull);
             }
+            unset($Pull);
+        }
 
-            /** Determine which template file to use. */
-            if (is_readable($this->AssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html')) {
-                $TemplateFile = $this->AssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html';
-            } elseif (is_readable($this->AssetsPath . 'template_default.html')) {
-                $TemplateFile = $this->AssetsPath . 'template_default.html';
-            } else {
-                $TemplateFile = '';
-            }
+        /** Determine which template file to use. */
+        if (is_readable($this->AssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html')) {
+            $TemplateFile = $this->AssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html';
+        } elseif (is_readable($this->AssetsPath . 'template_default.html')) {
+            $TemplateFile = $this->AssetsPath . 'template_default.html';
+        } else {
+            $TemplateFile = '';
+        }
 
-            /** Log "uploads_log" data. */
-            if (strlen($this->Loader->HashReference) !== 0) {
-                $Handle['Data'] = sprintf(
-                    "%s: %s\n%s: %s\n== %s ==\n%s\n== %s ==\n%s",
-                    $this->Loader->L10N->getString('field_date'),
-                    $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format']),
-                    $this->Loader->L10N->getString('field_ip_address'),
-                    ($this->Loader->Configuration['legal']['pseudonymise_ip_addresses'] ? $this->Loader->pseudonymiseIP(
-                        $_SERVER[$this->Loader->Configuration['core']['ipaddr']]
-                    ) : $_SERVER[$this->Loader->Configuration['core']['ipaddr']]),
-                    $this->Loader->L10N->getString('field_header_scan_results_why_flagged'),
-                    $Detections,
-                    $this->Loader->L10N->getString('field_header_hash_reconstruction'),
-                    $this->Loader->HashReference
+        /** Log "uploads_log" data. */
+        if (strlen($this->Loader->HashReference) !== 0) {
+            $Handle['Data'] = sprintf(
+                "%s: %s\n%s: %s\n== %s ==\n%s\n== %s ==\n%s",
+                $this->Loader->L10N->getString('field_date'),
+                $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format']),
+                $this->Loader->L10N->getString('field_ip_address'),
+                ($this->Loader->Configuration['legal']['pseudonymise_ip_addresses'] ? $this->Loader->pseudonymiseIP(
+                    $_SERVER[$this->Loader->Configuration['core']['ipaddr']]
+                ) : $_SERVER[$this->Loader->Configuration['core']['ipaddr']]),
+                $this->Loader->L10N->getString('field_header_scan_results_why_flagged'),
+                $Detections,
+                $this->Loader->L10N->getString('field_header_hash_reconstruction'),
+                $this->Loader->HashReference
+            );
+            if ($this->Loader->PEData) {
+                $Handle['Data'] .= sprintf(
+                    "== %s ==\n%s",
+                    $this->Loader->L10N->getString('field_header_pe_reconstruction'),
+                    $this->Loader->PEData
                 );
-                if ($this->Loader->PEData) {
-                    $Handle['Data'] .= sprintf(
-                        "== %s ==\n%s",
-                        $this->Loader->L10N->getString('field_header_pe_reconstruction'),
-                        $this->Loader->PEData
-                    );
-                }
-                $Handle['Data'] .= "\n";
-                $this->Loader->Events->fireEvent('writeToUploadsLog', $Handle['Data']);
-                $Handle = [];
             }
+            $Handle['Data'] .= "\n";
+            $this->Loader->Events->fireEvent('writeToUploadsLog', $Handle['Data']);
+            $Handle = [];
+        }
 
-            /** Fallback to use if the HTML template file is missing. */
-            if (!$TemplateFile) {
-                header('Content-Type: text/plain');
-                die('[phpMussel] ' . $this->Loader->L10N->getString('denied') . ' ' . $TemplateData['detected']);
-            }
+        /** Fallback to use if the HTML template file is missing. */
+        if (!$TemplateFile) {
+            header('Content-Type: text/plain');
+            die('[phpMussel] ' . $this->Loader->ClientL10N->getString('denied') . ' ' . $TemplateData['detected']);
+        }
 
-            /** Send a 403 FORBIDDEN status code to the client if "forbid_on_block" is enabled. */
-            if ($this->Loader->Configuration['web']['forbid_on_block']) {
-                header('HTTP/1.0 403 Forbidden');
-                header('HTTP/1.1 403 Forbidden');
-                header('Status: 403 Forbidden');
-            }
+        /** Send a 403 FORBIDDEN status code to the client if "forbid_on_block" is enabled. */
+        if ($this->Loader->Configuration['web']['forbid_on_block']) {
+            header('HTTP/1.0 403 Forbidden');
+            header('HTTP/1.1 403 Forbidden');
+            header('Status: 403 Forbidden');
+        }
 
-            /** Include privacy policy. */
-            $TemplateData['pp'] = empty(
-                $this->Loader->Configuration['legal']['privacy_policy']
-            ) ? '' : '<br /><a href="' . $this->Loader->Configuration['legal']['privacy_policy'] . '">' . $this->Loader->L10N->getString('PrivacyPolicy') . '</a>';
+        /** Include privacy policy. */
+        $TemplateData['pp'] = empty(
+            $this->Loader->Configuration['legal']['privacy_policy']
+        ) ? '' : '<br /><a href="' . $this->Loader->Configuration['legal']['privacy_policy'] . '">' . $this->ClientL10N->L10N->getString('PrivacyPolicy') . '</a>';
 
-            /** Generate HTML output. */
-            $Output = $this->Loader->parse(
-                $this->Loader->L10N->Data,
-                $this->Loader->parse($TemplateData, $this->Loader->readFile($TemplateFile))
+        /** Generate HTML output. */
+        $Output = $this->Loader->parse(
+            $this->Loader->ClientL10N->Data,
+            $this->Loader->parse($TemplateData, $this->Loader->readFile($TemplateFile))
+        );
+
+        /** Send email notifications about blocked uploads (if enabled). */
+        if (strlen($this->Loader->InstanceCache['enable_notifications'])) {
+            /** Generate email body. */
+            $EmailBody = sprintf(
+                $this->Loader->L10N->getString('notifications_message'),
+                preg_replace(['~^([\da-z]+\:\d+\:)~i', '~\n~'], ['', "<br />\n"], strip_tags($this->Loader->HashReference)),
+                $TemplateData['detected'],
+                $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format'])
             );
 
-            /** Before output event. */
-            $this->Loader->Events->fireEvent('beforeOutput', '', $Output);
+            /** Generate email event data. */
+            $EventData = [
+                [],
+                $this->Loader->L10N->getString('notifications_subject'),
+                $EmailBody,
+                strip_tags($EmailBody),
+                ''
+            ];
 
-            /** Send HTML output and the kill the script. */
-            die($Output);
+            /** Process recipients. */
+            foreach (explode(',', $this->Loader->InstanceCache['enable_notifications']) as $Recipient) {
+                if (!strlen($Recipient)) {
+                    continue;
+                }
+                if (preg_match('~^[^<>]+ <[^<>]+>$~', $Recipient)) {
+                    $Name = preg_replace('~^([^<>]+) <[^<>]+>$~', '\1', $Recipient);
+                    $Address = preg_replace('~^[^<>]+ <([^<>]+)>$~', '\1', $Recipient);
+                } else {
+                    $Name = $Recipient;
+                    $Address = $Recipient;
+                }
+                $EventData[0][] = ['Name' => $Name, 'Address' => $Address];
+            }
+
+            /** Send the notification. */
+            $this->Loader->Events->fireEvent('sendMail', '', ...$EventData);
         }
+
+        /** Before output event. */
+        $this->Loader->Events->fireEvent('beforeOutput', '', $Output);
+
+        /** Send HTML output and the kill the script. */
+        die($Output);
     }
 }
