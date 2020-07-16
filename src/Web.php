@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2020.07.13).
+ * This file: Upload handler (last modified: 2020.07.16).
  */
 
 namespace phpMussel\Web;
@@ -146,13 +146,13 @@ class Web
         $FilesToScan = [];
 
         /** Iterate through $_FILES array and scan as necessary. */
-        foreach ($_FILES as $FileKey => $FileData) {
+        foreach ($_FILES as $FileData) {
             /** Guard. */
             if (!isset($FileData['error'])) {
                 continue;
             }
 
-            /** Normalise the structure of the uploads array. */
+            /** Normalise the structure of the files array. */
             if (!is_array($FileData['error'])) {
                 $FilesData['FileSet'] = [
                     'name' => [$FileData['name']],
@@ -263,7 +263,7 @@ class Web
         }
 
         /** Exit here if there aren't any file upload detections. */
-        if (count($this->Loader->ScanResultsText) < 1) {
+        if (empty($this->Loader->InstanceCache['DetectionsCount'])) {
             return;
         }
 
@@ -398,5 +398,44 @@ class Web
 
         /** Send HTML output and the kill the script. */
         die($Output);
+    }
+
+    /**
+     * A method provided for running the names of uploaded files through the
+     * demojibakefier for the optional use of the implementation (warning: this
+     * will modify the "name" value of the entries in $_FILES).
+     *
+     * @param string $Encoding The implementation may optionally specify the
+     *      preferred encoding for the demojibakefier to normalise names to. It
+     *      is generally recommended to leave it at its default, however.
+     */
+    public function demojibakefier(string $Encoding = 'UTF-8')
+    {
+        /** Instantiate the demojibakefier class. */
+        $Demojibakefier = new \Maikuolan\Common\Demojibakefier($Encoding);
+
+        /** Exit early if there isn't anything to run through. */
+        if (!$this->Uploads) {
+            return;
+        }
+
+        /** Iterate through the $_FILES array. */
+        foreach ($_FILES as &$FileData) {
+            /** Guard. */
+            if (!isset($FileData['name'])) {
+                continue;
+            }
+
+            /** Run the names through the demojibakefier. */
+            if (is_array($FileData['name'])) {
+                foreach ($FileData['name'] as &$FileName) {
+                    if (is_string($FileName)) {
+                        $FileName = $Demojibakefier->guard($FileName);
+                    }
+                }
+            } elseif (is_string($FileData['name'])) {
+                $FileData['name'] = $Demojibakefier->guard($FileData['name']);
+            }
+        }
     }
 }
