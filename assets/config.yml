@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Configuration defaults file (last modified: 2020.06.23).
+# This file: Configuration defaults file (last modified: 2020.07.15).
 ##/
 
 web:
@@ -35,7 +35,6 @@ web:
    bluemetal: "Blue Metal"
    moss: "Moss"
    fullmoon: "Full Moon"
-  choice_filter: "filterTheme"
  magnification:
   type: "float"
   step: "any"
