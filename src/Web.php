@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2020.07.16).
+ * This file: Upload handler (last modified: 2020.07.20).
  */
 
 namespace phpMussel\Web;
@@ -86,7 +86,7 @@ class Web
             $this->Attache = sprintf(
                 ' lang="%s" dir="%s"',
                 $this->Loader->ClientL10NAccepted,
-                $this->Loader->L10N->Data['Text Direction'] ?? 'ltr'
+                $this->Loader->ClientL10N->Data['Text Direction'] ?? 'ltr'
             );
         }
 
@@ -282,7 +282,8 @@ class Web
             'detected' => $Detections,
             'phpmusselversion' => $this->Loader->ScriptIdent,
             'favicon' => base64_encode($this->Loader->getFavicon()),
-            'xmlLang' => $this->Loader->Configuration['core']['lang']
+            'xmlLang' => $this->Loader->Configuration['core']['lang'],
+            'Text Direction' => $this->Loader->L10N->Data['Text Direction']
         ];
 
         /** Pull relevant client-specified L10N data. */
