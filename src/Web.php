@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2020.07.20).
+ * This file: Upload handler (last modified: 2020.07.31).
  */
 
 namespace phpMussel\Web;
@@ -279,8 +279,11 @@ class Web
         $TemplateData = [
             'magnification' => $this->Loader->Configuration['web']['magnification'],
             'Attache' => $this->Attache,
+            'GeneratedBy' => sprintf(
+                $this->Loader->ClientL10N->getString('generated_by'),
+                '<div id="phpmusselversion" dir="ltr">' . $this->Loader->ScriptIdent . '</div>'
+            ),
             'detected' => $Detections,
-            'phpmusselversion' => $this->Loader->ScriptIdent,
             'favicon' => base64_encode($this->Loader->getFavicon()),
             'xmlLang' => $this->Loader->Configuration['core']['lang'],
             'Text Direction' => $this->Loader->L10N->Data['Text Direction']
