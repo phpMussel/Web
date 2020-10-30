@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2020.07.31).
+ * This file: Upload handler (last modified: 2020.10.30).
  */
 
 namespace phpMussel\Web;
@@ -31,6 +31,11 @@ class Web
     private $AssetsPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR;
 
     /**
+     * @var string A path for any custom front-end asset files.
+     */
+    public $CustomAssetsPath = '';
+
+    /**
      * @var string The path to the upload handler's L10N files.
      */
     private $L10NPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'l10n' . DIRECTORY_SEPARATOR;
@@ -49,6 +54,7 @@ class Web
      * Construct the loader.
      *
      * @param \phpMussel\Core\Loader $Loader The instantiated loader object, passed by reference.
+     * @param \phpMussel\Core\Scanner $Scanner The instantiated scanner object, passed by reference.
      */
     public function __construct(\phpMussel\Core\Loader &$Loader, \phpMussel\Core\Scanner &$Scanner)
     {
@@ -300,11 +306,20 @@ class Web
         }
 
         /** Determine which template file to use. */
-        if (is_readable($this->AssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html')) {
-            $TemplateFile = $this->AssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html';
-        } elseif (is_readable($this->AssetsPath . 'template_default.html')) {
-            $TemplateFile = $this->AssetsPath . 'template_default.html';
+        if ($this->CustomAssetsPath) {
+            if (is_readable($this->CustomAssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html')) {
+                $TemplateFile = $this->CustomAssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html';
+            } elseif (is_readable($this->CustomAssetsPath . 'template_default.html')) {
+                $TemplateFile = $this->CustomAssetsPath . 'template_default.html';
+            }
         } else {
+            if (is_readable($this->AssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html')) {
+                $TemplateFile = $this->AssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html';
+            } elseif (is_readable($this->AssetsPath . 'template_default.html')) {
+                $TemplateFile = $this->AssetsPath . 'template_default.html';
+            }
+        }
+        if (empty($TemplateFile)) {
             $TemplateFile = '';
         }
 
