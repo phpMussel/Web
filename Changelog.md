@@ -23,3 +23,5 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.1.2
 
 [2021.04.27; Maikuolan]: Added missing fullmoon template file.
+
+[2021.05.01; Bug-fix; Maikuolan]: Log truncation not being calculated properly; Fixed.

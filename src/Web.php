@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2020.10.30).
+ * This file: Upload handler (last modified: 2021.05.01).
  */
 
 namespace phpMussel\Web;
@@ -115,12 +115,9 @@ class Web
                 $Data = \phpMussel\Core\Loader::SAFETY . "\n\n" . $Data;
                 $WriteMode = 'wb';
             } else {
-                $WriteMode = (
-                    $this->Loader->Configuration['core']['truncate'] > 0 &&
-                    filesize($File) >= $this->Loader->readBytes($this->Loader->Configuration['core']['truncate'])
-                ) ? 'wb' : 'ab';
+                $Truncate = $this->Loader->readBytes($this->Loader->Configuration['core']['truncate']);
+                $WriteMode = ($Truncate > 0 && filesize($File) >= $Truncate) ? 'wb' : 'ab';
             }
-
             $Stream = fopen($File, $WriteMode);
             fwrite($Stream, $Data);
             fclose($Stream);
