@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2021.05.01).
+ * This file: Upload handler (last modified: 2021.05.28).
  */
 
 namespace phpMussel\Web;
@@ -106,6 +106,7 @@ class Web
             /** Guard. */
             if (
                 strlen($this->Loader->HashReference) === 0 ||
+                $this->Loader->Configuration['web']['uploads_log'] === '' ||
                 !($File = $this->Loader->buildPath($this->Loader->Configuration['web']['uploads_log']))
             ) {
                 return false;
