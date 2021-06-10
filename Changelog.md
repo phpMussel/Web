@@ -27,3 +27,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 [2021.05.01; Bug-fix; Maikuolan]: Log truncation not being calculated properly; Fixed.
 
 [2021.05.28; Maikuolan]: Performed some minor refactoring.
+
+### v3.2.0
+
+[2021.06.10; Maikuolan]: Added a configuration directive for returning a 415 status code for when an upload is blocked due to its filetype being blacklisted.

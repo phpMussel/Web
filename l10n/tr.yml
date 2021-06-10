@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2020.07.13).
+# This file: Turkish language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "Gizlilik Politikası"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "Bu yönerge genelde, phpMussel'ın sizin belir
 config_web_magnification: "Yazı tipi büyütme. Varsayılan = 1."
 config_web_max_uploads: "Yükleme taraması sırasında taranacak maksimum dosya sayısı. Bu sayıyı aşmak taramayı durduracak ve kullanıcıya çok fazla yükleme yaptıkları bildirilecektir! Sisteminizi veya CMS'nizi DDoS girişiminde bulunduran teorik bir saldırıya karşı koruma sağlar. Tavsiye edilen: 10. Donanımınızın hızına bağlı olarak bu sayıyı yükseltebilir veya azaltabilirsiniz. Bu numaranın arşiv içeriğini hesaba katmadığını unutmayın."
 config_web_theme: ""Yükleme Reddedildi" sayfası için kullanılacak estetik."
+config_web_unsupported_media_type_header: "Kara listeye alınmış dosya türleri nedeniyle yüklemeler engellendiğinde phpMussel 415 başlık göndermeli mi? Doğru/True olduğunda, bu ayar <code>forbid_on_block</code>'in yerini alır. Yanlış/False = Hayır [Varsayılan]; Doğru/True = Evet."
 config_web_uploads_log: "Engellenen tüm yüklemelerin nereye kaydedileceği. Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."
 denied: "Yükleme Reddedildi!"
 denied_reason: "Yükleme aşağıda belirtilen nedenlerle engellendi:"

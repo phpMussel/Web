@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Configuration defaults file (last modified: 2021.04.27).
+# This file: Configuration defaults file (last modified: 2021.06.09).
 ##/
 
 web:
@@ -17,6 +17,9 @@ web:
  forbid_on_block:
   type: "bool"
   default: true
+ unsupported_media_type_header:
+  type: "bool"
+  default: false
  max_uploads:
   type: "int"
   default: 10

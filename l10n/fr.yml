@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2020.07.13).
+# This file: French language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "Politique de Confidentialité"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "Cette directive doit généralement être DÉS
 config_web_magnification: "Grossissement des fontes. Défaut = 1."
 config_web_max_uploads: "Maximum admissible nombre de fichiers pour analyse lorsque l'analyse de fichier téléchargements avant d'abandonner l'analyse et informer l'utilisateur qu'ils sont téléchargement trop à la fois ! Fournit protection contre une théorique attaque par lequel un attaquant tente à DDoS votre système ou CMS par surchargeant phpMussel à ralentir le processus de PHP à une halte. Recommandé : 10. Vous pouvez désirer d'augmenter ou diminuer ce nombre dépendamment de la vitesse de votre hardware. Notez que ce nombre ne tient pas compte pour ou inclure le contenus des archives."
 config_web_theme: "L'esthétique à utiliser pour la page « Téléchargement Refusé »."
+config_web_unsupported_media_type_header: "Devrait phpMussel envoyer les en-têtes 415 lorsque les téléchargements sont bloqués en raison du types de fichiers sur la liste noire ? Lorsqu'il est true, ce paramètre remplace <code>forbid_on_block</code>. False = Non [Défaut] ; True = Oui."
 config_web_uploads_log: "Où tous les téléchargements bloqués doivent être enregistrés. Spécifiez un nom de fichier, ou laisser vide à désactiver."
 denied: "Téléchargement Refusé !"
 denied_reason: "Votre tentative de téléchargement a été bloquée pour les raisons énumérées ci-dessous :"

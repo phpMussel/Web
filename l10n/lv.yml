@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2020.07.13).
+# This file: Latvian language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "Privātuma Politika"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "Parasti jums tas jāiespējo tikai tad, ja tas
 config_web_magnification: "Fonta palielinājums. Noklusējuma = 1."
 config_web_max_uploads: "Maksimālais failu skaits, augšupielādes skenēšanas laikā, ko phpMussel ir atļauts skenēt, pirms skenēšanas pārtraukšanas un lietotāja informēšanas, ka viņš vienlaikus augšupielādē pārāk daudz! Nodrošina aizsardzību pret teorētisku uzbrukumu, kurā uzbrucējs mēģina DDoS jūsu sistēmā vai CMS, pārslogojot phpMussel, lai palēninātu PHP procesu līdz apturēšanai. Ieteicams: 10. Iespējams, vēlēsities palielināt vai samazināt šo numuru atkarībā no aparatūras ātruma. Ņemiet vērā, ka šis numurs neaptver un neietver arhīvu saturu."
 config_web_theme: "Estētika, ko izmantot lapā “augšupielāde ir noraidīta”."
+config_web_unsupported_media_type_header: "Vai phpMussel vajadzētu nosūtīt 415 galvenes, kad augšupielāde ir bloķētas melnajā sarakstā iekļauto failu tipu dēļ? Ja tā ir true (patiesa), šis iestatījums aizstāj <code>forbid_on_block</code>. False (Nepatiess) = Nē [Noklusējuma]; True (Patiess) = Jā."
 config_web_uploads_log: "Kur vajadzētu reģistrēt visas bloķētās augšupielādes. Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."
 denied: "Augšupielāde ir noraidīta!"
 denied_reason: "Jūsu augšupielāde tika bloķēta zemāk uzskaitīto iemeslu dēļ:"

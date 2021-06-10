@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2020.07.13).
+# This file: Italian language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "Politica sulla Privacy"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "Questa direttiva dovrebbe generalmente essere 
 config_web_magnification: "Ingrandimento del carattere. Predefinito = 1."
 config_web_max_uploads: "Massimo numero di file per analizzare durante il file caricamenti scansione prima le terminazione del scansione e d'informare dell'utente che essi stai caricando troppo in una volta! Fornisce protezione contro un teorico attacco per cui un malintenzionato utente tenta per DDoS vostra sistema o CMS da sovraccaricamento phpMussel rallentare il PHP processo ad un brusco stop. Raccomandato: 10. Si potrebbe desiderare di aumentare o diminuire che numero basato sulla velocità del vostra sistema e hardware. Si noti che questo numero non tiene conto o includere il contenuti degli archivi."
 config_web_theme: "L'estetica da utilizzare per la pagina "Caricamento Negato"."
+config_web_unsupported_media_type_header: "phpMussel dovrebbe inviare 415 header quando i caricamenti sono bloccati a causa del tipo di file nella lista nera? Se true, questa impostazione sostituisce <code>forbid_on_block</code>. False = No [Predefinito]; True = Sì."
 config_web_uploads_log: "Dove devono essere registrati tutti i caricamenti bloccati. Specificare un nome del file, o lasciare vuoto per disattivarlo."
 denied: "Caricamento Negato!"
 denied_reason: "Il tentativo di caricamento è stato bloccato per i motivi elencati di seguito:"

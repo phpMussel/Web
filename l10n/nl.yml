@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2020.07.13).
+# This file: Dutch language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "Privacybeleid"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "Dit richtlijn moet in het algemeen worden uitg
 config_web_magnification: "Lettergrootte vergroting. Standaard = 1."
 config_web_max_uploads: "Maximaal toegestane aantal bestanden te scannen tijdens bestandsupload scan voordat aborteren de scan en informeren de gebruiker ze zijn uploaden van te veel in een keer! Biedt bescherming tegen een theoretische aanval waardoor een aanvaller probeert te DDoS uw systeem of CMS door overbelasting phpMussel te vertragen het PHP proces tot stilstand. Aanbevolen: 10. U zou kunnen wil te verhogen of verlagen dit nummer afhankelijk van de snelheid van uw hardware. Noteren dat dit aantal niet verklaren voor of opnemen de inhoud van de archieven."
 config_web_theme: "De esthetiek die moet worden gebruikt voor de pagina "Upload Geweigerd"."
+config_web_unsupported_media_type_header: "Moet phpMussel 415 headers verzenden wanneer uploads worden geblokkeerd vanwege bestandstypes op de zwarte lijst? Indien true, deze vervangt instelling <code>forbid_on_block</code>. False = Nee [Standaard]; True = Ja."
 config_web_uploads_log: "Waar alle geblokkeerde uploads moeten worden geregistreerd. Geef een bestandsnaam of laat leeg om te uitschakelen."
 denied: "Upload Geweigerd!"
 denied_reason: "De upload poging werd geblokkeerd voor de hieronder vermelde redenen:"

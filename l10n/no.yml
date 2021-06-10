@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2020.07.13).
+# This file: Norwegian language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "Personvernpolicy"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "Dette direktivet bør vanligvis deaktiveres me
 config_web_magnification: "Font forstørrelse. Standardverdi = 1."
 config_web_max_uploads: "Maksimalt antall filer som phpMussel har lov til å skanne når den skannes opplastinger før de avbryter skanningen og informerer brukeren om at de laster opp for mye på en gang! Gir beskyttelse mot et teoretisk angrep der en angriper forsøker å DDoS systemet eller CMS ved å overbelaste phpMussel for å bremse PHP-prosessen til en stansing. Anbefalt: 10. Det kan være lurt å heve eller senke dette tallet, avhengig av maskinvarens hastighet. Merk at dette nummeret ikke står for eller inkluderer innholdet i arkiver."
 config_web_theme: "Det estetiske å bruke for siden "Opplastingen Nektet"."
+config_web_unsupported_media_type_header: "Bør phpMussel sende 415 overskrifter når opplastinger er blokkert på grunn av svartypede filtyper? Når det er true, denne erstatter innstillingen <code>forbid_on_block</code>. False = Nei [Standardverdi]; True = Ja."
 config_web_uploads_log: "Hvor alle blokkerte opplastinger skal logges. Spesifiser et filnavn, eller la være tomt for å deaktivere."
 denied: "Opplastingen Nektet!"
 denied_reason: "Opplastingen din ble blokkert av grunnene nedenfor:"

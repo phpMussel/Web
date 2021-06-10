@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2020.07.13).
+# This file: Swedish language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "Integritetspolicy"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "Detta direktiv bör i allmänhet inaktiveras s
 config_web_magnification: "Font förstoring. Standard = 1."
 config_web_max_uploads: "Maximalt antal filer som phpMussel tillåter att skanna när skannar uppladdningar innan avbryter skanningen och informerar användaren om att de laddar upp för mycket på en gång! Ger skydd mot en teoretisk attack där en angripare försöker DDoS ditt system eller CMS genom att överbelasta phpMussel för att bromsa PHP-processen till ett slipande stopp. Rekommenderad: 10. Du kanske vill höja eller sänka detta antal beroende på hårdvarans hastighet. Observera att detta nummer inte tar hänsyn till innehållet i arkiven."
 config_web_theme: "Det estetiska att använda för sidan "Uppladdning Nekad"."
+config_web_unsupported_media_type_header: "Ska phpMussel skicka 415 rubriker när uppladdningar blockeras på grund av svartlistade filtyper? När det är true, den ersätter inställningen <code>forbid_on_block</code>. False = Nej [Standard]; True = Ja."
 config_web_uploads_log: "Där alla blockerade uppladdningar ska loggas. Ange ett filnamn eller lämna tomt för att inaktivera."
 denied: "Uppladdning Nekad!"
 denied_reason: "Din uppladdning var blockerad av anledningarna nedan:"

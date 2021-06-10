@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2020.07.13).
+# This file: Spanish language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "Política de Privacidad"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "Esta directiva, en general, debe ser desactiva
 config_web_magnification: "Ampliación de fuente. Predefinido = 1."
 config_web_max_uploads: "Máximo permitido número de archivos para escanear durante archivo subido escaneo antes de abortando la escaneo e informando al usuario están subir demasiado simultáneamente! Proporciona protección contra un teórico ataque por lo cual un atacante intenta DDoS su sistema o CMS por sobrecargando phpMussel para ralentizar el proceso de PHP a niveles inoperables. Recomendado: 10. Es posible que desee aumentar o reducir este número dependiendo de la velocidad de su hardware. Notar que este número no tiene en cuenta o incluir el contenidos de compactados archivos."
 config_web_theme: "La estética a utilizar para la página "Subida Denegada"."
+config_web_unsupported_media_type_header: "¿Debería phpMussel enviar 415 header cuando las cargas están bloqueadas debido a tipos de archivos en la lista negra? Cuando es true, esta configuración reemplaza a <code>forbid_on_block</code>. False = No [Predefinido]; True = Sí."
 config_web_uploads_log: "Donde se deben registrar todas las subidas bloqueadas. Especifique un archivo nombre, o dejar en blanco para desactivar."
 denied: "¡Subida Denegada!"
 denied_reason: "La subida de archivo fue bloqueada por las razones que se indican a continuación:"

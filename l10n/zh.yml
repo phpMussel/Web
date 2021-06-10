@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2020.07.13).
+# This file: Chinese (simplified) language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "隐私政策"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "这个指令按说应会关闭除非它是需�
 config_web_magnification: "字体放大。​标准 = 1。"
 config_web_max_uploads: "最大允许数值的文件为扫描当文件上传扫描之前中止扫描和告诉用户他们是上传太多在同一时间！​提供保护针对一个理论攻击哪里一个攻击者尝试DDoS您的系统或CMS通过超载phpMussel以减速PHP进程到一个停止。​推荐：10。​您可能想增加或减少这个数值，​根据速度的您的硬件。​注意这个数值不交待为或包括存档内容。"
 config_web_theme: "用于“上传是否认”页面的美学。"
+config_web_unsupported_media_type_header: "当上传因列入黑名单的文件类型而被阻止时，phpMussel是否应该发送415标头？​如果为true（真），此设置将取代<code>forbid_on_block</code>。​False（假）=不发送【标准】；True（真）=发送。"
 config_web_uploads_log: "应该记录所有阻止的上传的位置。​指定一个文件名，​或留空以关闭。"
 denied: "上传是否认！"
 denied_reason: "您的上传被拒绝由于这些原因:"

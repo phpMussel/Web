@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2020.07.13).
+# This file: German language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "Datenschutz-Bestimmungen"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "Diese Direktive sollte generell AUS geschaltet
 config_web_magnification: "Schriftvergrößerung. Standardeinstellung = 1."
 config_web_max_uploads: "Maximale erlaubte Anzahl zu überprüfender Dateien während eines Dateiuploads bevor der Scan abgebrochen und der Nutzer darüber informiert wird, dass er zu viele Dateien auf einmal hochgeladen hat. Bietet einen Schutz gegen den theoretischen Angriff eines DDoS auf Ihr System oder CMS, indem der Angreifer phpMussel überlastet und den PHP-Prozess zum Stillstand bringt. Empfohlen: 10. Sie können den Wert abhängig von Ihrer Hardware erhöhen oder senken. Beachten Sie, dass dieser Wert nicht den Inhalt von Archiven berücksichtigt."
 config_web_theme: "Die Ästhetik für die Seite "Upload verweigert"."
+config_web_unsupported_media_type_header: "Sollte phpMussel 415 Header senden, wenn Uploads aufgrund von Dateitypen auf der schwarzen Liste blockiert werden? Wenn true, ersetzt diese Einstellung <code>forbid_on_block</code>. False = Nein [Standardeinstellung]; True = Ja."
 config_web_uploads_log: "Wo sollen alle blockierten Uploads protokolliert werden. Geben Sie einen Dateinamen an oder lassen Sie die Option zum Deaktivieren leer."
 denied: "Upload verweigert!"
 denied_reason: "Der Upload wurde aus den unten aufgeführten Gründen blockiert:"

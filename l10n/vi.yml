@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2020.07.13).
+# This file: Vietnamese language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "Chính sách bảo mật"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "Nói chung, tùy chọn này nên bị vô hi�
 config_web_magnification: "Phóng to chữ. Mặc định = 1."
 config_web_max_uploads: "Số lượng tối đa của tập tin cho phép để quét trong khi quét tập tin tải lên trước khi hủy bỏ quá trình quét và thông báo cho người dùng rằng họ đang tải lên quá nhiều cùng một lúc! Trong lý thuyết, cung cấp bảo vệ chống lại một cuộc tấn công nhờ đó mà một kẻ tấn công cố gắng DDoS hệ thống hay CMS của bạn bằng cách quá tải phpMussel để làm chậm quá trình PHP đến khi nó dừng lại. Đề xuất: 10. Bạn có thể muốn tăng hoặc giảm số này tùy thuộc vào tốc độ của phần cứng của bạn. Chú ý rằng con số này không tính đến hoặc bao gồm các nội dung của kho lưu trữ."
 config_web_theme: "Tính thẩm mỹ để sử dụng cho trang "Sự tải lên đã bị từ chối"."
+config_web_unsupported_media_type_header: "phpMussel có nên gửi tiêu đề 415 khi tải lên bị chặn do các loại tập tin nằm trong danh sách đen không? Khi true, cài đặt này thay thế <code>forbid_on_block</code>. False = Không [Mặc định]; True = Vâng."
 config_web_uploads_log: "Trường hợp tất cả các tải lên bị chặn nên được đăng nhập. Chỉ định một tên tập tin, hoặc để trống để vô hiệu hóa."
 denied: "Sự tải lên đã bị từ chối!"
 denied_reason: "Sự tải lên của bạn đã bị từ chối bởi lý do dưới đây:"

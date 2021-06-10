@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2020.07.13).
+# This file: Indonesian language data (last modified: 2021.06.10).
 ##/
 
 PrivacyPolicy: "Kebijakan Privasi"
@@ -17,6 +17,7 @@ config_web_ignore_upload_errors: "Direktif ini umumnya harus DINONAKTIFKAN kecua
 config_web_magnification: "Perbesaran font. Default = 1."
 config_web_max_uploads: "Maksimum jumla file-file yang diizinkan untuk dipindai selama pemindaian upload file sebelum menghentikan pemindaian dan menginformasikan pengguna bahwa pengguna mengupload terlalu banyak! Menyediakan perlindungan pada serangan teoritis dimana penyerang mencoba DDoS pada sistem Anda atau CMS ada dengan overloading phpMussel supaya berjalan lambat. Proses PHP ke penghentian keras. Recommendasi: 10. Anda dapat menaikkan atau menurunkan angka ini bergantung dari kecepatan hardware Anda. Catat itu nomor ini tidak mengakuntabilitas atau mengikutkan konten dari file terkompres."
 config_web_theme: "Estetika yang digunakan untuk halaman "Upload Ditolak"."
+config_web_unsupported_media_type_header: "Seharusnya phpMussel mengirimkan 415 headers saat upload diblokir karena jenis filenya ada di daftar hitam? Jika true, pengaturan ini menggantikan <code>forbid_on_block</code>. False = Tidak [Default]; True = Ya."
 config_web_uploads_log: "Dimana semua upload yang diblokir harus dicatat. Spesifikan nama atau biarkan kosong untuk menonaktifkan."
 denied: "Upload Ditolak!"
 denied_reason: "Upload diblokir karena alasan yang tercantum dibawah:"
