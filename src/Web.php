@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2021.07.10).
+ * This file: Upload handler (last modified: 2021.08.25).
  */
 
 namespace phpMussel\Web;
@@ -72,7 +72,7 @@ class Web
             $Configuration = $this->Loader->readFile($this->AssetsPath . 'config.yml')
         ) {
             $Defaults = [];
-            $this->Loader->YAML->process($Configuration, $Defaults);
+            $this->Loader->YAML->process($Configuration, $Defaults, 0, true);
             if (isset($Defaults)) {
                 $this->Loader->fallback($Defaults);
                 $this->Loader->ConfigurationDefaults = array_merge_recursive($this->Loader->ConfigurationDefaults, $Defaults);
