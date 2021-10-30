@@ -31,3 +31,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.2.0
 
 [2021.06.10; Maikuolan]: Added a configuration directive for returning a 415 status code for when an upload is blocked due to its filetype being blacklisted.
+
+### v3.2.1
+
+[2021.10.30; Maikuolan]: Code-style cleanup: Public before private properties, magic before public before private methods.

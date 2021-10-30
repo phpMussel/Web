@@ -8,13 +8,18 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2021.09.05).
+ * This file: Upload handler (last modified: 2021.10.30).
  */
 
 namespace phpMussel\Web;
 
 class Web
 {
+    /**
+     * @var string A path for any custom front-end asset files.
+     */
+    public $CustomAssetsPath = '';
+
     /**
      * @var \phpMussel\Core\Loader The instantiated loader object.
      */
@@ -29,11 +34,6 @@ class Web
      * @var string The path to the upload handler's asset files.
      */
     private $AssetsPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR;
-
-    /**
-     * @var string A path for any custom front-end asset files.
-     */
-    public $CustomAssetsPath = '';
 
     /**
      * @var string The path to the upload handler's L10N files.
