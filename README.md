@@ -55,7 +55,7 @@ unset($Web, $Scanner, $Loader);
 *(And, after using that form to try uploading `ascii_standard_testfile.txt`, a benign sample provided for the sole purpose of testing phpMussel)…*
 
 __*Screenshot:*__
-![Screenshot](https://raw.githubusercontent.com/phpMussel/extras/master/screenshots/web-v3.0-alpha2.png)
+![Screenshot](https://raw.githubusercontent.com/phpMussel/extras/master/screenshots/web-v3.0.0-alpha2.png)
 
 ---
 
