@@ -35,3 +35,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.2.1
 
 [2021.10.30; Maikuolan]: Code-style cleanup: Public before private properties, magic before public before private methods.
+
+### v3.2.2
+
+[2022.02.01; Bug-fix; Maikuolan]: Failed to correctly determine the client's IP address under certain circumstances (e.g., multiple choices available via HTTP_X_FORWARDED_FOR); Fixed.
