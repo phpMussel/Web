@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2022.02.01).
+ * This file: Upload handler (last modified: 2022.02.13).
  */
 
 namespace phpMussel\Web;
@@ -327,7 +327,7 @@ class Web
                 $this->Loader->L10N->getString('field_date'),
                 $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format']),
                 $this->Loader->L10N->getString('field_ip_address'),
-                $this->Loader->Configuration['legal']['pseudonymise_ip_addresses'] ? $this->Loader->pseudonymiseIP($this->IPAddr) : $this->IPAddr,
+                $this->Loader->Configuration['legal']['pseudonymise_ip_addresses'] ? $this->Loader->pseudonymiseIP($this->Loader->IPAddr) : $this->Loader->IPAddr,
                 $this->Loader->L10N->getString('field_header_scan_results_why_flagged'),
                 $Detections,
                 $this->Loader->L10N->getString('field_header_hash_reconstruction'),
