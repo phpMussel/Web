@@ -7,30 +7,20 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2021.06.10).
+# This file: French language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "Politique de Confidentialité"
 config_web: "Configuration du gestionnaire de téléchargements."
-config_web_forbid_on_block: "Devrait phpMussel envoyer les en-têtes 403 avec le fichier téléchargement bloqué message, ou rester avec l'habitude 200 bien (200 OK) ? False = Non (200) ; True = Oui (403) [Défaut]."
-config_web_ignore_upload_errors: "Cette directive doit généralement être DÉSACTIVÉ sauf si cela est nécessaire pour la correcte fonctionnalité de phpMussel sur votre spécifique système. Normalement, lorsque DÉSACTIVÉ, lorsque phpMussel détecte la présence d'éléments dans le <code>$_FILES</code>() tableau, il va tenter de lancer une analyse du fichiers que ces éléments représentent, et, si ces éléments sont vide, phpMussel retourne un message d'erreur. Ce comportement est normal pour phpMussel. Mais, pour certains CMS, vides éléments dans <code>$_FILES</code> peuvent survenir à la suite du naturel comportement de ces CMS, ou erreurs peuvent être signalés quand il ne sont pas tout, dans ce cas, le normal comportement pour phpMussel seront interférer avec le normal comportement de ces CMS. Si telle une situation se produit pour vous, ACTIVATION de cette option sera instruire phpMussel ne pas à tenter de lancer d'analyses pour ces vides éléments, ignorer quand il est reconnu et ne pas à retourner tout de connexes messages d'erreur, permettant ainsi la continuation de la requête de page. False = Désactivé ; True = Activé."
+config_web_forbid_on_block: "Devrait phpMussel envoyer les en-têtes 403 avec le fichier téléchargement bloqué message, ou rester avec l'habitude 200 bien (200 OK)\_? False = Non (200)\_; True = Oui (403) [Défaut]."
+config_web_ignore_upload_errors: "Cette directive doit généralement être DÉSACTIVÉ sauf si cela est nécessaire pour la correcte fonctionnalité de phpMussel sur votre spécifique système. Normalement, lorsque DÉSACTIVÉ, lorsque phpMussel détecte la présence d'éléments dans le <code>$_FILES</code>() tableau, il va tenter de lancer une analyse du fichiers que ces éléments représentent, et, si ces éléments sont vide, phpMussel retourne un message d'erreur. Ce comportement est normal pour phpMussel. Mais, pour certains CMS, vides éléments dans <code>$_FILES</code> peuvent survenir à la suite du naturel comportement de ces CMS, ou erreurs peuvent être signalés quand il ne sont pas tout, dans ce cas, le normal comportement pour phpMussel seront interférer avec le normal comportement de ces CMS. Si telle une situation se produit pour vous, ACTIVATION de cette option sera instruire phpMussel ne pas à tenter de lancer d'analyses pour ces vides éléments, ignorer quand il est reconnu et ne pas à retourner tout de connexes messages d'erreur, permettant ainsi la continuation de la requête de page. False = Désactivé\_; True = Activé."
 config_web_magnification: "Grossissement des fontes. Défaut = 1."
-config_web_max_uploads: "Maximum admissible nombre de fichiers pour analyse lorsque l'analyse de fichier téléchargements avant d'abandonner l'analyse et informer l'utilisateur qu'ils sont téléchargement trop à la fois ! Fournit protection contre une théorique attaque par lequel un attaquant tente à DDoS votre système ou CMS par surchargeant phpMussel à ralentir le processus de PHP à une halte. Recommandé : 10. Vous pouvez désirer d'augmenter ou diminuer ce nombre dépendamment de la vitesse de votre hardware. Notez que ce nombre ne tient pas compte pour ou inclure le contenus des archives."
-config_web_theme: "L'esthétique à utiliser pour la page « Téléchargement Refusé »."
-config_web_unsupported_media_type_header: "Devrait phpMussel envoyer les en-têtes 415 lorsque les téléchargements sont bloqués en raison du types de fichiers sur la liste noire ? Lorsqu'il est true, ce paramètre remplace <code>forbid_on_block</code>. False = Non [Défaut] ; True = Oui."
+config_web_max_uploads: "Maximum admissible nombre de fichiers pour analyse lorsque l'analyse de fichier téléchargements avant d'abandonner l'analyse et informer l'utilisateur qu'ils sont téléchargement trop à la fois\_! Fournit protection contre une théorique attaque par lequel un attaquant tente à DDoS votre système ou CMS par surchargeant phpMussel à ralentir le processus de PHP à une halte. Recommandé\_: 10. Vous pouvez désirer d'augmenter ou diminuer ce nombre dépendamment de la vitesse de votre hardware. Notez que ce nombre ne tient pas compte pour ou inclure le contenus des archives."
+config_web_theme: "L'esthétique à utiliser pour la page «\_Téléchargement Refusé\_»."
+config_web_unsupported_media_type_header: "Devrait phpMussel envoyer les en-têtes 415 lorsque les téléchargements sont bloqués en raison du types de fichiers sur la liste noire\_? Lorsqu'il est true, ce paramètre remplace <code>forbid_on_block</code>. False = Non [Défaut]\_; True = Oui."
 config_web_uploads_log: "Où tous les téléchargements bloqués doivent être enregistrés. Spécifiez un nom de fichier, ou laisser vide à désactiver."
-denied: "Téléchargement Refusé !"
-denied_reason: "Votre tentative de téléchargement a été bloquée pour les raisons énumérées ci-dessous :"
-scan_unauthorised_upload: "Non autorisée manipulation de téléchargement de fichiers détecté !"
-scan_unauthorised_upload_or_misconfig: "Manipulation de téléchargement de fichiers non autorisée ou mauvaise configuration détectée !"
-upload_error_1: "La taille du fichier dépasse la directive upload_max_filesize."
-upload_error_2: "La taille du fichier dépasse la limite spécifiée dans le formulaire taille limite."
-upload_error_34: "Échec du téléchargement ! S'il vous plaît contacter le hostmaster pour obtenir de l'aide !"
-upload_error_6: "Répertoire de téléchargement manquant ! Veuillez contacter le hostmaster pour obtenir de l'aide !"
-upload_error_7: "Erreur d'écriture disque ! Veuillez contacter le hostmaster pour obtenir de l'aide !"
-upload_error_8: "Mauvaise configuration PHP détectée ! Veuillez contacter le hostmaster pour obtenir de l'aide !"
-upload_limit_exceeded: "Limite de téléchargement dépassée"
-
+denied: "Téléchargement Refusé\_!"
+denied_reason: "Votre tentative de téléchargement a été bloquée pour les raisons énumérées ci-dessous\_:"
 notifications_message: |
  <center>
  <p><strong>Bonjour.</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Notification de téléchargement bloqué"
+scan_unauthorised_upload: "Non autorisée manipulation de téléchargement de fichiers détecté\_!"
+scan_unauthorised_upload_or_misconfig: "Manipulation de téléchargement de fichiers non autorisée ou mauvaise configuration détectée\_!"
+upload_error_1: "La taille du fichier dépasse la directive upload_max_filesize."
+upload_error_2: "La taille du fichier dépasse la limite spécifiée dans le formulaire taille limite."
+upload_error_34: "Échec du téléchargement\_! S'il vous plaît contacter le hostmaster pour obtenir de l'aide\_!"
+upload_error_6: "Répertoire de téléchargement manquant\_! Veuillez contacter le hostmaster pour obtenir de l'aide\_!"
+upload_error_7: "Erreur d'écriture disque\_! Veuillez contacter le hostmaster pour obtenir de l'aide\_!"
+upload_error_8: "Mauvaise configuration PHP détectée\_! Veuillez contacter le hostmaster pour obtenir de l'aide\_!"
+upload_limit_exceeded: "Limite de téléchargement dépassée"

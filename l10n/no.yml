@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2021.06.10).
+# This file: Norwegian language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "Personvernpolicy"
@@ -21,16 +21,6 @@ config_web_unsupported_media_type_header: "Bør phpMussel sende 415 overskrifter
 config_web_uploads_log: "Hvor alle blokkerte opplastinger skal logges. Spesifiser et filnavn, eller la være tomt for å deaktivere."
 denied: "Opplastingen Nektet!"
 denied_reason: "Opplastingen din ble blokkert av grunnene nedenfor:"
-scan_unauthorised_upload: "Uautorisert manipulering av filopplasting oppdaget!"
-scan_unauthorised_upload_or_misconfig: "Uautorisert manipulering av filopplasting eller feilkonfigurasjon oppdaget!"
-upload_error_1: "Filstørrelse overstiger direktivet upload_max_filesize."
-upload_error_2: "Filstørrelse overskrider formspesifisert filstørrelsesgrense."
-upload_error_34: "Opplasting feil! Vennligst kontakt vertsmesteren for å få hjelp!"
-upload_error_6: "Opplastingskatalog mangler! Vennligst kontakt vertsmesteren for å få hjelp!"
-upload_error_7: "Disk-skrive feil! Vennligst kontakt vertsmesteren for å få hjelp!"
-upload_error_8: "PHP-feilkonfigurasjon oppdaget! Vennligst kontakt vertsmesteren for å få hjelp!"
-upload_limit_exceeded: "Opplastingsgrensen overskredet"
-
 notifications_message: |
  <center>
  <p><strong>Hallo.</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Blokkert opplasting varsel"
+scan_unauthorised_upload: "Uautorisert manipulering av filopplasting oppdaget!"
+scan_unauthorised_upload_or_misconfig: "Uautorisert manipulering av filopplasting eller feilkonfigurasjon oppdaget!"
+upload_error_1: "Filstørrelse overstiger direktivet upload_max_filesize."
+upload_error_2: "Filstørrelse overskrider formspesifisert filstørrelsesgrense."
+upload_error_34: "Opplasting feil! Vennligst kontakt vertsmesteren for å få hjelp!"
+upload_error_6: "Opplastingskatalog mangler! Vennligst kontakt vertsmesteren for å få hjelp!"
+upload_error_7: "Disk-skrive feil! Vennligst kontakt vertsmesteren for å få hjelp!"
+upload_error_8: "PHP-feilkonfigurasjon oppdaget! Vennligst kontakt vertsmesteren for å få hjelp!"
+upload_limit_exceeded: "Opplastingsgrensen overskredet"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2021.06.10).
+# This file: Turkish language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "Gizlilik Politikası"
@@ -21,16 +21,6 @@ config_web_unsupported_media_type_header: "Kara listeye alınmış dosya türler
 config_web_uploads_log: "Engellenen tüm yüklemelerin nereye kaydedileceği. Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."
 denied: "Yükleme Reddedildi!"
 denied_reason: "Yükleme aşağıda belirtilen nedenlerle engellendi:"
-scan_unauthorised_upload: "Yetkisiz dosya yükleme işi algılandı!"
-scan_unauthorised_upload_or_misconfig: "Yetkisiz dosya yükleme manipülasyonu veya yanlış yapılandırma algılandı!"
-upload_error_1: "Dosya boyutu upload_max_filesize yönergesini aşıyor."
-upload_error_2: "Dosya boyutu form tanımlı dosya boyutu sınırını aşıyor."
-upload_error_34: "Yükleme hatası! Lütfen yardım için hostmaster ile iletişime geçin!"
-upload_error_6: "Yükleme dizini eksik! Lütfen yardım için hostmaster ile iletişime geçin!"
-upload_error_7: "Disk yazma hatası! Lütfen yardım için hostmaster ile iletişime geçin!"
-upload_error_8: "PHP yanlış yapılandırması tespit edildi! Lütfen yardım için hostmaster ile iletişime geçin!"
-upload_limit_exceeded: "Yükleme sınırı aşıldı"
-
 notifications_message: |
  <center>
  <p><strong>Merhaba.</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Engellenen yükleme bildirimi"
+scan_unauthorised_upload: "Yetkisiz dosya yükleme işi algılandı!"
+scan_unauthorised_upload_or_misconfig: "Yetkisiz dosya yükleme manipülasyonu veya yanlış yapılandırma algılandı!"
+upload_error_1: "Dosya boyutu upload_max_filesize yönergesini aşıyor."
+upload_error_2: "Dosya boyutu form tanımlı dosya boyutu sınırını aşıyor."
+upload_error_34: "Yükleme hatası! Lütfen yardım için hostmaster ile iletişime geçin!"
+upload_error_6: "Yükleme dizini eksik! Lütfen yardım için hostmaster ile iletişime geçin!"
+upload_error_7: "Disk yazma hatası! Lütfen yardım için hostmaster ile iletişime geçin!"
+upload_error_8: "PHP yanlış yapılandırması tespit edildi! Lütfen yardım için hostmaster ile iletişime geçin!"
+upload_limit_exceeded: "Yükleme sınırı aşıldı"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2021.06.10).
+# This file: Korean language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "개인 정보 정책"
@@ -20,17 +20,7 @@ config_web_theme: ""업로드 거부"페이지에 사용할 미학."
 config_web_unsupported_media_type_header: "블랙리스트 파일 형식으로 인해 업로드가 차단되면 phpMussel이 415 헤더를 보내야 합니까? True이면이 설정이 <code>forbid_on_block</code>를 대체합니다. False = 아니오 [Default / 기본 설정]; True = 예."
 config_web_uploads_log: "차단된 모든 업로드를 기록해야 하는 위치. 파일 이름을 지정하십시오. 비활성화하려면 비워 둡니다."
 denied: "업로드 거부!"
-denied_reason: "다음과 같은 이유로 업로드가 거부되었습니다 :"
-scan_unauthorised_upload: "불법 파일 업로드 변조가 감지되었습니다!"
-scan_unauthorised_upload_or_misconfig: "불법 파일 업로드 변조 또는 미스 콘 피규 레이션이 감지되었습니다!"
-upload_error_1: "지시 된 최대 업로드 파일 크기를 초과합니다."
-upload_error_2: "양식의 파일 크기 제한을 초과합니다."
-upload_error_34: "업로드 실패! 호스트 책임자와 상담하십시오!"
-upload_error_6: "업로드 디렉토리가 없습니다! 호스트 책임자와 상담하십시오!"
-upload_error_7: "디스크에 쓸 수 없습니다! 호스트 책임자와 상담하십시오!"
-upload_error_8: "잘못된 PHP 설정이 감지되었습니다! 호스트 책임자와 상담하십시오!"
-upload_limit_exceeded: "업로드 제한을 초과합니다."
-
+denied_reason: "다음과 같은 이유로 업로드가 거부되었습니다\_:"
 notifications_message: |
  <center>
  <p><strong>안녕하세요.</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "차단 된 업로드 알림"
+scan_unauthorised_upload: "불법 파일 업로드 변조가 감지되었습니다!"
+scan_unauthorised_upload_or_misconfig: "불법 파일 업로드 변조 또는 미스 콘 피규 레이션이 감지되었습니다!"
+upload_error_1: "지시 된 최대 업로드 파일 크기를 초과합니다."
+upload_error_2: "양식의 파일 크기 제한을 초과합니다."
+upload_error_34: "업로드 실패! 호스트 책임자와 상담하십시오!"
+upload_error_6: "업로드 디렉토리가 없습니다! 호스트 책임자와 상담하십시오!"
+upload_error_7: "디스크에 쓸 수 없습니다! 호스트 책임자와 상담하십시오!"
+upload_error_8: "잘못된 PHP 설정이 감지되었습니다! 호스트 책임자와 상담하십시오!"
+upload_limit_exceeded: "업로드 제한을 초과합니다."

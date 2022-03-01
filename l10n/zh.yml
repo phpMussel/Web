@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2021.06.10).
+# This file: Chinese (simplified) language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "隐私政策"
@@ -21,16 +21,6 @@ config_web_unsupported_media_type_header: "当上传因列入黑名单的文件�
 config_web_uploads_log: "应该记录所有阻止的上传的位置。​指定一个文件名，​或留空以关闭。"
 denied: "上传是否认！"
 denied_reason: "您的上传被拒绝由于这些原因:"
-scan_unauthorised_upload: "未经授权的文件上传操控是检测！"
-scan_unauthorised_upload_or_misconfig: "未经授权的文件上传操控或配置错误是检测！"
-upload_error_1: "文件大小超过upload_max_filesize指令。"
-upload_error_2: "文件大小超过文件大小限制指定由文件上传信息。"
-upload_error_34: "上传失败！​请联系网站管理员或网站托管服务！"
-upload_error_6: "上传文件夹是失踪！​请联系网站管理员或网站托管服务！"
-upload_error_7: "硬盘写入错误！​请联系网站管理员或网站托管服务！"
-upload_error_8: "PHP配置错误是检测！​请联系网站管理员或网站托管服务！"
-upload_limit_exceeded: "超过上传限制"
-
 notifications_message: |
  <center>
  <p><strong>你好。</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "关于上传已被阻止的通知"
+scan_unauthorised_upload: "未经授权的文件上传操控是检测！"
+scan_unauthorised_upload_or_misconfig: "未经授权的文件上传操控或配置错误是检测！"
+upload_error_1: "文件大小超过upload_max_filesize指令。"
+upload_error_2: "文件大小超过文件大小限制指定由文件上传信息。"
+upload_error_34: "上传失败！​请联系网站管理员或网站托管服务！"
+upload_error_6: "上传文件夹是失踪！​请联系网站管理员或网站托管服务！"
+upload_error_7: "硬盘写入错误！​请联系网站管理员或网站托管服务！"
+upload_error_8: "PHP配置错误是检测！​请联系网站管理员或网站托管服务！"
+upload_limit_exceeded: "超过上传限制"

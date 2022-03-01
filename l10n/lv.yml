@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2021.06.10).
+# This file: Latvian language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "Privātuma Politika"
@@ -21,16 +21,6 @@ config_web_unsupported_media_type_header: "Vai phpMussel vajadzētu nosūtīt 41
 config_web_uploads_log: "Kur vajadzētu reģistrēt visas bloķētās augšupielādes. Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."
 denied: "Augšupielāde ir noraidīta!"
 denied_reason: "Jūsu augšupielāde tika bloķēta zemāk uzskaitīto iemeslu dēļ:"
-scan_unauthorised_upload: "Atrasta neatļautas failu augšupielādes manipulācijas!"
-scan_unauthorised_upload_or_misconfig: "Atrasta neatļautas failu augšupielādes manipulācijas vai nepareizas konfigurācijas!"
-upload_error_1: "Faila lielums pārsniedz upload_max_filesize direktīvu."
-upload_error_2: "Faila lielums pārsniedz formā norādīto faila lieluma ierobežojumu."
-upload_error_34: "Augšupielāde neizdevās! Lūdzu, sazinieties ar tīmekļa mitinātājs pārzinis, lai saņemtu palīdzību!"
-upload_error_6: "Trūkst augšupielādes direktorijas! Lūdzu, sazinieties ar tīmekļa mitinātājs pārzinis, lai saņemtu palīdzību!"
-upload_error_7: "Diska rakstīšanas kļūda! Lūdzu, sazinieties ar tīmekļa mitinātājs pārzinis, lai saņemtu palīdzību!"
-upload_error_8: "Atrasts nepareiza PHP konfigurācija! Lūdzu, sazinieties ar tīmekļa mitinātājs pārzinis, lai saņemtu palīdzību!"
-upload_limit_exceeded: "Augšupielādes ierobežojums ir pārsniegts"
-
 notifications_message: |
  <center>
  <p><strong>Sveiki.</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Bloķēts augšupielādes paziņojums"
+scan_unauthorised_upload: "Atrasta neatļautas failu augšupielādes manipulācijas!"
+scan_unauthorised_upload_or_misconfig: "Atrasta neatļautas failu augšupielādes manipulācijas vai nepareizas konfigurācijas!"
+upload_error_1: "Faila lielums pārsniedz upload_max_filesize direktīvu."
+upload_error_2: "Faila lielums pārsniedz formā norādīto faila lieluma ierobežojumu."
+upload_error_34: "Augšupielāde neizdevās! Lūdzu, sazinieties ar tīmekļa mitinātājs pārzinis, lai saņemtu palīdzību!"
+upload_error_6: "Trūkst augšupielādes direktorijas! Lūdzu, sazinieties ar tīmekļa mitinātājs pārzinis, lai saņemtu palīdzību!"
+upload_error_7: "Diska rakstīšanas kļūda! Lūdzu, sazinieties ar tīmekļa mitinātājs pārzinis, lai saņemtu palīdzību!"
+upload_error_8: "Atrasts nepareiza PHP konfigurācija! Lūdzu, sazinieties ar tīmekļa mitinātājs pārzinis, lai saņemtu palīdzību!"
+upload_limit_exceeded: "Augšupielādes ierobežojums ir pārsniegts"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2021.06.10).
+# This file: Italian language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "Politica sulla Privacy"
@@ -21,16 +21,6 @@ config_web_unsupported_media_type_header: "phpMussel dovrebbe inviare 415 header
 config_web_uploads_log: "Dove devono essere registrati tutti i caricamenti bloccati. Specificare un nome del file, o lasciare vuoto per disattivarlo."
 denied: "Caricamento Negato!"
 denied_reason: "Il tentativo di caricamento è stato bloccato per i motivi elencati di seguito:"
-scan_unauthorised_upload: "Rilevata manipolazione non autorizzata del caricamento del file!"
-scan_unauthorised_upload_or_misconfig: "Rilevata manipolazione non autorizzata del caricamento del file o malconfigurazione!"
-upload_error_1: "La dimensione del file supera la direttiva upload_max_filesize."
-upload_error_2: "La dimensione del file supera la dimensione limite specificata dal modulo."
-upload_error_34: "Caricamento fallito! Contatta l'hostmaster per assistenza!"
-upload_error_6: "Cartella per il caricamento mancante! Contatta l'hostmaster per assistenza!"
-upload_error_7: "Errore nella scrittura del disco! Contatta l'hostmaster per assistenza!"
-upload_error_8: "Rilevata una malconfigurazione di PHP! Contatta l'hostmaster per assistenza!"
-upload_limit_exceeded: "Limite di caricamento superato"
-
 notifications_message: |
  <center>
  <p><strong>Salve.</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Notifica di caricamento bloccata"
+scan_unauthorised_upload: "Rilevata manipolazione non autorizzata del caricamento del file!"
+scan_unauthorised_upload_or_misconfig: "Rilevata manipolazione non autorizzata del caricamento del file o malconfigurazione!"
+upload_error_1: "La dimensione del file supera la direttiva upload_max_filesize."
+upload_error_2: "La dimensione del file supera la dimensione limite specificata dal modulo."
+upload_error_34: "Caricamento fallito! Contatta l'hostmaster per assistenza!"
+upload_error_6: "Cartella per il caricamento mancante! Contatta l'hostmaster per assistenza!"
+upload_error_7: "Errore nella scrittura del disco! Contatta l'hostmaster per assistenza!"
+upload_error_8: "Rilevata una malconfigurazione di PHP! Contatta l'hostmaster per assistenza!"
+upload_limit_exceeded: "Limite di caricamento superato"

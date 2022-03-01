@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2021.06.10).
+# This file: Vietnamese language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "Chính sách bảo mật"
@@ -21,16 +21,6 @@ config_web_unsupported_media_type_header: "phpMussel có nên gửi tiêu đề 
 config_web_uploads_log: "Trường hợp tất cả các tải lên bị chặn nên được đăng nhập. Chỉ định một tên tập tin, hoặc để trống để vô hiệu hóa."
 denied: "Sự tải lên đã bị từ chối!"
 denied_reason: "Sự tải lên của bạn đã bị từ chối bởi lý do dưới đây:"
-scan_unauthorised_upload: "Sự thay đỗi của tập tin không được phép tải lên được phát hiện!"
-scan_unauthorised_upload_or_misconfig: "Sự thay đỗi của tập tin không được phép tải lên được phát hiện!"
-upload_error_1: "Cỡ của tập tin quá giới hạn upload_max_filesize chỉ dẫn."
-upload_error_2: "Cỡ của tập tin quá giới hạn của cỡ file chỉ định."
-upload_error_34: "Sự tải lên đã bị lối! Xin vui lòng liên lạc với hostmaster để được giúp đỡ!"
-upload_error_6: "Thư mục tải lên bị thiếu! Xin vui lòng liên lạc với hostmaster để được giúp đỡ!"
-upload_error_7: "Đĩa ghi bị lỗi! Xin vui lòng liên lạc với hostmaster để được giúp đỡ!"
-upload_error_8: "Phát hiện PHP sai! Xin vui lòng liên lạc với hostmaster để được giúp đỡ!"
-upload_limit_exceeded: "Đã quá giới hạn tải lên"
-
 notifications_message: |
  <center>
  <p><strong>Xin chào.</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Thông báo về việc tải lên bị chặn"
+scan_unauthorised_upload: "Sự thay đỗi của tập tin không được phép tải lên được phát hiện!"
+scan_unauthorised_upload_or_misconfig: "Sự thay đỗi của tập tin không được phép tải lên được phát hiện!"
+upload_error_1: "Cỡ của tập tin quá giới hạn upload_max_filesize chỉ dẫn."
+upload_error_2: "Cỡ của tập tin quá giới hạn của cỡ file chỉ định."
+upload_error_34: "Sự tải lên đã bị lối! Xin vui lòng liên lạc với hostmaster để được giúp đỡ!"
+upload_error_6: "Thư mục tải lên bị thiếu! Xin vui lòng liên lạc với hostmaster để được giúp đỡ!"
+upload_error_7: "Đĩa ghi bị lỗi! Xin vui lòng liên lạc với hostmaster để được giúp đỡ!"
+upload_error_8: "Phát hiện PHP sai! Xin vui lòng liên lạc với hostmaster để được giúp đỡ!"
+upload_limit_exceeded: "Đã quá giới hạn tải lên"

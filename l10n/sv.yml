@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2021.06.10).
+# This file: Swedish language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "Integritetspolicy"
@@ -21,16 +21,6 @@ config_web_unsupported_media_type_header: "Ska phpMussel skicka 415 rubriker nä
 config_web_uploads_log: "Där alla blockerade uppladdningar ska loggas. Ange ett filnamn eller lämna tomt för att inaktivera."
 denied: "Uppladdning Nekad!"
 denied_reason: "Din uppladdning var blockerad av anledningarna nedan:"
-scan_unauthorised_upload: "Obehörig manipulering av filuppladdning upptäckt!"
-scan_unauthorised_upload_or_misconfig: "Obehörig manipulering av filuppladdning eller felkonfiguration upptäckt!"
-upload_error_1: "Filstorleken överskrider direktivet upload_max_filesize."
-upload_error_2: "Filstorleken överskrider formspecificerad filstorleksgräns."
-upload_error_34: "Uppladdningsfel! Vänligen kontakta värdmästaren för hjälp!"
-upload_error_6: "Uppladdningen katalog saknas! Vänligen kontakta värdmästaren för hjälp!"
-upload_error_7: "Skivskrivningsfel! Vänligen kontakta värdmästaren för hjälp!"
-upload_error_8: "PHP-felkonfiguration upptäckt! Vänligen kontakta värdmästaren för hjälp!"
-upload_limit_exceeded: "Överföringsgränsen överskred"
-
 notifications_message: |
  <center>
  <p><strong>Hallå.</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Meddelande om blockerade uppladdningar"
+scan_unauthorised_upload: "Obehörig manipulering av filuppladdning upptäckt!"
+scan_unauthorised_upload_or_misconfig: "Obehörig manipulering av filuppladdning eller felkonfiguration upptäckt!"
+upload_error_1: "Filstorleken överskrider direktivet upload_max_filesize."
+upload_error_2: "Filstorleken överskrider formspecificerad filstorleksgräns."
+upload_error_34: "Uppladdningsfel! Vänligen kontakta värdmästaren för hjälp!"
+upload_error_6: "Uppladdningen katalog saknas! Vänligen kontakta värdmästaren för hjälp!"
+upload_error_7: "Skivskrivningsfel! Vänligen kontakta värdmästaren för hjälp!"
+upload_error_8: "PHP-felkonfiguration upptäckt! Vänligen kontakta värdmästaren för hjälp!"
+upload_limit_exceeded: "Överföringsgränsen överskred"

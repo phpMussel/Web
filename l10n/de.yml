@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2021.06.10).
+# This file: German language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "Datenschutz-Bestimmungen"
@@ -21,16 +21,6 @@ config_web_unsupported_media_type_header: "Sollte phpMussel 415 Header senden, w
 config_web_uploads_log: "Wo sollen alle blockierten Uploads protokolliert werden. Geben Sie einen Dateinamen an oder lassen Sie die Option zum Deaktivieren leer."
 denied: "Upload verweigert!"
 denied_reason: "Der Upload wurde aus den unten aufgeführten Gründen blockiert:"
-scan_unauthorised_upload: "Unerlaubte Upload-Manipulation erkannt!"
-scan_unauthorised_upload_or_misconfig: "Unerlaubte Upload-Manipulation oder Fehlkonfiguration erkannt!"
-upload_error_1: "Dateigröße überschreitet die Richtlinie upload_max_filesize."
-upload_error_2: "Dateigröße überschreitet die im Formular angegebene Dateigröße."
-upload_error_34: "Upload gescheitert! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
-upload_error_6: "Fehlendes Uploadverzeichnis! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
-upload_error_7: "Festplatten-Schreibfehler! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
-upload_error_8: "PHP-Fehlkonfiguration erkannt! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
-upload_limit_exceeded: "Uploadlimit überschritten"
-
 notifications_message: |
  <center>
  <p><strong>Hallo.</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Blockierte Upload"
+scan_unauthorised_upload: "Unerlaubte Upload-Manipulation erkannt!"
+scan_unauthorised_upload_or_misconfig: "Unerlaubte Upload-Manipulation oder Fehlkonfiguration erkannt!"
+upload_error_1: "Dateigröße überschreitet die Richtlinie upload_max_filesize."
+upload_error_2: "Dateigröße überschreitet die im Formular angegebene Dateigröße."
+upload_error_34: "Upload gescheitert! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
+upload_error_6: "Fehlendes Uploadverzeichnis! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
+upload_error_7: "Festplatten-Schreibfehler! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
+upload_error_8: "PHP-Fehlkonfiguration erkannt! Bitte kontaktieren Sie den Hostmaster für Unterstützung!"
+upload_limit_exceeded: "Uploadlimit überschritten"

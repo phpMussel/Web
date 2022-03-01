@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2021.06.10).
+# This file: Polish language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "Polityka Prywatności"
@@ -21,16 +21,6 @@ config_web_unsupported_media_type_header: "Czy phpMussel powinien wysyłać 415 
 config_web_uploads_log: "Gdzie powinny być rejestrowane wszystkie zablokowane przesyłanie. Podaj nazwę pliku lub pozostaw puste, aby wyłączyć."
 denied: "Przesyłanie Odrzucone!"
 denied_reason: "Twoje przesyłanie zostało zablokowane z powodów wymienionych poniżej:"
-scan_unauthorised_upload: "Wykryto nieautoryzowane manipulowanie przesyłania plików!"
-scan_unauthorised_upload_or_misconfig: "Wykryto nieautoryzowane manipulowanie przesyłania plików lub błędną konfigurację!"
-upload_error_1: "Rozmiar pliku przekracza dyrektywę upload_max_filesize."
-upload_error_2: "Rozmiar pliku przekracza określony rozmiar formularza."
-upload_error_34: "Błąd przesyłania! Proszę skontaktuj się z gospodarzem, aby uzyskać pomoc!"
-upload_error_6: "Brakuje katalogu do przesłania! Proszę skontaktuj się z gospodarzem, aby uzyskać pomoc!"
-upload_error_7: "Błąd zapisu płyty! Proszę skontaktuj się z gospodarzem, aby uzyskać pomoc!"
-upload_error_8: "Wykryto błędną konfigurację PHP! Proszę skontaktuj się z gospodarzem, aby uzyskać pomoc!"
-upload_limit_exceeded: "Przekroczono limit przesyłania"
-
 notifications_message: |
  <center>
  <p><strong>Cześć.</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Powiadomienie o zablokowanym przesyłaniu"
+scan_unauthorised_upload: "Wykryto nieautoryzowane manipulowanie przesyłania plików!"
+scan_unauthorised_upload_or_misconfig: "Wykryto nieautoryzowane manipulowanie przesyłania plików lub błędną konfigurację!"
+upload_error_1: "Rozmiar pliku przekracza dyrektywę upload_max_filesize."
+upload_error_2: "Rozmiar pliku przekracza określony rozmiar formularza."
+upload_error_34: "Błąd przesyłania! Proszę skontaktuj się z gospodarzem, aby uzyskać pomoc!"
+upload_error_6: "Brakuje katalogu do przesłania! Proszę skontaktuj się z gospodarzem, aby uzyskać pomoc!"
+upload_error_7: "Błąd zapisu płyty! Proszę skontaktuj się z gospodarzem, aby uzyskać pomoc!"
+upload_error_8: "Wykryto błędną konfigurację PHP! Proszę skontaktuj się z gospodarzem, aby uzyskać pomoc!"
+upload_limit_exceeded: "Przekroczono limit przesyłania"

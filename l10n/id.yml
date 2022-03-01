@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2021.06.10).
+# This file: Indonesian language data (last modified: 2022.03.01).
 ##/
 
 PrivacyPolicy: "Kebijakan Privasi"
@@ -21,16 +21,6 @@ config_web_unsupported_media_type_header: "Seharusnya phpMussel mengirimkan 415 
 config_web_uploads_log: "Dimana semua upload yang diblokir harus dicatat. Spesifikan nama atau biarkan kosong untuk menonaktifkan."
 denied: "Upload Ditolak!"
 denied_reason: "Upload diblokir karena alasan yang tercantum dibawah:"
-scan_unauthorised_upload: "Tidak sah file nama manipulasi terdeteksi!"
-scan_unauthorised_upload_or_misconfig: "Tidak sah file nama manipulasi atau salah-konfigurasi terdeteksi!"
-upload_error_1: "File ukuran melebihi direktif upload_max_filesize."
-upload_error_2: "File ukuran melebihi formulir ditentukan file ukuran batas."
-upload_error_34: "Upload gagal! Silahkan hubungi hostmaster untuk bantuan!"
-upload_error_6: "Upload direktori hilang! Silahkan hubungi hostmaster untuk bantuan!"
-upload_error_7: "Disk-menulis kesalahan! Silahkan hubungi hostmaster untuk bantuan!"
-upload_error_8: "PHP salah-konfigurasi terdeteksi! Silahkan hubungi hostmaster untuk bantuan!"
-upload_limit_exceeded: "Upload batas melebihi"
-
 notifications_message: |
  <center>
  <p><strong>Salam.</strong></p>
@@ -42,3 +32,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Pemberitahuan upload yang diblokir"
+scan_unauthorised_upload: "Tidak sah file nama manipulasi terdeteksi!"
+scan_unauthorised_upload_or_misconfig: "Tidak sah file nama manipulasi atau salah-konfigurasi terdeteksi!"
+upload_error_1: "File ukuran melebihi direktif upload_max_filesize."
+upload_error_2: "File ukuran melebihi formulir ditentukan file ukuran batas."
+upload_error_34: "Upload gagal! Silahkan hubungi hostmaster untuk bantuan!"
+upload_error_6: "Upload direktori hilang! Silahkan hubungi hostmaster untuk bantuan!"
+upload_error_7: "Disk-menulis kesalahan! Silahkan hubungi hostmaster untuk bantuan!"
+upload_error_8: "PHP salah-konfigurasi terdeteksi! Silahkan hubungi hostmaster untuk bantuan!"
+upload_limit_exceeded: "Upload batas melebihi"
