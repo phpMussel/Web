@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2022.02.13).
+ * This file: Upload handler (last modified: 2022.06.19).
  */
 
 namespace phpMussel\Web;
@@ -400,7 +400,7 @@ class Web
 
             /** Process recipients. */
             foreach (explode(',', $this->Loader->InstanceCache['enable_notifications']) as $Recipient) {
-                if (!strlen($Recipient)) {
+                if ($Recipient === '') {
                     continue;
                 }
                 if (preg_match('~^[^<>]+ <[^<>]+>$~', $Recipient)) {
