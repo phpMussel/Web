@@ -1,0 +1,57 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Farsi language data (last modified: 2022.08.11).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
+##/
+
+PrivacyPolicy: "سیاست حفظ حریم خصوصی"
+config_web: "پیکربندی برای کنترل کننده آپلود."
+config_web_forbid_on_block: "آیا phpMussel باید 403 هدر را با پیام آپلود فایل مسدود شده ارسال کند یا 200 OK را ارسال کند؟ False = خیر (200)؛ True = آره (403) [پیشفرض]."
+config_web_ignore_upload_errors: "اگر برای عملکرد صحیح phpMussel لازم نیست، باید این کار را به حال خود رها کنید. وقتی خاموش می شود، وقتی phpMussel عناصر را در <code>$_FILES</code> array() تشخیص می دهد، سعی خواهد کرد فایل های ارائه شده توسط آن عناصر را اسکن کند، و اگر آن عناصر خالی باشند، phpMussel یک پیغام خطا برمی گرداند. این رفتار مناسب برای phpMussel است. با این حال، برای برخی از CMS ها، عناصر خالی در <code>$_FILES</code> می تواند در نتیجه رفتار طبیعی آن CMS رخ دهد، یا ممکن است در صورت عدم وجود خطا، گزارش شود. در چنین مواردی، رفتار طبیعی phpMussel با رفتار عادی آن CMS تداخل خواهد داشت. اگر چنین وضعیتی برای شما پیش آمد، روشن کردن این گزینه به phpMussel دستور می‌دهد که عناصر خالی را اسکن نکند، در صورت یافتن آنها را نادیده بگیرد و هیچ پیام خطای مرتبطی را برنگرداند. این باید به درخواست اجازه دهد تا به طور معمول ادامه یابد. False = خاموش؛ True = بر."
+config_web_magnification: "بزرگنمایی فونت. پیشفرض = 1."
+config_web_max_uploads: "حداکثر تعداد فایل هایی که phpMussel مجاز به اسکن همزمان است. فراتر از این تعداد، اسکن متوقف می شود و به کاربر اطلاع داده می شود که از حد مجاز فراتر رفته است. از نظر تئوری محافظت در برابر حملات DDoS که شامل توقف فرآیند PHP به دلیل بارگذاری بیش از حد است. توصیه شده: 10. بسته به سرعت سخت افزار خود، ممکن است بخواهید این عدد را تنظیم کنید. توجه داشته باشید که این شماره به محتوای آرشیو مربوط نمی شود."
+config_web_theme: "زیبایی شناسی برای استفاده در صفحه "آپلود رد شد"."
+config_web_unsupported_media_type_header: "آیا phpMussel باید 415 سرصفحه ارسال کند زمانی که آپلودها به دلیل انواع فایل های لیست سیاه مسدود می شوند؟ وقتی true باشد، این تنظیم جایگزین <code>forbid_on_block</code> می شود. False = خیر [پیشفرض]; True = آره."
+config_web_uploads_log: "جایی که همه آپلودهای مسدود شده باید ثبت شوند. نام فایل را مشخص کنید یا برای غیرفعال کردن آن را خالی بگذارید."
+denied: "آپلود رد شد!"
+denied_reason: "آپلود شما به دلایل ذکر شده در زیر مسدود شد:"
+notifications_message: |
+ <center>
+ <p><strong>سلام.</strong></p>
+ <p><strong>این ایمیل به اطلاع شما می رساند که آپلود فایل های زیر مسدود شده است:</strong></p>
+ <p>%s</p>
+ <p><strong>چرا این اتفاق افتاد:</strong></p>
+ <p>%s</p>
+ <p><strong>وقتی این اتفاق افتاد:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "اعلان آپلود مسدود شده است"
+scan_unauthorised_upload: "دستکاری آپلود فایل غیرمجاز شناسایی شد!"
+scan_unauthorised_upload_or_misconfig: "دستکاری آپلود فایل غیرمجاز یا پیکربندی نادرست شناسایی شد!"
+upload_error_1: "اندازه فایل از دستورالعمل upload_max_filesize بیشتر است."
+upload_error_2: "اندازه فایل از محدودیت اندازه فایل مشخص شده در فرم بیشتر است."
+upload_error_34: "آپلود ناموفق! لطفا برای کمک با میزبان تماس بگیرید!"
+upload_error_6: "فهرست راهنمای آپلود وجود ندارد! لطفا برای کمک با میزبان تماس بگیرید!"
+upload_error_7: "خطای نوشتن دیسک! لطفا برای کمک با میزبان تماس بگیرید!"
+upload_error_8: "پیکربندی اشتباه PHP شناسایی شد! لطفا برای کمک با میزبان تماس بگیرید!"
+upload_limit_exceeded: "از محدودیت بارگذاری فراتر رفت"

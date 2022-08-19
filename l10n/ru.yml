@@ -7,19 +7,33 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data (last modified: 2022.03.01).
+# This file: Russian language data (last modified: 2022.07.28).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
 PrivacyPolicy: "Политика Конфиденциальности"
 config_web: "Конфигурация для обработчика загрузки."
-config_web_forbid_on_block: "Возвращённый 403-HTTP-заголовок при заблокированной загрузке данных. False = Нет (200); True = Да (403) [Стандарт]."
+config_web_forbid_on_block: "Отправлять заголовок HTTP 403 при отображении сообщения о блокировке загрузки или придерживаться обычного HTTP 200? False = Нет (200); True = Да (403) [Стандарт]."
 config_web_ignore_upload_errors: "Как правило, эта директива находится в положении False/Деактивировано, если только нет потребности в ней для правильного функционирования phpMussel на вашей системе. При находящейся в положении False/Деактивировано директиве phpMussel, опознав нѐкий элемент в <code>$_FILES</code> array(), начинает проверять файлы, представляющие этот элемент. В случае если файлы окажутся пустыми, phpMussel подаёт сигнал тревоги. Это нормальная реакция phpMussel. Однако некоторые CMS нормальными считают пустые элементы в <code>$_FILES</code>, и сигнал тревоги подаётся в случае отсутствия пустых элементов. В этой ситуации возникает конфликт между нормальным поведением phpMussel и CMS. Если это касается вашей CMS, то вам необходимо переключить опцию в позицию True/Активировано, тогда phpMussel не будет искать пустые элементы, а найдя будет их игнорировать, не сообщая об ошибке. Сигнал запроса страницы, таким образом, может продолжаться. False = Деактивировано; True = Активировано."
 config_web_magnification: "Увеличение шрифта. Стандарт = 1."
 config_web_max_uploads: "Максимально разрешённое количество проверяемых файлов в течение одной загрузки файлов. Если количество скачиваемых файлов превышает это значение, то, прежде чем сканирование прекратится, пользователь будет об этом проинформирован. Эта опция защищает от теоретической DDoS-атаки на вашу систему или CMS, тем что, пока агрессор перегружает phpMussel, останавливается PHP-процесс. Рекомендуется установить число 10. В зависимости от мощности вашего устройства Вы можете повышать или уменьшать это значение. Внимание! Это значение не учитывает содержание архивов."
-config_web_theme: "Эстетика для использования на странице «Загрузка Отказана»."
+config_web_theme: "Эстетика для использования на странице «загрузка отказана»."
 config_web_unsupported_media_type_header: "Должен ли phpMussel отправлять 415 заголовков, когда загрузка заблокирована из-за типов файлов, занесенных в черный список? Когда true, этот параметр заменяет <code>forbid_on_block</code>. False = Нет [Стандарт]; True = Да."
 config_web_uploads_log: "Где все заблокированные загрузки должны быть зарегистрированы. Задайте имя файлу, или оставьте пустым чтобы деактивировать опцию."
-denied: "Загрузка Отказана!"
+denied: "Загрузка отказана!"
 denied_reason: "Ваша загрузка была заблокирована по причинам перечисленным ниже:"
 notifications_message: |
  <center>
@@ -36,7 +50,7 @@ scan_unauthorised_upload: "Обнаружены несанкционирован
 scan_unauthorised_upload_or_misconfig: "Обнаружены несанкционированное загрузки манипуляции файла или неправильная конфигурация!"
 upload_error_1: "Файл превышает размер директивы upload_max_filesize."
 upload_error_2: "Файл превышает размер заданных в директиве формы."
-upload_error_34: "Загрузка Отказана! Пожалуйста свяжитесь с хостмастером о помощи!"
+upload_error_34: "Загрузка отказана! Пожалуйста свяжитесь с хостмастером о помощи!"
 upload_error_6: "Загрузка директорий отсутствует! Пожалуйста свяжитесь с хостмастером о помощи!"
 upload_error_7: "Ошибка диск-записи! Пожалуйста свяжитесь с хостмастером о помощи!"
 upload_error_8: "PHP реконфигурация обнаружена! Пожалуйста свяжитесь с хостмастером о помощи!"

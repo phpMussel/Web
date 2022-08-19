@@ -1,0 +1,57 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Hebrew language data (last modified: 2022.08.16).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
+##/
+
+PrivacyPolicy: "מדיניות פרטיות"
+config_web: "תצורה להעלאות."
+config_web_forbid_on_block: "לשלוח HTTP 403 עם ההודעה חסומה להעלאת קובץ, או להישאר עם HTTP 200 הרגיל? False = לא (200); True = כן (403) [ערך ברירת מחדל]."
+config_web_ignore_upload_errors: "בדרך כלל זה צריך להיות מושבת למעט כאשר זה נדרש כדי phpMussel לתפקד כהלכה. בדרך כלל, כאשר מושבת, כאשר phpMussel מזהה נוכחות של אלמנטים ב array() <code>$_FILES</code>, זה ינסה לסרוק את הקבצים המיוצגים על ידי אותם אלמנטים, ואם האלמנטים האלה ריקים, phpMussel יחזיר הודעת שגיאה. זוהי התנהגות נאותה עבור phpMussel. עם זאת, עבור חלק מה-CMS, אלמנטים ריקים ב-<code>$_FILES</code> יכולים להתרחש כתוצאה מההתנהגות הטבעית של אותם CMS, או שגיאות עשויות להיות מדווחות כאשר אין, במקרה זה, ההתנהגות הרגילה של phpMussel תפריע להתנהגות הרגילה של אותם CMS. אם זה קורה עבורך, הפעל את האפשרות הזו כדי להורות ל-phpMussel לא לנסות לסרוק אלמנטים ריקים כאלה, להתעלם מהם כאשר הם מוצאים, ולא להחזיר הודעות שגיאה קשורות כלשהן, ובכך לאפשר את המשך בקשת הדף. False = כבוי; True = נדלק."
+config_web_magnification: "הגדלת גופן. ערך ברירת מחדל = 1."
+config_web_max_uploads: "מספר מקסימלי של קבצים ש-phpMussel רשאי לסרוק בבת אחת לפני שמבטלים את הסריקה ומודיעים למשתמש שהם מעלים יותר מדי בבת אחת! מספק הגנה מפני התקפה תיאורטית לפיה תוקף מנסה DDoS למערכת או ל-CMS שלך על ידי העמסת יתר של phpMussel ועצירת כל תהליך ה-PHP. מומלץ: 10. ייתכן שתרצה להתאים מספר זה בהתאם למהירות החומרה שלך. שים לב שמספר זה אינו מתייחס או כולל את התוכן של ארכיונים."
+config_web_theme: "האסתטיקה לשימוש בדף "העלאה נדחתה"."
+config_web_unsupported_media_type_header: "לשלוח סטטוס HTTP 415 כאשר העלאות חסומות עקב סוגי קבצים ברשימה השחורה? כאשר true, זה מחליף את <code>forbid_on_block</code>. False = לא [ערך ברירת מחדל]; True = כן."
+config_web_uploads_log: "היכן יש לרשום את כל ההעלאות החסומות. ציין שם קובץ, או השאר ריק כדי לבטל."
+denied: "העלאה נדחתה!"
+denied_reason: "ההעלאה שלך נחסמה מהסיבות המפורטות להלן:"
+notifications_message: |
+ <center>
+ <p><strong>שלום.</strong></p>
+ <p><strong>דוא״ל זה נועד להודיע לך שהעלאות הקבצים הבאות נחסמו:</strong></p>
+ <p>%s</p>
+ <p><strong>למה זה קרה:</strong></p>
+ <p>%s</p>
+ <p><strong>כשזה קרה:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "הודעת העלאה חסומה"
+scan_unauthorised_upload: "זוהתה מניפולציה לא מורשית של העלאת קבצים!"
+scan_unauthorised_upload_or_misconfig: "זוהתה מניפולציה לא מורשית של העלאת קבצים או תצורה שגויה!"
+upload_error_1: "גודל הקובץ חורג מההנחיה upload_max_filesize."
+upload_error_2: "גודל הקובץ חורג מהמגבלה שצוינה בטופס."
+upload_error_34: "כשל בהעלאה! צור קשר עם המארח לסיוע!"
+upload_error_6: "חסר ספריית העלאה! צור קשר עם המארח לסיוע!"
+upload_error_7: "שגיאת כתיבת דיסק! צור קשר עם המארח לסיוע!"
+upload_error_8: "זוהתה תצורה שגויה של PHP! צור קשר עם המארח לסיוע!"
+upload_limit_exceeded: "חרגת ממגבלת ההעלאה"

@@ -1,0 +1,57 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Malay language data (last modified: 2022.07.28).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
+##/
+
+PrivacyPolicy: "Dasar Privasi"
+config_web: "Konfigurasi untuk pengendali muat naik."
+config_web_forbid_on_block: "Patutkah phpMussel menghantar 403 pengepala dengan mesej yang muat naik fail disekat, atau kekal dengan 200 OK? False = Tidak (200); True = Ya (403) [Lalai]."
+config_web_ignore_upload_errors: "Arahan ini secara amnya harus DINYAHAKTIFKAN melainkan diperlukan untuk kefungsian phpMussel yang betul pada sistem spesifik anda. Biasanya, apabila DINYAHAKTIFKAN, apabila phpMussel mengesan kehadiran elemen dalam <code>$_FILES</code> array(), ia akan cuba memulakan imbasan fail yang diwakili oleh elemen tersebut, dan, jika elemen tersebut ialah kosong, phpMussel akan mengembalikan mesej ralat. Ini adalah tingkah laku yang betul untuk phpMussel. Walau bagaimanapun, untuk sesetengah CMS, elemen yang kosong dalam <code>$_FILES</code> boleh berlaku akibat daripada kelakuan semula jadi CMS tersebut, atau ralat mungkin dilaporkan apabila tiada, dan dalam kes ini, tingkah laku biasa untuk phpMussel akan mengganggu tingkah laku biasa CMS tersebut. Jika situasi sedemikian berlaku untuk anda, mengaktifkan pilihan ini akan mengarahkan phpMussel untuk tidak cuba memulakan imbasan untuk elemen kosong tersebut, mengabaikannya apabila ditemui, dan tidak mengembalikan sebarang mesej ralat yang berkaitan, sekali gus membenarkan kesinambungan permintaan halaman. False = DINYAHAKTIFKAN; True = DIAKTIFKAN."
+config_web_magnification: "Pembesaran fon. Lalai = 1."
+config_web_max_uploads: "Bilangan maksimum fail yang dibenarkan untuk diimbas apabila mengimbas muat naik sebelum membatalkan imbasan dan memaklumkan pengguna bahawa mereka memuat naik terlalu banyak! Memberi perlindungan terhadap serangan teori dimana penyerang cuba untuk DDoS sistem atau CMS anda melalui membebankan phpMussel untuk memperlahankan proses PHP sehingga terhenti. Disyorkan: 10. Anda mungkin ingin menaikkan atau menurunkan nombor ini bergantung pada kelajuan perkakasan anda. Ambil perhatian bahawa nombor ini tidak mengambil kira atau termasuk kandungan arkib."
+config_web_theme: "Estetika yang digunakan untuk halaman "Muat Naik Ditolak"."
+config_web_unsupported_media_type_header: "Patutkah phpMussel menghantar 415 pengepala apabila muat naik disekat kerana jenis fail ialah disenaraihitamkan? Apabila true, tetapan ini menggantikan <code>forbid_on_block</code>. False = Tidak [Lalai]; True = Ya."
+config_web_uploads_log: "Dimana semua muat naik yang disekat harus dilog. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
+denied: "Muat Naik Ditolak!"
+denied_reason: "Muat naik anda telah disekat atas sebab yang disenaraikan dibawah:"
+notifications_message: |
+ <center>
+ <p><strong>Salam.</strong></p>
+ <p><strong>E-mel ini untuk memberitahu anda bahawa muat naik fail berikut telah disekat:</strong></p>
+ <p>%s</p>
+ <p><strong>Mengapa ini berlaku:</strong></p>
+ <p>%s</p>
+ <p><strong>Apabila ini berlaku:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Pemberitahuan muat naik yang disekat"
+scan_unauthorised_upload: "Manipulasi muat naik fail tanpa kebenaran dikesan!"
+scan_unauthorised_upload_or_misconfig: "Manipulasi muat naik fail yang tidak dibenarkan atau salah konfigurasi dikesan!"
+upload_error_1: "Saiz fail melebihi arahan upload_max_filesize."
+upload_error_2: "Saiz fail melebihi had saiz fail yang ditentukan oleh borang."
+upload_error_34: "Gagal muat naik! Sila hubungi tuan rumah untuk mendapatkan bantuan!"
+upload_error_6: "Direktori muat naik tiada! Sila hubungi tuan rumah untuk mendapatkan bantuan!"
+upload_error_7: "Ralat tulis cakera! Sila hubungi tuan rumah untuk mendapatkan bantuan!"
+upload_error_8: "Salah konfigurasi PHP dikesan! Sila hubungi tuan rumah untuk mendapatkan bantuan!"
+upload_limit_exceeded: "Melebihi had muat naik"
