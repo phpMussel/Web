@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2022.07.28).
+# This file: Malay language data (last modified: 2022.08.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -34,7 +34,7 @@ config_web_theme: "Estetika yang digunakan untuk halaman "Muat Naik Ditolak"."
 config_web_unsupported_media_type_header: "Patutkah phpMussel menghantar 415 pengepala apabila muat naik disekat kerana jenis fail ialah disenaraihitamkan? Apabila true, tetapan ini menggantikan <code>forbid_on_block</code>. False = Tidak [Lalai]; True = Ya."
 config_web_uploads_log: "Dimana semua muat naik yang disekat harus dilog. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
 denied: "Muat Naik Ditolak!"
-denied_reason: "Muat naik anda telah disekat atas sebab yang disenaraikan dibawah:"
+denied_reason: "Muat naik anda telah disekat atas sebab yang disenaraikan di bawah:"
 notifications_message: |
  <center>
  <p><strong>Salam.</strong></p>

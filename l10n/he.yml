@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2022.08.16).
+# This file: Hebrew language data (last modified: 2022.09.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -38,7 +38,7 @@ denied_reason: "ההעלאה שלך נחסמה מהסיבות המפורטות �
 notifications_message: |
  <center>
  <p><strong>שלום.</strong></p>
- <p><strong>דוא״ל זה נועד להודיע לך שהעלאות הקבצים הבאות נחסמו:</strong></p>
+ <p><strong>דואייל זה נועד להודיע לך שהעלאות הקבצים הבאות נחסמו:</strong></p>
  <p>%s</p>
  <p><strong>למה זה קרה:</strong></p>
  <p>%s</p>
