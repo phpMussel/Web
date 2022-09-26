@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2022.07.28).
+# This file: Japanese language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -26,6 +26,8 @@
 
 PrivacyPolicy: "プライバシー・ポリシー"
 config_web: "アップロード・ハンドラの設定。"
+config_web_custom_footer: "すべての「アップロード拒否」ページの最下部にＨＴＭＬとして挿入されます。​法的通知、連絡先リンク、ビジネス情報、などに役立ちます。"
+config_web_custom_header: "すべての「アップロード拒否」ページの最初にＨＴＭＬとして挿入されます。​ウェブサイトのロゴ、パーソナライズされたヘッダー、スクリプト、などに役立ちます。"
 config_web_forbid_on_block: "アップロードファイルがブロックされたメッセージと共に、​phpMusselから４０３ヘッダーを送るべきか、​通常の２００でよいかどうかについて。​False（偽）=いいえ（２００）；​True（真）=はい（４０３）「Default/デフォルト設定」。"
 config_web_ignore_upload_errors: "システム上でphpMusselの機能に修正が必要でない限りはこのディレクティブは通常無効です。​無効に設定すると、​<code>$_FILES</code> array()に要素の存在を検知したとき、​その要素が表すファイルのスキャンが開始され、​要素が空白か無であればphpMusselはエラーメッセージを返します。​これは本来phpMusselがあるべき姿です。​しかしＣＭＳにおいては、​$_FILESの空要素は普通に発生するものであり、​正常なphpMusselの挙動が正常なＣＭＳの挙動を阻害する恐れがあります。​このような場合は、​本オプションを有効にして、​phpMusselが空要素をスキャンしてエラーメッセージを返すのを避け、​要求のあったページへスムーズに進むことができるようにします。​False（偽）=ＯＦＦ「オフ」です。<code>true</code>（真）=ＯＮ「オン」です。"
 config_web_magnification: "フォントの倍率。​Default/デフォルルト = １。"

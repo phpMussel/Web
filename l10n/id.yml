@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2022.07.28).
+# This file: Indonesian language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -26,6 +26,8 @@
 
 PrivacyPolicy: "Kebijakan Privasi"
 config_web: "Konfigurasi untuk penangan upload."
+config_web_custom_footer: "Disisipkan sebagai HTML di akhir semua halaman "upload ditolak". Ini dapat berguna jika Anda ingin menyertakan pemberitahuan hukum, tautan kontak, informasi bisnis, atau sejenisnya di semua halaman tersebut."
+config_web_custom_header: "Disisipkan sebagai HTML di awal semua halaman "upload ditolak". Ini dapat berguna jika Anda ingin menyertakan logo situs web, header yang dipersonalisasi, skrip, atau sejenisnya di semua halaman tersebut."
 config_web_forbid_on_block: "Seharusnya phpMussel mengirimkan 403 headers dengan pesan upload file yang terblok, atau cocok dengan 200 OK? False = Tidak (200); True = Ya (403) [Default]."
 config_web_ignore_upload_errors: "Direktif ini umumnya harus DINONAKTIFKAN kecuali diharuskan untuk fungsi yang benar dari phpMussel pada sistem tertentu. Biasanya, ketika DINONAKTIFKAN, ketika phpMussel mendeteksi adanya elemen dalam <code>$_FILES</code> array(), itu akan mencoba untuk memulai scan file yang mewakili elemen, dan, jika elemen tersebut adalah kosong, phpMussel akan mengembalikan pesan kesalahan. Ini adalah perilaku yang tepat untuk phpMussel. Namun, untuk beberapa CMS, elemen kosong di <code>$_FILES</code> dapat terjadi sebagai akibat dari perilaku alami jadi CMS tersebut, atau kesalahan dapat dilaporkan bila tidak ada, dan dalam kasus seperti itu, perilaku normal untuk phpMussel akan mengganggu untuk perilaku normal itu CMS. Jika situasi seperti itu terjadi untuk Anda, MENGAKTIFKAN direktif ini akan menginstruksikan phpMussel untuk tidak mencoba untuk memulai scan untuk elemen kosong, mengabaikan saat ditemui dan untuk tidak kembali terkait pesan kesalahan, sehingga memungkinkan kelanjutan dari halaman permintaan. False = DINONAKTIFKAN; True = DIAKTIFKAN."
 config_web_magnification: "Perbesaran font. Default = 1."

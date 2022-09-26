@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2022.07.28).
+# This file: French language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -26,6 +26,8 @@
 
 PrivacyPolicy: "Politique de Confidentialité"
 config_web: "Configuration du gestionnaire de téléchargements."
+config_web_custom_footer: "Inséré en tant que HTML au tout bas de toutes les pages «\_téléchargement refusé\_». Cela peut être utile si vous souhaitez inclure une notice légale, un lien de contact, des informations commerciales, ou similaires sur toutes ces pages."
+config_web_custom_header: "Inséré en tant que HTML au tout début de toutes les pages «\_téléchargement refusé\_». Cela peut être utile si vous souhaitez inclure un logo de site Web, un en-tête personnalisé, des scripts, ou similaires sur toutes ces pages."
 config_web_forbid_on_block: "Devrait phpMussel envoyer les en-têtes 403 avec le fichier téléchargement bloqué message, ou rester avec l'habitude 200 bien (200 OK)\_? False = Non (200)\_; True = Oui (403) [Défaut]."
 config_web_ignore_upload_errors: "Cette directive doit généralement être DÉSACTIVÉ sauf si cela est nécessaire pour la correcte fonctionnalité de phpMussel sur votre spécifique système. Normalement, lorsque DÉSACTIVÉ, lorsque phpMussel détecte la présence d'éléments dans le <code>$_FILES</code>() tableau, il va tenter de lancer une analyse du fichiers que ces éléments représentent, et, si ces éléments sont vide, phpMussel retourne un message d'erreur. Ce comportement est normal pour phpMussel. Mais, pour certains CMS, vides éléments dans <code>$_FILES</code> peuvent survenir à la suite du naturel comportement de ces CMS, ou erreurs peuvent être signalés quand il ne sont pas tout, dans ce cas, le normal comportement pour phpMussel seront interférer avec le normal comportement de ces CMS. Si telle une situation se produit pour vous, ACTIVATION de cette option sera instruire phpMussel ne pas à tenter de lancer d'analyses pour ces vides éléments, ignorer quand il est reconnu et ne pas à retourner tout de connexes messages d'erreur, permettant ainsi la continuation de la requête de page. False = Désactivé\_; True = Activé."
 config_web_magnification: "Grossissement des fontes. Défaut = 1."

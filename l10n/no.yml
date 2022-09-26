@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2022.07.28).
+# This file: Norwegian language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -26,6 +26,8 @@
 
 PrivacyPolicy: "Personvernpolicy"
 config_web: "Konfigurasjon for opplastingsbehandleren."
+config_web_custom_footer: "Sett inn som HTML helt i slutten av alle "opplastingen nektet"-sider. Dette kan være nyttig i tilfelle du ønsker å inkludere en juridisk melding, kontaktlenke, forretningsinformasjon, eller lignende på alle slike sider."
+config_web_custom_header: "Sett inn som HTML helt i begynnelsen av alle "opplastingen nektet"-sider. Dette kan være nyttig i tilfelle du ønsker å inkludere en nettsidelogo, personlig overskrift, skript, eller lignende på alle slike sider."
 config_web_forbid_on_block: "Bør phpMussel sende 403 overskrifter med filen lastet opp blokkert melding, eller holde seg til de vanlige 200 OK? False = Nei (200); True = Ja (403) [Standardverdi]."
 config_web_ignore_upload_errors: "Dette direktivet bør vanligvis deaktiveres med mindre det er nødvendig for riktig funksjonalitet av phpMussel på ditt spesifikke system. Normalt, når deaktivert, når phpMussel oppdager tilstedeværelsen av elementer i array() <code>$_FILES</code>, den vil prøve å starte en skanning av filene som elementene representerer, og hvis elementene er tomme, vil phpMussel returnere en feilmelding. Dette er riktig oppførsel for phpMussel. Imidlertid kan tomme elementer i <code>$_FILES</code> for noen CMS oppstå som et resultat av den naturlige oppførselen til disse CMS, eller feil kan rapporteres når det ikke er noen, og i så fall vil den normale oppførselen for phpMussel forstyrre den normale oppførselen til disse CMS. Hvis en slik situasjon oppstår for deg, aktivering av dette alternativet instruere phpMussel til ikke å prøve å skanninger etter slike tomme elementer, å ignorere dem når de blir funnet og ikke returnere relaterte feilmeldinger, derfor som tillater videreføring av sideforespørselen. False = Av; True = På."
 config_web_magnification: "Font forstørrelse. Standardverdi = 1."

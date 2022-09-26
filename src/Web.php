@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2022.06.19).
+ * This file: Upload handler (last modified: 2022.09.25).
  */
 
 namespace phpMussel\Web;
@@ -281,6 +281,8 @@ class Web
         /** Merging parsable variables for the template data. */
         $TemplateData = [
             'magnification' => $this->Loader->Configuration['web']['magnification'],
+            'CustomHeader' => $this->Loader->Configuration['web']['custom_header'],
+            'CustomFooter' => $this->Loader->Configuration['web']['custom_footer'],
             'Attache' => $this->Attache,
             'GeneratedBy' => sprintf(
                 $this->Loader->ClientL10N->getString('generated_by'),

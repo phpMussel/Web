@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2022.08.20).
+# This file: Malay language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -26,6 +26,8 @@
 
 PrivacyPolicy: "Dasar Privasi"
 config_web: "Konfigurasi untuk pengendali muat naik."
+config_web_custom_footer: "Disisipkan sebagai HTML pada penghujung semua halaman "muat naik ditolak". Ini mungkin berguna sekiranya anda ingin menyertakan notis undang-undang, pautan hubungan, maklumat perniagaan, dsb pada semua halaman tersebut."
+config_web_custom_header: "Disisipkan sebagai HTML pada permulaan semua halaman "muat naik ditolak". Ini mungkin berguna sekiranya anda ingin menyertakan logo tapak web, pengepala diperibadikan, skrip, dsb pada semua halaman tersebut."
 config_web_forbid_on_block: "Patutkah phpMussel menghantar 403 pengepala dengan mesej yang muat naik fail disekat, atau kekal dengan 200 OK? False = Tidak (200); True = Ya (403) [Lalai]."
 config_web_ignore_upload_errors: "Arahan ini secara amnya harus DINYAHAKTIFKAN melainkan diperlukan untuk kefungsian phpMussel yang betul pada sistem spesifik anda. Biasanya, apabila DINYAHAKTIFKAN, apabila phpMussel mengesan kehadiran elemen dalam <code>$_FILES</code> array(), ia akan cuba memulakan imbasan fail yang diwakili oleh elemen tersebut, dan, jika elemen tersebut ialah kosong, phpMussel akan mengembalikan mesej ralat. Ini adalah tingkah laku yang betul untuk phpMussel. Walau bagaimanapun, untuk sesetengah CMS, elemen yang kosong dalam <code>$_FILES</code> boleh berlaku akibat daripada kelakuan semula jadi CMS tersebut, atau ralat mungkin dilaporkan apabila tiada, dan dalam kes ini, tingkah laku biasa untuk phpMussel akan mengganggu tingkah laku biasa CMS tersebut. Jika situasi sedemikian berlaku untuk anda, mengaktifkan pilihan ini akan mengarahkan phpMussel untuk tidak cuba memulakan imbasan untuk elemen kosong tersebut, mengabaikannya apabila ditemui, dan tidak mengembalikan sebarang mesej ralat yang berkaitan, sekali gus membenarkan kesinambungan permintaan halaman. False = DINYAHAKTIFKAN; True = DIAKTIFKAN."
 config_web_magnification: "Pembesaran fon. Lalai = 1."

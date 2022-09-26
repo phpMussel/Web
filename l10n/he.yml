@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2022.09.01).
+# This file: Hebrew language data (last modified: 2022.09.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -26,6 +26,8 @@
 
 PrivacyPolicy: "מדיניות פרטיות"
 config_web: "תצורה להעלאות."
+config_web_custom_footer: "הוכנס כ-HTML בתחתית כל דפי "העלאה נדחתה". זה יכול להיות שימושי למקרה שתרצה לכלול הודעה משפטית, קישור ליצירת קשר, מידע עסקי, או דומה בכל הדפים הללו."
+config_web_custom_header: "הוכנס כ-HTML ממש בתחילת כל דפי "העלאה נדחתה". זה יכול להיות שימושי למקרה שתרצה לכלול לוגו של אתר אינטרנט, כותרת עליונה אישית, סקריפטים, או דומה בכל הדפים הללו."
 config_web_forbid_on_block: "לשלוח HTTP 403 עם ההודעה חסומה להעלאת קובץ, או להישאר עם HTTP 200 הרגיל? False = לא (200); True = כן (403) [ערך ברירת מחדל]."
 config_web_ignore_upload_errors: "בדרך כלל זה צריך להיות מושבת למעט כאשר זה נדרש כדי phpMussel לתפקד כהלכה. בדרך כלל, כאשר מושבת, כאשר phpMussel מזהה נוכחות של אלמנטים ב array() <code>$_FILES</code>, זה ינסה לסרוק את הקבצים המיוצגים על ידי אותם אלמנטים, ואם האלמנטים האלה ריקים, phpMussel יחזיר הודעת שגיאה. זוהי התנהגות נאותה עבור phpMussel. עם זאת, עבור חלק מה-CMS, אלמנטים ריקים ב-<code>$_FILES</code> יכולים להתרחש כתוצאה מההתנהגות הטבעית של אותם CMS, או שגיאות עשויות להיות מדווחות כאשר אין, במקרה זה, ההתנהגות הרגילה של phpMussel תפריע להתנהגות הרגילה של אותם CMS. אם זה קורה עבורך, הפעל את האפשרות הזו כדי להורות ל-phpMussel לא לנסות לסרוק אלמנטים ריקים כאלה, להתעלם מהם כאשר הם מוצאים, ולא להחזיר הודעות שגיאה קשורות כלשהן, ובכך לאפשר את המשך בקשת הדף. False = כבוי; True = נדלק."
 config_web_magnification: "הגדלת גופן. ערך ברירת מחדל = 1."
