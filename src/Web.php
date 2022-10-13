@@ -150,20 +150,25 @@ class Web
 
         /** Normalise the structure of the files array. */
         foreach ($_FILES as $fileData) {
-            if (is_array ($fileData['name'])) {
-                array_walk_recursive($fileData['name'], function($item, $key) use (&$FilesData) {
+            /** Guard. */
+            if (!isset($fileData['error'])) {
+                continue;
+            }
+
+            if (is_array($fileData['name'])) {
+                array_walk_recursive($fileData['name'], function ($item, $key) use (&$FilesData) {
                     $FilesData['name'][] = $item;
                 });
-                array_walk_recursive($fileData['type'], function($item, $key) use (&$FilesData) {
+                array_walk_recursive($fileData['type'], function ($item, $key) use (&$FilesData) {
                     $FilesData['type'][] = $item;
                 });
-                array_walk_recursive($fileData['tmp_name'], function($item, $key) use (&$FilesData) {
+                array_walk_recursive($fileData['tmp_name'], function ($item, $key) use (&$FilesData) {
                     $FilesData['tmp_name'][] = $item;
                 });
-                array_walk_recursive($fileData['error'], function($item, $key) use (&$FilesData) {
+                array_walk_recursive($fileData['error'], function ($item, $key) use (&$FilesData) {
                     $FilesData['error'][] = $item;
                 });
-                array_walk_recursive($fileData['size'], function($item, $key) use (&$FilesData) {
+                array_walk_recursive($fileData['size'], function ($item, $key) use (&$FilesData) {
                     $FilesData['size'][] = $item;
                 });
             } else {
@@ -176,10 +181,9 @@ class Web
         }
 
         $FilesCount = count($FilesData['error']);
-        
+
         /** Iterate through normalised array and scan as necessary. */
         for ($Iterator = 0; $Iterator < $FilesCount; $Iterator++) {
-
             if (!isset($FilesData['name'][$Iterator])) {
                 $FilesData['name'][$Iterator] = '';
             }
@@ -218,7 +222,6 @@ class Web
                 }
                 continue;
             }
-
 
             /** Protection against upload spoofing (1/2). */
             if (
@@ -268,7 +271,7 @@ class Web
             /** Designate as scan target. */
             $FilesToScan[$FilesData['name'][$Iterator]] = $FilesData['tmp_name'][$Iterator];
         }
-        
+
         /** Check these first, because they'll reset otherwise, then execute the scan. */
         if (!count($this->Loader->ScanResultsText) && count($FilesToScan)) {
             $this->Scanner->scan($FilesToScan, 4);
