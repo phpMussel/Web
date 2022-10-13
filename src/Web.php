@@ -150,6 +150,11 @@ class Web
 
         /** Normalise the structure of the files array. */
         foreach ($_FILES as $fileData) {
+            /** Guard. */
+            if (!isset($fileData['error'])) {
+                continue;
+            }
+
             if (is_array($fileData['name'])) {
                 array_walk_recursive($fileData['name'], function ($item, $key) use (&$FilesData) {
                     $FilesData['name'][] = $item;
@@ -217,7 +222,6 @@ class Web
                 }
                 continue;
             }
-
 
             /** Protection against upload spoofing (1/2). */
             if (
