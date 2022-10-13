@@ -148,118 +148,127 @@ class Web
         /** Create an array to designate the scan targets. */
         $FilesToScan = [];
 
-        /** Iterate through $_FILES array and scan as necessary. */
-        foreach ($_FILES as $FileData) {
-            /** Guard. */
-            if (!isset($FileData['error'])) {
-                continue;
-            }
-
-            /** Normalise the structure of the files array. */
-            if (!is_array($FileData['error'])) {
-                $FilesData['FileSet'] = [
-                    'name' => [$FileData['name']],
-                    'type' => [$FileData['type']],
-                    'tmp_name' => [$FileData['tmp_name']],
-                    'error' => [$FileData['error']],
-                    'size' => [$FileData['size']]
-                ];
+        /** Normalise the structure of the files array. */
+        foreach ($_FILES as $fileData) {
+            if (is_array ($fileData['name'])) {
+                array_walk_recursive($fileData['name'], function($item, $key) use (&$FilesData) {
+                    $FilesData['name'][] = $item;
+                });
+                array_walk_recursive($fileData['type'], function($item, $key) use (&$FilesData) {
+                    $FilesData['type'][] = $item;
+                });
+                array_walk_recursive($fileData['tmp_name'], function($item, $key) use (&$FilesData) {
+                    $FilesData['tmp_name'][] = $item;
+                });
+                array_walk_recursive($fileData['error'], function($item, $key) use (&$FilesData) {
+                    $FilesData['error'][] = $item;
+                });
+                array_walk_recursive($fileData['size'], function($item, $key) use (&$FilesData) {
+                    $FilesData['size'][] = $item;
+                });
             } else {
-                $FilesData['FileSet'] = $FileData;
-            }
-            $FilesCount = count($FilesData['FileSet']['error']);
-
-            /** Iterate through fileset. */
-            for ($Iterator = 0; $Iterator < $FilesCount; $Iterator++) {
-                if (!isset($FilesData['FileSet']['name'][$Iterator])) {
-                    $FilesData['FileSet']['name'][$Iterator] = '';
-                }
-                if (!isset($FilesData['FileSet']['type'][$Iterator])) {
-                    $FilesData['FileSet']['type'][$Iterator] = '';
-                }
-                if (!isset($FilesData['FileSet']['tmp_name'][$Iterator])) {
-                    $FilesData['FileSet']['tmp_name'][$Iterator] = '';
-                }
-                if (!isset($FilesData['FileSet']['error'][$Iterator])) {
-                    $FilesData['FileSet']['error'][$Iterator] = 0;
-                }
-                if (!isset($FilesData['FileSet']['size'][$Iterator])) {
-                    $FilesData['FileSet']['size'][$Iterator] = 0;
-                }
-
-                unset($ThisError);
-                $ThisError = &$FilesData['FileSet']['error'][$Iterator];
-
-                /** Handle upload errors. */
-                if ($ThisError > 0) {
-                    if ($this->Loader->Configuration['compatibility']['ignore_upload_errors'] || $ThisError > 8 || $ThisError === 5) {
-                        continue;
-                    }
-                    $this->Loader->atHit('', -1, '', sprintf(
-                        $this->Loader->L10N->getString('grammar_exclamation_mark'),
-                        $this->Loader->L10N->getString('upload_error_' . (($ThisError === 3 || $ThisError === 4) ? '34' : $ThisError))
-                    ), -5, -1);
-                    if (
-                        ($ThisError === 1 || $ThisError === 2) &&
-                        $this->Loader->Configuration['core']['delete_on_sight'] &&
-                        is_uploaded_file($FilesData['FileSet']['tmp_name'][$Iterator]) &&
-                        is_readable($FilesData['FileSet']['tmp_name'][$Iterator])
-                    ) {
-                        unlink($FilesData['FileSet']['tmp_name'][$Iterator]);
-                    }
-                    continue;
-                }
-
-                /** Protection against upload spoofing (1/2). */
-                if (
-                    !$FilesData['FileSet']['name'][$Iterator] ||
-                    !$FilesData['FileSet']['tmp_name'][$Iterator]
-                ) {
-                    $this->Loader->atHit('', -1, '', $this->Loader->L10N->getString('scan_unauthorised_upload_or_misconfig'), -5, -1);
-                    continue;
-                }
-
-                /** Protection against upload spoofing (2/2). */
-                if (!is_uploaded_file($FilesData['FileSet']['tmp_name'][$Iterator])) {
-                    $this->Loader->atHit(
-                        '',
-                        $FilesData['FileSet']['size'][$Iterator],
-                        $FilesData['FileSet']['name'][$Iterator],
-                        $this->Loader->L10N->getString('scan_unauthorised_upload'),
-                        -5,
-                        -1
-                    );
-                    continue;
-                }
-
-                /** Process this block if the number of files being uploaded exceeds "max_uploads". */
-                if (
-                    $this->Loader->Configuration['web']['max_uploads'] >= 1 &&
-                    $this->Uploads > $this->Loader->Configuration['web']['max_uploads']
-                ) {
-                    $this->Loader->atHit('', $FilesData['FileSet']['size'][$Iterator], $FilesData['FileSet']['name'][$Iterator], sprintf(
-                        $this->Loader->L10N->getString('grammar_exclamation_mark'),
-                        sprintf(
-                            $this->Loader->L10N->getString('grammar_brackets'),
-                            $this->Loader->L10N->getString('upload_limit_exceeded'),
-                            $FilesData['FileSet']['name'][$Iterator]
-                        )
-                    ), -5, -1);
-                    if (
-                        $this->Loader->Configuration['core']['delete_on_sight'] &&
-                        is_uploaded_file($FilesData['FileSet']['tmp_name'][$Iterator]) &&
-                        is_readable($FilesData['FileSet']['tmp_name'][$Iterator])
-                    ) {
-                        unlink($FilesData['FileSet']['tmp_name'][$Iterator]);
-                    }
-                    continue;
-                }
-
-                /** Designate as scan target. */
-                $FilesToScan[$FilesData['FileSet']['name'][$Iterator]] = $FilesData['FileSet']['tmp_name'][$Iterator];
+                $FilesData['name'][] = $fileData['name'];
+                $FilesData['type'][] = $fileData['type'];
+                $FilesData['tmp_name'][] = $fileData['tmp_name'];
+                $FilesData['error'][] = $fileData['error'];
+                $FilesData['size'][] = $fileData['size'];
             }
         }
 
+        $FilesCount = count($FilesData['error']);
+        
+        /** Iterate through normalised array and scan as necessary. */
+        for ($Iterator = 0; $Iterator < $FilesCount; $Iterator++) {
+
+            if (!isset($FilesData['name'][$Iterator])) {
+                $FilesData['name'][$Iterator] = '';
+            }
+            if (!isset($FilesData['type'][$Iterator])) {
+                $FilesData['type'][$Iterator] = '';
+            }
+            if (!isset($FilesData['tmp_name'][$Iterator])) {
+                $FilesData['tmp_name'][$Iterator] = '';
+            }
+            if (!isset($FilesData['error'][$Iterator])) {
+                $FilesData['error'][$Iterator] = 0;
+            }
+            if (!isset($FilesData['size'][$Iterator])) {
+                $FilesData['size'][$Iterator] = 0;
+            }
+
+            unset($ThisError);
+            $ThisError = &$FilesData['error'][$Iterator];
+
+            /** Handle upload errors. */
+            if ($ThisError > 0) {
+                if ($this->Loader->Configuration['compatibility']['ignore_upload_errors'] || $ThisError > 8 || $ThisError === 5) {
+                    continue;
+                }
+                $this->Loader->atHit('', -1, '', sprintf(
+                    $this->Loader->L10N->getString('grammar_exclamation_mark'),
+                    $this->Loader->L10N->getString('upload_error_' . (($ThisError === 3 || $ThisError === 4) ? '34' : $ThisError))
+                ), -5, -1);
+                if (
+                    ($ThisError === 1 || $ThisError === 2) &&
+                    $this->Loader->Configuration['core']['delete_on_sight'] &&
+                    is_uploaded_file($FilesData['tmp_name'][$Iterator]) &&
+                    is_readable($FilesData['tmp_name'][$Iterator])
+                ) {
+                    unlink($FilesData['tmp_name'][$Iterator]);
+                }
+                continue;
+            }
+
+
+            /** Protection against upload spoofing (1/2). */
+            if (
+                !$FilesData['name'][$Iterator] ||
+                !$FilesData['tmp_name'][$Iterator]
+            ) {
+                $this->Loader->atHit('', -1, '', $this->Loader->L10N->getString('scan_unauthorised_upload_or_misconfig'), -5, -1);
+                continue;
+            }
+
+            /** Protection against upload spoofing (2/2). */
+            if (!is_uploaded_file($FilesData['tmp_name'][$Iterator])) {
+                $this->Loader->atHit(
+                    '',
+                    $FilesData['size'][$Iterator],
+                    $FilesData['name'][$Iterator],
+                    $this->Loader->L10N->getString('scan_unauthorised_upload'),
+                    -5,
+                    -1
+                );
+                continue;
+            }
+
+            /** Process this block if the number of files being uploaded exceeds "max_uploads". */
+            if (
+                $this->Loader->Configuration['web']['max_uploads'] >= 1 &&
+                $this->Uploads > $this->Loader->Configuration['web']['max_uploads']
+            ) {
+                $this->Loader->atHit('', $FilesData['size'][$Iterator], $FilesData['name'][$Iterator], sprintf(
+                    $this->Loader->L10N->getString('grammar_exclamation_mark'),
+                    sprintf(
+                        $this->Loader->L10N->getString('grammar_brackets'),
+                        $this->Loader->L10N->getString('upload_limit_exceeded'),
+                        $FilesData['name'][$Iterator]
+                    )
+                ), -5, -1);
+                if (
+                    $this->Loader->Configuration['core']['delete_on_sight'] &&
+                    is_uploaded_file($FilesData['tmp_name'][$Iterator]) &&
+                    is_readable($FilesData['tmp_name'][$Iterator])
+                ) {
+                    unlink($FilesData['tmp_name'][$Iterator]);
+                }
+                continue;
+            }
+
+            /** Designate as scan target. */
+            $FilesToScan[$FilesData['name'][$Iterator]] = $FilesData['tmp_name'][$Iterator];
+        }
+        
         /** Check these first, because they'll reset otherwise, then execute the scan. */
         if (!count($this->Loader->ScanResultsText) && count($FilesToScan)) {
             $this->Scanner->scan($FilesToScan, 4);
