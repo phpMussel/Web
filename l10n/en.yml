@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2022.09.25).
+# This file: English language data (last modified: 2023.01.14).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -32,10 +32,10 @@ config_web_forbid_on_block: "Should phpMussel send 403 headers with the file upl
 config_web_ignore_upload_errors: "This directive should generally be disabled unless it's required for correct functionality of phpMussel on your specific system. Normally, when disabled, when phpMussel detects the presence of elements in the <code>$_FILES</code> array(), it'll attempt to initiate a scan of the files that those elements represent, and, if those elements are blank or empty, phpMussel will return an error message. This is proper behaviour for phpMussel. However, for some CMS, empty elements in <code>$_FILES</code> can occur as a result of the natural behaviour of those CMS, or errors may be reported when there aren't any, in which case, the normal behaviour for phpMussel will be interfering with the normal behaviour of those CMS. If such a situation occurs for you, enabling this option will instruct phpMussel to not attempt to initiate scans for such empty elements, ignore them when found and to not return any related error messages, thus allowing continuation of the page request. False = OFF; True = ON."
 config_web_magnification: "Font magnification. Default = 1."
 config_web_max_uploads: "Maximum number of files that phpMussel is allowed to scan when scanning uploads before aborting the scan and informing the user they are uploading too much at once! Provides protection against a theoretical attack whereby an attacker attempts to DDoS your system or CMS by overloading phpMussel to slow down the PHP process to a grinding halt. Recommended: 10. You may wish to raise or lower this number depending on the speed of your hardware. Note that this number doesn't account for or include the contents of archives."
-config_web_theme: "The aesthetic to use for the "Upload Denied" page."
+config_web_theme: "The aesthetic to use for the "upload denied" page."
 config_web_unsupported_media_type_header: "Should phpMussel send 415 headers when uploads are blocked due to blacklisted filetypes? When true, this setting supersedes <code>forbid_on_block</code>. False = No [Default]; True = Yes."
 config_web_uploads_log: "Where all blocked uploads should be logged. Specify a filename, or leave blank to disable."
-denied: "Upload Denied!"
+denied: "Upload denied!"
 denied_reason: "Your upload was blocked for the reasons listed below:"
 notifications_message: |
  <center>
