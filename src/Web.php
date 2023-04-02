@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2023.04.01).
+ * This file: Upload handler (last modified: 2023.04.02).
  */
 
 namespace phpMussel\Web;
@@ -298,7 +298,9 @@ class Web
             'detected' => $Detections,
             'favicon' => base64_encode($this->Loader->getFavicon()),
             'xmlLang' => $this->Loader->L10NAccepted,
-            'Text Direction' => $this->Loader->L10N->Directionality
+            'Text Direction' => $this->Loader->L10N->Directionality,
+            'FE_Align' => $this->Loader->L10N->Directionality === 'rtl' ? 'right' : 'left',
+            'FE_Align_Reverse' => $this->Loader->L10N->Directionality === 'rtl' ? 'left' : 'right'
         ];
 
         /** Pull relevant client-specified L10N data. */
