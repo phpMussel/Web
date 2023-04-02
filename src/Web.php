@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2022.09.25).
+ * This file: Upload handler (last modified: 2023.04.01).
  */
 
 namespace phpMussel\Web;
@@ -87,11 +87,11 @@ class Web
         $this->Uploads = empty($_FILES) ? 0 : count($_FILES);
 
         /** Generate output language information attachment. */
-        if ($this->Loader->Configuration['core']['lang'] !== $this->Loader->ClientL10NAccepted) {
+        if ($this->Loader->L10NAccepted !== $this->Loader->ClientL10NAccepted) {
             $this->Attache = sprintf(
                 ' lang="%s" dir="%s"',
                 $this->Loader->ClientL10NAccepted,
-                $this->Loader->ClientL10N->Data['Text Direction'] ?? 'ltr'
+                $this->Loader->ClientL10N->Directionality
             );
         }
 
@@ -285,11 +285,6 @@ class Web
         /** Build detections. */
         $Detections = implode($this->Loader->L10N->getString('grammar_spacer'), $this->Loader->ScanResultsText);
 
-        /** A fix for correctly displaying LTR/RTL text. */
-        if ($this->Loader->L10N->getString('Text Direction') !== 'rtl') {
-            $this->Loader->L10N->Data['Text Direction'] = 'ltr';
-        }
-
         /** Merging parsable variables for the template data. */
         $TemplateData = [
             'magnification' => $this->Loader->Configuration['web']['magnification'],
@@ -302,8 +297,8 @@ class Web
             ),
             'detected' => $Detections,
             'favicon' => base64_encode($this->Loader->getFavicon()),
-            'xmlLang' => $this->Loader->Configuration['core']['lang'],
-            'Text Direction' => $this->Loader->L10N->Data['Text Direction']
+            'xmlLang' => $this->Loader->L10NAccepted,
+            'Text Direction' => $this->Loader->L10N->Directionality
         ];
 
         /** Pull relevant client-specified L10N data. */
