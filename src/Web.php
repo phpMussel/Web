@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2023.04.02).
+ * This file: Upload handler (last modified: 2023.04.03).
  */
 
 namespace phpMussel\Web;
@@ -156,20 +156,20 @@ class Web
             }
 
             if (is_array($fileData['name'])) {
-                array_walk_recursive($fileData['name'], function ($item, $key) use (&$FilesData) {
-                    $FilesData['name'][] = $item;
+                array_walk_recursive($fileData['name'], function ($Item, $Key) use (&$FilesData) {
+                    $FilesData['name'][] = $Item;
                 });
-                array_walk_recursive($fileData['type'], function ($item, $key) use (&$FilesData) {
-                    $FilesData['type'][] = $item;
+                array_walk_recursive($fileData['type'], function ($Item, $Key) use (&$FilesData) {
+                    $FilesData['type'][] = $Item;
                 });
-                array_walk_recursive($fileData['tmp_name'], function ($item, $key) use (&$FilesData) {
-                    $FilesData['tmp_name'][] = $item;
+                array_walk_recursive($fileData['tmp_name'], function ($Item, $Key) use (&$FilesData) {
+                    $FilesData['tmp_name'][] = $Item;
                 });
-                array_walk_recursive($fileData['error'], function ($item, $key) use (&$FilesData) {
-                    $FilesData['error'][] = $item;
+                array_walk_recursive($fileData['error'], function ($Item, $Key) use (&$FilesData) {
+                    $FilesData['error'][] = $Item;
                 });
-                array_walk_recursive($fileData['size'], function ($item, $key) use (&$FilesData) {
-                    $FilesData['size'][] = $item;
+                array_walk_recursive($fileData['size'], function ($Item, $Key) use (&$FilesData) {
+                    $FilesData['size'][] = $Item;
                 });
             } else {
                 $FilesData['name'][] = $fileData['name'];
@@ -306,11 +306,11 @@ class Web
         /** Pull relevant client-specified L10N data. */
         if (!empty($this->Attache)) {
             foreach (['denied', 'denied_reason'] as $Pull) {
-                if (isset($this->ClientL10N->Data[$Pull])) {
-                    $TemplateData[$Pull] = $this->ClientL10N->Data[$Pull];
+                if (($Try = $this->ClientL10N->getString($Pull)) !== '') {
+                    $TemplateData[$Pull] = $Try;
                 }
             }
-            unset($Pull);
+            unset($Try, $Pull);
         }
 
         /** Determine which template file to use. */
@@ -385,10 +385,15 @@ class Web
         ) ? '' : '<br /><a href="' . $this->Loader->Configuration['legal']['privacy_policy'] . '">' . $this->ClientL10N->L10N->getString('PrivacyPolicy') . '</a>';
 
         /** Generate HTML output. */
-        $Output = $this->Loader->parse(
-            $this->Loader->ClientL10N->Data,
-            $this->Loader->parse($TemplateData, $this->Loader->readFile($TemplateFile))
-        );
+        $Output = $this->Loader->parse($TemplateData, $this->Loader->readFile($TemplateFile));
+        if (preg_match_all('~\{([A-Za-z\d_ -]+)\}~', $Output, $Matches)) {
+            foreach ($Matches[1] as $Key) {
+                if (($Value = $this->Loader->ClientL10N->getString($Key)) !== '') {
+                    $Output = str_replace('{' . $Key . '}', $Value, $Output);
+                }
+            }
+        }
+        unset($Value, $Key, $Matches);
 
         /** Send email notifications about blocked uploads (if enabled). */
         if (strlen($this->Loader->InstanceCache['enable_notifications'])) {
