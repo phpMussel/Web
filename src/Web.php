@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2023.04.03).
+ * This file: Upload handler (last modified: 2023.04.04).
  */
 
 namespace phpMussel\Web;
@@ -387,7 +387,7 @@ class Web
         /** Generate HTML output. */
         $Output = $this->Loader->parse($TemplateData, $this->Loader->readFile($TemplateFile));
         if (preg_match_all('~\{([A-Za-z\d_ -]+)\}~', $Output, $Matches)) {
-            foreach ($Matches[1] as $Key) {
+            foreach (array_unique($Matches[1]) as $Key) {
                 if (($Value = $this->Loader->ClientL10N->getString($Key)) !== '') {
                     $Output = str_replace('{' . $Key . '}', $Value, $Output);
                 }
