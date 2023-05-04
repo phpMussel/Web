@@ -1,0 +1,59 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Punjabi language data (last modified: 2023.05.04).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
+##/
+
+PrivacyPolicy: "ਪਰਾਈਵੇਟ ਨੀਤੀ"
+config_web: "ਅੱਪਲੋਡ ਹੈਂਡਲਰ ਲਈ ਸੰਰਚਨਾ।"
+config_web_custom_footer: "ਸਾਰੇ "ਅਪਲੋਡ ਕਰਨ ਤੋਂ ਇਨਕਾਰ ਕੀਤਾ" ਪੰਨਿਆਂ ਦੇ ਬਿਲਕੁਲ ਹੇਠਾਂ HTML ਦੇ ਰੂਪ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ। ਇਹ ਉਪਯੋਗੀ ਹੋ ਸਕਦਾ ਹੈ ਜੇਕਰ ਤੁਸੀਂ ਅਜਿਹੇ ਸਾਰੇ ਪੰਨਿਆਂ 'ਤੇ ਕਾਨੂੰਨੀ ਨੋਟਿਸ, ਸੰਪਰਕ ਲਿੰਕ, ਕਾਰੋਬਾਰੀ ਜਾਣਕਾਰੀ ਜਾਂ ਸਮਾਨ ਸ਼ਾਮਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ।"
+config_web_custom_header: "ਸਾਰੇ "ਅਪਲੋਡ ਕਰਨ ਤੋਂ ਇਨਕਾਰ ਕੀਤਾ" ਪੰਨਿਆਂ ਦੇ ਸ਼ੁਰੂ ਵਿੱਚ HTML ਦੇ ਰੂਪ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ। ਇਹ ਉਪਯੋਗੀ ਹੋ ਸਕਦਾ ਹੈ ਜੇਕਰ ਤੁਸੀਂ ਅਜਿਹੇ ਸਾਰੇ ਪੰਨਿਆਂ 'ਤੇ ਇੱਕ ਵੈਬਸਾਈਟ ਲੋਗੋ, ਵਿਅਕਤੀਗਤ ਸਿਰਲੇਖ, ਸਕ੍ਰਿਪਟਾਂ, ਜਾਂ ਸਮਾਨ ਸ਼ਾਮਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ।"
+config_web_forbid_on_block: "ਕੀ phpMussel ਨੂੰ ਫਾਈਲ ਅਪਲੋਡ ਬਲੌਕ ਕੀਤੇ ਸੁਨੇਹੇ ਦੇ ਨਾਲ 403 ਸਿਰਲੇਖ ਭੇਜਣੇ ਚਾਹੀਦੇ ਹਨ, ਜਾਂ ਆਮ 200 OK ਨਾਲ ਜੁੜੇ ਰਹਿਣਾ ਚਾਹੀਦਾ ਹੈ? False = ਨਹੀਂ (200); True = ਹਾਂ (403) [ਡਿਫਾਲਟ]।"
+config_web_ignore_upload_errors: "ਇਹ ਨਿਰਦੇਸ਼ ਆਮ ਤੌਰ 'ਤੇ ਅਕਿਰਿਆਸ਼ੀਲ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ, ਪਰ ਕੁਝ ਮਾਮਲਿਆਂ ਵਿੱਚ phpMussel ਨੂੰ ਤੁਹਾਡੇ ਖਾਸ ਸਿਸਟਮ 'ਤੇ ਸਹੀ ਢੰਗ ਨਾਲ ਕੰਮ ਕਰਨ ਲਈ ਇਸਨੂੰ ਕਿਰਿਆਸ਼ੀਲ ਕਰਨਾ ਜ਼ਰੂਰੀ ਹੋ ਸਕਦਾ ਹੈ। ਆਮ ਤੌਰ 'ਤੇ, ਜਦੋਂ ਅਕਿਰਿਆਸ਼ੀਲ ਹੁੰਦਾ ਹੈ, ਜਦੋਂ phpMussel <code>$_FILES</code> array() ਵਿੱਚ ਤੱਤਾਂ ਦੀ ਮੌਜੂਦਗੀ ਦਾ ਪਤਾ ਲਗਾਉਂਦਾ ਹੈ, ਉਹਨਾਂ ਤੱਤਾਂ ਦੁਆਰਾ ਦਰਸਾਈਆਂ ਗਈਆਂ ਫਾਈਲਾਂ ਦੀ ਸਕੈਨ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾਵੇਗੀ, ਅਤੇ, ਜੇਕਰ ਉਹ ਤੱਤ ਖਾਲੀ ਹਨ, ਤਾਂ phpMussel ਇੱਕ ਗਲਤੀ ਸੁਨੇਹਾ ਵਾਪਸ ਕਰੇਗਾ। ਇਹ phpMussel ਲਈ ਸਹੀ ਵਿਵਹਾਰ ਹੈ। ਹਾਲਾਂਕਿ, ਕੁਝ CMS ਲਈ, <code>$_FILES</code> ਵਿੱਚ ਖਾਲੀ ਤੱਤ ਉਹਨਾਂ CMS ਦੇ ਕੁਦਰਤੀ ਵਿਵਹਾਰ ਦੇ ਨਤੀਜੇ ਵਜੋਂ ਹੋ ਸਕਦੇ ਹਨ, ਜਾਂ ਗਲਤੀਆਂ ਦੀ ਰਿਪੋਰਟ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ ਜਦੋਂ ਕੋਈ ਨਾ ਹੋਵੇ, ਜਿਸ ਸਥਿਤੀ ਵਿੱਚ, phpMussel ਲਈ ਆਮ ਵਿਵਹਾਰ ਉਹਨਾਂ CMS ਦੇ ਆਮ ਵਿਵਹਾਰ ਵਿੱਚ ਦਖਲਅੰਦਾਜ਼ੀ ਕਰੇਗਾ। ਜੇਕਰ ਤੁਹਾਡੇ ਲਈ ਅਜਿਹੀ ਸਥਿਤੀ ਪੈਦਾ ਹੁੰਦੀ ਹੈ, ਤਾਂ ਇਸਨੂੰ ਕਿਰਿਆਸ਼ੀਲ ਕਰਨ ਨਾਲ phpMussel ਨੂੰ ਇਹਨਾਂ ਖਾਲੀ ਤੱਤਾਂ ਲਈ ਸਕੈਨ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਨਾ ਕਰਨ ਦੀ ਹਦਾਇਤ ਹੋਵੇਗੀ, ਲੱਭੇ ਜਾਣ 'ਤੇ ਉਹਨਾਂ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼ ਕਰਨ ਲਈ ਅਤੇ ਕੋਈ ਵੀ ਸੰਬੰਧਿਤ ਗਲਤੀ ਸੁਨੇਹੇ ਵਾਪਸ ਨਾ ਕਰਨ ਲਈ, ਇਸ ਤਰ੍ਹਾਂ ਪੇਜ ਦੀ ਬੇਨਤੀ ਨੂੰ ਜਾਰੀ ਰੱਖਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ। False = ਅਕਿਰਿਆਸ਼ੀਲ; True = ਕਿਰਿਆਸ਼ੀਲ।"
+config_web_magnification: "ਫੌਂਟ ਵੱਡਦਰਸ਼ੀ। ਡਿਫਾਲਟ = 1."
+config_web_max_uploads: "ਫਾਈਲਾਂ ਦੀ ਵੱਧ ਤੋਂ ਵੱਧ ਸੰਖਿਆ ਜੋ phpMussel ਨੂੰ ਅਪਲੋਡਾਂ ਨੂੰ ਸਕੈਨ ਕਰਨ ਵੇਲੇ ਸਕੈਨ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਹੈ। ਜਦੋਂ ਇਹ ਅਧਿਕਤਮ ਵੱਧ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਸਕੈਨ ਨੂੰ ਅਧੂਰਾ ਛੱਡ ਦਿੱਤਾ ਜਾਵੇਗਾ, ਅਤੇ ਉਪਭੋਗਤਾ ਨੇ ਸੂਚਿਤ ਕੀਤਾ ਕਿ ਉਹ ਇੱਕ ਵਾਰ ਵਿੱਚ ਬਹੁਤ ਜ਼ਿਆਦਾ ਅੱਪਲੋਡ ਕਰ ਰਹੇ ਹਨ। ਇੱਕ ਸਿਧਾਂਤਕ ਹਮਲੇ ਤੋਂ ਸੁਰੱਖਿਆ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਇੱਕ ਹਮਲਾਵਰ PHP ਪ੍ਰਕਿਰਿਆ ਨੂੰ ਹੌਲੀ ਕਰਨ ਲਈ phpMussel ਨੂੰ ਓਵਰਲੋਡ ਕਰਕੇ ਤੁਹਾਡੇ ਸਿਸਟਮ ਜਾਂ CMS ਨੂੰ DDoS ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦਾ ਹੈ। ਸਿਫਾਰਸ਼ੀ: 10. ਤੁਸੀਂ ਆਪਣੇ ਹਾਰਡਵੇਅਰ ਦੀ ਗਤੀ ਦੇ ਆਧਾਰ 'ਤੇ ਇਸ ਨੰਬਰ ਨੂੰ ਵਧਾਉਣ ਜਾਂ ਘਟਾਉਣਾ ਚਾਹ ਸਕਦੇ ਹੋ। ਨੋਟ ਕਰੋ ਕਿ ਇਹ ਸੰਖਿਆ ਪੁਰਾਲੇਖਾਂ ਦੀ ਸਮੱਗਰੀ ਲਈ ਲੇਖਾ ਜਾਂ ਸ਼ਾਮਲ ਨਹੀਂ ਕਰਦਾ ਹੈ।"
+config_web_theme: ""ਅਪਲੋਡ ਕਰਨ ਤੋਂ ਇਨਕਾਰ ਕੀਤਾ" ਪੰਨੇ ਲਈ ਵਰਤਣ ਲਈ ਸ਼ੈਲੀ।"
+config_web_unsupported_media_type_header: "ਕੀ phpMussel ਨੂੰ 415 ਸਿਰਲੇਖ ਭੇਜਣੇ ਚਾਹੀਦੇ ਹਨ ਜਦੋਂ ਬਲੈਕਲਿਸਟਡ ਫਾਈਲ ਕਿਸਮਾਂ ਦੇ ਕਾਰਨ ਅੱਪਲੋਡ ਬਲੌਕ ਕੀਤੇ ਜਾਂਦੇ ਹਨ? True ਹੋਣ 'ਤੇ, ਇਹ ਸੈਟਿੰਗ <code>forbid_on_block</code> ਨੂੰ ਛੱਡ ਦਿੰਦੀ ਹੈ। False = ਨਹੀਂ [ਡਿਫਾਲਟ]; True = ਹਾਂ।"
+config_web_uploads_log: "ਜਿੱਥੇ ਸਾਰੇ ਬਲੌਕ ਕੀਤੇ ਅੱਪਲੋਡ ਲੌਗ ਕੀਤੇ ਜਾਣੇ ਚਾਹੀਦੇ ਹਨ। ਇੱਕ ਫਾਈਲ ਨਾਮ ਦਿਓ, ਜਾਂ ਅਯੋਗ ਕਰਨ ਲਈ ਖਾਲੀ ਛੱਡੋ।"
+denied: "ਅਪਲੋਡ ਕਰਨ ਤੋਂ ਇਨਕਾਰ ਕੀਤਾ!"
+denied_reason: "ਤੁਹਾਡੇ ਅੱਪਲੋਡ ਨੂੰ ਹੇਠਾਂ ਦਿੱਤੇ ਕਾਰਨਾਂ ਕਰਕੇ ਬਲੌਕ ਕੀਤਾ ਗਿਆ ਸੀ:"
+notifications_message: |
+ <center>
+ <p><strong>ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ।</strong></p>
+ <p><strong>ਇਹ ਈਮੇਲ ਤੁਹਾਨੂੰ ਸੂਚਿਤ ਕਰਨ ਲਈ ਹੈ ਕਿ ਨਿਮਨਲਿਖਤ ਫਾਈਲ ਅਪਲੋਡ ਬਲੌਕ ਕੀਤੇ ਗਏ ਸਨ:</strong></p>
+ <p>%s</p>
+ <p><strong>ਕਿਉਂ ਇਹ ਹੋਇਆ:</strong></p>
+ <p>%s</p>
+ <p><strong>ਜਦੋਂ ਇਹ ਹੋਇਆ:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "ਬਲੌਕ ਕੀਤੀ ਅੱਪਲੋਡ ਸੂਚਨਾ"
+scan_unauthorised_upload: "ਅਣਅਧਿਕਾਰਤ ਫਾਈਲ ਅਪਲੋਡ ਹੇਰਾਫੇਰੀ ਦਾ ਪਤਾ ਲੱਗਾ!"
+scan_unauthorised_upload_or_misconfig: "ਅਣਅਧਿਕਾਰਤ ਫਾਈਲ ਅਪਲੋਡ ਹੇਰਾਫੇਰੀ ਜਾਂ ਗਲਤ ਸੰਰਚਨਾ ਦਾ ਪਤਾ ਲੱਗਾ!"
+upload_error_1: "ਫ਼ਾਈਲ ਦਾ ਆਕਾਰ upload_max_filesize ਡਾਇਰੈਕਟਿਵ ਤੋਂ ਵੱਧ ਹੈ।"
+upload_error_2: "ਫ਼ਾਈਲ ਦਾ ਆਕਾਰ ਫਾਰਮ-ਨਿਰਧਾਰਤ ਫ਼ਾਈਲ ਆਕਾਰ ਸੀਮਾ ਤੋਂ ਵੱਧ ਹੈ।"
+upload_error_34: "ਅੱਪਲੋਡ ਅਸਫਲਤਾ! ਕਿਰਪਾ ਕਰਕੇ ਸਹਾਇਤਾ ਲਈ ਹੋਸਟਮਾਸਟਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ!"
+upload_error_6: "ਅੱਪਲੋਡ ਡਾਇਰੈਕਟਰੀ ਗੁੰਮ ਹੈ! ਕਿਰਪਾ ਕਰਕੇ ਸਹਾਇਤਾ ਲਈ ਹੋਸਟਮਾਸਟਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ!"
+upload_error_7: "ਡਿਸਕ-ਲਿਖਣ ਗਲਤੀ! ਕਿਰਪਾ ਕਰਕੇ ਸਹਾਇਤਾ ਲਈ ਹੋਸਟਮਾਸਟਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ!"
+upload_error_8: "PHP ਗਲਤ ਸੰਰਚਨਾ ਖੋਜੀ ਗਈ! ਕਿਰਪਾ ਕਰਕੇ ਸਹਾਇਤਾ ਲਈ ਹੋਸਟਮਾਸਟਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ!"
+upload_limit_exceeded: "ਅੱਪਲੋਡ ਸੀਮਾ ਪਾਰ ਹੋ ਗਈ ਹੈ"

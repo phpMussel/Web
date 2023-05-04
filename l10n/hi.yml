@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2022.09.25).
+# This file: Hindi language data (last modified: 2023.05.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,7 +39,7 @@ denied: "अपलोड अस्वीकृत!"
 denied_reason: "आपके अपलोड को नीचे सूचीबद्ध कारणों के कारण अवरुद्ध किया गया था:"
 notifications_message: |
  <center>
- <p><strong>हैलो।</strong></p>
+ <p><strong>नमस्ते।</strong></p>
  <p><strong>यह ईमेल आपको सूचित करने के लिए है कि निम्नलिखित फ़ाइल अपलोड अवरुद्ध थे:</strong></p>
  <p>%s</p>
  <p><strong>ऐसा क्यों हुआ:</strong></p>
