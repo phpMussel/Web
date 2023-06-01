@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2023.05.04).
+# This file: Punjabi language data (last modified: 2023.05.07).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -50,8 +50,8 @@ notifications_message: |
 notifications_subject: "ਬਲੌਕ ਕੀਤੀ ਅੱਪਲੋਡ ਸੂਚਨਾ"
 scan_unauthorised_upload: "ਅਣਅਧਿਕਾਰਤ ਫਾਈਲ ਅਪਲੋਡ ਹੇਰਾਫੇਰੀ ਦਾ ਪਤਾ ਲੱਗਾ!"
 scan_unauthorised_upload_or_misconfig: "ਅਣਅਧਿਕਾਰਤ ਫਾਈਲ ਅਪਲੋਡ ਹੇਰਾਫੇਰੀ ਜਾਂ ਗਲਤ ਸੰਰਚਨਾ ਦਾ ਪਤਾ ਲੱਗਾ!"
-upload_error_1: "ਫ਼ਾਈਲ ਦਾ ਆਕਾਰ upload_max_filesize ਡਾਇਰੈਕਟਿਵ ਤੋਂ ਵੱਧ ਹੈ।"
-upload_error_2: "ਫ਼ਾਈਲ ਦਾ ਆਕਾਰ ਫਾਰਮ-ਨਿਰਧਾਰਤ ਫ਼ਾਈਲ ਆਕਾਰ ਸੀਮਾ ਤੋਂ ਵੱਧ ਹੈ।"
+upload_error_1: "ਫਾਈਲ ਦਾ ਆਕਾਰ upload_max_filesize ਡਾਇਰੈਕਟਿਵ ਤੋਂ ਵੱਧ ਹੈ।"
+upload_error_2: "ਫਾਈਲ ਦਾ ਆਕਾਰ ਫਾਰਮ-ਨਿਰਧਾਰਤ ਫਾਈਲ ਆਕਾਰ ਸੀਮਾ ਤੋਂ ਵੱਧ ਹੈ।"
 upload_error_34: "ਅੱਪਲੋਡ ਅਸਫਲਤਾ! ਕਿਰਪਾ ਕਰਕੇ ਸਹਾਇਤਾ ਲਈ ਹੋਸਟਮਾਸਟਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ!"
 upload_error_6: "ਅੱਪਲੋਡ ਡਾਇਰੈਕਟਰੀ ਗੁੰਮ ਹੈ! ਕਿਰਪਾ ਕਰਕੇ ਸਹਾਇਤਾ ਲਈ ਹੋਸਟਮਾਸਟਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ!"
 upload_error_7: "ਡਿਸਕ-ਲਿਖਣ ਗਲਤੀ! ਕਿਰਪਾ ਕਰਕੇ ਸਹਾਇਤਾ ਲਈ ਹੋਸਟਮਾਸਟਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ!"
