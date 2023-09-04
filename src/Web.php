@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2023.04.04).
+ * This file: Upload handler (last modified: 2023.09.04).
  */
 
 namespace phpMussel\Web;
@@ -208,7 +208,7 @@ class Web
                 if ($this->Loader->Configuration['compatibility']['ignore_upload_errors'] || $ThisError > 8 || $ThisError === 5) {
                     continue;
                 }
-                $this->Loader->atHit('', -1, '', sprintf(
+                $this->Scanner->atHit('', -1, '', sprintf(
                     $this->Loader->L10N->getString('grammar_exclamation_mark'),
                     $this->Loader->L10N->getString('upload_error_' . (($ThisError === 3 || $ThisError === 4) ? '34' : $ThisError))
                 ), -5, -1);
@@ -228,13 +228,13 @@ class Web
                 !$FilesData['name'][$Iterator] ||
                 !$FilesData['tmp_name'][$Iterator]
             ) {
-                $this->Loader->atHit('', -1, '', $this->Loader->L10N->getString('scan_unauthorised_upload_or_misconfig'), -5, -1);
+                $this->Scanner->atHit('', -1, '', $this->Loader->L10N->getString('scan_unauthorised_upload_or_misconfig'), -5, -1);
                 continue;
             }
 
             /** Protection against upload spoofing (2/2). */
             if (!is_uploaded_file($FilesData['tmp_name'][$Iterator])) {
-                $this->Loader->atHit(
+                $this->Scanner->atHit(
                     '',
                     $FilesData['size'][$Iterator],
                     $FilesData['name'][$Iterator],
@@ -250,7 +250,7 @@ class Web
                 $this->Loader->Configuration['web']['max_uploads'] >= 1 &&
                 $this->Uploads > $this->Loader->Configuration['web']['max_uploads']
             ) {
-                $this->Loader->atHit('', $FilesData['size'][$Iterator], $FilesData['name'][$Iterator], sprintf(
+                $this->Scanner->atHit('', $FilesData['size'][$Iterator], $FilesData['name'][$Iterator], sprintf(
                     $this->Loader->L10N->getString('grammar_exclamation_mark'),
                     sprintf(
                         $this->Loader->L10N->getString('grammar_brackets'),
