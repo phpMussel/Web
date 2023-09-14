@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2023.09.01).
+# This file: Afrikaans language data (last modified: 2023.09.13).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -48,12 +48,12 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Geblokkeerde oplaaikennisgewing"
-scan_unauthorised_upload: "Ongemagtigde lêeroplaai-manipulasie bespeur!"
-scan_unauthorised_upload_or_misconfig: "Ongemagtigde lêeroplaai-manipulasie of wanopstelling bespeur!"
-upload_error_1: "Lêergrootte oorskry die upload_max_filesize-richtlijn."
+scan_unauthorised_upload: "Ongemagtigde lêeroplaai-manipulasie is bespeur!"
+scan_unauthorised_upload_or_misconfig: "Ongemagtigde lêeroplaai-manipulasie of wanopstelling is bespeur!"
+upload_error_1: "Lêergrootte oorskry die upload_max_filesize-opsie."
 upload_error_2: "Lêergrootte oorskry vormgespesifiseerde lêergroottelimiet."
 upload_error_34: "Oplaai misluk! Kontak asseblief die gasheermeester vir bystand!"
 upload_error_6: "Oplaai gids ontbreek! Kontak asseblief die gasheermeester vir bystand!"
 upload_error_7: "Skyf-skryffout! Kontak asseblief die gasheermeester vir bystand!"
-upload_error_8: "PHP wanopstelling bespeur! Kontak asseblief die gasheermeester vir bystand!"
+upload_error_8: "PHP wanopstelling is bespeur! Kontak asseblief die gasheermeester vir bystand!"
 upload_limit_exceeded: "Oplaailimiet oorskry"
