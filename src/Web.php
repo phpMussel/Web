@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2023.09.16).
+ * This file: Upload handler (last modified: 2023.09.18).
  */
 
 namespace phpMussel\Web;
@@ -118,7 +118,10 @@ class Web
                 $Truncate = $this->Loader->readBytes($this->Loader->Configuration['core']['truncate']);
                 $WriteMode = ($Truncate > 0 && filesize($File) >= $Truncate) ? 'wb' : 'ab';
             }
-            $Stream = fopen($File, $WriteMode);
+            if (!is_resource($Stream = fopen($File, $WriteMode))) {
+                trigger_error('The "writeToUploadsLog" event failed to open "' . $File . '" for writing.');
+                return false;
+            }
             fwrite($Stream, $Data);
             fclose($Stream);
             $this->Loader->logRotation($this->Loader->Configuration['web']['uploads_log']);
