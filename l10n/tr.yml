@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2023.01.14).
+# This file: Turkish language data (last modified: 2023.09.16).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -25,16 +25,17 @@
 ##/
 
 PrivacyPolicy: "Gizlilik Politikası"
-config_web: "Yükleme işleyicisi için yapılandırma."
-config_web_custom_footer: "Tüm "yükleme reddedildi" sayfalarının sonuna HTML olarak eklenir. Bu tür tüm sayfalara yasal bir bildirim, iletişim bağlantısı, işletme bilgileri, veya benzerlerini eklemek istediğinizde kullanışlıdır."
-config_web_custom_header: "Tüm "yükleme reddedildi" sayfalarının başına HTML olarak eklenir. Bu tür tüm sayfalara bir web sitesi logosu, kişiselleştirilmiş başlık, komut dosyaları, veya benzerlerini eklemek istediğinizde kullanışlıdır."
-config_web_forbid_on_block: "phpMussel, dosya yüklemesi engellenen mesajla birlikte hangi başlıkları göndermelidir? Yanlış/False = 200 OK (Tamam); Doğru/True = 403 Forbidden (Yasak) [Varsayılan]."
-config_web_ignore_upload_errors: "Bu yönerge genelde, phpMussel'ın sizin belirli sisteminizde düzgün çalışması için gerekliyse devre dışı bırakılmalıdır. Normalde devre dışı bırakıldığında, phpMussel <code>$_FILES</code> array() içindeki öğelerin varlığını tespit ettiğinde, bu elemanların temsil ettiği dosyaların bir taramasını başlatmaya çalışacaktır, ve, bu elemanlar boşsa, phpMussel bir hata mesajı döndürür. Bu, phpMussel için doğru davranıştır. Bununla birlikte, bazı CMS için <code>$_FILES</code> daki boş öğeler, bu CMS'nin doğal davranışının bir sonucu olarak ortaya çıkabilir veya herhangi bir şey olmadığında hata raporlanabilir, ve bu durumda, phpMussel için normal davranış, o CMS'nin normal davranışını engelleyecektir. Böyle bir durum sizin için ortaya çıkarsa, bu seçeneği etkinleştirmek bu tarama türlerini önlemeniz yoluyla yardımcı olacaktır, böylece sayfa talebinin devam etmesine izin verilir. Yanlış/False = Kapalı; Doğru/True = Açık."
-config_web_magnification: "Yazı tipi büyütme. Varsayılan = 1."
-config_web_max_uploads: "Yükleme taraması sırasında taranacak maksimum dosya sayısı. Bu sayıyı aşmak taramayı durduracak ve kullanıcıya çok fazla yükleme yaptıkları bildirilecektir! Sisteminizi veya CMS'nizi DDoS girişiminde bulunduran teorik bir saldırıya karşı koruma sağlar. Tavsiye edilen: 10. Donanımınızın hızına bağlı olarak bu sayıyı yükseltebilir veya azaltabilirsiniz. Bu numaranın arşiv içeriğini hesaba katmadığını unutmayın."
-config_web_theme: ""Yükleme reddedildi" sayfası için kullanılacak estetik."
-config_web_unsupported_media_type_header: "Kara listeye alınmış dosya türleri nedeniyle yüklemeler engellendiğinde phpMussel 415 başlık göndermeli mi? Doğru/True olduğunda, bu ayar <code>forbid_on_block</code>'in yerini alır. Yanlış/False = Hayır [Varsayılan]; Doğru/True = Evet."
-config_web_uploads_log: "Engellenen tüm yüklemelerin nereye kaydedileceği. Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."
+config:
+ web: "Yükleme işleyicisi için yapılandırma."
+ web_custom_footer: "Tüm "yükleme reddedildi" sayfalarının sonuna HTML olarak eklenir. Bu tür tüm sayfalara yasal bir bildirim, iletişim bağlantısı, işletme bilgileri, veya benzerlerini eklemek istediğinizde kullanışlıdır."
+ web_custom_header: "Tüm "yükleme reddedildi" sayfalarının başına HTML olarak eklenir. Bu tür tüm sayfalara bir web sitesi logosu, kişiselleştirilmiş başlık, komut dosyaları, veya benzerlerini eklemek istediğinizde kullanışlıdır."
+ web_forbid_on_block: "phpMussel, dosya yüklemesi engellenen mesajla birlikte hangi başlıkları göndermelidir? Yanlış/False = 200 OK (Tamam); Doğru/True = 403 Forbidden (Yasak) [Varsayılan]."
+ web_ignore_upload_errors: "Bu yönerge genelde, phpMussel'ın sizin belirli sisteminizde düzgün çalışması için gerekliyse devre dışı bırakılmalıdır. Normalde devre dışı bırakıldığında, phpMussel <code>$_FILES</code> array() içindeki öğelerin varlığını tespit ettiğinde, bu elemanların temsil ettiği dosyaların bir taramasını başlatmaya çalışacaktır, ve, bu elemanlar boşsa, phpMussel bir hata mesajı döndürür. Bu, phpMussel için doğru davranıştır. Bununla birlikte, bazı CMS için <code>$_FILES</code> daki boş öğeler, bu CMS'nin doğal davranışının bir sonucu olarak ortaya çıkabilir veya herhangi bir şey olmadığında hata raporlanabilir, ve bu durumda, phpMussel için normal davranış, o CMS'nin normal davranışını engelleyecektir. Böyle bir durum sizin için ortaya çıkarsa, bu seçeneği etkinleştirmek bu tarama türlerini önlemeniz yoluyla yardımcı olacaktır, böylece sayfa talebinin devam etmesine izin verilir. Yanlış/False = Kapalı; Doğru/True = Açık."
+ web_magnification: "Yazı tipi büyütme. Varsayılan = 1."
+ web_max_uploads: "Yükleme taraması sırasında taranacak maksimum dosya sayısı. Bu sayıyı aşmak taramayı durduracak ve kullanıcıya çok fazla yükleme yaptıkları bildirilecektir! Sisteminizi veya CMS'nizi DDoS girişiminde bulunduran teorik bir saldırıya karşı koruma sağlar. Tavsiye edilen: 10. Donanımınızın hızına bağlı olarak bu sayıyı yükseltebilir veya azaltabilirsiniz. Bu numaranın arşiv içeriğini hesaba katmadığını unutmayın."
+ web_theme: ""Yükleme reddedildi" sayfası için kullanılacak estetik."
+ web_unsupported_media_type_header: "Kara listeye alınmış dosya türleri nedeniyle yüklemeler engellendiğinde phpMussel 415 başlık göndermeli mi? Doğru/True olduğunda, bu ayar <code>forbid_on_block</code>'in yerini alır. Yanlış/False = Hayır [Varsayılan]; Doğru/True = Evet."
+ web_uploads_log: "Engellenen tüm yüklemelerin nereye kaydedileceği. Dosya adı belirtin veya devre dışı bırakmak için boş bırakın."
 denied: "Yükleme reddedildi!"
 denied_reason: "Yükleme aşağıda belirtilen nedenlerle engellendi:"
 notifications_message: |

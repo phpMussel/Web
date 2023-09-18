@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2023.05.04).
+# This file: Czech language data (last modified: 2023.09.16).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -25,16 +25,17 @@
 ##/
 
 PrivacyPolicy: "Zásady ochrany osobních údajů"
-config_web: "Konfigurace pro obslužný program nahrávání."
-config_web_custom_footer: "Vloženo jako HTML úplně dole na všech stránkách se „nahrání odepřen“. To by mohlo být užitečné v případě, že chcete na všech takových stránkách zahrnout právní upozornění, kontaktní odkaz, obchodní informace nebo podobné."
-config_web_custom_header: "Vloženo jako HTML úplný začátek všech stránek se „nahrání odepřen“. To by mohlo být užitečné v případě, že chcete na všechny takové stránky zahrnout logo webové stránky, personalizované záhlaví, skripty nebo podobné."
-config_web_forbid_on_block: "Měl by phpMussel poslat 403 hlaviček se zprávou o blokovaném nahrávání souboru, nebo zůstat u obvyklých 200 OK? False (Nepravdivé) = Ne (200); True (Pravdivé) = Ano (403) [Standardní]."
-config_web_ignore_upload_errors: "Tato direktiva by měla být obecně deaktivována, ale její aktivace může být v některých případech nezbytná, aby phpMussel správně fungoval na vašem konkrétním systému. Normálně, když je deaktivován, když phpMussel detekuje přítomnost prvků v array() <code>$_FILES</code>, pokusí se zahájit kontrolu souborů, které tyto prvky představují, a pokud jsou tyto prvky prázdné, phpMussel vrátí chybovou zprávu. Toto je správné chování pro phpMussel. U některých CMS se však mohou prázdné prvky v <code>$_FILES</code> vyskytnout v důsledku přirozeného chování těchto CMS, nebo mohou být hlášeny chyby, když žádné, v takovém případě bude normální chování phpMussel narušovat normální chování těchto CMS. Pokud taková situace nastane u vás, aktivací této funkce dá phpMussel pokyn, aby se nepokoušel zahajovat skenování takových prázdných prvků, ignoroval je, když je našel, a nevracel žádné související chybové zprávy, což umožní pokračování požadavku na stránku. False (Nepravdivé) = Deaktivováno; True (Pravdivé) = Aktivováno."
-config_web_magnification: "Zvětšení písma. Standardní = 1."
-config_web_max_uploads: "Maximální počet souborů, které může phpMussel skenovat při skenování uploadů, než skenování přeruší a informuje uživatele, že nahrávají příliš mnoho najednou! Poskytuje ochranu proti teoretickému útoku, kdy se útočník pokouší DDoS váš systém nebo CMS přetížením phpMussel, aby zpomalil proces PHP až do úplného zastavení. Doporučeno: 10. Toto číslo můžete chtít zvýšit nebo snížit v závislosti na rychlosti vašeho hardwaru. Upozorňujeme, že toto číslo nezahrnuje obsah archivů."
-config_web_theme: "Estetika, která se má použít pro stránku „nahrání odepřen“."
-config_web_unsupported_media_type_header: "Měl by phpMussel odeslat 415 hlaviček, když je nahrávání blokováno kvůli typům souborů na černé listině? Když je true, toto nastavení nahrazuje <code>forbid_on_block</code>. False (Nepravdivé) = Ne [Standardní]; True (Pravdivé) = Ano."
-config_web_uploads_log: "Kde by měla být zaznamenána všechna blokovaná nahrávání. Zadejte název souboru nebo ponechejte prázdné, chcete-li jej deaktivovat."
+config:
+ web: "Konfigurace pro obslužný program nahrávání."
+ web_custom_footer: "Vloženo jako HTML úplně dole na všech stránkách se „nahrání odepřen“. To by mohlo být užitečné v případě, že chcete na všech takových stránkách zahrnout právní upozornění, kontaktní odkaz, obchodní informace nebo podobné."
+ web_custom_header: "Vloženo jako HTML úplný začátek všech stránek se „nahrání odepřen“. To by mohlo být užitečné v případě, že chcete na všechny takové stránky zahrnout logo webové stránky, personalizované záhlaví, skripty nebo podobné."
+ web_forbid_on_block: "Měl by phpMussel poslat 403 hlaviček se zprávou o blokovaném nahrávání souboru, nebo zůstat u obvyklých 200 OK? False (Nepravdivé) = Ne (200); True (Pravdivé) = Ano (403) [Standardní]."
+ web_ignore_upload_errors: "Tato direktiva by měla být obecně deaktivována, ale její aktivace může být v některých případech nezbytná, aby phpMussel správně fungoval na vašem konkrétním systému. Normálně, když je deaktivován, když phpMussel detekuje přítomnost prvků v array() <code>$_FILES</code>, pokusí se zahájit kontrolu souborů, které tyto prvky představují, a pokud jsou tyto prvky prázdné, phpMussel vrátí chybovou zprávu. Toto je správné chování pro phpMussel. U některých CMS se však mohou prázdné prvky v <code>$_FILES</code> vyskytnout v důsledku přirozeného chování těchto CMS, nebo mohou být hlášeny chyby, když žádné, v takovém případě bude normální chování phpMussel narušovat normální chování těchto CMS. Pokud taková situace nastane u vás, aktivací této funkce dá phpMussel pokyn, aby se nepokoušel zahajovat skenování takových prázdných prvků, ignoroval je, když je našel, a nevracel žádné související chybové zprávy, což umožní pokračování požadavku na stránku. False (Nepravdivé) = Deaktivováno; True (Pravdivé) = Aktivováno."
+ web_magnification: "Zvětšení písma. Standardní = 1."
+ web_max_uploads: "Maximální počet souborů, které může phpMussel skenovat při skenování uploadů, než skenování přeruší a informuje uživatele, že nahrávají příliš mnoho najednou! Poskytuje ochranu proti teoretickému útoku, kdy se útočník pokouší DDoS váš systém nebo CMS přetížením phpMussel, aby zpomalil proces PHP až do úplného zastavení. Doporučeno: 10. Toto číslo můžete chtít zvýšit nebo snížit v závislosti na rychlosti vašeho hardwaru. Upozorňujeme, že toto číslo nezahrnuje obsah archivů."
+ web_theme: "Estetika, která se má použít pro stránku „nahrání odepřen“."
+ web_unsupported_media_type_header: "Měl by phpMussel odeslat 415 hlaviček, když je nahrávání blokováno kvůli typům souborů na černé listině? Když je true, toto nastavení nahrazuje <code>forbid_on_block</code>. False (Nepravdivé) = Ne [Standardní]; True (Pravdivé) = Ano."
+ web_uploads_log: "Kde by měla být zaznamenána všechna blokovaná nahrávání. Zadejte název souboru nebo ponechejte prázdné, chcete-li jej deaktivovat."
 denied: "Nahrání odepřen!"
 denied_reason: "Vaše nahrávání bylo zablokováno z důvodů uvedených níže:"
 notifications_message: |

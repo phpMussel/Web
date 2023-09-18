@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2023.09.01).
+# This file: Romanian language data (last modified: 2023.09.16).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -25,16 +25,17 @@
 ##/
 
 PrivacyPolicy: "Politica de confidențialitate"
-config_web: "Configurare pentru handlerul de încărcare."
-config_web_custom_footer: "Inserat ca HTML chiar la sfârşitul tuturor paginilor „încărcare refuzată”. Acest lucru ar putea fi util în cazul în care doriți să includeți o notificare legală, un link de contact, informații despre companie, sau similare în toate aceste pagini."
-config_web_custom_header: "Inserat ca HTML chiar la începutul tuturor paginilor „încărcare refuzată”. Acest lucru ar putea fi util în cazul în care doriți să includeți un logo al site-ului web, un antet personalizat, scripturi, sau similare în toate aceste pagini."
-config_web_forbid_on_block: "Ar trebui phpMussel să trimită 403 anteturi cu mesajul despre încărcare blocat sau să rămână cu 200 OK? False = Nu (200); True = Da (403) [Valoare implicită]."
-config_web_ignore_upload_errors: "Această directivă ar trebui, în general, să fie dezactivată, cu excepția cazului în care este necesară pentru funcționalitatea corectă a phpMussel pe sistemul dumneavoastră specific. În mod normal, când este dezactivat, când phpMussel detectează prezența elementelor în array() <code>$_FILES</code>, va încerca să inițieze o scanare a fișierelor pe care le reprezintă acele elemente și, dacă acele elemente sunt goale, phpMussel va returna un mesaj de eroare. Acesta este un comportament adecvat pentru phpMussel. Cu toate acestea, pentru unele CMS, elementele goale în <code>$_FILES</code> pot apărea ca urmare a comportamentului natural al acelor CMS, sau erori pot fi raportate atunci când nu există, caz în care, comportamentul normal pentru phpMussel va interfera cu comportamentul normal al acelor CMS. Dacă apare o astfel de situație pentru dvs., activarea acestei opțiuni va instrui phpMussel să nu încerce să inițieze scanări pentru astfel de elemente goale, să le ignore atunci când sunt găsite și să nu returneze niciun mesaj de eroare aferent, permițând astfel continuarea solicitării paginii. False = Oprit; True = Aprins."
-config_web_magnification: "Mărirea fontului. Valoare implicită = 1."
-config_web_max_uploads: "Numărul maxim de fișiere pe care phpMussel are voie să le scaneze atunci când scanează încărcări înainte de a anula scanarea și de a informa utilizatorul că încarcă prea multe simultan! Oferă protecție împotriva unui atac teoretic prin care un atacator încearcă să vă DDoS sistemul sau CMS-ul prin supraîncărcarea phpMussel pentru a încetini procesul PHP până la o oprire. Recomandat: 10. Este posibil să doriți să creșteți sau să micșorați acest număr în funcție de viteza hardware-ului dvs. Rețineți că acest număr nu ține cont și nu include conținutul arhivelor."
-config_web_theme: "Estetica de utilizat pentru pagina „încărcare refuzată”."
-config_web_unsupported_media_type_header: "Ar trebui phpMussel să trimită 415 anteturi atunci când încărcările sunt blocate din cauza tipurilor de fișiere aflate pe lista neagră? Când este adevărată, această setare înlocuiește <code>forbid_on_block</code>. False = Nu [Valoare implicită]; True = Da."
-config_web_uploads_log: "Unde ar trebui să fie înregistrate toate încărcările blocate. Specificați un nume de fișier, sau lăsați necompletat pentru a dezactiva."
+config:
+ web: "Configurare pentru handlerul de încărcare."
+ web_custom_footer: "Inserat ca HTML chiar la sfârşitul tuturor paginilor „încărcare refuzată”. Acest lucru ar putea fi util în cazul în care doriți să includeți o notificare legală, un link de contact, informații despre companie, sau similare în toate aceste pagini."
+ web_custom_header: "Inserat ca HTML chiar la începutul tuturor paginilor „încărcare refuzată”. Acest lucru ar putea fi util în cazul în care doriți să includeți un logo al site-ului web, un antet personalizat, scripturi, sau similare în toate aceste pagini."
+ web_forbid_on_block: "Ar trebui phpMussel să trimită 403 anteturi cu mesajul despre încărcare blocat sau să rămână cu 200 OK? False = Nu (200); True = Da (403) [Valoare implicită]."
+ web_ignore_upload_errors: "Această directivă ar trebui, în general, să fie dezactivată, cu excepția cazului în care este necesară pentru funcționalitatea corectă a phpMussel pe sistemul dumneavoastră specific. În mod normal, când este dezactivat, când phpMussel detectează prezența elementelor în array() <code>$_FILES</code>, va încerca să inițieze o scanare a fișierelor pe care le reprezintă acele elemente și, dacă acele elemente sunt goale, phpMussel va returna un mesaj de eroare. Acesta este un comportament adecvat pentru phpMussel. Cu toate acestea, pentru unele CMS, elementele goale în <code>$_FILES</code> pot apărea ca urmare a comportamentului natural al acelor CMS, sau erori pot fi raportate atunci când nu există, caz în care, comportamentul normal pentru phpMussel va interfera cu comportamentul normal al acelor CMS. Dacă apare o astfel de situație pentru dvs., activarea acestei opțiuni va instrui phpMussel să nu încerce să inițieze scanări pentru astfel de elemente goale, să le ignore atunci când sunt găsite și să nu returneze niciun mesaj de eroare aferent, permițând astfel continuarea solicitării paginii. False = Oprit; True = Aprins."
+ web_magnification: "Mărirea fontului. Valoare implicită = 1."
+ web_max_uploads: "Numărul maxim de fișiere pe care phpMussel are voie să le scaneze atunci când scanează încărcări înainte de a anula scanarea și de a informa utilizatorul că încarcă prea multe simultan! Oferă protecție împotriva unui atac teoretic prin care un atacator încearcă să vă DDoS sistemul sau CMS-ul prin supraîncărcarea phpMussel pentru a încetini procesul PHP până la o oprire. Recomandat: 10. Este posibil să doriți să creșteți sau să micșorați acest număr în funcție de viteza hardware-ului dvs. Rețineți că acest număr nu ține cont și nu include conținutul arhivelor."
+ web_theme: "Estetica de utilizat pentru pagina „încărcare refuzată”."
+ web_unsupported_media_type_header: "Ar trebui phpMussel să trimită 415 anteturi atunci când încărcările sunt blocate din cauza tipurilor de fișiere aflate pe lista neagră? Când este adevărată, această setare înlocuiește <code>forbid_on_block</code>. False = Nu [Valoare implicită]; True = Da."
+ web_uploads_log: "Unde ar trebui să fie înregistrate toate încărcările blocate. Specificați un nume de fișier, sau lăsați necompletat pentru a dezactiva."
 denied: "Încărcare refuzată!"
 denied_reason: "Încărcarea dvs. a fost blocată din motivele enumerate mai jos:"
 notifications_message: |

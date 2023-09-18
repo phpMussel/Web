@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2023.09.04).
+ * This file: Upload handler (last modified: 2023.09.16).
  */
 
 namespace phpMussel\Web;
@@ -335,19 +335,19 @@ class Web
         if (strlen($this->Loader->HashReference) !== 0) {
             $Handle['Data'] = sprintf(
                 "%s: %s\n%s: %s\n== %s ==\n%s\n== %s ==\n%s",
-                $this->Loader->L10N->getString('field_date'),
+                $this->Loader->L10N->getString('field.Date'),
                 $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format']),
-                $this->Loader->L10N->getString('field_ip_address'),
+                $this->Loader->L10N->getString('field.IP address'),
                 $this->Loader->Configuration['legal']['pseudonymise_ip_addresses'] ? $this->Loader->pseudonymiseIP($this->Loader->IPAddr) : $this->Loader->IPAddr,
-                $this->Loader->L10N->getString('field_header_scan_results_why_flagged'),
+                $this->Loader->L10N->getString('field.Scan results (why flagged)'),
                 $Detections,
-                $this->Loader->L10N->getString('field_header_hash_reconstruction'),
+                $this->Loader->L10N->getString('field.Hash signatures reconstruction'),
                 $this->Loader->HashReference
             );
             if ($this->Loader->PEData) {
                 $Handle['Data'] .= sprintf(
                     "== %s ==\n%s",
-                    $this->Loader->L10N->getString('field_header_pe_reconstruction'),
+                    $this->Loader->L10N->getString('field.PE sectional signatures reconstruction'),
                     $this->Loader->PEData
                 );
             }

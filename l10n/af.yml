@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2023.09.13).
+# This file: Afrikaans language data (last modified: 2023.09.16).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -25,16 +25,17 @@
 ##/
 
 PrivacyPolicy: "Privaatheidsbeleid"
-config_web: "Konfigurasie vir die oplaai hanteerder."
-config_web_custom_footer: "Ingevoeg as HTML heel onderaan alle "oplaai geweier" bladsye. Dit kan nuttig wees indien jy 'n regskennisgewing, kontakskakel, besigheidsinligting, of soortgelyke by al sulke bladsye wil insluit."
-config_web_custom_header: "Ingevoeg as HTML heel aan die begin van alle "oplaai geweier" bladsye. Dit kan nuttig wees indien u 'n webwerf-logo, gepersonaliseerde kopskrif, skrifte, of soortgelyke by al sulke bladsye wil insluit."
-config_web_forbid_on_block: "Moet phpMussel 403-opskrifte stuur met die lêeroplaai-geblokkeerde boodskap, of by die gewone 200 OK bly? False = Nee (200); True = Ja (403) [Verstek]."
-config_web_ignore_upload_errors: "Hierdie instruksie moet oor die algemeen gedeaktiveer word, tensy dit nodig is vir die korrekte funksionaliteit van phpMussel op jou spesifieke stelsel. Normaalweg, wanneer gedeaktiveer, wanneer phpMussel die teenwoordigheid van elemente in die <code>$_FILES</code> array() bespeur, dit sal probeer om die lêers wat daardie elemente verteenwoordig te skandeer, en as daardie elemente leeg is, sal phpMussel 'n foutboodskap terugstuur. Dit is behoorlike gedrag vir phpMussel. Vir sommige CMS egter kan leë elemente in <code>$_FILES</code> voorkom as gevolg van die natuurlike gedrag van daardie CMS, of foute kan gerapporteer word wanneer daar nie enige is nie, in welke geval die normale gedrag vir phpMussel sal inmeng met die normale gedrag van daardie CMS. As so 'n situasie vir jou voorkom, sal die aktivering van hierdie opsie phpMussel opdrag gee om nie te probeer om skanderings vir sulke leë elemente te begin nie, hulle te ignoreer wanneer dit gevind word en om nie enige verwante foutboodskappe terug te stuur nie, om sodoende voortsetting van die bladsyversoek moontlik te maak. False = AF; True = AAN."
-config_web_magnification: "Lettertipe vergroting. Verstek = 1."
-config_web_max_uploads: "Maksimum aantal lêers wat phpMussel toegelaat word om te skandeer wanneer oplaaie geskandeer word voordat die skandering gestaak word en die gebruiker inlig dat hulle te veel op een slag oplaai! Bied beskerming teen 'n teoretiese aanval waardeur 'n aanvaller probeer om jou stelsel of CMS te DDoS deur phpMussel te oorlaai om die PHP-proses tot stilstand te vertraag. Aanbeveel: 10. Jy sal dalk hierdie getal wil verhoog of verlaag, afhangende van die spoed van jou hardeware. Let daarop dat hierdie nommer nie rekening hou met die inhoud van argiewe nie."
-config_web_theme: "Die estetiese om te gebruik vir die "oplaai geweier" bladsy."
-config_web_unsupported_media_type_header: "Moet phpMussel 415-opskrifte stuur wanneer oplaaie geblokkeer word as gevolg van lêertipes op die swartlys? Wanneer waar, word <code>forbid_on_block</code> vervang deur hierdie instelling. False = Nee [Verstek]; True = Ja."
-config_web_uploads_log: "Waar alle geblokkeerde oplaaie aangeteken moet word. Spesifiseer 'n lêernaam, of laat leeg om te deaktiveer."
+config:
+ web: "Konfigurasie vir die oplaai hanteerder."
+ web_custom_footer: "Ingevoeg as HTML heel onderaan alle "oplaai geweier" bladsye. Dit kan nuttig wees indien jy 'n regskennisgewing, kontakskakel, besigheidsinligting, of soortgelyke by al sulke bladsye wil insluit."
+ web_custom_header: "Ingevoeg as HTML heel aan die begin van alle "oplaai geweier" bladsye. Dit kan nuttig wees indien u 'n webwerf-logo, gepersonaliseerde kopskrif, skrifte, of soortgelyke by al sulke bladsye wil insluit."
+ web_forbid_on_block: "Moet phpMussel 403-opskrifte stuur met die lêeroplaai-geblokkeerde boodskap, of by die gewone 200 OK bly? False = Nee (200); True = Ja (403) [Verstek]."
+ web_ignore_upload_errors: "Hierdie instruksie moet oor die algemeen gedeaktiveer word, tensy dit nodig is vir die korrekte funksionaliteit van phpMussel op jou spesifieke stelsel. Normaalweg, wanneer gedeaktiveer, wanneer phpMussel die teenwoordigheid van elemente in die <code>$_FILES</code> array() bespeur, dit sal probeer om die lêers wat daardie elemente verteenwoordig te skandeer, en as daardie elemente leeg is, sal phpMussel 'n foutboodskap terugstuur. Dit is behoorlike gedrag vir phpMussel. Vir sommige CMS egter kan leë elemente in <code>$_FILES</code> voorkom as gevolg van die natuurlike gedrag van daardie CMS, of foute kan gerapporteer word wanneer daar nie enige is nie, in welke geval die normale gedrag vir phpMussel sal inmeng met die normale gedrag van daardie CMS. As so 'n situasie vir jou voorkom, sal die aktivering van hierdie opsie phpMussel opdrag gee om nie te probeer om skanderings vir sulke leë elemente te begin nie, hulle te ignoreer wanneer dit gevind word en om nie enige verwante foutboodskappe terug te stuur nie, om sodoende voortsetting van die bladsyversoek moontlik te maak. False = AF; True = AAN."
+ web_magnification: "Lettertipe vergroting. Verstek = 1."
+ web_max_uploads: "Maksimum aantal lêers wat phpMussel toegelaat word om te skandeer wanneer oplaaie geskandeer word voordat die skandering gestaak word en die gebruiker inlig dat hulle te veel op een slag oplaai! Bied beskerming teen 'n teoretiese aanval waardeur 'n aanvaller probeer om jou stelsel of CMS te DDoS deur phpMussel te oorlaai om die PHP-proses tot stilstand te vertraag. Aanbeveel: 10. Jy sal dalk hierdie getal wil verhoog of verlaag, afhangende van die spoed van jou hardeware. Let daarop dat hierdie nommer nie rekening hou met die inhoud van argiewe nie."
+ web_theme: "Die estetiese om te gebruik vir die "oplaai geweier" bladsy."
+ web_unsupported_media_type_header: "Moet phpMussel 415-opskrifte stuur wanneer oplaaie geblokkeer word as gevolg van lêertipes op die swartlys? Wanneer waar, word <code>forbid_on_block</code> vervang deur hierdie instelling. False = Nee [Verstek]; True = Ja."
+ web_uploads_log: "Waar alle geblokkeerde oplaaie aangeteken moet word. Spesifiseer 'n lêernaam, of laat leeg om te deaktiveer."
 denied: "Oplaai geweier!"
 denied_reason: "Jou oplaai is geblokkeer om die redes hieronder gelys:"
 notifications_message: |

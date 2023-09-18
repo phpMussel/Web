@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2023.01.14).
+# This file: Spanish language data (last modified: 2023.09.16).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -25,16 +25,17 @@
 ##/
 
 PrivacyPolicy: "Política de Privacidad"
-config_web: "Configuración para el controlador de subidas."
-config_web_custom_footer: "Insertado como HTML al final de todas las páginas "subida denegada". Esto podría ser útil en caso de que desee incluir un aviso legal, enlace de contacto, información comercial, o similar en todas dichas páginas."
-config_web_custom_header: "Insertado como HTML al principio de todas las páginas "subida denegada". Esto podría ser útil en caso de que desee incluir un logotipo de sitio web, un encabezado personalizado, scripts, o similar en todas dichas páginas."
-config_web_forbid_on_block: "¿Debería phpMussel enviar 403 header con la bloqueados archivos subidos mensaje, o quedarse con los usual 200 OK? False = No (200); True = Sí (403) [Predefinido]."
-config_web_ignore_upload_errors: "Esta directiva, en general, debe ser desactivado, a menos que se requiere para la correcta funcionalidad de phpMussel en su específico sistema. Normalmente, cuando está desactivado, cuando phpMussel detecta la presencia de elementos en la <code>$_FILES</code> array(), intentará iniciar un escaneo de los archivos que esos elementos representan, y, si esos elementos están blanco o vacío, phpMussel devolverá un mensaje de error. Este es el comportamiento natural para phpMussel. Pero, para algunos CMS, vacíos elementos en <code>$_FILES</code> puede ocurrir como resultado del comportamiento natural de los CMS, o errores pueden ser reportados cuando no existe ninguna, en cuyo caso, el comportamiento natural para phpMussel será interfiriendo con el comportamiento natural de los CMS. Si tal situación ocurre para usted, activando esta opción instruirá phpMussel no intentar iniciar un escaneo para tales vacíos elementos, ignorarlos cuando encontrado y no devuelva cualquier relacionado mensaje de error, así permitiendo la continuación de la página cargando. False = DESACTIVADO; True = ACTIVADO."
-config_web_magnification: "Ampliación de fuente. Predefinido = 1."
-config_web_max_uploads: "Máximo permitido número de archivos para escanear durante archivo subido escaneo antes de abortando la escaneo e informando al usuario están subir demasiado simultáneamente! Proporciona protección contra un teórico ataque por lo cual un atacante intenta DDoS su sistema o CMS por sobrecargando phpMussel para ralentizar el proceso de PHP a niveles inoperables. Recomendado: 10. Es posible que desee aumentar o reducir este número dependiendo de la velocidad de su hardware. Notar que este número no tiene en cuenta o incluir el contenidos de compactados archivos."
-config_web_theme: "La estética a utilizar para la página "subida denegada"."
-config_web_unsupported_media_type_header: "¿Debería phpMussel enviar 415 header cuando las cargas están bloqueadas debido a tipos de archivos en la lista negra? Cuando es true, esta configuración reemplaza a <code>forbid_on_block</code>. False = No [Predefinido]; True = Sí."
-config_web_uploads_log: "Donde se deben registrar todas las subidas bloqueadas. Especifique un archivo nombre, o dejar en blanco para desactivar."
+config:
+ web: "Configuración para el controlador de subidas."
+ web_custom_footer: "Insertado como HTML al final de todas las páginas "subida denegada". Esto podría ser útil en caso de que desee incluir un aviso legal, enlace de contacto, información comercial, o similar en todas dichas páginas."
+ web_custom_header: "Insertado como HTML al principio de todas las páginas "subida denegada". Esto podría ser útil en caso de que desee incluir un logotipo de sitio web, un encabezado personalizado, scripts, o similar en todas dichas páginas."
+ web_forbid_on_block: "¿Debería phpMussel enviar 403 header con la bloqueados archivos subidos mensaje, o quedarse con los usual 200 OK? False = No (200); True = Sí (403) [Predefinido]."
+ web_ignore_upload_errors: "Esta directiva, en general, debe ser desactivado, a menos que se requiere para la correcta funcionalidad de phpMussel en su específico sistema. Normalmente, cuando está desactivado, cuando phpMussel detecta la presencia de elementos en la <code>$_FILES</code> array(), intentará iniciar un escaneo de los archivos que esos elementos representan, y, si esos elementos están blanco o vacío, phpMussel devolverá un mensaje de error. Este es el comportamiento natural para phpMussel. Pero, para algunos CMS, vacíos elementos en <code>$_FILES</code> puede ocurrir como resultado del comportamiento natural de los CMS, o errores pueden ser reportados cuando no existe ninguna, en cuyo caso, el comportamiento natural para phpMussel será interfiriendo con el comportamiento natural de los CMS. Si tal situación ocurre para usted, activando esta opción instruirá phpMussel no intentar iniciar un escaneo para tales vacíos elementos, ignorarlos cuando encontrado y no devuelva cualquier relacionado mensaje de error, así permitiendo la continuación de la página cargando. False = DESACTIVADO; True = ACTIVADO."
+ web_magnification: "Ampliación de fuente. Predefinido = 1."
+ web_max_uploads: "Máximo permitido número de archivos para escanear durante archivo subido escaneo antes de abortando la escaneo e informando al usuario están subir demasiado simultáneamente! Proporciona protección contra un teórico ataque por lo cual un atacante intenta DDoS su sistema o CMS por sobrecargando phpMussel para ralentizar el proceso de PHP a niveles inoperables. Recomendado: 10. Es posible que desee aumentar o reducir este número dependiendo de la velocidad de su hardware. Notar que este número no tiene en cuenta o incluir el contenidos de compactados archivos."
+ web_theme: "La estética a utilizar para la página "subida denegada"."
+ web_unsupported_media_type_header: "¿Debería phpMussel enviar 415 header cuando las cargas están bloqueadas debido a tipos de archivos en la lista negra? Cuando es true, esta configuración reemplaza a <code>forbid_on_block</code>. False = No [Predefinido]; True = Sí."
+ web_uploads_log: "Donde se deben registrar todas las subidas bloqueadas. Especifique un archivo nombre, o dejar en blanco para desactivar."
 denied: "¡Subida denegada!"
 denied_reason: "La subida de archivo fue bloqueada por las razones que se indican a continuación:"
 notifications_message: |
