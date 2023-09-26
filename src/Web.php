@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2023.09.19).
+ * This file: Upload handler (last modified: 2023.09.26).
  */
 
 namespace phpMussel\Web;
@@ -51,7 +51,7 @@ class Web
     private $Attache = '';
 
     /**
-     * Construct the loader.
+     * Construct the upload handler.
      *
      * @param \phpMussel\Core\Loader $Loader The instantiated loader object, passed by reference.
      * @param \phpMussel\Core\Scanner $Scanner The instantiated scanner object, passed by reference.
