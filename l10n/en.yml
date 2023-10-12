@@ -7,16 +7,21 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2023.09.16).
+# This file: English language data (last modified: 2023.10.12).
 ##/
 
 PrivacyPolicy: "Privacy Policy"
 config:
  web: "Configuration for the upload handler."
  web_custom_footer: "Inserted as HTML at the very bottom of all "upload denied" pages. This could be useful in case you want to include a legal notice, contact link, business information, or similar at all such pages."
- web_custom_header: "Inserted as HTML at the very beginning of all "upload denied" pages. This could be useful in case you want to include a website logo, personalised header, scripts, or similar at all such pages."
+ web_custom_header:
+  en-AU: "Inserted as HTML at the very beginning of all "upload denied" pages. This could be useful in case you want to include a website logo, personalised header, scripts, or similar at all such pages."
+  en-CA: &cp "Inserted as HTML at the very beginning of all "upload denied" pages. This could be useful in case you want to include a website logo, personalized header, scripts, or similar at all such pages."
+  en-US: *cp
  web_forbid_on_block: "Should phpMussel send 403 headers with the file upload blocked message, or stick with the usual 200 OK? False = No (200); True = Yes (403) [Default]."
- web_ignore_upload_errors: "This directive should generally be disabled unless it's required for correct functionality of phpMussel on your specific system. Normally, when disabled, when phpMussel detects the presence of elements in the <code>$_FILES</code> array(), it'll attempt to initiate a scan of the files that those elements represent, and, if those elements are blank or empty, phpMussel will return an error message. This is proper behaviour for phpMussel. However, for some CMS, empty elements in <code>$_FILES</code> can occur as a result of the natural behaviour of those CMS, or errors may be reported when there aren't any, in which case, the normal behaviour for phpMussel will be interfering with the normal behaviour of those CMS. If such a situation occurs for you, enabling this option will instruct phpMussel to not attempt to initiate scans for such empty elements, ignore them when found and to not return any related error messages, thus allowing continuation of the page request. False = OFF; True = ON."
+ web_ignore_upload_errors:
+  en-AU: "This directive should generally be disabled unless it's required for correct functionality of phpMussel on your specific system. Normally, when disabled, when phpMussel detects the presence of elements in the <code>$_FILES</code> array(), it'll attempt to initiate a scan of the files that those elements represent, and, if those elements are blank or empty, phpMussel will return an error message. This is proper behaviour for phpMussel. However, for some CMS, empty elements in <code>$_FILES</code> can occur as a result of the natural behaviour of those CMS, or errors may be reported when there aren't any, in which case, the normal behaviour for phpMussel will be interfering with the normal behaviour of those CMS. If such a situation occurs for you, enabling this option will instruct phpMussel to not attempt to initiate scans for such empty elements, ignore them when found and to not return any related error messages, thus allowing continuation of the page request. False = OFF; True = ON."
+  en-US: "This directive should generally be disabled unless it's required for correct functionality of phpMussel on your specific system. Normally, when disabled, when phpMussel detects the presence of elements in the <code>$_FILES</code> array(), it'll attempt to initiate a scan of the files that those elements represent, and, if those elements are blank or empty, phpMussel will return an error message. This is proper behavior for phpMussel. However, for some CMS, empty elements in <code>$_FILES</code> can occur as a result of the natural behavior of those CMS, or errors may be reported when there aren't any, in which case, the normal behavior for phpMussel will be interfering with the normal behavior of those CMS. If such a situation occurs for you, enabling this option will instruct phpMussel to not attempt to initiate scans for such empty elements, ignore them when found and to not return any related error messages, thus allowing continuation of the page request. False = OFF; True = ON."
  web_magnification: "Font magnification. Default = 1."
  web_max_uploads: "Maximum number of files that phpMussel is allowed to scan when scanning uploads before aborting the scan and informing the user they are uploading too much at once! Provides protection against a theoretical attack whereby an attacker attempts to DDoS your system or CMS by overloading phpMussel to slow down the PHP process to a grinding halt. Recommended: 10. You may wish to raise or lower this number depending on the speed of your hardware. Note that this number doesn't account for or include the contents of archives."
  web_theme: "The aesthetic to use for the "upload denied" page."
@@ -35,8 +40,14 @@ notifications_message: |
  <p>%s</p>
  </center>
 notifications_subject: "Blocked upload notification"
-scan_unauthorised_upload: "Unauthorised file upload manipulation detected!"
-scan_unauthorised_upload_or_misconfig: "Unauthorised file upload manipulation or misconfiguration detected!"
+scan_unauthorised_upload:
+ en-AU: "Unauthorised file upload manipulation detected!"
+ en-CA: &cp "Unauthorized file upload manipulation detected!"
+ en-US: *cp
+scan_unauthorised_upload_or_misconfig:
+ en-AU: "Unauthorised file upload manipulation or misconfiguration detected!"
+ en-CA: &cp "Unauthorized file upload manipulation or misconfiguration detected!"
+ en-US: *cp
 upload_error_1: "Filesize exceeds the upload_max_filesize directive."
 upload_error_2: "Filesize exceeds form-specified filesize limit."
 upload_error_34: "Upload failure! Please contact the hostmaster for assistance!"
