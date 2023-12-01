@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2023.09.26).
+ * This file: Upload handler (last modified: 2023.12.01).
  */
 
 namespace phpMussel\Web;
@@ -403,7 +403,7 @@ class Web
             /** Generate email body. */
             $EmailBody = sprintf(
                 $this->Loader->L10N->getString('notifications_message'),
-                preg_replace(['~^([\da-z]+\:\d+\:)~i', '~\n~'], ['', "<br />\n"], strip_tags($this->Loader->HashReference)),
+                preg_replace(['~^([\da-z]+:\d+:)~i', '~\n~'], ['', "<br />\n"], strip_tags($this->Loader->HashReference)),
                 $TemplateData['detected'],
                 $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format'])
             );
