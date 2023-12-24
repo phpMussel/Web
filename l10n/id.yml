@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2023.09.16).
+# This file: Indonesian language data (last modified: 2023.12.15).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -53,8 +53,8 @@ scan_unauthorised_upload: "Tidak sah file nama manipulasi terdeteksi!"
 scan_unauthorised_upload_or_misconfig: "Tidak sah file nama manipulasi atau salah konfigurasi terdeteksi!"
 upload_error_1: "File ukuran melebihi direktif upload_max_filesize."
 upload_error_2: "File ukuran melebihi formulir ditentukan file ukuran batas."
-upload_error_34: "Upload gagal! Silahkan hubungi hostmaster untuk bantuan!"
-upload_error_6: "Upload direktori hilang! Silahkan hubungi hostmaster untuk bantuan!"
-upload_error_7: "Disk-menulis kesalahan! Silahkan hubungi hostmaster untuk bantuan!"
-upload_error_8: "PHP salah konfigurasi terdeteksi! Silahkan hubungi hostmaster untuk bantuan!"
+upload_error_34: "Upload gagal! Silakan hubungi hostmaster untuk bantuan!"
+upload_error_6: "Upload direktori hilang! Silakan hubungi hostmaster untuk bantuan!"
+upload_error_7: "Disk-menulis kesalahan! Silakan hubungi hostmaster untuk bantuan!"
+upload_error_8: "PHP salah konfigurasi terdeteksi! Silakan hubungi hostmaster untuk bantuan!"
 upload_limit_exceeded: "Upload batas melebihi"
