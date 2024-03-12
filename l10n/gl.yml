@@ -1,0 +1,46 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Galician language data (last modified: 2024.03.12).
+##/
+
+PrivacyPolicy: "Política de Privacidade"
+config:
+ web: "Configuración para o controlador de carga."
+ web_custom_footer: "Inseriuse como HTML na parte inferior de todas as páxinas de "carga denegada". Isto pode ser útil no caso de que queiras incluír un aviso legal, ligazón de contacto, información comercial, ou similares en todas esas páxinas."
+ web_custom_header: "Inseriuse como HTML ao comezo de todas as páxinas de "carga denegada". Isto pode ser útil no caso de que queiras incluír un logotipo do sitio web, un encabezado personalizado, guións, ou similares en todas esas páxinas."
+ web_forbid_on_block: "Debería phpMussel enviar cabeceiras 403 coa mensaxe bloqueada de carga de ficheiros ou manterse cos 200 habituais? False/Falso = Non (200); True/Verdadeiro = Si (403) [Predeterminado]."
+ web_ignore_upload_errors: "En xeral, esta directiva debería estar desactivada a non ser que sexa necesaria para a correcta funcionalidade de phpMussel no seu sistema específico. Normalmente, cando está desactivado, cando phpMussel detecta a presenza de elementos na matriz <code>$_FILES</code>, intentará iniciar unha exploración dos ficheiros que representan eses elementos, e, se eses elementos están en branco ou baleiros, phpMussel devolverá unha mensaxe de erro. Este é un comportamento adecuado para phpMussel. Non obstante, para algúns CMS, os elementos baleiros en <code>$_FILES</code> poden ocorrer como resultado do comportamento natural destes CMS, ou se poden informar erros cando non os haxa, nese caso, o comportamento normal de phpMussel interferirá co comportamento normal destes CMS. Se se produce tal situación, activar esta opción indicará a phpMussel que non intente iniciar exploracións para tales elementos baleiros, que os ignore cando se atope, e que non devolva ningunha mensaxe de erro relacionada, permitindo así a continuación da solicitude da páxina. False/Falso = Desactivado; True/Verdadeiro = Activado."
+ web_magnification: "Ampliación da fonte. Predeterminado = 1."
+ web_max_uploads: "Número máximo de ficheiros que phpMussel pode escanear ao analizar as cargas antes de abortar a exploración e informar ao usuario de que está cargando demasiado á vez. Ofrece protección contra un ataque teórico polo que un atacante intenta DDoS o seu sistema ou CMS por medio de sobrecargando phpMussel para ralentizar o proceso PHP ata parar. Recomendado: 10. Pode querer aumentar ou baixar este número dependendo da velocidade do seu hardware. Teña en conta que este número non conta nin inclúe o contido dos arquivos."
+ web_theme: "A estética a utilizar para a páxina de "carga denegada"."
+ web_unsupported_media_type_header: "Debería phpMussel enviar cabeceiras 415 cando as cargas están bloqueadas debido aos tipos de ficheiros da lista negra? Cando é verdadeiro, esta configuración substitúe a <code>forbid_on_block</code>. False/Falso = Non [Predeterminado]; True/Verdadeiro = Si."
+ web_uploads_log: "Onde deben rexistrarse todas as cargas bloqueadas. Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
+denied: "Carga denegada!"
+denied_reason: "Bloqueouse a túa carga polos motivos que se indican a continuación:"
+notifications_message: |
+ <center>
+ <p><strong>Ola.</strong></p>
+ <p><strong>Este correo electrónico é para notificarche que se bloquearon as seguintes cargas de ficheiros:</strong></p>
+ <p>%s</p>
+ <p><strong>Por que isto ocorreu:</strong></p>
+ <p>%s</p>
+ <p><strong>Cando isto ocorreu:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Notificación de carga bloqueada"
+scan_unauthorised_upload: "Detectouse manipulación de carga de ficheiros non autorizada!"
+scan_unauthorised_upload_or_misconfig: "Detectouse manipulación de carga de ficheiros non autorizada ou configuración incorrecta!"
+upload_error_1: "O tamaño do ficheiro supera a directiva upload_max_filesize."
+upload_error_2: "O tamaño do ficheiro supera o límite de tamaño de ficheiro especificado polo formulario."
+upload_error_34: "Fallo de carga! Ponte en contacto co hostmaster para obter axuda!"
+upload_error_6: "Falta o directorio de carga! Ponte en contacto co hostmaster para obter axuda!"
+upload_error_7: "Erro ao escribir no disco! Ponte en contacto co hostmaster para obter axuda!"
+upload_error_8: "Detectouse configuración incorrecta de PHP! Ponte en contacto co hostmaster para obter axuda!"
+upload_limit_exceeded: "Superouse o límite de carga"

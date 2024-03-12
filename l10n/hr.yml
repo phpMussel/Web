@@ -1,0 +1,46 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Croatian language data (last modified: 2024.03.12).
+##/
+
+PrivacyPolicy: "Politika privatnosti"
+config:
+ web: "Konfiguracija za rukovatelja prijenosom."
+ web_custom_footer: "Umetnuto kao HTML na samom dnu svih "prijenos odbijen" stranica. Ovo bi moglo biti korisno u slučaju da želite uključiti pravnu obavijest, poveznicu za kontakt, poslovne informacije, ili slično na sve takve stranice."
+ web_custom_header: "Umetnuto kao HTML na samom početku svih "prijenos odbijen" stranica. Ovo bi moglo biti korisno u slučaju da želite uključiti logotip web stranice, personalizirano zaglavlje, skripte, ili slično na sve takve stranice."
+ web_forbid_on_block: "Treba li phpMussel poslati zaglavlja 403 s porukom o blokiranom prijenosu datoteke ili se držati uobičajenih 200 OK? False/Lažno = Ne (200); True/Istinito = Da (403) [Zadano]."
+ web_ignore_upload_errors: "Ova bi direktiva općenito trebala biti onemogućena osim ako je potrebna za ispravnu funkcionalnost phpMussel-a na vašem specifičnom sustavu. Obično, kada je onemogućeno, kada phpMussel otkrije prisutnost elemenata u array() <code>$_FILES</code>, pokušat će pokrenuti skeniranje datoteka koje ti elementi predstavljaju, i, ako su ti elementi prazni, phpMussel će vratiti poruku o pogrešci. Ovo je ispravno ponašanje za phpMussel. Međutim, za neke CMS-ove prazni elementi u <code>$_FILES</code> mogu se pojaviti kao rezultat prirodnog ponašanja tih CMS-ova, ili se pogreške mogu prijaviti kada ih nema, u kojem će slučaju normalno ponašanje phpMussela ometati normalno ponašanje tih CMS-ova. Ako se takva situacija dogodi za vas, uključivanje ove opcije će uputiti phpMussel da ne pokušava pokrenuti skeniranje za takve prazne elemente, zanemariti ih kada se pronađu, i ne vraćati nikakve povezane poruke o pogrešci, dopuštajući tako nastavak zahtjeva stranice. False/Lažno = Onemogućeno; True/Istinito = Omogućeno."
+ web_magnification: "Povećanje fonta. Zadano = 1."
+ web_max_uploads: "Maksimalan broj datoteka koje phpMussel smije skenirati prilikom skeniranja učitavanja prije nego što prekine skeniranje i obavijesti korisnika da učitava previše odjednom! Pruža zaštitu od teoretskog napada pri kojem napadač pokušava DDoS vaš sustav ili CMS putem preopterećujući phpMussel kako bi usporio PHP proces do krajnjeg zaustavljanja. Preporučeno: 10. Možda ćete htjeti povećati ili smanjiti ovaj broj ovisno o brzini vašeg hardvera. Imajte na umu da ovaj broj ne obuhvaća niti uključuje sadržaj arhiva."
+ web_theme: "Estetika za korištenje za "prijenos odbijen" stranicu."
+ web_unsupported_media_type_header: "Treba li phpMussel poslati zaglavlja 415 kada su prijenosi blokirani zbog tipova datoteka na crnoj listi? Kada je istinito, ova postavka zamjenjuje <code>forbid_on_block</code>. False/Lažno = Ne [Zadano]; True/Istinito = Da."
+ web_uploads_log: "Gdje bi se trebali bilježiti svi blokirani prijenosi. Navedite naziv datoteke ili ostavite prazno za onemogućavanje."
+denied: "Prijenos odbijen!"
+denied_reason: "Vaš prijenos je blokiran iz dolje navedenih razloga:"
+notifications_message: |
+ <center>
+ <p><strong>Zdravo.</strong></p>
+ <p><strong>Ovom e-poštom vas obavještavamo da su sljedeći prijenosi datoteka blokirani:</strong></p>
+ <p>%s</p>
+ <p><strong>Zašto se ovo dogodilo:</strong></p>
+ <p>%s</p>
+ <p><strong>Kada se ovo dogodilo:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Obavijest o blokiranom prijenosu"
+scan_unauthorised_upload: "Otkrivena je manipulacija neovlaštenog učitavanja datoteke!"
+scan_unauthorised_upload_or_misconfig: "Otkrivena je manipulacija neovlaštenog učitavanja datoteke ili pogrešna konfiguracija!"
+upload_error_1: "Veličina datoteke premašuje direktivu upload_max_filesize."
+upload_error_2: "Veličina datoteke premašuje ograničenje veličine datoteke navedeno u obrascu."
+upload_error_34: "Prijenos nije uspio! Molimo kontaktirajte domaćina za pomoć!"
+upload_error_6: "Nedostaje direktorij za prijenos! Molimo kontaktirajte domaćina za pomoć!"
+upload_error_7: "Greška pri pisanju diska! Molimo kontaktirajte domaćina za pomoć!"
+upload_error_8: "Otkrivena je pogrešna konfiguracija PHP-a! Molimo kontaktirajte domaćina za pomoć!"
+upload_limit_exceeded: "Ograničenje učitavanja premašeno"

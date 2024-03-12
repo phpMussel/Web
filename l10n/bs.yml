@@ -1,0 +1,46 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Bosnian language data (last modified: 2024.03.12).
+##/
+
+PrivacyPolicy: "Politika privatnosti"
+config:
+ web: "Konfiguracija za rukovaoca otpremanja."
+ web_custom_footer: "Umetnuto kao HTML na samom dnu svih stranica "odbijeno upload". Ovo bi moglo biti korisno u slučaju da na svim takvim stranicama želite uključiti pravnu obavijest, vezu za kontakt, poslovne informacije, ili slično."
+ web_custom_header: "Umetnuto kao HTML na samom početku svih stranica "odbijeno upload". Ovo bi moglo biti korisno u slučaju da na svim takvim stranicama želite uključiti logotip web stranice, personalizirano zaglavlje, skripte, ili slično."
+ web_forbid_on_block: "Da li phpMussel treba da pošalje 403 zaglavlja sa porukom o blokiranom učitavanju datoteke ili da se drži uobičajenih 200 OK? False/Lažno = Ne (200); True/Istinito = Da (403) [Zadano]."
+ web_ignore_upload_errors: "Ova direktiva bi općenito trebala biti onemogućena osim ako je potrebna za ispravnu funkcionalnost phpMussel-a na vašem sistemu. Obično, kada je onemogućeno, kada phpMussel detektuje prisustvo elemenata u <code>$_FILES</code> array(), pokušat će pokrenuti skeniranje datoteka koje ti elementi predstavljaju, i, ako su ti elementi prazni, phpMussel će vratiti poruku o grešci. Ovo je ispravno ponašanje za phpMussel. Međutim, za neke CMS, prazni elementi u <code>$_FILES</code> mogu se pojaviti kao rezultat prirodnog ponašanja tih CMS-a, ili greške mogu biti prijavljene kada ih nema, u kom slučaju će normalno ponašanje phpMussel-a ometati normalno ponašanje tih CMS-a. Ako vam se dogodi takva situacija, omogućavanje ove opcije će uputiti phpMussel da ne pokušava da pokrene skeniranje za takve prazne elemente, ignoriše ih kada ih pronađe, i da ne vraća nikakve povezane poruke o grešci, čime će se omogućiti nastavak zahteva stranice. False/Lažno = Onemogućeno; True/Istinito = Omogućeno."
+ web_magnification: "Uvećanje fonta. Zadano = 1."
+ web_max_uploads: "Maksimalan broj datoteka koje phpMussel smije skenirati prilikom skeniranja upload-a prije nego što prekine skeniranje i obavijesti korisnika da otprema previše odjednom! Pruža zaštitu od teoretskog napada u kojem napadač pokušava DDoS vaš sistem ili CMS putem preopterećenjem phpMussel-a da uspori PHP proces do potpunog zaustavljanja. Preporučeno: 10. Možda ćete željeti povećati ili smanjiti ovaj broj ovisno o brzini vašeg hardvera. Imajte na umu da ovaj broj ne obuhvata niti uključuje sadržaj arhive."
+ web_theme: "Estetika za upotrebu stranice "odbijeno upload"."
+ web_unsupported_media_type_header: "Da li phpMussel treba da pošalje 415 zaglavlja kada su otpremanja blokirana zbog tipova datoteka na crnoj listi? Kada je istinito, ova postavka zamjenjuje <code>forbid_on_block</code>. False/Lažno = Ne [Zadano]; True/Istinito = Da."
+ web_uploads_log: "Gdje bi svi blokirani upload-ovi trebali biti prijavljeni. Navedite naziv datoteke ili ostavite prazno da biste onemogućili."
+denied: "Odbijeno upload!"
+denied_reason: "Vaše upload je blokirano iz dolje navedenih razloga:"
+notifications_message: |
+ <center>
+ <p><strong>Zdravo.</strong></p>
+ <p><strong>Ovom e-porukom vas obavještavamo da su blokirani sljedeći upload-ovi:</strong></p>
+ <p>%s</p>
+ <p><strong>Zašto se ovo desilo:</strong></p>
+ <p>%s</p>
+ <p><strong>Kada se ovo desilo:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Obavijest o blokiranom upload"
+scan_unauthorised_upload: "Otkrivena je neovlaštena manipulacija upload-m datoteka!"
+scan_unauthorised_upload_or_misconfig: "Otkrivena je neovlaštena manipulacija upload-m datoteka ili pogrešna konfiguracija!"
+upload_error_1: "Veličina datoteke premašuje upload_max_filesize direktivu."
+upload_error_2: "Veličina datoteke premašuje ograničenje veličine datoteke navedeno u obrascu."
+upload_error_34: "Upload nije uspjelo! Molimo kontaktirajte hostmastera za pomoć!"
+upload_error_6: "Nedostaje direktorij za upload! Molimo kontaktirajte hostmastera za pomoć!"
+upload_error_7: "Greška pri pisanju na disk! Molimo kontaktirajte hostmastera za pomoć!"
+upload_error_8: "Otkrivena je pogrešna konfiguracija PHP-a! Molimo kontaktirajte hostmastera za pomoć!"
+upload_limit_exceeded: "Prekoračeno je ograničenje za upload"

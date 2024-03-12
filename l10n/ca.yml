@@ -1,0 +1,46 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Catalan language data (last modified: 2024.03.12).
+##/
+
+PrivacyPolicy: "Política de privacitat"
+config:
+ web: "Configuració del gestor de càrrega."
+ web_custom_footer: "Inserir com a HTML a la part inferior de totes les pàgines de "càrrega denegada". Això pot ser útil en cas que vulgueu incloure un avís legal, un enllaç de contacte, informació comercial, o similar a totes aquestes pàgines."
+ web_custom_header: "Inserir com a HTML al principi de totes les pàgines de "càrrega denegada". Això pot ser útil en cas que vulgueu incloure un logotip de lloc web, una capçalera personalitzada, scripts, o similar a totes aquestes pàgines."
+ web_forbid_on_block: "El phpMussel hauria d'enviar 403 capçaleres amb el missatge bloquejat per a la càrrega del fitxer, o quedar-se amb els 200 habituals? False/Fals = No (200); True/Cert = Sí (403) [Predeterminat]."
+ web_ignore_upload_errors: "Aquesta directiva s'hauria de desactivar generalment tret que sigui necessari per a la correcta funcionalitat de phpMussel al vostre sistema específic. Normalment, quan està desactivat, quan phpMussel detecta la presència d'elements a la matriu <code>$_FILES</code>, intentarà iniciar una exploració dels fitxers que representen aquests elements, i, si aquests elements estan en blanc o buits, phpMussel retornarà un missatge d'error. Aquest és un comportament adequat per a phpMussel. Tanmateix, per a alguns CMS, es poden produir elements buits en <code>$_FILES</code> com a resultat del comportament natural d'aquests CMS, o es poden notificar errors quan no n'hi ha, en aquest cas, el comportament normal de phpMussel interferirà amb el comportament normal d'aquests CMS. Si es produeix aquesta situació, activar aquesta opció indicarà a phpMussel que no intenti iniciar exploracions per a aquests elements buits, que els ignori quan es trobi, i que no retorni cap missatge d'error relacionat, permetent així la continuació de la sol·licitud de la pàgina. False/Fals = Desactivat; True/Cert = Activat."
+ web_magnification: "Ampliació de la font. Predeterminat = 1."
+ web_max_uploads: "Nombre màxim de fitxers que phpMussel pot escanejar quan escaneja les càrregues abans d'avortar l'escaneig i informar a l'usuari que n'està carregant massa alhora! Proporciona protecció contra un atac teòric mitjançant el qual un atacant intenta DDoS al vostre sistema o CMS per mitjà de sobrecarregant phpMussel per frenar el procés PHP fins a una parada. Recomanat: 10. És possible que vulgueu augmentar o reduir aquest nombre en funció de la velocitat del vostre maquinari. Tingueu en compte que aquest número no té en compte ni inclou el contingut dels arxius."
+ web_theme: "L'estètica a utilitzar per a la pàgina "càrrega denegada"."
+ web_unsupported_media_type_header: "phpMussel hauria d'enviar 415 capçaleres quan les càrregues estan bloquejades a causa dels tipus de fitxers a la llista negra? Quan és cert, aquesta configuració substitueix <code>forbid_on_block</code>. False/Fals = No [Predeterminat]; True/Cert = Sí."
+ web_uploads_log: "On s'han de registrar totes les càrregues bloquejades. Especifiqueu un nom de fitxer o deixeu-lo en blanc per desactivar-lo."
+denied: "Càrrega denegada!"
+denied_reason: "La teva càrrega s'ha bloquejat pels motius que s'indiquen a continuació:"
+notifications_message: |
+ <center>
+ <p><strong>Hola.</strong></p>
+ <p><strong>Aquest correu electrònic és per notificar-vos que s'han bloquejat les càrregues de fitxers següents:</strong></p>
+ <p>%s</p>
+ <p><strong>Per què va passar això:</strong></p>
+ <p>%s</p>
+ <p><strong>Quan va passar això:</strong></p>
+ <p>%s</p>
+ </center>
+notifications_subject: "Notificació de càrrega bloquejada"
+scan_unauthorised_upload: "Detectat una manipulació de càrrega de fitxers no autoritzada!"
+scan_unauthorised_upload_or_misconfig: "Detectat una manipulació de càrrega de fitxers no autoritzada o una configuració incorrecta!"
+upload_error_1: "La mida del fitxer supera la directiva upload_max_filesize."
+upload_error_2: "La mida del fitxer supera el límit de mida del fitxer especificat pel formulari."
+upload_error_34: "Error de càrrega! Si us plau, poseu-vos en contacte amb l'hostmaster per obtenir ajuda!"
+upload_error_6: "Falta el directori de càrrega! Si us plau, poseu-vos en contacte amb l'hostmaster per obtenir ajuda!"
+upload_error_7: "Error d'escriptura del disc! Si us plau, poseu-vos en contacte amb l'hostmaster per obtenir ajuda!"
+upload_error_8: "Detectat una configuració de PHP incorrecta! Si us plau, poseu-vos en contacte amb l'hostmaster per obtenir ajuda!"
+upload_limit_exceeded: "Superat el límit de càrrega"
