@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2023.12.01).
+ * This file: Upload handler (last modified: 2024.03.13).
  */
 
 namespace phpMussel\Web;
@@ -309,7 +309,7 @@ class Web
         /** Pull relevant client-specified L10N data. */
         if (!empty($this->Attache)) {
             foreach (['denied', 'denied_reason'] as $Pull) {
-                if (($Try = $this->ClientL10N->getString($Pull)) !== '') {
+                if (($Try = $this->Loader->ClientL10N->getString($Pull)) !== '') {
                     $TemplateData[$Pull] = $Try;
                 }
             }
@@ -385,7 +385,7 @@ class Web
         /** Include privacy policy. */
         $TemplateData['pp'] = empty(
             $this->Loader->Configuration['legal']['privacy_policy']
-        ) ? '' : '<br /><a href="' . $this->Loader->Configuration['legal']['privacy_policy'] . '">' . $this->ClientL10N->L10N->getString('PrivacyPolicy') . '</a>';
+        ) ? '' : '<br /><a href="' . $this->Loader->Configuration['legal']['privacy_policy'] . '">' . $this->Loader->ClientL10N->L10N->getString('PrivacyPolicy') . '</a>';
 
         /** Generate HTML output. */
         $Output = $this->Loader->parse($TemplateData, $this->Loader->readFile($TemplateFile));
