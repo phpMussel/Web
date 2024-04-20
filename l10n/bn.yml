@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2023.09.16).
+# This file: Bangla language data (last modified: 2024.04.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -41,7 +41,7 @@ denied_reason: "আপনার আপলোড নীচে তালিকা�
 notifications_message: |
  <center>
  <p><strong>হ্যালো।</strong></p>
- <p><strong>এই ইমেলটি আপনাকে জানাতে নীচের ফাইল আপলোডগুলি অবরুদ্ধ করা হয়েছে:</strong></p>
+ <p><strong>এই ইমেইলটি আপনাকে জানাতে নীচের ফাইল আপলোডগুলি অবরুদ্ধ করা হয়েছে:</strong></p>
  <p>%s</p>
  <p><strong>কেন এটি ঘটেছে:</strong></p>
  <p>%s</p>

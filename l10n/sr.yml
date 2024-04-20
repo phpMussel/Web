@@ -7,14 +7,28 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2024.03.12).
+# This file: Serbian language data (last modified: 2024.04.19).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
 ##/
 
 PrivacyPolicy: "Правила о приватности"
 config:
  web: "Конфигурација за обрађивач отпремања."
  web_custom_footer: "Уметнуто као ХТМЛ на самом дну свих страница „одбијено отпремање“. Ово би могло бити корисно у случају да на свим таквим страницама желите да укључите правно обавештење, везу за контакт, пословне информације, или слично."
- web_custom_header: "Уметнуто као ХТМЛ на самом почетку свих страница „одбијено отпремање“. Ово би могло бити корисно у случају да на свим таквим страницама желите да укључите логотип веб локације, персонализовано заглавље, скрипте, или слично."
+ web_custom_header: "Уметнуто као ХТМЛ на самом почетку свих страница „одбијено отпремање“. Ово би могло бити корисно у случају да на свим таквим страницама желите да укључите логотип веб странице, персонализовано заглавље, скрипте, или слично."
  web_forbid_on_block: "Да ли пхпМуссел треба да пошаље 403 заглавља са поруком о блокирању отпремања датотеке или да се држи уобичајених 200 ОК? Лажно = Не (200); Истинито = Да (403) [Подразумевано]."
  web_ignore_upload_errors: "Ова директива би генерално требало да буде онемогућена осим ако потребна за исправну функционалност пхпМуссел-а на вашем систему. Обично, када је онемогућен, када пхпМуссел открије присуство елемената у <code>$_FILES</code> array(), покушаће да покрене скенирање датотека које ти елементи представљају, и, ако су ти елементи празни, пхпМуссел ће вратити поруку о грешци. Ово је исправно понашање за пхпМуссел. Међутим, за неке ЦМС, празни елементи у <code>$_FILES</code> могу настати као резултат природног понашања тих ЦМС-а, или грешке могу бити пријављене када их нема, у ком случају ће нормално понашање пхпМуссел-а ометати нормално понашање тих ЦМС-а. Ако се таква ситуација догоди за вас, омогућавање ове опције ће упутити пхпМуссел да не покушава да покрене скенирање за такве празне елементе, игнорише их када их пронађе, и да не враћа никакве повезане поруке о грешци, дозвољавајући тако наставак захтева странице. Лажно = Онемогућено; Истинито = Омогућено."
  web_magnification: "Увећање фонта. Подразумевано = 1."
