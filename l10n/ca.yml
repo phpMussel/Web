@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2024.04.19).
+# This file: Catalan language data (last modified: 2024.05.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -35,7 +35,7 @@ config:
  web_max_uploads: "Nombre màxim de fitxers que phpMussel pot escanejar quan escaneja les càrregues abans d'avortar l'escaneig i informar a l'usuari que n'està carregant massa alhora! Proporciona protecció contra un atac teòric mitjançant el qual un atacant intenta DDoS al vostre sistema o CMS per mitjà de sobrecarregant phpMussel per frenar el procés PHP fins a una parada. Recomanat: 10. És possible que vulgueu augmentar o reduir aquest nombre en funció de la velocitat del vostre maquinari. Tingueu en compte que aquest número no té en compte ni inclou el contingut dels arxius."
  web_theme: "L'estètica a utilitzar per a la pàgina "càrrega denegada"."
  web_unsupported_media_type_header: "phpMussel hauria d'enviar 415 capçaleres quan les càrregues estan bloquejades a causa dels tipus de fitxers a la llista negra? Quan és cert, aquesta configuració substitueix <code>forbid_on_block</code>. False/Fals = No [Predeterminat]; True/Cert = Sí."
- web_uploads_log: "On s'han de registrar totes les càrregues bloquejades. Especifiqueu un nom de fitxer o deixeu-lo en blanc per desactivar-lo."
+ web_uploads_log: "On s'han de registrar totes les càrregues bloquejades. Especifiqueu un nom de fitxer, o deixeu-lo en blanc per desactivar-lo."
 denied: "Càrrega denegada!"
 denied_reason: "La teva càrrega s'ha bloquejat pels motius que s'indiquen a continuació:"
 notifications_message: |
