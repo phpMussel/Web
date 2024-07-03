@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2023.09.16).
+# This file: French language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Téléchargement refusé\_!"
 denied_reason: "Votre tentative de téléchargement a été bloquée pour les raisons énumérées ci-dessous\_:"
 notifications_message: |
- <center>
- <p><strong>Bonjour.</strong></p>
- <p><strong>Cet e-mail vous informe que les téléchargements de fichiers suivants ont été bloqués :</strong></p>
- <p>%s</p>
- <p><strong>Pourquoi cela s'est passé :</strong></p>
- <p>%s</p>
- <p><strong>Quand ça s'est passé :</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Bonjour.</strong></p>
+ <p><strong>Cet e-mail vous informe que les téléchargements de fichiers suivants ont été bloqués :</strong></p><p>%s</p>
+ <p><strong>Pourquoi cela s'est passé :</strong></p><p>%s</p>
+ <p><strong>Quand ça s'est passé :</strong></p><p>%s</p></center>
 notifications_subject: "Notification de téléchargement bloqué"
 scan_unauthorised_upload: "Non autorisée manipulation de téléchargement de fichiers détecté\_!"
 scan_unauthorised_upload_or_misconfig: "Manipulation de téléchargement de fichiers non autorisée ou mauvaise configuration détectée\_!"

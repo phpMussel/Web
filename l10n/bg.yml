@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data (last modified: 2023.09.16).
+# This file: Bulgarian language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Отказано качване!"
 denied_reason: "Вашето качване беше блокирано поради изброените по-долу причини:"
 notifications_message: |
- <center>
- <p><strong>Здравейте.</strong></p>
- <p><strong>С този имейл ви уведомяваме, че следните качвания на файлове са блокирани:</strong></p>
- <p>%s</p>
- <p><strong>Защо това се случи:</strong></p>
- <p>%s</p>
- <p><strong>Когато това се случи:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Здравейте.</strong></p>
+ <p><strong>С този имейл ви уведомяваме, че следните качвания на файлове са блокирани:</strong></p><p>%s</p>
+ <p><strong>Защо това се случи:</strong></p><p>%s</p>
+ <p><strong>Когато това се случи:</strong></p><p>%s</p></center>
 notifications_subject: "Известие за блокирано качване"
 scan_unauthorised_upload: "Открита е манипулация на неоторизирано качване на файл!"
 scan_unauthorised_upload_or_misconfig: "Открита е манипулация на неоторизирано качване на файл или неправилна конфигурация!"

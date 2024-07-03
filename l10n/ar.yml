@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2023.09.16).
+# This file: Arabic language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "رفض تحميل!"
 denied_reason: "تم حجب التحميل للأسباب الواردة أدناه:"
 notifications_message: |
- <center>
- <p><strong>مرحبا.</strong></p>
- <p><strong>هذا البريد الإلكتروني لإعلامك بأنه تم حظر تحميلات الملفات التالية:</strong></p>
- <p>%s</p>
- <p><strong>لماذا حدث هذا:</strong></p>
- <p>%s</p>
- <p><strong>عندما حدث هذا:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>مرحبا.</strong></p>
+ <p><strong>هذا البريد الإلكتروني لإعلامك بأنه تم حظر تحميلات الملفات التالية:</strong></p><p>%s</p>
+ <p><strong>لماذا حدث هذا:</strong></p><p>%s</p>
+ <p><strong>عندما حدث هذا:</strong></p><p>%s</p></center>
 notifications_subject: "إشعار تحميل محظور"
 scan_unauthorised_upload: "الكشف تلاعب تحميل الملف غير مصرح!"
 scan_unauthorised_upload_or_misconfig: "تلاعب تحميل الملف غير مصرح أو تكوين الخطأ الكشف!"

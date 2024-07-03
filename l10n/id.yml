@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2023.12.15).
+# This file: Indonesian language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Upload ditolak!"
 denied_reason: "Upload Anda diblokir karena alasan yang tercantum dibawah:"
 notifications_message: |
- <center>
- <p><strong>Salam.</strong></p>
- <p><strong>Email ini untuk memberi tahu Anda bahwa file diupload berikut diblokir:</strong></p>
- <p>%s</p>
- <p><strong>Mengapa ini terjadi:</strong></p>
- <p>%s</p>
- <p><strong>Ketika ini terjadi:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Salam.</strong></p>
+ <p><strong>Email ini untuk memberi tahu Anda bahwa file diupload berikut diblokir:</strong></p><p>%s</p>
+ <p><strong>Mengapa ini terjadi:</strong></p><p>%s</p>
+ <p><strong>Ketika ini terjadi:</strong></p><p>%s</p></center>
 notifications_subject: "Pemberitahuan upload yang diblokir"
 scan_unauthorised_upload: "Tidak sah file nama manipulasi terdeteksi!"
 scan_unauthorised_upload_or_misconfig: "Tidak sah file nama manipulasi atau salah konfigurasi terdeteksi!"

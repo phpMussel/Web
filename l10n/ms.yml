@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2023.09.16).
+# This file: Malay language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Muat naik ditolak!"
 denied_reason: "Muat naik anda telah disekat atas sebab yang disenaraikan di bawah:"
 notifications_message: |
- <center>
- <p><strong>Salam.</strong></p>
- <p><strong>E-mel ini untuk memberitahu anda bahawa muat naik fail berikut telah disekat:</strong></p>
- <p>%s</p>
- <p><strong>Mengapa ini berlaku:</strong></p>
- <p>%s</p>
- <p><strong>Apabila ini berlaku:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Salam.</strong></p>
+ <p><strong>E-mel ini untuk memberitahu anda bahawa muat naik fail berikut telah disekat:</strong></p><p>%s</p>
+ <p><strong>Mengapa ini berlaku:</strong></p><p>%s</p>
+ <p><strong>Apabila ini berlaku:</strong></p><p>%s</p></center>
 notifications_subject: "Pemberitahuan muat naik yang disekat"
 scan_unauthorised_upload: "Manipulasi muat naik fail tanpa kebenaran dikesan!"
 scan_unauthorised_upload_or_misconfig: "Manipulasi muat naik fail yang tidak dibenarkan atau salah konfigurasi dikesan!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Ukrainian language data (last modified: 2023.09.16).
+# This file: Ukrainian language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Завантаження відмовлено!"
 denied_reason: "Ваше завантаження було заблоковано з наведених нижче причин."
 notifications_message: |
- <center>
- <p><strong>Привіт.</strong></p>
- <p><strong>Цим електронним листом повідомляємо, що завантаження таких файлів заблоковано:</strong></p>
- <p>%s</p>
- <p><strong>Чому це сталося:</strong></p>
- <p>%s</p>
- <p><strong>Коли це сталося:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Привіт.</strong></p>
+ <p><strong>Цим електронним листом повідомляємо, що завантаження таких файлів заблоковано:</strong></p><p>%s</p>
+ <p><strong>Чому це сталося:</strong></p><p>%s</p>
+ <p><strong>Коли це сталося:</strong></p><p>%s</p></center>
 notifications_subject: "Сповіщення про заблоковане завантаження"
 scan_unauthorised_upload: "Виявлено несанкціонована маніпуляції завантаження файлів!"
 scan_unauthorised_upload_or_misconfig: "Виявлено несанкціонована маніпуляції завантаження файлів або неправильна конфігурація!"

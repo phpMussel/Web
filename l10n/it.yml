@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2023.12.22).
+# This file: Italian language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Caricamento negato!"
 denied_reason: "Il tentativo di caricamento è stato bloccato per i motivi elencati di seguito:"
 notifications_message: |
- <center>
- <p><strong>Salve.</strong></p>
- <p><strong>Questa email ti informa che i seguenti caricamenti di file sono stati bloccati:</strong></p>
- <p>%s</p>
- <p><strong>Perché è successo:</strong></p>
- <p>%s</p>
- <p><strong>Quando è successo:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Salve.</strong></p>
+ <p><strong>Questa email ti informa che i seguenti caricamenti di file sono stati bloccati:</strong></p><p>%s</p>
+ <p><strong>Perché è successo:</strong></p><p>%s</p>
+ <p><strong>Quando è successo:</strong></p><p>%s</p></center>
 notifications_subject: "Notifica di caricamento bloccata"
 scan_unauthorised_upload: "Rilevata manipolazione non autorizzata del caricamento del file!"
 scan_unauthorised_upload_or_misconfig: "Rilevata manipolazione non autorizzata del caricamento del file o malconfigurazione!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2024.04.19).
+# This file: Galician language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Carga denegada!"
 denied_reason: "Bloqueouse a túa carga polos motivos que se indican a continuación:"
 notifications_message: |
- <center>
- <p><strong>Ola.</strong></p>
- <p><strong>Este correo electrónico é para notificarche que se bloquearon as seguintes cargas de ficheiros:</strong></p>
- <p>%s</p>
- <p><strong>Por que isto ocorreu:</strong></p>
- <p>%s</p>
- <p><strong>Cando isto ocorreu:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Ola.</strong></p>
+ <p><strong>Este correo electrónico é para notificarche que se bloquearon as seguintes cargas de ficheiros:</strong></p><p>%s</p>
+ <p><strong>Por que isto ocorreu:</strong></p><p>%s</p>
+ <p><strong>Cando isto ocorreu:</strong></p><p>%s</p></center>
 notifications_subject: "Notificación de carga bloqueada"
 scan_unauthorised_upload: "Detectouse manipulación de carga de ficheiros non autorizada!"
 scan_unauthorised_upload_or_misconfig: "Detectouse manipulación de carga de ficheiros non autorizada ou configuración incorrecta!"

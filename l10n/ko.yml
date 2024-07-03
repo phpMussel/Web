@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2023.09.16).
+# This file: Korean language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "업로드 거부!"
 denied_reason: "다음과 같은 이유로 업로드가 거부되었습니다\_:"
 notifications_message: |
- <center>
- <p><strong>안녕하세요.</strong></p>
- <p><strong>본 이메일은, 파일 업로드가 차단되었음을 알리기 위한 것입니다 :</strong></p>
- <p>%s</p>
- <p><strong>이런 일이 발생했을 왜 :</strong></p>
- <p>%s</p>
- <p><strong>이런 일이 발생했을 때 :</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>안녕하세요.</strong></p>
+ <p><strong>본 이메일은, 파일 업로드가 차단되었음을 알리기 위한 것입니다 :</strong></p><p>%s</p>
+ <p><strong>이런 일이 발생했을 왜 :</strong></p><p>%s</p>
+ <p><strong>이런 일이 발생했을 때 :</strong></p><p>%s</p></center>
 notifications_subject: "차단 된 업로드 알림"
 scan_unauthorised_upload: "불법 파일 업로드 변조가 감지되었습니다!"
 scan_unauthorised_upload_or_misconfig: "불법 파일 업로드 변조 또는 미스 콘 피규 레이션이 감지되었습니다!"

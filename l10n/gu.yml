@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2024.04.29).
+# This file: Gujarati language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "અપલોડ નકારેલ!"
 denied_reason: "નીચે સૂચિબદ્ધ કારણોસર તમારું અપલોડ અવરોધિત કરવામાં આવ્યું હતું:"
 notifications_message: |
- <center>
- <p><strong>નમસ્તે.</strong></p>
- <p><strong>આ ઇમેઇલ તમને સૂચિત કરવા માટે છે કે નીચેની ફાઇલ અપલોડને અવરોધિત કરવામાં આવી હતી:</strong></p>
- <p>%s</p>
- <p><strong>શા માટે:</strong></p>
- <p>%s</p>
- <p><strong>ક્યારે:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>નમસ્તે.</strong></p>
+ <p><strong>આ ઇમેઇલ તમને સૂચિત કરવા માટે છે કે નીચેની ફાઇલ અપલોડને અવરોધિત કરવામાં આવી હતી:</strong></p><p>%s</p>
+ <p><strong>શા માટે:</strong></p><p>%s</p>
+ <p><strong>ક્યારે:</strong></p><p>%s</p></center>
 notifications_subject: "અવરોધિત અપલોડ સૂચના"
 scan_unauthorised_upload: "અનધિકૃત ફાઇલ અપલોડ મેનીપ્યુલેશન મળી!"
 scan_unauthorised_upload_or_misconfig: "અનધિકૃત ફાઇલ અપલોડ મેનીપ્યુલેશન અથવા ખોટી રૂપરેખાંકન મળી!"

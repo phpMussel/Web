@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Serbian language data (last modified: 2024.04.19).
+# This file: Serbian language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Одбијено отпремање!"
 denied_reason: "Ваше отпремање је блокирано из разлога наведених у наставку:"
 notifications_message: |
- <center>
- <p><strong>Здраво.</strong></p>
- <p><strong>Овом е-поруком вас обавештавамо да је блокирано отпремање следећих датотека:</strong></p>
- <p>%s</p>
- <p><strong>Зашто се ово десило:</strong></p>
- <p>%s</p>
- <p><strong>Када се ово десило:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Здраво.</strong></p>
+ <p><strong>Овом е-поруком вас обавештавамо да је блокирано отпремање следећих датотека:</strong></p><p>%s</p>
+ <p><strong>Зашто се ово десило:</strong></p><p>%s</p>
+ <p><strong>Када се ово десило:</strong></p><p>%s</p></center>
 notifications_subject: "Обавештење о блокираном отпремању"
 scan_unauthorised_upload: "Откривена је неовлашћена манипулација отпремањем датотека!"
 scan_unauthorised_upload_or_misconfig: "Откривена је неовлашћена манипулација отпремањем датотека или погрешна конфигурација!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2023.09.16).
+# This file: Tamil language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "பதிவேற்றம் மறுக்கப்பட்டது!"
 denied_reason: "கீழே பட்டியலிடப்பட்ட காரணங்களுக்காக உங்கள் பதிவேற்றம் தடுக்கப்பட்டது:"
 notifications_message: |
- <center>
- <p><strong>வணக்கம்.</strong></p>
- <p><strong>பின்வரும் கோப்பு பதிவேற்றங்கள் தடுக்கப்பட்டன என்பதை உங்களுக்கு அறிவிக்க இந்த மின்னஞ்சல்:</strong></p>
- <p>%s</p>
- <p><strong>அது நடந்த காரணம்:</strong></p>
- <p>%s</p>
- <p><strong>அது நடந்த நேரம்:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>வணக்கம்.</strong></p>
+ <p><strong>பின்வரும் கோப்பு பதிவேற்றங்கள் தடுக்கப்பட்டன என்பதை உங்களுக்கு அறிவிக்க இந்த மின்னஞ்சல்:</strong></p><p>%s</p>
+ <p><strong>அது நடந்த காரணம்:</strong></p><p>%s</p>
+ <p><strong>அது நடந்த நேரம்:</strong></p><p>%s</p></center>
 notifications_subject: "தடுக்கப்பட்ட பதிவேற்றங்கள் குறித்த அறிவிப்பு"
 scan_unauthorised_upload: "அங்கீகரிக்கப்படாத கோப்பு பதிவேற்ற கையாளுதல் கண்டறியப்பட்டது!"
 scan_unauthorised_upload_or_misconfig: "அங்கீகரிக்கப்படாத கோப்பு பதிவேற்ற கையாளுதல் அல்லது தவறான உள்ளமைவு கண்டறியப்பட்டது!"

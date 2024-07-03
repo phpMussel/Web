@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2023.09.16).
+# This file: German language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Upload verweigert!"
 denied_reason: "Der Upload wurde aus den unten aufgeführten Gründen blockiert:"
 notifications_message: |
- <center>
- <p><strong>Hallo.</strong></p>
- <p><strong>Diese E-Mail informiert Sie darüber, dass die folgenden Datei-Uploads blockiert wurden:</strong></p>
- <p>%s</p>
- <p><strong>Warum es passiert ist:</strong></p>
- <p>%s</p>
- <p><strong>Wann es passiert ist:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Hallo.</strong></p>
+ <p><strong>Diese E-Mail informiert Sie darüber, dass die folgenden Datei-Uploads blockiert wurden:</strong></p><p>%s</p>
+ <p><strong>Warum es passiert ist:</strong></p><p>%s</p>
+ <p><strong>Wann es passiert ist:</strong></p><p>%s</p></center>
 notifications_subject: "Blockierte Upload"
 scan_unauthorised_upload: "Unerlaubte Upload-Manipulation erkannt!"
 scan_unauthorised_upload_or_misconfig: "Unerlaubte Upload-Manipulation oder Fehlkonfiguration erkannt!"

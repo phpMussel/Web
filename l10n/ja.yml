@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2023.09.16).
+# This file: Japanese language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "アップロード拒否！"
 denied_reason: "以下の理由でアップロードは拒否されました："
 notifications_message: |
- <center>
- <p><strong>こんにちは。</strong></p>
- <p><strong>このＥメールは、ファイル・アップロードがブロックされたことを通知するためのものです。</strong></p>
- <p>%s</p>
- <p><strong>これが起こったなぜ：</strong></p>
- <p>%s</p>
- <p><strong>これが起こったとき：</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>こんにちは。</strong></p>
+ <p><strong>このＥメールは、ファイル・アップロードがブロックされたことを通知するためのものです。</strong></p><p>%s</p>
+ <p><strong>これが起こったなぜ：</strong></p><p>%s</p>
+ <p><strong>これが起こったとき：</strong></p><p>%s</p></center>
 notifications_subject: "ブロックされたアップロードの通知"
 scan_unauthorised_upload: "不正ファイルアップロード改ざんが検出されました！"
 scan_unauthorised_upload_or_misconfig: "不正ファイルアップロード改ざんまたはミスコンフィギュレーションが検出されました！"

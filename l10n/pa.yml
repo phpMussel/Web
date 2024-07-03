@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data (last modified: 2023.09.16).
+# This file: Punjabi language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "ਅਪਲੋਡ ਕਰਨ ਤੋਂ ਇਨਕਾਰ ਕੀਤਾ!"
 denied_reason: "ਤੁਹਾਡੇ ਅੱਪਲੋਡ ਨੂੰ ਹੇਠਾਂ ਦਿੱਤੇ ਕਾਰਨਾਂ ਕਰਕੇ ਬਲੌਕ ਕੀਤਾ ਗਿਆ ਸੀ:"
 notifications_message: |
- <center>
- <p><strong>ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ।</strong></p>
- <p><strong>ਇਹ ਈਮੇਲ ਤੁਹਾਨੂੰ ਸੂਚਿਤ ਕਰਨ ਲਈ ਹੈ ਕਿ ਨਿਮਨਲਿਖਤ ਫਾਈਲ ਅਪਲੋਡ ਬਲੌਕ ਕੀਤੇ ਗਏ ਸਨ:</strong></p>
- <p>%s</p>
- <p><strong>ਕਿਉਂ ਇਹ ਹੋਇਆ:</strong></p>
- <p>%s</p>
- <p><strong>ਜਦੋਂ ਇਹ ਹੋਇਆ:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ।</strong></p>
+ <p><strong>ਇਹ ਈਮੇਲ ਤੁਹਾਨੂੰ ਸੂਚਿਤ ਕਰਨ ਲਈ ਹੈ ਕਿ ਨਿਮਨਲਿਖਤ ਫਾਈਲ ਅਪਲੋਡ ਬਲੌਕ ਕੀਤੇ ਗਏ ਸਨ:</strong></p><p>%s</p>
+ <p><strong>ਕਿਉਂ ਇਹ ਹੋਇਆ:</strong></p><p>%s</p>
+ <p><strong>ਜਦੋਂ ਇਹ ਹੋਇਆ:</strong></p><p>%s</p></center>
 notifications_subject: "ਬਲੌਕ ਕੀਤੀ ਅੱਪਲੋਡ ਸੂਚਨਾ"
 scan_unauthorised_upload: "ਅਣਅਧਿਕਾਰਤ ਫਾਈਲ ਅਪਲੋਡ ਹੇਰਾਫੇਰੀ ਦਾ ਪਤਾ ਲੱਗਾ!"
 scan_unauthorised_upload_or_misconfig: "ਅਣਅਧਿਕਾਰਤ ਫਾਈਲ ਅਪਲੋਡ ਹੇਰਾਫੇਰੀ ਜਾਂ ਗਲਤ ਕੌਂਫਿਗਰੇਸ਼ਨ ਦਾ ਪਤਾ ਲੱਗਾ!"

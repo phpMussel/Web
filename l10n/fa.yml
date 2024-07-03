@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2023.09.16).
+# This file: Farsi language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "بارگذاری رد شد!"
 denied_reason: "بارگذاری شما به دلایل ذکر شده در زیر مسدود شد:"
 notifications_message: |
- <center>
- <p><strong>سلام.</strong></p>
- <p><strong>این ایمیل به اطلاع شما می رساند که بارگذاری فایل های زیر مسدود شده است:</strong></p>
- <p>%s</p>
- <p><strong>چرا این اتفاق افتاد:</strong></p>
- <p>%s</p>
- <p><strong>وقتی این اتفاق افتاد:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>سلام.</strong></p>
+ <p><strong>این ایمیل به اطلاع شما می رساند که بارگذاری فایل های زیر مسدود شده است:</strong></p><p>%s</p>
+ <p><strong>چرا این اتفاق افتاد:</strong></p><p>%s</p>
+ <p><strong>وقتی این اتفاق افتاد:</strong></p><p>%s</p></center>
 notifications_subject: "اعلان بارگذاری مسدود شده"
 scan_unauthorised_upload: "دستکاری بارگذاری فایل غیرمجاز شناسایی شد!"
 scan_unauthorised_upload_or_misconfig: "دستکاری بارگذاری فایل غیرمجاز یا پیکربندی نادرست شناسایی شد!"

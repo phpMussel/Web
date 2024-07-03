@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2023.09.16).
+# This file: Latvian language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Augšupielāde ir noraidīta!"
 denied_reason: "Jūsu augšupielāde tika bloķēta zemāk uzskaitīto iemeslu dēļ:"
 notifications_message: |
- <center>
- <p><strong>Sveiki.</strong></p>
- <p><strong>Šis e-pasts paziņo jums, ka ir bloķēti šādu failu augšupielāde:</strong></p>
- <p>%s</p>
- <p><strong>Kāpēc tas notika:</strong></p>
- <p>%s</p>
- <p><strong>Kad tas notika:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Sveiki.</strong></p>
+ <p><strong>Šis e-pasts paziņo jums, ka ir bloķēti šādu failu augšupielāde:</strong></p><p>%s</p>
+ <p><strong>Kāpēc tas notika:</strong></p><p>%s</p>
+ <p><strong>Kad tas notika:</strong></p><p>%s</p></center>
 notifications_subject: "Bloķēts augšupielādes paziņojums"
 scan_unauthorised_upload: "Atrasta neatļautas failu augšupielādes manipulācijas!"
 scan_unauthorised_upload_or_misconfig: "Atrasta neatļautas failu augšupielādes manipulācijas vai nepareizas konfigurācijas!"

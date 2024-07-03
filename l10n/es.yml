@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data (last modified: 2023.09.16).
+# This file: Spanish language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "¡Subida denegada!"
 denied_reason: "La subida de archivo fue bloqueada por las razones que se indican a continuación:"
 notifications_message: |
- <center>
- <p><strong>Hola.</strong></p>
- <p><strong>Este correo electrónico es para notificarle que se bloquearon las siguientes subidas de archivos:</strong></p>
- <p>%s</p>
- <p><strong>Por qué esto pasó:</strong></p>
- <p>%s</p>
- <p><strong>Cuando esto pasó:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Hola.</strong></p>
+ <p><strong>Este correo electrónico es para notificarle que se bloquearon las siguientes subidas de archivos:</strong></p><p>%s</p>
+ <p><strong>Por qué esto pasó:</strong></p><p>%s</p>
+ <p><strong>Cuando esto pasó:</strong></p><p>%s</p></center>
 notifications_subject: "Notificación de subida bloqueada"
 scan_unauthorised_upload: "No autorizado archivos manipulación detectado!"
 scan_unauthorised_upload_or_misconfig: "¡No autorizado archivos manipulación o malo configuración detectado!"

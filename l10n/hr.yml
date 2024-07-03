@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Croatian language data (last modified: 2024.04.19).
+# This file: Croatian language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Prijenos odbijen!"
 denied_reason: "Vaš prijenos je blokiran iz dolje navedenih razloga:"
 notifications_message: |
- <center>
- <p><strong>Zdravo.</strong></p>
- <p><strong>Ovom e-poštom vas obavještavamo da su sljedeći prijenosi datoteka blokirani:</strong></p>
- <p>%s</p>
- <p><strong>Zašto se ovo dogodilo:</strong></p>
- <p>%s</p>
- <p><strong>Kada se ovo dogodilo:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Zdravo.</strong></p>
+ <p><strong>Ovom e-poštom vas obavještavamo da su sljedeći prijenosi datoteka blokirani:</strong></p><p>%s</p>
+ <p><strong>Zašto se ovo dogodilo:</strong></p><p>%s</p>
+ <p><strong>Kada se ovo dogodilo:</strong></p><p>%s</p></center>
 notifications_subject: "Obavijest o blokiranom prijenosu"
 scan_unauthorised_upload: "Otkrivena je manipulacija neovlaštenog učitavanja datoteke!"
 scan_unauthorised_upload_or_misconfig: "Otkrivena je manipulacija neovlaštenog učitavanja datoteke ili pogrešna konfiguracija!"

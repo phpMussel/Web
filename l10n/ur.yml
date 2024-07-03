@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Urdu language data (last modified: 2023.09.16).
+# This file: Urdu language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "اپ لوڈ کریں تردید!"
 denied_reason: "آپ کا اپ لوڈ ذیل میں درج وجوہات کی بنا پر بلاک کر دیا گیا:"
 notifications_message: |
- <center>
- <p><strong>ہیلو.</strong></p>
- <p><strong>یہ ای میل آپ کو مطلع کرنے کے لئے ہے کہ درج ذیل فائل اپلوڈز کو مسدود کردیا گیا تھا:</strong></p>
- <p>%s</p>
- <p><strong>ایسا کیوں ہوا:</strong></p>
- <p>%s</p>
- <p><strong>جب یہ ہوا:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>ہیلو.</strong></p>
+ <p><strong>یہ ای میل آپ کو مطلع کرنے کے لئے ہے کہ درج ذیل فائل اپلوڈز کو مسدود کردیا گیا تھا:</strong></p><p>%s</p>
+ <p><strong>ایسا کیوں ہوا:</strong></p><p>%s</p>
+ <p><strong>جب یہ ہوا:</strong></p><p>%s</p></center>
 notifications_subject: "مسدود اپ لوڈ کی اطلاع"
 scan_unauthorised_upload: "غیر مجاز فائل اپ ہیرا پھیری کے پتہ!"
 scan_unauthorised_upload_or_misconfig: "غیر مجاز فائل اپ ہیرا پھیری یا غلط کنفیگریشن کے پتہ!"

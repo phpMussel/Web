@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2023.09.16).
+# This file: Afrikaans language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Oplaai geweier!"
 denied_reason: "Jou oplaai is geblokkeer om die redes hieronder gelys:"
 notifications_message: |
- <center>
- <p><strong>Hallo.</strong></p>
- <p><strong>Hierdie e-pos is om jou in kennis te stel dat die volgende lêeroplaaie geblokkeer is:</strong></p>
- <p>%s</p>
- <p><strong>Hoekom dit gebeur het:</strong></p>
- <p>%s</p>
- <p><strong>Toe dit gebeur het:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Hallo.</strong></p>
+ <p><strong>Hierdie e-pos is om jou in kennis te stel dat die volgende lêeroplaaie geblokkeer is:</strong></p><p>%s</p>
+ <p><strong>Hoekom dit gebeur het:</strong></p><p>%s</p>
+ <p><strong>Toe dit gebeur het:</strong></p><p>%s</p></center>
 notifications_subject: "Geblokkeerde oplaaikennisgewing"
 scan_unauthorised_upload: "Ongemagtigde lêeroplaai-manipulasie is bespeur!"
 scan_unauthorised_upload_or_misconfig: "Ongemagtigde lêeroplaai-manipulasie of wanopstelling is bespeur!"

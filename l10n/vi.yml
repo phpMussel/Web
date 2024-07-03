@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2023.09.16).
+# This file: Vietnamese language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Sự tải lên đã bị từ chối!"
 denied_reason: "Sự tải lên của bạn đã bị từ chối bởi lý do dưới đây:"
 notifications_message: |
- <center>
- <p><strong>Xin chào.</strong></p>
- <p><strong>Email này là để thông báo cho bạn rằng các tập tin tải lên sau đây đã bị chặn:</strong></p>
- <p>%s</p>
- <p><strong>Lý do tại sao điều này xảy ra:</strong></p>
- <p>%s</p>
- <p><strong>Thời điểm điều này xảy ra:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Xin chào.</strong></p>
+ <p><strong>Email này là để thông báo cho bạn rằng các tập tin tải lên sau đây đã bị chặn:</strong></p><p>%s</p>
+ <p><strong>Lý do tại sao điều này xảy ra:</strong></p><p>%s</p>
+ <p><strong>Thời điểm điều này xảy ra:</strong></p><p>%s</p></center>
 notifications_subject: "Thông báo về việc tải lên bị chặn"
 scan_unauthorised_upload: "Sự thay đỗi của tập tin không được phép tải lên được phát hiện!"
 scan_unauthorised_upload_or_misconfig: "Sự thay đỗi của tập tin không được phép tải lên được phát hiện!"

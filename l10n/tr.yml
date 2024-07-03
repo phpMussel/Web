@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2023.09.16).
+# This file: Turkish language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Yükleme reddedildi!"
 denied_reason: "Yükleme aşağıda belirtilen nedenlerle engellendi:"
 notifications_message: |
- <center>
- <p><strong>Merhaba.</strong></p>
- <p><strong>Bu e-posta, size aşağıdaki dosya yüklemelerinin engellendiğini bildirmek içindir:</strong></p>
- <p>%s</p>
- <p><strong>Bu neden oldu:</strong></p>
- <p>%s</p>
- <p><strong>Bu ne zaman oldu:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Merhaba.</strong></p>
+ <p><strong>Bu e-posta, size aşağıdaki dosya yüklemelerinin engellendiğini bildirmek içindir:</strong></p><p>%s</p>
+ <p><strong>Bu neden oldu:</strong></p><p>%s</p>
+ <p><strong>Bu ne zaman oldu:</strong></p><p>%s</p></center>
 notifications_subject: "Engellenen yükleme bildirimi"
 scan_unauthorised_upload: "Yetkisiz dosya yükleme işi algılandı!"
 scan_unauthorised_upload_or_misconfig: "Yetkisiz dosya yükleme manipülasyonu veya yanlış yapılandırma algılandı!"

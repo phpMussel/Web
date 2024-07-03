@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2024.05.08).
+# This file: Catalan language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Càrrega denegada!"
 denied_reason: "La teva càrrega s'ha bloquejat pels motius que s'indiquen a continuació:"
 notifications_message: |
- <center>
- <p><strong>Hola.</strong></p>
- <p><strong>Aquest correu electrònic és per notificar-vos que s'han bloquejat les càrregues de fitxers següents:</strong></p>
- <p>%s</p>
- <p><strong>Per què va passar això:</strong></p>
- <p>%s</p>
- <p><strong>Quan va passar això:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Hola.</strong></p>
+ <p><strong>Aquest correu electrònic és per notificar-vos que s'han bloquejat les càrregues de fitxers següents:</strong></p><p>%s</p>
+ <p><strong>Per què va passar això:</strong></p><p>%s</p>
+ <p><strong>Quan va passar això:</strong></p><p>%s</p></center>
 notifications_subject: "Notificació de càrrega bloquejada"
 scan_unauthorised_upload: "Detectat una manipulació de càrrega de fitxers no autoritzada!"
 scan_unauthorised_upload_or_misconfig: "Detectat una manipulació de càrrega de fitxers no autoritzada o una configuració incorrecta!"

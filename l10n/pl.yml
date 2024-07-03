@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2023.09.16).
+# This file: Polish language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Przesyłanie odrzucone!"
 denied_reason: "Twoje przesyłanie zostało zablokowane z powodów wymienionych poniżej:"
 notifications_message: |
- <center>
- <p><strong>Cześć.</strong></p>
- <p><strong>Ten e-mail ma powiadomić Cię, że następujące przesyłanie plików zostało zablokowane:</strong></p>
- <p>%s</p>
- <p><strong>Dlaczego to się stało:</strong></p>
- <p>%s</p>
- <p><strong>Kiedy to się stało:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Cześć.</strong></p>
+ <p><strong>Ten e-mail ma powiadomić Cię, że następujące przesyłanie plików zostało zablokowane:</strong></p><p>%s</p>
+ <p><strong>Dlaczego to się stało:</strong></p><p>%s</p>
+ <p><strong>Kiedy to się stało:</strong></p><p>%s</p></center>
 notifications_subject: "Powiadomienie o zablokowanym przesyłaniu"
 scan_unauthorised_upload: "Wykryto nieautoryzowane manipulowanie przesyłania plików!"
 scan_unauthorised_upload_or_misconfig: "Wykryto nieautoryzowane manipulowanie przesyłania plików lub błędną konfigurację!"

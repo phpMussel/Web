@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data (last modified: 2023.09.16).
+# This file: Thai language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "อัปโหลดถูกปฏิเสธ!"
 denied_reason: "การอัปโหลดของคุณถูกบล็อกด้วยเหตุผลด้านล่าง:"
 notifications_message: |
- <center>
- <p><strong>สวัสดี.</strong></p>
- <p><strong>อีเมลนี้จะแจ้งให้คุณทราบว่าการอัปโหลดไฟล์ต่อไปนี้ถูกบล็อก:</strong></p>
- <p>%s</p>
- <p><strong>ทำไมสิ่งนี้เกิดขึ้น:</strong></p>
- <p>%s</p>
- <p><strong>เมื่อสิ่งนี้เกิดขึ้น:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>สวัสดี.</strong></p>
+ <p><strong>อีเมลนี้จะแจ้งให้คุณทราบว่าการอัปโหลดไฟล์ต่อไปนี้ถูกบล็อก:</strong></p><p>%s</p>
+ <p><strong>ทำไมสิ่งนี้เกิดขึ้น:</strong></p><p>%s</p>
+ <p><strong>เมื่อสิ่งนี้เกิดขึ้น:</strong></p><p>%s</p></center>
 notifications_subject: "การแจ้งเตือนเกี่ยวกับการอัปโหลดที่ถูกบล็อก"
 scan_unauthorised_upload: "อัปโหลดไฟล์ที่ไม่ได้รับอนุญาตถูกตรวจพบ!"
 scan_unauthorised_upload_or_misconfig: "อัปโหลดไฟล์ที่ไม่ได้รับอนุญาตหรือการกำหนดค่าที่ไม่ถูกต้องถูกตรวจพบ!"

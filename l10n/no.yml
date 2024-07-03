@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data (last modified: 2023.09.16).
+# This file: Norwegian language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Opplastingen nektet!"
 denied_reason: "Opplastingen din ble blokkert av grunnene nedenfor:"
 notifications_message: |
- <center>
- <p><strong>Hallo.</strong></p>
- <p><strong>Denne e-postmeldingen skal varsle deg om at følgende filopplastinger ble blokkert:</strong></p>
- <p>%s</p>
- <p><strong>Hvorfor dette skjedde:</strong></p>
- <p>%s</p>
- <p><strong>Når dette skjedde:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Hallo.</strong></p>
+ <p><strong>Denne e-postmeldingen skal varsle deg om at følgende filopplastinger ble blokkert:</strong></p><p>%s</p>
+ <p><strong>Hvorfor dette skjedde:</strong></p><p>%s</p>
+ <p><strong>Når dette skjedde:</strong></p><p>%s</p></center>
 notifications_subject: "Blokkert opplasting varsel"
 scan_unauthorised_upload: "Uautorisert manipulering av filopplasting oppdaget!"
 scan_unauthorised_upload_or_misconfig: "Uautorisert manipulering av filopplasting eller feilkonfigurasjon oppdaget!"

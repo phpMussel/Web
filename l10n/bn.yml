@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data (last modified: 2024.04.12).
+# This file: Bangla language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "আপলোড অস্বীকার!"
 denied_reason: "আপনার আপলোড নীচে তালিকাভুক্ত কারণগুলির জন্য অবরুদ্ধ করা হয়েছে:"
 notifications_message: |
- <center>
- <p><strong>হ্যালো।</strong></p>
- <p><strong>এই ইমেইলটি আপনাকে জানাতে নীচের ফাইল আপলোডগুলি অবরুদ্ধ করা হয়েছে:</strong></p>
- <p>%s</p>
- <p><strong>কেন এটি ঘটেছে:</strong></p>
- <p>%s</p>
- <p><strong>যখন এটি ঘটেছে:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>হ্যালো।</strong></p>
+ <p><strong>এই ইমেইলটি আপনাকে জানাতে নীচের ফাইল আপলোডগুলি অবরুদ্ধ করা হয়েছে:</strong></p><p>%s</p>
+ <p><strong>কেন এটি ঘটেছে:</strong></p><p>%s</p>
+ <p><strong>যখন এটি ঘটেছে:</strong></p><p>%s</p></center>
 notifications_subject: "ব্লক আপলোড বিজ্ঞপ্তি"
 scan_unauthorised_upload: "অননুমোদিত ফাইল আপলোড ম্যানিপুলেশন সনাক্ত হয়েছে!"
 scan_unauthorised_upload_or_misconfig: "অননুমোদিত ফাইল আপলোড ম্যানিপুলেশন বা ভুল কনফিগারেশন সনাক্ত হয়েছে!"

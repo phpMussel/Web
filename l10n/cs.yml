@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data (last modified: 2023.09.16).
+# This file: Czech language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Nahrání odepřen!"
 denied_reason: "Vaše nahrávání bylo zablokováno z důvodů uvedených níže:"
 notifications_message: |
- <center>
- <p><strong>Ahoj.</strong></p>
- <p><strong>Tímto e-mailem vás chceme upozornit, že byla zablokována následující nahrávání souborů:</strong></p>
- <p>%s</p>
- <p><strong>Proč se to stalo:</strong></p>
- <p>%s</p>
- <p><strong>Když se to stalo:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Ahoj.</strong></p>
+ <p><strong>Tímto e-mailem vás chceme upozornit, že byla zablokována následující nahrávání souborů:</strong></p><p>%s</p>
+ <p><strong>Proč se to stalo:</strong></p><p>%s</p>
+ <p><strong>Když se to stalo:</strong></p><p>%s</p></center>
 notifications_subject: "Oznámení o zablokování nahrávání"
 scan_unauthorised_upload: "Zjištěna neoprávněná manipulace s nahráváním souborů!"
 scan_unauthorised_upload_or_misconfig: "Zjištěna neoprávněná manipulace s nahráváním souborů nebo nesprávná konfigurace!"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data (last modified: 2023.09.16).
+# This file: Swedish language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Uppladdning nekad!"
 denied_reason: "Din uppladdning var blockerad av anledningarna nedan:"
 notifications_message: |
- <center>
- <p><strong>Hallå.</strong></p>
- <p><strong>Det här e-postmeddelandet ska meddela dig att följande filuppladdningar har blockerats:</strong></p>
- <p>%s</p>
- <p><strong>Varför detta hände:</strong></p>
- <p>%s</p>
- <p><strong>När detta hände:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Hallå.</strong></p>
+ <p><strong>Det här e-postmeddelandet ska meddela dig att följande filuppladdningar har blockerats:</strong></p><p>%s</p>
+ <p><strong>Varför detta hände:</strong></p><p>%s</p>
+ <p><strong>När detta hände:</strong></p><p>%s</p></center>
 notifications_subject: "Meddelande om blockerade uppladdningar"
 scan_unauthorised_upload: "Obehörig manipulering av filuppladdning upptäckt!"
 scan_unauthorised_upload_or_misconfig: "Obehörig manipulering av filuppladdning eller felkonfiguration upptäckt!"

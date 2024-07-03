@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data (last modified: 2023.09.16).
+# This file: Dutch language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Upload geweigerd!"
 denied_reason: "De upload poging werd geblokkeerd voor de hieronder vermelde redenen:"
 notifications_message: |
- <center>
- <p><strong>Hallo.</strong></p>
- <p><strong>Deze e-mail is om u te laten weten dat de volgende bestandsuploads zijn geblokkeerd:</strong></p>
- <p>%s</p>
- <p><strong>Waarom dit gebeurde:</strong></p>
- <p>%s</p>
- <p><strong>Wanneer dit gebeurde:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Hallo.</strong></p>
+ <p><strong>Deze e-mail is om u te laten weten dat de volgende bestandsuploads zijn geblokkeerd:</strong></p><p>%s</p>
+ <p><strong>Waarom dit gebeurde:</strong></p><p>%s</p>
+ <p><strong>Wanneer dit gebeurde:</strong></p><p>%s</p></center>
 notifications_subject: "Melding over geblokkeerde upload"
 scan_unauthorised_upload: "Ongeautoriseerde bestand uploaden manipulatie gedetecteerd!"
 scan_unauthorised_upload_or_misconfig: "Ongeautoriseerde bestand uploaden manipulatie of misconfiguratie gedetecteerd!"

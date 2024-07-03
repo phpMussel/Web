@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2024.04.19).
+# This file: Bosnian language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Odbijeno upload!"
 denied_reason: "Vaše upload je blokirano iz dolje navedenih razloga:"
 notifications_message: |
- <center>
- <p><strong>Zdravo.</strong></p>
- <p><strong>Ovom e-porukom vas obavještavamo da su blokirani sljedeći upload-ovi:</strong></p>
- <p>%s</p>
- <p><strong>Zašto se ovo desilo:</strong></p>
- <p>%s</p>
- <p><strong>Kada se ovo desilo:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Zdravo.</strong></p>
+ <p><strong>Ovom e-porukom vas obavještavamo da su blokirani sljedeći upload-ovi:</strong></p><p>%s</p>
+ <p><strong>Zašto se ovo desilo:</strong></p><p>%s</p>
+ <p><strong>Kada se ovo desilo:</strong></p><p>%s</p></center>
 notifications_subject: "Obavijest o blokiranom upload"
 scan_unauthorised_upload: "Otkrivena je neovlaštena manipulacija upload-m datoteka!"
 scan_unauthorised_upload_or_misconfig: "Otkrivena je neovlaštena manipulacija upload-m datoteka ili pogrešna konfiguracija!"

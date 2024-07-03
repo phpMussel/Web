@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2023.09.27).
+# This file: Romanian language data (last modified: 2024.07.01).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,15 +39,10 @@ config:
 denied: "Încărcare refuzată!"
 denied_reason: "Încărcarea dvs. a fost blocată din motivele enumerate mai jos:"
 notifications_message: |
- <center>
- <p><strong>Buna ziua.</strong></p>
- <p><strong>Acest e-mail este pentru a vă anunța că următoarele fișiere încărcate au fost blocate:</strong></p>
- <p>%s</p>
- <p><strong>Motivul pentru care s-a întâmplat acest lucru:</strong></p>
- <p>%s</p>
- <p><strong>Când s-a întâmplat asta:</strong></p>
- <p>%s</p>
- </center>
+ <center><p><strong>Buna ziua.</strong></p>
+ <p><strong>Acest e-mail este pentru a vă anunța că următoarele fișiere încărcate au fost blocate:</strong></p><p>%s</p>
+ <p><strong>Motivul pentru care s-a întâmplat acest lucru:</strong></p><p>%s</p>
+ <p><strong>Când s-a întâmplat asta:</strong></p><p>%s</p></center>
 notifications_subject: "Notificare de încărcare blocată"
 scan_unauthorised_upload: "A fost detectată manipularea neautorizată a încărcării fișierelor!"
 scan_unauthorised_upload_or_misconfig: "A fost detectată manipularea neautorizată a încărcării fișierelor sau o configurare greșită!"
