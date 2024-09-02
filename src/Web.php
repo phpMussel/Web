@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2024.03.13).
+ * This file: Upload handler (last modified: 2024.09.02).
  */
 
 namespace phpMussel\Web;
@@ -365,7 +365,6 @@ class Web
             die('[phpMussel] ' . $this->Loader->ClientL10N->getString('denied') . ' ' . $TemplateData['detected']);
         }
 
-        /** Determine whether to send a 415 UNSUPPORTED MEDIA TYPE status code. */
         if (
             $this->Loader->Configuration['web']['unsupported_media_type_header'] &&
             !empty($this->Loader->InstanceCache['blacklist_triggered'])
@@ -373,10 +372,7 @@ class Web
             header('HTTP/1.0 415 Unsupported Media Type');
             header('HTTP/1.1 415 Unsupported Media Type');
             header('Status: 415 Unsupported Media Type');
-        }
-
-        /** Determine whether to send a 403 FORBIDDEN status code. */
-        elseif ($this->Loader->Configuration['web']['forbid_on_block']) {
+        } elseif ($this->Loader->Configuration['web']['forbid_on_block']) {
             header('HTTP/1.0 403 Forbidden');
             header('HTTP/1.1 403 Forbidden');
             header('Status: 403 Forbidden');
