@@ -1,0 +1,55 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Marathi language data (last modified: 2024.09.26).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
+##/
+
+PrivacyPolicy: "गोपनीयता धोरण"
+config:
+ web: "अपलोड हँडलरसाठी कॉन्फिगरेशन."
+ web_custom_footer: "सर्व "अपलोड नाकारले" पृष्ठांच्या अगदी तळाशी HTML म्हणून घातले. तुम्हाला कायदेशीर सूचना, संपर्क लिंक, व्यवसाय माहिती, किंवा तत्सम अशा सर्व पृष्ठांवर समाविष्ट करायचे असल्यास हे उपयुक्त ठरू शकते."
+ web_custom_header: "सर्व "अपलोड नाकारले" पृष्ठांच्या अगदी सुरुवातीला HTML म्हणून घातले. तुम्हाला वेबसाइटचा लोगो, वैयक्तिक हेडर, स्क्रिप्ट्स, किंवा तत्सम अशा सर्व पृष्ठांवर समाविष्ट करायचे असल्यास हे उपयुक्त ठरू शकते."
+ web_forbid_on_block: "phpMussel ने फाइल अपलोड ब्लॉक केलेल्या संदेशासह 403 शीर्षलेख पाठवावे किंवा नेहमीच्या 200 OK सह चिकटवावे? False = नाही (200); True = होय (403) [डीफॉल्ट]."
+ web_ignore_upload_errors: "तुमच्या विशिष्ट प्रणालीवर phpMussel च्या योग्य कार्यक्षमतेसाठी आवश्यक नसल्यास हे निर्देश सहसा अक्षम केले जावे. अक्षम केल्यावर, जेव्हा <code>$_FILES</code> array() मध्ये घटक असतील, तेव्हा phpMussel त्या फायलींचे स्कॅन सुरू करण्याचा प्रयत्न करेल ज्याचे ते घटक प्रतिनिधित्व करतात, आणि ते घटक रिक्त किंवा रिक्त असल्यास, phpMussel एक त्रुटी संदेश देईल. हे phpMussel साठी योग्य वर्तन आहे. तथापि, काही CMS साठी, <code>$_FILES</code> मधील रिकामे घटक त्या CMS च्या नैसर्गिक वर्तनाचा परिणाम म्हणून उद्भवू शकतात किंवा कोणतीही नसताना त्रुटी नोंदवल्या जाऊ शकतात, आणि अशा परिस्थितीत, phpMussel चे सामान्य वर्तन त्या CMS च्या सामान्य वर्तनात हस्तक्षेप करेल. तुमच्या बाबतीत अशी परिस्थिती उद्भवल्यास, ही सूचना सक्षम असताना, phpMussel अशा रिकाम्या घटकांसाठी स्कॅन सुरू करण्याचा प्रयत्न करणार नाही, सापडल्यावर त्याकडे दुर्लक्ष करेल, आणि संबंधित त्रुटी संदेश परत करणार नाही, अशा प्रकारे पृष्ठ विनंती सुरू ठेवण्याची परवानगी देते. False = अक्षम करा; True = सक्षम करा."
+ web_magnification: "फॉन्ट मॅग्निफिकेशन. डीफॉल्ट = 1."
+ web_max_uploads: "स्कॅन रद्द करण्यापूर्वी अपलोड स्कॅन करताना phpMussel ला स्कॅन करण्याची परवानगी असलेल्या फाइल्सची कमाल संख्या आणि वापरकर्त्याला ते एकाच वेळी खूप अपलोड करत आहेत याची माहिती देतात! सैद्धांतिक हल्ल्यापासून संरक्षण प्रदान करते ज्याद्वारे आक्रमणकर्ता PHP प्रक्रिया धीमा करण्यासाठी phpMussel ओव्हरलोड करून तुमची सिस्टम किंवा CMS DDoS करण्याचा प्रयत्न करतो. शिफारस: 10. तुमच्या हार्डवेअरच्या गतीनुसार तुम्ही हा नंबर वाढवू किंवा कमी करू शकता. लक्षात घ्या की हा नंबर संग्रहणांच्या सामग्रीचा हिशोब देत नाही किंवा समाविष्ट करत नाही."
+ web_theme: ""अपलोड नाकारले" पृष्ठासाठी वापरण्यासाठी सौंदर्यशास्त्र."
+ web_unsupported_media_type_header: "काळ्या यादीत टाकलेल्या फाइल प्रकारांमुळे अपलोड अवरोधित केल्यावर phpMussel ने 415 शीर्षलेख पाठवावे का? सत्य असताना, ही सेटिंग <code>forbid_on_block</code> ची जागा घेते. False = नाही [डीफॉल्ट]; True = होय."
+ web_uploads_log: "जेथे सर्व अवरोधित अपलोड लॉग केले जावेत. फाइलनाव निर्दिष्ट करा, किंवा अक्षम करण्यासाठी रिक्त सोडा."
+denied: "अपलोड नाकारले!"
+denied_reason: "खाली सूचीबद्ध केलेल्या कारणांमुळे तुमचे अपलोड अवरोधित केले आहे:"
+notifications_message: |
+ <center><p><strong>नमस्कार.</strong></p>
+ <p><strong>हा ईमेल तुम्हाला सूचित करण्यासाठी आहे की खालील फाइल अपलोड अवरोधित केले आहेत:</strong></p><p>%s</p>
+ <p><strong>हे का घडले:</strong></p><p>%s</p>
+ <p><strong>जेव्हा हे घडले:</strong></p><p>%s</p></center>
+notifications_subject: "अवरोधित अपलोड सूचना"
+scan_unauthorised_upload: "अनधिकृत फाइल अपलोड फेरफार आढळला!"
+scan_unauthorised_upload_or_misconfig: "अनधिकृत फाइल अपलोड मॅनिपुलेशन किंवा चुकीचे कॉन्फिगरेशन आढळले!"
+upload_error_1: "फाइलचा आकार upload_max_filesize निर्देशापेक्षा जास्त आहे."
+upload_error_2: "फाइलचा आकार फॉर्म-निर्दिष्ट फाइल आकार मर्यादा ओलांडतो."
+upload_error_34: "अपलोड अयशस्वी! कृपया मदतीसाठी होस्टमास्टरशी संपर्क साधा!"
+upload_error_6: "अपलोड निर्देशिका गहाळ आहे! कृपया मदतीसाठी होस्टमास्टरशी संपर्क साधा!"
+upload_error_7: "डिस्क-राइट त्रुटी! कृपया मदतीसाठी होस्टमास्टरशी संपर्क साधा!"
+upload_error_8: "PHP चुकीचे कॉन्फिगरेशन आढळले! कृपया मदतीसाठी होस्टमास्टरशी संपर्क साधा!"
+upload_limit_exceeded: "अपलोड मर्यादा ओलांडली"
