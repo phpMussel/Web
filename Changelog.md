@@ -20,12 +20,11 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 ### v3.1.2
 
-- [2021.04.27]: Added missing fullmoon template file.
-
 #### Bugs fixed.
 - [2021.05.01]: Log truncation not being calculated properly; Fixed.
 
 #### Other changes.
+- [2021.04.27]: Added missing fullmoon template file.
 - [2021.05.28]: Performed some minor refactoring.
 
 ### v3.2.0
@@ -93,3 +92,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 - [2024.07.02]: Merged zh and zh-TW L10N, and dropped region designations (e.g., CN, TW) in favour of script designations (e.g., Hans, Hant).
 - [2024.09.02]: Code-style patch.
 - [2024.09.26]: Added L10N for Marathi.
+
+### v3.5.3
+
+- [2024.11.06]: Added PHP 8.4 to workflows.
