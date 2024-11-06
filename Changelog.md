@@ -47,7 +47,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.3.0
 
 #### Bugs fixed.
-- [2022.10.13; Bug-fix; ben-mckenzie]: The scan function was incorrectly detecting file spoofing when associative or nested structures were present in `$_FILES` (e.g. `foo['bar'][]`); Fixed.
+- [2022.10.13; ben-mckenzie]: The scan function was incorrectly detecting file spoofing when associative or nested structures were present in `$_FILES` (e.g. `foo['bar'][]`); Fixed.
 
 #### Other changes.
 - [2022.09.26]: Custom headers/footers for front-end pages and the upload denied page can now be set directly via configuration.
@@ -96,3 +96,4 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 ### v3.5.3
 
 - [2024.11.06]: Added PHP 8.4 to workflows.
+- [2024.11.06]: Added L10N for Malayalam.

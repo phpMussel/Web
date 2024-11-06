@@ -1,0 +1,55 @@
+##\
+# This file is a part of the phpMussel\Web package.
+# Homepage: https://phpmussel.github.io/
+#
+# PHPMUSSEL COPYRIGHT 2013 AND BEYOND BY THE PHPMUSSEL TEAM.
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Malayalam language data (last modified: 2024.11.06).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
+##/
+
+PrivacyPolicy: "സ്വകാര്യതാ നയം"
+config:
+ web: "അപ്‌ലോഡ് ഹാൻഡ്‌ലറിനായുള്ള കോൺഫിഗറേഷൻ."
+ web_custom_footer: "എല്ലാ "അപ്‌ലോഡ് നിരസിച്ചു" പേജുകളുടെയും ഏറ്റവും താഴെയായി HTML ആയി ചേർത്തു. നിയമപരമായ അറിയിപ്പ്, കോൺടാക്റ്റ് ലിങ്ക്, ബിസിനസ്സ് വിവരങ്ങൾ, അല്ലെങ്കിൽ സമാനമായ എല്ലാ പേജുകളിലും ഉൾപ്പെടുത്താൻ നിങ്ങൾ ആഗ്രഹിക്കുന്ന സാഹചര്യത്തിൽ ഇത് ഉപയോഗപ്രദമാകും."
+ web_custom_header: "എല്ലാ "അപ്‌ലോഡ് നിരസിച്ചു" പേജുകളുടെയും തുടക്കത്തിൽ തന്നെ HTML ആയി ചേർത്തു. ഒരു വെബ്‌സൈറ്റ് ലോഗോ, വ്യക്തിഗതമാക്കിയ തലക്കെട്ട്, സ്‌ക്രിപ്റ്റുകൾ, അല്ലെങ്കിൽ സമാനമായ എല്ലാ പേജുകളിലും ഉൾപ്പെടുത്താൻ നിങ്ങൾ ആഗ്രഹിക്കുന്ന സാഹചര്യത്തിൽ ഇത് ഉപയോഗപ്രദമാകും."
+ web_forbid_on_block: "phpMussel ഫയൽ അപ്‌ലോഡ് ബ്ലോക്ക് ചെയ്‌ത സന്ദേശത്തോടൊപ്പം 403 തലക്കെട്ടുകൾ അയയ്‌ക്കണോ അതോ സാധാരണ 200 ശരിയാണോ? False = ഇല്ല (200); True = അതെ (403) [സ്ഥിരസ്ഥിതി]."
+ web_ignore_upload_errors: "നിങ്ങളുടെ നിർദ്ദിഷ്ട സിസ്റ്റത്തിൽ phpMussel-ൻ്റെ ശരിയായ പ്രവർത്തനത്തിന് ആവശ്യമില്ലെങ്കിൽ ഈ നിർദ്ദേശം സാധാരണയായി പ്രവർത്തനരഹിതമാക്കേണ്ടതാണ്. സാധാരണഗതിയിൽ, പ്രവർത്തനരഹിതമാക്കുമ്പോൾ, <code>$_FILES</code> array()-ൽ ഉദ്ധരിച്ചിട്ടുള്ള ശൂന്യമായ ഫയലുകൾക്ക് ഒരു പിശക് സന്ദേശം നൽകും. ഇത് phpMussel-ൻ്റെ ശരിയായ പെരുമാറ്റമാണ്. എന്നിരുന്നാലും, ചില CMS-കളിൽ, അത്തരം ശൂന്യമായ ഘടകങ്ങൾ ആ CMS-ൻ്റെ സ്വാഭാവിക സ്വഭാവത്തിൻ്റെ ഫലമായി സംഭവിക്കാം, അല്ലെങ്കിൽ പിശകുകൾ ഒന്നും ഇല്ലാതിരിക്കുമ്പോൾ റിപ്പോർട്ട് ചെയ്യപ്പെട്ടേക്കാം, ഈ സാഹചര്യത്തിൽ, phpMussel-ൻ്റെ സാധാരണ സ്വഭാവം ആ CMS-ൻ്റെ സാധാരണ സ്വഭാവത്തെ തടസ്സപ്പെടുത്തും. അത്തരമൊരു സാഹചര്യം നിങ്ങൾക്ക് സംഭവിക്കുകയാണെങ്കിൽ, ഈ ഓപ്‌ഷൻ പ്രവർത്തനക്ഷമമാക്കുന്നത് അത്തരം ശൂന്യമായ ഘടകങ്ങളെ അവഗണിക്കാനും ബന്ധപ്പെട്ട പിശക് സന്ദേശങ്ങളൊന്നും നൽകാതിരിക്കാനും phpMussel-നോട് നിർദ്ദേശിക്കും, അങ്ങനെ പേജ് അഭ്യർത്ഥന തുടരാൻ അനുവദിക്കുന്നു. False = ഓഫും; True = ഓണും."
+ web_magnification: "ഫോണ്ട് മാഗ്നിഫിക്കേഷൻ. സ്ഥിരസ്ഥിതി = 1."
+ web_max_uploads: "സ്കാൻ നിർത്തുന്നതിന് മുമ്പ് അപ്‌ലോഡുകൾ സ്കാൻ ചെയ്യുമ്പോൾ phpMussel-ന് സ്കാൻ ചെയ്യാൻ അനുവദിക്കുന്ന പരമാവധി എണ്ണം ഫയലുകൾ, അവർ ഒരേസമയം വളരെയധികം അപ്‌ലോഡ് ചെയ്യുന്നുണ്ടെന്ന് ഉപയോക്താവിനെ അറിയിക്കുക! PHP പ്രക്രിയയെ മന്ദഗതിയിലാക്കാൻ phpMussel ഓവർലോഡ് ചെയ്തുകൊണ്ട് ഒരു ആക്രമണകാരി നിങ്ങളുടെ സിസ്റ്റത്തെയോ CMS-നെയോ DDoS ചെയ്യാൻ ശ്രമിക്കുന്ന ഒരു സൈദ്ധാന്തിക ആക്രമണത്തിനെതിരെ സംരക്ഷണം നൽകുന്നു. ശുപാർശ ചെയ്യുന്നത്: 10. നിങ്ങളുടെ ഹാർഡ്‌വെയറിൻ്റെ വേഗതയെ ആശ്രയിച്ച് ഈ നമ്പർ കൂട്ടാനോ കുറയ്ക്കാനോ നിങ്ങൾ ആഗ്രഹിച്ചേക്കാം. ഈ നമ്പർ ആർക്കൈവുകളുടെ ഉള്ളടക്കം കണക്കിലെടുക്കുകയോ ഉൾപ്പെടുത്തുകയോ ചെയ്യുന്നില്ല എന്നത് ശ്രദ്ധിക്കുക."
+ web_theme: ""അപ്‌ലോഡ് നിരസിച്ചു" പേജിനായി ഉപയോഗിക്കേണ്ട സൗന്ദര്യശാസ്ത്രം."
+ web_unsupported_media_type_header: "ബ്ലാക്ക്‌ലിസ്റ്റ് ചെയ്‌ത ഫയൽ തരങ്ങൾ കാരണം അപ്‌ലോഡുകൾ ബ്ലോക്ക് ചെയ്യുമ്പോൾ phpMussel 415 തലക്കെട്ടുകൾ അയയ്‌ക്കണോ? അങ്ങനെ ചെയ്യുമ്പോൾ, ഈ ക്രമീകരണം <code>forbid_on_block</code> എന്നതിനെ മാറ്റിസ്ഥാപിക്കുന്നു. False = ഇല്ല [സ്ഥിരസ്ഥിതി]; True = അതെ."
+ web_uploads_log: "ബ്ലോക്ക് ചെയ്‌ത എല്ലാ അപ്‌ലോഡുകളും ലോഗ് ചെയ്യേണ്ട സ്ഥലം. ഒരു ഫയലിൻ്റെ പേര് വ്യക്തമാക്കുക, അല്ലെങ്കിൽ പ്രവർത്തനരഹിതമാക്കാൻ ശൂന്യമായി വിടുക."
+denied: "അപ്‌ലോഡ് നിരസിച്ചു!"
+denied_reason: "ചുവടെ ലിസ്റ്റുചെയ്തിരിക്കുന്ന കാരണങ്ങളാൽ നിങ്ങളുടെ അപ്‌ലോഡ് തടഞ്ഞു:"
+notifications_message: |
+ <center><p><strong>ഹലോ.</strong></p>
+ <p><strong>ഇനിപ്പറയുന്ന ഫയൽ അപ്‌ലോഡുകൾ തടഞ്ഞുവെന്ന് നിങ്ങളെ അറിയിക്കുന്നതിനാണ് ഈ ഇമെയിൽ:</strong></p><p>%s</p>
+ <p><strong>എന്തുകൊണ്ടാണ് ഇത് സംഭവിച്ചത്:</strong></p><p>%s</p>
+ <p><strong>ഇത് സംഭവിച്ചപ്പോൾ:</strong></p><p>%s</p></center>
+notifications_subject: "അപ്‌ലോഡ് അറിയിപ്പ് തടഞ്ഞു"
+scan_unauthorised_upload: "അനധികൃത ഫയൽ അപ്‌ലോഡ് കൃത്രിമം കണ്ടെത്തി!"
+scan_unauthorised_upload_or_misconfig: "അനധികൃത ഫയൽ അപ്‌ലോഡ് കൃത്രിമം അല്ലെങ്കിൽ തെറ്റായ കോൺഫിഗറേഷൻ കണ്ടെത്തി!"
+upload_error_1: "ഫയലിൻ്റെ വലുപ്പം upload_max_filesize നിർദ്ദേശം കവിയുന്നു."
+upload_error_2: "ഫോം-നിർദ്ദിഷ്‌ട ഫയലുകളുടെ വലുപ്പ പരിധി കവിയുന്നു."
+upload_error_34: "അപ്‌ലോഡ് പരാജയം! സഹായത്തിന് ഹോസ്റ്റ് മാസ്റ്ററെ ബന്ധപ്പെടുക!"
+upload_error_6: "അപ്‌ലോഡ് ഡയറക്‌ടറി കാണുന്നില്ല! സഹായത്തിന് ഹോസ്റ്റ് മാസ്റ്ററെ ബന്ധപ്പെടുക!"
+upload_error_7: "ഡിസ്ക്-റൈറ്റ് പിശക്! സഹായത്തിന് ഹോസ്റ്റ് മാസ്റ്ററെ ബന്ധപ്പെടുക!"
+upload_error_8: "PHP തെറ്റായ കോൺഫിഗറേഷൻ കണ്ടെത്തി! സഹായത്തിന് ഹോസ്റ്റ് മാസ്റ്ററെ ബന്ധപ്പെടുക!"
+upload_limit_exceeded: "അപ്‌ലോഡ് പരിധി കവിഞ്ഞു"
