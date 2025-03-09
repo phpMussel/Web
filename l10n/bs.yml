@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2024.07.01).
+# This file: Bosnian language data (last modified: 2025.02.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -28,7 +28,7 @@ PrivacyPolicy: "Politika privatnosti"
 config:
  web: "Konfiguracija za rukovaoca otpremanja."
  web_custom_footer: "Umetnuto kao HTML na samom dnu svih stranica "odbijeno upload". Ovo bi moglo biti korisno u slučaju da na svim takvim stranicama želite uključiti pravnu obavijest, vezu za kontakt, poslovne informacije, ili slično."
- web_custom_header: "Umetnuto kao HTML na samom početku svih stranica "odbijeno upload". Ovo bi moglo biti korisno u slučaju da na svim takvim stranicama želite uključiti logotip web stranice, personalizirano zaglavlje, skripte, ili slično."
+ web_custom_header: "Umetnuto kao HTML na samom početku svih stranica "odbijeno upload". Ovo bi moglo biti korisno u slučaju da na svim takvim stranicama želite uključiti logo web stranice, personalizirano zaglavlje, skripte, ili slično."
  web_forbid_on_block: "Da li phpMussel treba da pošalje 403 zaglavlja sa porukom o blokiranom učitavanju datoteke ili da se drži uobičajenih 200 OK? False/Lažno = Ne (200); True/Istinito = Da (403) [Zadano]."
  web_ignore_upload_errors: "Ova direktiva bi općenito trebala biti onemogućena osim ako je potrebna za ispravnu funkcionalnost phpMussel-a na vašem sistemu. Obično, kada je onemogućeno, kada phpMussel detektuje prisustvo elemenata u <code>$_FILES</code> array(), pokušat će pokrenuti skeniranje datoteka koje ti elementi predstavljaju, i, ako su ti elementi prazni, phpMussel će vratiti poruku o grešci. Ovo je ispravno ponašanje za phpMussel. Međutim, za neke CMS, prazni elementi u <code>$_FILES</code> mogu se pojaviti kao rezultat prirodnog ponašanja tih CMS-a, ili greške mogu biti prijavljene kada ih nema, u kom slučaju će normalno ponašanje phpMussel-a ometati normalno ponašanje tih CMS-a. Ako vam se dogodi takva situacija, omogućavanje ove opcije će uputiti phpMussel da ne pokušava da pokrene skeniranje za takve prazne elemente, ignoriše ih kada ih pronađe, i da ne vraća nikakve povezane poruke o grešci, čime će se omogućiti nastavak zahteva stranice. False/Lažno = Onemogućeno; True/Istinito = Omogućeno."
  web_magnification: "Uvećanje fonta. Zadano = 1."
