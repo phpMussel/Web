@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2024.07.01).
+# This file: Hindi language data (last modified: 2025.03.29).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -34,13 +34,13 @@ config:
  web_magnification: "फ़ॉन्ट बढ़ाई। डिफ़ॉल्ट = 1।"
  web_max_uploads: "अपलोड करने पर स्कैन करने के लिए फाइलों की अधिकतम अनुमति संख्या, स्कैन को रद्द करने और उपयोगकर्ता को सूचित करने से पहले वे एक बार में बहुत अधिक अपलोड कर रहे हैं! एक सैद्धांतिक हमले के विरुद्ध सुरक्षा प्रदान करता है जिससे एक हमलावर phpMussel को ओवरलोड करने के द्वारा पीडीपी PHP को धीमा करने के लिए पीसने से रोकने के लिए आपका सिस्टम या CMS का प्रयास करता है। अनुशंसित: 10। आप अपने हार्डवेयर की गति के आधार पर इस नंबर को बढ़ा या कम कर सकते हैं। ध्यान दें कि इस संख्या में अभिलेखागार की सामग्री शामिल नहीं है।"
  web_theme: ""अपलोड अस्वीकृत" पृष्ठ के लिए उपयोग करने का सौंदर्यशास्त्र।"
- web_unsupported_media_type_header: "जब ब्लैक लिस्टेड फ़ाइल प्रकारों के कारण अपलोड अवरुद्ध हो जाते हैं तो क्या phpMussel को 415 हेडर भेजना चाहिए? True होने पर, यह सेटिंग <code>forbid_on_block</code> का स्थान लेती है। False(झूठी) = नहीं [डिफ़ॉल्ट]; True(सच्चे) = हाँ।"
+ web_unsupported_media_type_header: "जब ब्लैक लिस्टेड फाइल प्रकारों के कारण अपलोड अवरुद्ध हो जाते हैं तो क्या phpMussel को 415 हेडर भेजना चाहिए? True होने पर, यह सेटिंग <code>forbid_on_block</code> का स्थान लेती है। False(झूठी) = नहीं [डिफ़ॉल्ट]; True(सच्चे) = हाँ।"
  web_uploads_log: "जहाँ सभी अवरुद्ध अपलोड को लॉग इन किया जाना चाहिए। फाइल नाम निर्दिष्ट करें, या निष्क्रिय करने के लिए खाली छोड़ें।"
 denied: "अपलोड अस्वीकृत!"
 denied_reason: "आपके अपलोड को नीचे सूचीबद्ध कारणों के कारण अवरुद्ध किया गया था:"
 notifications_message: |
  <center><p><strong>नमस्ते।</strong></p>
- <p><strong>यह ईमेल आपको सूचित करने के लिए है कि निम्नलिखित फ़ाइल अपलोड अवरुद्ध थे:</strong></p><p>%s</p>
+ <p><strong>यह ईमेल आपको सूचित करने के लिए है कि निम्नलिखित फाइल अपलोड अवरुद्ध थे:</strong></p><p>%s</p>
  <p><strong>ऐसा क्यों हुआ:</strong></p><p>%s</p>
  <p><strong>ऐसा कब हुआ:</strong></p><p>%s</p></center>
 notifications_subject: "अवरुद्ध अपलोड की सूचना"

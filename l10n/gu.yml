@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data (last modified: 2024.07.01).
+# This file: Gujarati language data (last modified: 2025.03.21).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -46,8 +46,8 @@ notifications_message: |
 notifications_subject: "અવરોધિત અપલોડ સૂચના"
 scan_unauthorised_upload: "અનધિકૃત ફાઇલ અપલોડ મેનીપ્યુલેશન મળી!"
 scan_unauthorised_upload_or_misconfig: "અનધિકૃત ફાઇલ અપલોડ મેનીપ્યુલેશન અથવા ખોટી રૂપરેખાંકન મળી!"
-upload_error_1: "ફાઇલસાઇઝ upload_max_filesize મર્યાદાને ઓળંગે છે."
-upload_error_2: "ફાઇલસાઇઝ ફોર્મ-નિર્દિષ્ટ ફાઇલસાઇઝ મર્યાદાને ઓળંગે છે."
+upload_error_1: "ફાઇલ કદ upload_max_filesize મર્યાદાને ઓળંગે છે."
+upload_error_2: "ફાઇલ કદ ફોર્મ-નિર્દિષ્ટ ફાઇલ કદ મર્યાદાને ઓળંગે છે."
 upload_error_34: "અપલોડ નિષ્ફળતા! કૃપા કરીને સહાય માટે હોસ્ટમાસ્ટરનો સંપર્ક કરો!"
 upload_error_6: "અપલોડ ડિરેક્ટરી ખૂટે છે! કૃપા કરીને સહાય માટે હોસ્ટમાસ્ટરનો સંપર્ક કરો!"
 upload_error_7: "ડિસ્ક લખવામાં ભૂલ! કૃપા કરીને સહાય માટે હોસ્ટમાસ્ટરનો સંપર્ક કરો!"
