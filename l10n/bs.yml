@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2025.02.08).
+# This file: Bosnian language data (last modified: 2025.06.10).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -34,7 +34,7 @@ config:
  web_magnification: "Uvećanje fonta. Zadano = 1."
  web_max_uploads: "Maksimalan broj datoteka koje phpMussel smije skenirati prilikom skeniranja upload-a prije nego što prekine skeniranje i obavijesti korisnika da otprema previše odjednom! Pruža zaštitu od teoretskog napada u kojem napadač pokušava DDoS vaš sistem ili CMS putem preopterećenjem phpMussel-a da uspori PHP proces do potpunog zaustavljanja. Preporučeno: 10. Možda ćete željeti povećati ili smanjiti ovaj broj ovisno o brzini vašeg hardvera. Imajte na umu da ovaj broj ne obuhvata niti uključuje sadržaj arhive."
  web_theme: "Estetika za upotrebu stranice "odbijeno upload"."
- web_unsupported_media_type_header: "Da li phpMussel treba da pošalje 415 zaglavlja kada su otpremanja blokirana zbog tipova datoteka na crnoj listi? Kada je istinito, ova postavka zamjenjuje <code>forbid_on_block</code>. False/Lažno = Ne [Zadano]; True/Istinito = Da."
+ web_unsupported_media_type_header: "Da li phpMussel treba da pošalje 415 zaglavlja kada su otpremanja blokirana zbog vrsta datoteka na crnoj listi? Kada je istinito, ova postavka zamjenjuje <code>forbid_on_block</code>. False/Lažno = Ne [Zadano]; True/Istinito = Da."
  web_uploads_log: "Gdje bi svi blokirani upload-ovi trebali biti prijavljeni. Navedite naziv datoteke ili ostavite prazno da biste onemogućili."
 denied: "Odbijeno upload!"
 denied_reason: "Vaše upload je blokirano iz dolje navedenih razloga:"
@@ -52,4 +52,4 @@ upload_error_34: "Upload nije uspjelo! Molimo kontaktirajte hostmastera za pomo�
 upload_error_6: "Nedostaje direktorij za upload! Molimo kontaktirajte hostmastera za pomoć!"
 upload_error_7: "Greška pri pisanju na disk! Molimo kontaktirajte hostmastera za pomoć!"
 upload_error_8: "Otkrivena je pogrešna konfiguracija PHP-a! Molimo kontaktirajte hostmastera za pomoć!"
-upload_limit_exceeded: "Prekoračeno je ograničenje za upload"
+upload_limit_exceeded: "Ograničenje prijenosa premašeno"
