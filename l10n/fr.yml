@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2025.04.27).
+# This file: French language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -43,9 +43,8 @@ config:
  web_max_uploads:
   fr-FR: "Maximum admissible nombre de fichiers pour analyse lorsque l'analyse de fichier téléchargements avant d'abandonner l'analyse et informer l'utilisateur qu'ils sont téléchargement trop à la fois\_! Fournit protection contre une théorique attaque par lequel un attaquant tente à DDoS votre système ou CMS par surchargeant phpMussel à ralentir le processus de PHP à une halte. Recommandé\_: 10. Vous pouvez désirer d'augmenter ou diminuer ce nombre dépendamment de la vitesse de votre hardware. Notez que ce nombre ne tient pas compte pour ou inclure le contenus des archives."
   fr-CA: "Nombre maximal de fichiers admissible à l'analyse lorsque l'analyse de fichiers téléversements avant d'abandonner l'analyse et d'informer l'utilisateur qu'ils sont trop téléversés en même temps\_! Fournit une protection contre une théorie attaque par laquelle un attaquant tente à DDoS votre système ou CMS par surchargeant phpMussel de ralentir le processus de PHP à une halte. Recommandé\_: 10. Vous pourriez vouloir augmenter ou diminuer ce nombre en fonction de la vitesse de votre hardware. Notez que ce nombre ne tient pas compte pour ou inclure le contenu des archives."
- web_theme:
-  fr-FR: "L'esthétique à utiliser pour la page «\_téléchargement refusé\_»."
-  fr-CA: "L'esthétique à utiliser pour la page «\_téléversement refusé\_»."
+ web_theme: "Le thème à utiliser pour les événements de blocage."
+ web_theme_mode: "Le mode pour le thème à utiliser pour les événements de blocage."
  web_unsupported_media_type_header:
   fr-FR: "Devrait phpMussel envoyer les en-têtes 415 lorsque les téléchargements sont bloqués en raison du types de fichiers sur la liste noire\_? Lorsqu'il est true, ce paramètre remplace <code>forbid_on_block</code>. False = Non [Défaut]\_; True = Oui."
   fr-CA: "Devrait phpMussel envoyer les en-têtes 415 lorsque les téléversements sont bloqués en raison du types de fichiers sur la liste noire\_? Lorsqu'il est true, ce paramètre remplace <code>forbid_on_block</code>. False = Non [Défaut]\_; True = Oui."

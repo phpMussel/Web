@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2024.09.02).
+ * This file: Upload handler (last modified: 2025.08.08).
  */
 
 namespace phpMussel\Web;
@@ -303,7 +303,8 @@ class Web
             'xmlLang' => $this->Loader->L10NAccepted,
             'Text Direction' => $this->Loader->L10N->Directionality,
             'FE_Align' => $this->Loader->L10N->Directionality === 'rtl' ? 'right' : 'left',
-            'FE_Align_Reverse' => $this->Loader->L10N->Directionality === 'rtl' ? 'left' : 'right'
+            'FE_Align_Reverse' => $this->Loader->L10N->Directionality === 'rtl' ? 'left' : 'right',
+            'theme_mode_effects' => $this->Loader->ConfigurationDefaults['web']['theme_mode']['effects'][$this->Loader->Configuration['web']['theme_mode']] ?? ''
         ];
 
         /** Pull relevant client-specified L10N data. */

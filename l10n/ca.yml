@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data (last modified: 2024.07.01).
+# This file: Catalan language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,8 @@ config:
  web_ignore_upload_errors: "Aquesta directiva s'hauria de desactivar generalment tret que sigui necessari per a la correcta funcionalitat de phpMussel al vostre sistema específic. Normalment, quan està desactivat, quan phpMussel detecta la presència d'elements a la matriu <code>$_FILES</code>, intentarà iniciar una exploració dels fitxers que representen aquests elements, i, si aquests elements estan en blanc o buits, phpMussel retornarà un missatge d'error. Aquest és un comportament adequat per a phpMussel. Tanmateix, per a alguns CMS, es poden produir elements buits en <code>$_FILES</code> com a resultat del comportament natural d'aquests CMS, o es poden notificar errors quan no n'hi ha, en aquest cas, el comportament normal de phpMussel interferirà amb el comportament normal d'aquests CMS. Si es produeix aquesta situació, activar aquesta opció indicarà a phpMussel que no intenti iniciar exploracions per a aquests elements buits, que els ignori quan es trobi, i que no retorni cap missatge d'error relacionat, permetent així la continuació de la sol·licitud de la pàgina. False/Fals = Desactivat; True/Cert = Activat."
  web_magnification: "Ampliació de la font. Predeterminat = 1."
  web_max_uploads: "Nombre màxim de fitxers que phpMussel pot escanejar quan escaneja les càrregues abans d'avortar l'escaneig i informar a l'usuari que n'està carregant massa alhora! Proporciona protecció contra un atac teòric mitjançant el qual un atacant intenta DDoS al vostre sistema o CMS per mitjà de sobrecarregant phpMussel per frenar el procés PHP fins a una parada. Recomanat: 10. És possible que vulgueu augmentar o reduir aquest nombre en funció de la velocitat del vostre maquinari. Tingueu en compte que aquest número no té en compte ni inclou el contingut dels arxius."
- web_theme: "L'estètica a utilitzar per a la pàgina "càrrega denegada"."
+ web_theme: "El tema que s'utilitzarà per a esdeveniments de bloqueig."
+ web_theme_mode: "El mode que el tema utilitzarà per a esdeveniments de bloqueig."
  web_unsupported_media_type_header: "phpMussel hauria d'enviar 415 capçaleres quan les càrregues estan bloquejades a causa dels tipus de fitxers a la llista negra? Quan és cert, aquesta configuració substitueix <code>forbid_on_block</code>. False/Fals = No [Predeterminat]; True/Cert = Sí."
  web_uploads_log: "On s'han de registrar totes les càrregues bloquejades. Especifiqueu un nom de fitxer, o deixeu-lo en blanc per desactivar-lo."
 denied: "Càrrega denegada!"

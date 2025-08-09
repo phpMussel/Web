@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data (last modified: 2024.07.01).
+# This file: Latvian language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,8 @@ config:
  web_ignore_upload_errors: "Parasti jums tas jāiespējo tikai tad, ja tas ir nepieciešams pareizai phpMussel funkcionalitātei jūsu konkrētajā sistēmā. Parasti, kad tas ir atspējots, kad phpMussel atklāts elementi, kas atrodas <code>$_FILES</code> array(), tas mēģinās sākt skenēt failus, kurus šie elementi attēlo, un, ja šie elementi ir tukši, phpMussel atgriezīs kļūdas ziņojumu. Tā ir pareiza phpMussel rīcība. Tomēr dažās CMS, šo CMS dabiskā izturēšanās var izraisīt tukšus elementus (iekšpusē <code>$_FILES</code>), vai kļūdas var tikt paziņotas kļūdaini, tādā gadījumā phpMussel normāla izturēšanās var traucēs šo CMS normālu izturēšanos. Ja šāda situācija rodas jums, iespējot šo opciju, phpMussel tiks uzdots neskenēt ar tukšiem elementiem, ignorēt tos, kad tie ir atrasti, un neatgriezt visus saistītos kļūdu ziņojumus, tādējādi ļaujot turpināt lapas pieprasījumu. False (Nepatiess) = Atspējots; True (Patiess) = Iespējots."
  web_magnification: "Fonta palielinājums. Noklusējuma = 1."
  web_max_uploads: "Maksimālais failu skaits, augšupielādes skenēšanas laikā, ko phpMussel ir atļauts skenēt, pirms skenēšanas pārtraukšanas un lietotāja informēšanas, ka viņš vienlaikus augšupielādē pārāk daudz! Nodrošina aizsardzību pret teorētisku uzbrukumu, kurā uzbrucējs mēģina DDoS jūsu sistēmā vai CMS, pārslogojot phpMussel, lai palēninātu PHP procesu līdz apturēšanai. Ieteicams: 10. Iespējams, vēlēsities palielināt vai samazināt šo numuru atkarībā no aparatūras ātruma. Ņemiet vērā, ka šis numurs neaptver un neietver arhīvu saturu."
- web_theme: "Estētika, ko izmantot lapā “augšupielāde ir noraidīta”."
+ web_theme: "Tēma, kas jāizmanto bloķēšanas notikumiem."
+ web_theme_mode: "Tēmas režīms, kas jāizmanto bloķēšanas notikumiem."
  web_unsupported_media_type_header: "Vai phpMussel vajadzētu nosūtīt 415 galvenes, kad augšupielāde ir bloķētas melnajā sarakstā iekļauto failu tipu dēļ? Ja tā ir true (patiesa), šis iestatījums aizstāj <code>forbid_on_block</code>. False (Nepatiess) = Nē [Noklusējuma]; True (Patiess) = Jā."
  web_uploads_log: "Kur vajadzētu reģistrēt visas bloķētās augšupielādes. Norādiet faila nosaukumu, vai atstājiet tukšu, lai to atspējotu."
 denied: "Augšupielāde ir noraidīta!"

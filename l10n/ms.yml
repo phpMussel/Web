@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2024.07.01).
+# This file: Malay language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,8 @@ config:
  web_ignore_upload_errors: "Arahan ini secara amnya harus DINYAHAKTIFKAN melainkan diperlukan untuk kefungsian phpMussel yang betul pada sistem spesifik anda. Biasanya, apabila DINYAHAKTIFKAN, apabila phpMussel mengesan kehadiran elemen dalam <code>$_FILES</code> array(), ia akan cuba memulakan imbasan fail yang diwakili oleh elemen tersebut, dan, jika elemen tersebut ialah kosong, phpMussel akan mengembalikan mesej ralat. Ini adalah tingkah laku yang betul untuk phpMussel. Walau bagaimanapun, untuk sesetengah CMS, elemen yang kosong dalam <code>$_FILES</code> boleh berlaku akibat daripada kelakuan semula jadi CMS tersebut, atau ralat mungkin dilaporkan apabila tiada, dan dalam kes ini, tingkah laku biasa untuk phpMussel akan mengganggu tingkah laku biasa CMS tersebut. Jika situasi sedemikian berlaku untuk anda, mengaktifkan pilihan ini akan mengarahkan phpMussel untuk tidak cuba memulakan imbasan untuk elemen kosong tersebut, mengabaikannya apabila ditemui, dan tidak mengembalikan sebarang mesej ralat yang berkaitan, sekali gus membenarkan kesinambungan permintaan halaman. False = DINYAHAKTIFKAN; True = DIAKTIFKAN."
  web_magnification: "Pembesaran fon. Lalai = 1."
  web_max_uploads: "Bilangan maksimum fail yang dibenarkan untuk diimbas apabila mengimbas muat naik sebelum membatalkan imbasan dan memaklumkan pengguna bahawa mereka memuat naik terlalu banyak! Memberi perlindungan terhadap serangan teori dimana penyerang cuba untuk DDoS sistem atau CMS anda melalui membebankan phpMussel untuk memperlahankan proses PHP sehingga terhenti. Disyorkan: 10. Anda mungkin ingin menaikkan atau menurunkan nombor ini bergantung pada kelajuan perkakasan anda. Ambil perhatian bahawa nombor ini tidak mengambil kira atau termasuk kandungan arkib."
- web_theme: "Estetika yang digunakan untuk halaman "muat naik ditolak"."
+ web_theme: "Tema yang akan digunakan untuk acara sekat."
+ web_theme_mode: "Mod untuk tema yang akan digunakan untuk acara sekat."
  web_unsupported_media_type_header: "Patutkah phpMussel menghantar 415 pengepala apabila muat naik disekat kerana jenis fail ialah disenaraihitamkan? Apabila true, tetapan ini menggantikan <code>forbid_on_block</code>. False = Tidak [Lalai]; True = Ya."
  web_uploads_log: "Dimana semua muat naik yang disekat harus dilog. Tentukan nama fail, atau biarkan kosong untuk nyahaktifkan."
 denied: "Muat naik ditolak!"

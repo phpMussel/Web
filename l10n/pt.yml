@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2024.07.01).
+# This file: Portuguese language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,9 +39,16 @@ config:
  web_max_uploads:
   pt-BR: "O máximo permitido número de arquivos para analisar durante os arquivos carregamentos análise antes de abortar a análise e informando ao usuário eles estão carregando demais muito de uma vez! Oferece proteção contra um teórico ataque pelo qual um atacante tenta DDoS seu sistema ou CMS por meio de sobrecarregando phpMussel a fim de retardar o PHP processo para uma parada. Recomendado: 10. Você pode querer aumentar ou diminuir esse número, dependendo das atributos do seu hardware. Note-se que este número não lev. Em conta ou incluir o conteúdos dos compactados arquivos."
   pt-PT: "O máximo permitido número de arquivos para analisar durante os arquivos carregamentos análise antes de abortar a análise e informando ao utilizador eles estão carregando demais muito de uma vez! Oferece proteção contra um teórico ataque pelo qual um atacante tenta DDoS o seu sistema ou CMS por meio de sobrecarregando phpMussel a fim de retardar o PHP processo para uma parada. Recomendado: 10. Você pode querer aumentar ou diminuir esse número, dependendo das atributos do seu hardware. Note-se que este número não lev. Em conta ou incluir o conteúdos dos compactados arquivos."
- web_theme: "A estética a ser usada na página "carregar negado"."
+ web_theme:
+  pt-BR: "O tema a ser usado para eventos de bloqueio."
+  pt-PT: "O tema a utilizar para eventos de bloqueio."
+ web_theme_mode:
+  pt-BR: "O modo para o tema a ser usado para eventos de bloqueio."
+  pt-PT: "O modo para o tema a utilizar para eventos de bloqueio."
  web_unsupported_media_type_header: "Deve phpMussel enviar 415 cabeçalhos quando os uploads são bloqueados devido a tipos de arquivos na lista negra? Quando true, esta configuração substitui <code>forbid_on_block</code>. False = Não [Padrão]; True = Sim."
- web_uploads_log: "Onde todos os carregamentos bloqueados devem ser registrados. Especifique um arquivo nome, ou deixe branco para desativar."
+ web_uploads_log:
+  pt-BR: "Onde todos os carregamentos bloqueados devem ser registrados. Especifique um arquivo nome, ou deixe branco para desativar."
+  pt-PT: "Onde todos os carregamentos bloqueados devem ser registados. Especifique um arquivo nome, ou deixe branco para desativar."
 denied: "Carregar negado!"
 denied_reason: "Carregamento tentativa foi bloqueado pelos motivos a seguir indicados:"
 notifications_message: |

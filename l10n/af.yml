@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2024.07.01).
+# This file: Afrikaans language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,8 @@ config:
  web_ignore_upload_errors: "Hierdie instruksie moet oor die algemeen gedeaktiveer word, tensy dit nodig is vir die korrekte funksionaliteit van phpMussel op jou spesifieke stelsel. Normaalweg, wanneer gedeaktiveer, wanneer phpMussel die teenwoordigheid van elemente in die <code>$_FILES</code> array() bespeur, dit sal probeer om die lêers wat daardie elemente verteenwoordig te skandeer, en as daardie elemente leeg is, sal phpMussel 'n foutboodskap terugstuur. Dit is behoorlike gedrag vir phpMussel. Vir sommige CMS egter kan leë elemente in <code>$_FILES</code> voorkom as gevolg van die natuurlike gedrag van daardie CMS, of foute kan gerapporteer word wanneer daar nie enige is nie, in welke geval die normale gedrag vir phpMussel sal inmeng met die normale gedrag van daardie CMS. As so 'n situasie vir jou voorkom, sal die aktivering van hierdie opsie phpMussel opdrag gee om nie te probeer om skanderings vir sulke leë elemente te begin nie, hulle te ignoreer wanneer dit gevind word en om nie enige verwante foutboodskappe terug te stuur nie, om sodoende voortsetting van die bladsyversoek moontlik te maak. False = AF; True = AAN."
  web_magnification: "Lettertipe vergroting. Verstek = 1."
  web_max_uploads: "Maksimum aantal lêers wat phpMussel toegelaat word om te skandeer wanneer oplaaie geskandeer word voordat die skandering gestaak word en die gebruiker inlig dat hulle te veel op een slag oplaai! Bied beskerming teen 'n teoretiese aanval waardeur 'n aanvaller probeer om jou stelsel of CMS te DDoS deur phpMussel te oorlaai om die PHP-proses tot stilstand te vertraag. Aanbeveel: 10. Jy sal dalk hierdie getal wil verhoog of verlaag, afhangende van die spoed van jou hardeware. Let daarop dat hierdie nommer nie rekening hou met die inhoud van argiewe nie."
- web_theme: "Die estetiese om te gebruik vir die "oplaai geweier" bladsy."
+ web_theme: "Die tema om te gebruik vir blokgebeurtenisse."
+ web_theme_mode: "Die modus vir die tema om te gebruik vir blokgebeurtenisse."
  web_unsupported_media_type_header: "Moet phpMussel 415-opskrifte stuur wanneer oplaaie geblokkeer word as gevolg van lêertipes op die swartlys? Wanneer waar, word <code>forbid_on_block</code> vervang deur hierdie instelling. False = Nee [Verstek]; True = Ja."
  web_uploads_log: "Waar alle geblokkeerde oplaaie aangeteken moet word. Spesifiseer 'n lêernaam, of laat leeg om te deaktiveer."
 denied: "Oplaai geweier!"

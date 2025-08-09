@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2024.07.01).
+# This file: Galician language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,8 @@ config:
  web_ignore_upload_errors: "En xeral, esta directiva debería estar desactivada a non ser que sexa necesaria para a correcta funcionalidade de phpMussel no seu sistema específico. Normalmente, cando está desactivado, cando phpMussel detecta a presenza de elementos na matriz <code>$_FILES</code>, intentará iniciar unha exploración dos ficheiros que representan eses elementos, e, se eses elementos están en branco ou baleiros, phpMussel devolverá unha mensaxe de erro. Este é un comportamento adecuado para phpMussel. Non obstante, para algúns CMS, os elementos baleiros en <code>$_FILES</code> poden ocorrer como resultado do comportamento natural destes CMS, ou se poden informar erros cando non os haxa, nese caso, o comportamento normal de phpMussel interferirá co comportamento normal destes CMS. Se se produce tal situación, activar esta opción indicará a phpMussel que non intente iniciar exploracións para tales elementos baleiros, que os ignore cando se atope, e que non devolva ningunha mensaxe de erro relacionada, permitindo así a continuación da solicitude da páxina. False/Falso = Desactivado; True/Verdadeiro = Activado."
  web_magnification: "Ampliación da fonte. Predeterminado = 1."
  web_max_uploads: "Número máximo de ficheiros que phpMussel pode escanear ao analizar as cargas antes de abortar a exploración e informar ao usuario de que está cargando demasiado á vez. Ofrece protección contra un ataque teórico polo que un atacante intenta DDoS o seu sistema ou CMS por medio de sobrecargando phpMussel para ralentizar o proceso PHP ata parar. Recomendado: 10. Pode querer aumentar ou baixar este número dependendo da velocidade do seu hardware. Teña en conta que este número non conta nin inclúe o contido dos arquivos."
- web_theme: "A estética a utilizar para a páxina de "carga denegada"."
+ web_theme: "O tema a usar para eventos de bloque."
+ web_theme_mode: "O modo para o tema a usar para eventos de bloque."
  web_unsupported_media_type_header: "Debería phpMussel enviar cabeceiras 415 cando as cargas están bloqueadas debido aos tipos de ficheiros da lista negra? Cando é verdadeiro, esta configuración substitúe a <code>forbid_on_block</code>. False/Falso = Non [Predeterminado]; True/Verdadeiro = Si."
  web_uploads_log: "Onde deben rexistrarse todas as cargas bloqueadas. Especifique un nome de ficheiro, ou déixeo en branco para desactivalo."
 denied: "Carga denegada!"

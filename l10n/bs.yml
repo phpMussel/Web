@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2025.06.10).
+# This file: Bosnian language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -33,7 +33,8 @@ config:
  web_ignore_upload_errors: "Ova direktiva bi općenito trebala biti onemogućena osim ako je potrebna za ispravnu funkcionalnost phpMussel-a na vašem sistemu. Obično, kada je onemogućeno, kada phpMussel detektuje prisustvo elemenata u <code>$_FILES</code> array(), pokušat će pokrenuti skeniranje datoteka koje ti elementi predstavljaju, i, ako su ti elementi prazni, phpMussel će vratiti poruku o grešci. Ovo je ispravno ponašanje za phpMussel. Međutim, za neke CMS, prazni elementi u <code>$_FILES</code> mogu se pojaviti kao rezultat prirodnog ponašanja tih CMS-a, ili greške mogu biti prijavljene kada ih nema, u kom slučaju će normalno ponašanje phpMussel-a ometati normalno ponašanje tih CMS-a. Ako vam se dogodi takva situacija, omogućavanje ove opcije će uputiti phpMussel da ne pokušava da pokrene skeniranje za takve prazne elemente, ignoriše ih kada ih pronađe, i da ne vraća nikakve povezane poruke o grešci, čime će se omogućiti nastavak zahteva stranice. False/Lažno = Onemogućeno; True/Istinito = Omogućeno."
  web_magnification: "Uvećanje fonta. Zadano = 1."
  web_max_uploads: "Maksimalan broj datoteka koje phpMussel smije skenirati prilikom skeniranja upload-a prije nego što prekine skeniranje i obavijesti korisnika da otprema previše odjednom! Pruža zaštitu od teoretskog napada u kojem napadač pokušava DDoS vaš sistem ili CMS putem preopterećenjem phpMussel-a da uspori PHP proces do potpunog zaustavljanja. Preporučeno: 10. Možda ćete željeti povećati ili smanjiti ovaj broj ovisno o brzini vašeg hardvera. Imajte na umu da ovaj broj ne obuhvata niti uključuje sadržaj arhive."
- web_theme: "Estetika za upotrebu stranice "odbijeno upload"."
+ web_theme: "Tema koja će se koristiti za blok događaje."
+ web_theme_mode: "Način za tema koja će se koristiti za blok događaje."
  web_unsupported_media_type_header: "Da li phpMussel treba da pošalje 415 zaglavlja kada su otpremanja blokirana zbog vrsta datoteka na crnoj listi? Kada je istinito, ova postavka zamjenjuje <code>forbid_on_block</code>. False/Lažno = Ne [Zadano]; True/Istinito = Da."
  web_uploads_log: "Gdje bi svi blokirani upload-ovi trebali biti prijavljeni. Navedite naziv datoteke ili ostavite prazno da biste onemogućili."
 denied: "Odbijeno upload!"

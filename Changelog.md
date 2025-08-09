@@ -97,3 +97,7 @@ __*Why "v3.0.0" instead of "v1.0.0?"*__ Prior to phpMussel v3, the "phpMussel Co
 
 - [2024.11.06]: Added PHP 8.4 to workflows.
 - [2024.11.06]: Added L10N for Malayalam.
+
+### v3.6.0
+
+- [2025.08.08]: Added the ability to change the "mode" of the configured theme, thus enabling any singular theme to have some slight variation in its potential presentation. Two new configuration directives have been added to facilitate this (look for `theme_mode` under `frontend` and `web` respectively, directly under the existing `theme` configuration directives). For now, the available "modes" are just "normal" and "inverted" (the latter inverting the tone of the colours/lighting used by the theme).

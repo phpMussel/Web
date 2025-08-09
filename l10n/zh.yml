@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.03.29).
+# This file: Chinese language data (last modified: 2025.08.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,7 +39,8 @@ config:
  web_max_uploads:
   zh-Hans: "最大允许数值的文件为扫描当文件上传扫描之前中止扫描和告诉用户他们是上传太多在同一时间！​提供保护针对一个理论攻击哪里一个攻击者尝试DDoS您的系统或CMS通过超载phpMussel以减速PHP进程到一个停止。​推荐：10。​您可能想增加或减少这个数值，​根据速度的您的硬件。​注意这个数值不交待为或包括存档内容。"
   zh-Hant: "最大允許數值的文件為掃描當文件上傳掃描之前中止掃描和告訴用戶他們是上傳太多在同一時間！​提供保護針對一個理論攻擊哪裡一個攻擊者嘗試DDoS您的系統或CMS通過超載phpMussel以減速PHP進程到一個停止。​推薦：10。​您可能想增加或減少這個數值，​根據速度的您的硬件。​注意這個數值不交待為或包括存檔內容。"
- web_theme: {"zh-Hans": "用于“上传是否认”页面的美学。", "zh-Hant": "用於『上傳是否認』頁面的美學。"}
+ web_theme: {"zh-Hans": "用于阻止事件的主题。", "zh-Hant": "用於阻止事件的主題。"}
+ web_theme_mode: {"zh-Hans": "用于阻止事件的主题模式。", "zh-Hant": "用於阻止事件的主題模式。"}
  web_unsupported_media_type_header:
   zh-Hans: "当上传因列入黑名单的文件类型而被阻止时，phpMussel是否应该发送415标头？​如果为true（真），此设置将取代<code>forbid_on_block</code>。​False（假）=不发送【标准】；True（真）=发送。"
   zh-Hant: "當上傳因列入黑名單的文件類型而被阻止時，phpMussel是否應該發送415標頭？​如果為true（真），此設置將取代<code>forbid_on_block</code>。​False（假）=不發送【標準】；True（真）=發送。"
