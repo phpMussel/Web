@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2025.08.08).
+# This file: Italian language data (last modified: 2025.09.30).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -50,7 +50,7 @@ scan_unauthorised_upload_or_misconfig: "Rilevata manipolazione non autorizzata d
 upload_error_1: "La dimensione del file supera la direttiva upload_max_filesize."
 upload_error_2: "La dimensione del file supera la dimensione limite specificata dal modulo."
 upload_error_34: "Caricamento fallito! Contatta l'hostmaster per assistenza!"
-upload_error_6: "Cartella per il caricamento mancante! Contatta l'hostmaster per assistenza!"
+upload_error_6: "Directory di caricamento mancante! Contatta l'hostmaster per assistenza!"
 upload_error_7: "Errore nella scrittura del disco! Contatta l'hostmaster per assistenza!"
 upload_error_8: "Rilevata una malconfigurazione di PHP! Contatta l'hostmaster per assistenza!"
 upload_limit_exceeded: "Limite di caricamento superato"
