@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2025.08.08).
+# This file: Korean language data (last modified: 2025.10.11).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -36,9 +36,9 @@ config:
  web_theme: "블록 이벤트에 사용할 테마입니다."
  web_theme_mode: "블록 이벤트에 사용할 테마의 모드입니다."
  web_unsupported_media_type_header: "블랙리스트 파일 형식으로 인해 업로드가 차단되면 phpMussel이 415 헤더를 보내야 합니까? True이면이 설정이 <code>forbid_on_block</code>를 대체합니다. False = 아니오 [Default / 기본 설정]; True = 예."
- web_uploads_log: "차단된 모든 업로드를 기록해야 하는 위치. 파일 이름을 지정하십시오. 비활성화하려면 비워 둡니다."
+ web_uploads_log: "차단된 모든 업로드를 기록해야 하는 위치. 파일 이름을 지정하거나, 비활성화하려면 비워 두세요."
 denied: "업로드 거부!"
-denied_reason: "다음과 같은 이유로 업로드가 거부되었습니다\_:"
+denied_reason: "다음과 같은 이유로 업로드가 거부되었습니다:"
 notifications_message: |
  <center><p><strong>안녕하세요.</strong></p>
  <p><strong>본 이메일은, 파일 업로드가 차단되었음을 알리기 위한 것입니다 :</strong></p><p>%s</p>
