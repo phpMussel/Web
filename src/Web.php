@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2025.08.08).
+ * This file: Upload handler (last modified: 2026.03.17).
  */
 
 namespace phpMussel\Web;
@@ -68,13 +68,13 @@ class Web
 
         /** Load phpMussel upload handler configuration defaults and perform fallbacks. */
         if (
-            is_readable($this->AssetsPath . 'config.yml') &&
+            \is_readable($this->AssetsPath . 'config.yml') &&
             $Configuration = $this->Loader->readFile($this->AssetsPath . 'config.yml')
         ) {
             $Defaults = [];
             $this->Loader->YAML->process($Configuration, $Defaults);
             $this->Loader->fallback($Defaults);
-            $this->Loader->ConfigurationDefaults = array_merge_recursive($this->Loader->ConfigurationDefaults, $Defaults);
+            $this->Loader->ConfigurationDefaults = \array_merge_recursive($this->Loader->ConfigurationDefaults, $Defaults);
         }
 
         /** Register log paths. */
@@ -88,7 +88,7 @@ class Web
 
         /** Generate output language information attachment. */
         if ($this->Loader->L10NAccepted !== $this->Loader->ClientL10NAccepted) {
-            $this->Attache = sprintf(
+            $this->Attache = \sprintf(
                 ' lang="%s" dir="%s"',
                 $this->Loader->ClientL10NAccepted,
                 $this->Loader->ClientL10N->Directionality
@@ -104,26 +104,26 @@ class Web
         $this->Loader->Events->addHandler('writeToUploadsLog', function (string $Data): bool {
             /** Guard. */
             if (
-                strlen($this->Loader->HashReference) === 0 ||
+                \strlen($this->Loader->HashReference) === 0 ||
                 $this->Loader->Configuration['web']['uploads_log'] === '' ||
                 !($File = $this->Loader->buildPath($this->Loader->Configuration['web']['uploads_log']))
             ) {
                 return false;
             }
 
-            if (!file_exists($File)) {
+            if (!\file_exists($File)) {
                 $Data = \phpMussel\Core\Loader::SAFETY . "\n\n" . $Data;
                 $WriteMode = 'wb';
             } else {
                 $Truncate = $this->Loader->readBytes($this->Loader->Configuration['core']['truncate']);
-                $WriteMode = ($Truncate > 0 && filesize($File) >= $Truncate) ? 'wb' : 'ab';
+                $WriteMode = ($Truncate > 0 && \filesize($File) >= $Truncate) ? 'wb' : 'ab';
             }
-            if (!is_resource($Stream = fopen($File, $WriteMode))) {
+            if (!\is_resource($Stream = \fopen($File, $WriteMode))) {
                 trigger_error('The "writeToUploadsLog" event failed to open "' . $File . '" for writing.');
                 return false;
             }
-            fwrite($Stream, $Data);
-            fclose($Stream);
+            \fwrite($Stream, $Data);
+            \fclose($Stream);
             $this->Loader->logRotation($this->Loader->Configuration['web']['uploads_log']);
             return true;
         });
@@ -158,20 +158,20 @@ class Web
                 continue;
             }
 
-            if (is_array($fileData['name'])) {
-                array_walk_recursive($fileData['name'], function ($Item, $Key) use (&$FilesData) {
+            if (\is_array($fileData['name'])) {
+                \array_walk_recursive($fileData['name'], function ($Item, $Key) use (&$FilesData) {
                     $FilesData['name'][] = $Item;
                 });
-                array_walk_recursive($fileData['type'], function ($Item, $Key) use (&$FilesData) {
+                \array_walk_recursive($fileData['type'], function ($Item, $Key) use (&$FilesData) {
                     $FilesData['type'][] = $Item;
                 });
-                array_walk_recursive($fileData['tmp_name'], function ($Item, $Key) use (&$FilesData) {
+                \array_walk_recursive($fileData['tmp_name'], function ($Item, $Key) use (&$FilesData) {
                     $FilesData['tmp_name'][] = $Item;
                 });
-                array_walk_recursive($fileData['error'], function ($Item, $Key) use (&$FilesData) {
+                \array_walk_recursive($fileData['error'], function ($Item, $Key) use (&$FilesData) {
                     $FilesData['error'][] = $Item;
                 });
-                array_walk_recursive($fileData['size'], function ($Item, $Key) use (&$FilesData) {
+                \array_walk_recursive($fileData['size'], function ($Item, $Key) use (&$FilesData) {
                     $FilesData['size'][] = $Item;
                 });
             } else {
@@ -211,7 +211,7 @@ class Web
                 if ($this->Loader->Configuration['compatibility']['ignore_upload_errors'] || $ThisError > 8 || $ThisError === 5) {
                     continue;
                 }
-                $this->Scanner->atHit('', -1, '', sprintf(
+                $this->Scanner->atHit('', -1, '', \sprintf(
                     $this->Loader->L10N->getString('grammar_exclamation_mark'),
                     $this->Loader->L10N->getString('upload_error_' . (($ThisError === 3 || $ThisError === 4) ? '34' : $ThisError))
                 ), -5, -1);
@@ -219,7 +219,7 @@ class Web
                     ($ThisError === 1 || $ThisError === 2) &&
                     $this->Loader->Configuration['core']['delete_on_sight'] &&
                     is_uploaded_file($FilesData['tmp_name'][$Iterator]) &&
-                    is_readable($FilesData['tmp_name'][$Iterator])
+                    \is_readable($FilesData['tmp_name'][$Iterator])
                 ) {
                     unlink($FilesData['tmp_name'][$Iterator]);
                 }
@@ -253,9 +253,9 @@ class Web
                 $this->Loader->Configuration['web']['max_uploads'] >= 1 &&
                 $this->Uploads > $this->Loader->Configuration['web']['max_uploads']
             ) {
-                $this->Scanner->atHit('', $FilesData['size'][$Iterator], $FilesData['name'][$Iterator], sprintf(
+                $this->Scanner->atHit('', $FilesData['size'][$Iterator], $FilesData['name'][$Iterator], \sprintf(
                     $this->Loader->L10N->getString('grammar_exclamation_mark'),
-                    sprintf(
+                    \sprintf(
                         $this->Loader->L10N->getString('grammar_brackets'),
                         $this->Loader->L10N->getString('upload_limit_exceeded'),
                         $FilesData['name'][$Iterator]
@@ -264,7 +264,7 @@ class Web
                 if (
                     $this->Loader->Configuration['core']['delete_on_sight'] &&
                     is_uploaded_file($FilesData['tmp_name'][$Iterator]) &&
-                    is_readable($FilesData['tmp_name'][$Iterator])
+                    \is_readable($FilesData['tmp_name'][$Iterator])
                 ) {
                     unlink($FilesData['tmp_name'][$Iterator]);
                 }
@@ -286,7 +286,7 @@ class Web
         }
 
         /** Build detections. */
-        $Detections = implode($this->Loader->L10N->getString('grammar_spacer'), $this->Loader->ScanResultsText);
+        $Detections = \implode($this->Loader->L10N->getString('grammar_spacer'), $this->Loader->ScanResultsText);
 
         /** Merging parsable variables for the template data. */
         $TemplateData = [
@@ -294,12 +294,12 @@ class Web
             'CustomHeader' => $this->Loader->Configuration['web']['custom_header'],
             'CustomFooter' => $this->Loader->Configuration['web']['custom_footer'],
             'Attache' => $this->Attache,
-            'GeneratedBy' => sprintf(
+            'GeneratedBy' => \sprintf(
                 $this->Loader->ClientL10N->getString('label.Generated by %s'),
                 '<div id="phpmusselversion" dir="ltr">' . $this->Loader->ScriptIdent . '</div>'
             ),
             'detected' => $Detections,
-            'favicon' => base64_encode($this->Loader->getFavicon()),
+            'favicon' => \base64_encode($this->Loader->getFavicon()),
             'xmlLang' => $this->Loader->L10NAccepted,
             'Text Direction' => $this->Loader->L10N->Directionality,
             'FE_Align' => $this->Loader->L10N->Directionality === 'rtl' ? 'right' : 'left',
@@ -319,15 +319,15 @@ class Web
 
         /** Determine which template file to use. */
         if ($this->CustomAssetsPath) {
-            if (is_readable($this->CustomAssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html')) {
+            if (\is_readable($this->CustomAssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html')) {
                 $TemplateFile = $this->CustomAssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html';
-            } elseif (is_readable($this->CustomAssetsPath . 'template_default.html')) {
+            } elseif (\is_readable($this->CustomAssetsPath . 'template_default.html')) {
                 $TemplateFile = $this->CustomAssetsPath . 'template_default.html';
             }
         } else {
-            if (is_readable($this->AssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html')) {
+            if (\is_readable($this->AssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html')) {
                 $TemplateFile = $this->AssetsPath . 'template_' . $this->Loader->Configuration['web']['theme'] . '.html';
-            } elseif (is_readable($this->AssetsPath . 'template_default.html')) {
+            } elseif (\is_readable($this->AssetsPath . 'template_default.html')) {
                 $TemplateFile = $this->AssetsPath . 'template_default.html';
             }
         }
@@ -336,8 +336,8 @@ class Web
         }
 
         /** Log "uploads_log" data. */
-        if (strlen($this->Loader->HashReference) !== 0) {
-            $Handle['Data'] = sprintf(
+        if (\strlen($this->Loader->HashReference) !== 0) {
+            $Handle['Data'] = \sprintf(
                 "%s: %s\n%s: %s\n== %s ==\n%s\n== %s ==\n%s",
                 $this->Loader->L10N->getString('field.Date'),
                 $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format']),
@@ -349,7 +349,7 @@ class Web
                 $this->Loader->HashReference
             );
             if ($this->Loader->PEData) {
-                $Handle['Data'] .= sprintf(
+                $Handle['Data'] .= \sprintf(
                     "== %s ==\n%s",
                     $this->Loader->L10N->getString('field.PE sectional signatures reconstruction'),
                     $this->Loader->PEData
@@ -386,21 +386,21 @@ class Web
 
         /** Generate HTML output. */
         $Output = $this->Loader->parse($TemplateData, $this->Loader->readFile($TemplateFile));
-        if (preg_match_all('~\{([A-Za-z\d_ -]+)\}~', $Output, $Matches)) {
-            foreach (array_unique($Matches[1]) as $Key) {
+        if (\preg_match_all('~\{([A-Za-z\d_ -]+)\}~', $Output, $Matches)) {
+            foreach (\array_unique($Matches[1]) as $Key) {
                 if (($Value = $this->Loader->ClientL10N->getString($Key)) !== '') {
-                    $Output = str_replace('{' . $Key . '}', $Value, $Output);
+                    $Output = \str_replace('{' . $Key . '}', $Value, $Output);
                 }
             }
         }
         unset($Value, $Key, $Matches);
 
         /** Send email notifications about blocked uploads (if enabled). */
-        if (strlen($this->Loader->InstanceCache['enable_notifications'])) {
+        if (\strlen($this->Loader->InstanceCache['enable_notifications'])) {
             /** Generate email body. */
-            $EmailBody = sprintf(
+            $EmailBody = \sprintf(
                 $this->Loader->L10N->getString('notifications_message'),
-                preg_replace(['~^([\da-z]+:\d+:)~i', '~\n~'], ['', "<br />\n"], strip_tags($this->Loader->HashReference)),
+                \preg_replace(['~^([\da-z]+:\d+:)~i', '~\n~'], ['', "<br />\n"], strip_tags($this->Loader->HashReference)),
                 $TemplateData['detected'],
                 $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format'])
             );
@@ -415,13 +415,13 @@ class Web
             ];
 
             /** Process recipients. */
-            foreach (explode(',', $this->Loader->InstanceCache['enable_notifications']) as $Recipient) {
+            foreach (\explode(',', $this->Loader->InstanceCache['enable_notifications']) as $Recipient) {
                 if ($Recipient === '') {
                     continue;
                 }
-                if (preg_match('~^[^<>]+ <[^<>]+>$~', $Recipient)) {
-                    $Name = preg_replace('~^([^<>]+) <[^<>]+>$~', '\1', $Recipient);
-                    $Address = preg_replace('~^[^<>]+ <([^<>]+)>$~', '\1', $Recipient);
+                if (\preg_match('~^[^<>]+ <[^<>]+>$~', $Recipient)) {
+                    $Name = \preg_replace('~^([^<>]+) <[^<>]+>$~', '\1', $Recipient);
+                    $Address = \preg_replace('~^[^<>]+ <([^<>]+)>$~', '\1', $Recipient);
                 } else {
                     $Name = $Recipient;
                     $Address = $Recipient;
@@ -467,13 +467,13 @@ class Web
             }
 
             /** Run the names through the demojibakefier. */
-            if (is_array($FileData['name'])) {
+            if (\is_array($FileData['name'])) {
                 foreach ($FileData['name'] as &$FileName) {
-                    if (is_string($FileName)) {
+                    if (\is_string($FileName)) {
                         $FileName = $Demojibakefier->guard($FileName);
                     }
                 }
-            } elseif (is_string($FileData['name'])) {
+            } elseif (\is_string($FileData['name'])) {
                 $FileData['name'] = $Demojibakefier->guard($FileData['name']);
             }
         }
