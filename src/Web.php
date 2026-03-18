@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2026.03.17).
+ * This file: Upload handler (last modified: 2026.03.18).
  */
 
 namespace phpMussel\Web;
@@ -33,12 +33,12 @@ class Web
     /**
      * @var string The path to the upload handler's asset files.
      */
-    private $AssetsPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR;
+    private $AssetsPath = __DIR__ . \DIRECTORY_SEPARATOR . '..' . \DIRECTORY_SEPARATOR . 'assets' . \DIRECTORY_SEPARATOR;
 
     /**
      * @var string The path to the upload handler's L10N files.
      */
-    private $L10NPath = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'l10n' . DIRECTORY_SEPARATOR;
+    private $L10NPath = __DIR__ . \DIRECTORY_SEPARATOR . '..' . \DIRECTORY_SEPARATOR . 'l10n' . \DIRECTORY_SEPARATOR;
 
     /**
      * @var int The number of uploads caught by PHP.
@@ -84,7 +84,7 @@ class Web
         $this->Loader->loadL10N($this->L10NPath);
 
         /** Count uploads caught by PHP. */
-        $this->Uploads = empty($_FILES) ? 0 : count($_FILES);
+        $this->Uploads = empty($_FILES) ? 0 : \count($_FILES);
 
         /** Generate output language information attachment. */
         if ($this->Loader->L10NAccepted !== $this->Loader->ClientL10NAccepted) {
@@ -119,7 +119,7 @@ class Web
                 $WriteMode = ($Truncate > 0 && \filesize($File) >= $Truncate) ? 'wb' : 'ab';
             }
             if (!\is_resource($Stream = \fopen($File, $WriteMode))) {
-                trigger_error('The "writeToUploadsLog" event failed to open "' . $File . '" for writing.');
+                \trigger_error('The "writeToUploadsLog" event failed to open "' . $File . '" for writing.');
                 return false;
             }
             \fwrite($Stream, $Data);
@@ -183,7 +183,7 @@ class Web
             }
         }
 
-        $FilesCount = count($FilesData['error']);
+        $FilesCount = \count($FilesData['error']);
 
         /** Iterate through normalised array and scan as necessary. */
         for ($Iterator = 0; $Iterator < $FilesCount; $Iterator++) {
@@ -276,7 +276,7 @@ class Web
         }
 
         /** Check these first, because they'll reset otherwise, then execute the scan. */
-        if (!count($this->Loader->ScanResultsText) && count($FilesToScan)) {
+        if (!\count($this->Loader->ScanResultsText) && \count($FilesToScan)) {
             $this->Scanner->scan($FilesToScan, 4);
         }
 
@@ -400,7 +400,7 @@ class Web
             /** Generate email body. */
             $EmailBody = \sprintf(
                 $this->Loader->L10N->getString('notifications_message'),
-                \preg_replace(['~^([\da-z]+:\d+:)~i', '~\n~'], ['', "<br />\n"], strip_tags($this->Loader->HashReference)),
+                \preg_replace(['~^([\da-z]+:\d+:)~i', '~\n~'], ['', "<br />\n"], \strip_tags($this->Loader->HashReference)),
                 $TemplateData['detected'],
                 $this->Loader->timeFormat($this->Loader->Time, $this->Loader->Configuration['core']['time_format'])
             );
@@ -410,7 +410,7 @@ class Web
                 [],
                 $this->Loader->L10N->getString('notifications_subject'),
                 $EmailBody,
-                strip_tags($EmailBody),
+                \strip_tags($EmailBody),
                 ''
             ];
 
