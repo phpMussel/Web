@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2025.08.08).
+# This file: French language data (last modified: 2026.04.16).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -84,8 +84,8 @@ upload_error_6:
  fr-FR: "Répertoire de téléchargement manquant\_! Veuillez contacter le hostmaster pour obtenir de l'aide\_!"
  fr-CA: "Répertoire de téléversement manquant\_! Veuillez contacter le maître d'hôte pour obtenir de l'aide\_!"
 upload_error_7:
- fr_FR: "Erreur d'écriture disque\_! Veuillez contacter le hostmaster pour obtenir de l'aide\_!"
- fr_CA: "Erreur d'écriture sur le disque\_! Veuillez contacter le maître d'hôte pour obtenir de l'aide\_!"
+ fr-FR: "Erreur d'écriture disque\_! Veuillez contacter le hostmaster pour obtenir de l'aide\_!"
+ fr-CA: "Erreur d'écriture sur le disque\_! Veuillez contacter le maître d'hôte pour obtenir de l'aide\_!"
 upload_error_8:
  fr-FR: "Mauvaise configuration PHP détectée\_! Veuillez contacter le hostmaster pour obtenir de l'aide\_!"
  fr-CA: "Mauvaise configuration PHP détectée\_! Veuillez contacter le maître d'hôte pour obtenir de l'aide\_!"

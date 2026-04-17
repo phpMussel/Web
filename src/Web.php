@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2026.03.18).
+ * This file: Upload handler (last modified: 2026.04.15).
  */
 
 namespace phpMussel\Web;
@@ -218,10 +218,10 @@ class Web
                 if (
                     ($ThisError === 1 || $ThisError === 2) &&
                     $this->Loader->Configuration['core']['delete_on_sight'] &&
-                    is_uploaded_file($FilesData['tmp_name'][$Iterator]) &&
+                    \is_uploaded_file($FilesData['tmp_name'][$Iterator]) &&
                     \is_readable($FilesData['tmp_name'][$Iterator])
                 ) {
-                    unlink($FilesData['tmp_name'][$Iterator]);
+                    \unlink($FilesData['tmp_name'][$Iterator]);
                 }
                 continue;
             }
@@ -236,7 +236,7 @@ class Web
             }
 
             /** Protection against upload spoofing (2/2). */
-            if (!is_uploaded_file($FilesData['tmp_name'][$Iterator])) {
+            if (!\is_uploaded_file($FilesData['tmp_name'][$Iterator])) {
                 $this->Scanner->atHit(
                     '',
                     $FilesData['size'][$Iterator],
@@ -263,10 +263,10 @@ class Web
                 ), -5, -1);
                 if (
                     $this->Loader->Configuration['core']['delete_on_sight'] &&
-                    is_uploaded_file($FilesData['tmp_name'][$Iterator]) &&
+                    \is_uploaded_file($FilesData['tmp_name'][$Iterator]) &&
                     \is_readable($FilesData['tmp_name'][$Iterator])
                 ) {
-                    unlink($FilesData['tmp_name'][$Iterator]);
+                    \unlink($FilesData['tmp_name'][$Iterator]);
                 }
                 continue;
             }
