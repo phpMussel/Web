@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2025.09.14).
+# This file: Chinese language data (last modified: 2026.05.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -27,24 +27,24 @@
 PrivacyPolicy: {"zh-Hans": "隐私政策", "zh-Hant": "隱私政策"}
 config:
  web: {"zh-Hans": "上传处理程序的配置。", "zh-Hant": "上傳處理程序的配置。"}
- web_custom_footer: {"zh-Hans": "在所有“上传是否认”页面的末尾作为HTML插入。​如果您想在所有此类页面中包含法律声明、联系链接、业务信息、或类似，这可能会很有用。", "zh-Hant": "在所有『上傳是否認』頁面的末尾作為HTML插入。​如果您想在所有此類頁面中包含法律聲明、聯繫鏈接、業務信息、或類似，這可能會很有用。"}
- web_custom_header: {"zh-Hans": "在所有“上传是否认”页面的开头作为HTML插入。​如果您想在所有此类页面中包含网站徽标、个性化标题、脚本、或类似，这可能会很有用。", "zh-Hant": "在所有『上傳是否認』頁面的開頭作為HTML插入。​如果您想在所有此類頁面中包含網站徽標、個性化標題、腳本、或類似，這可能會很有用。"}
+ web_custom_footer: {"zh-Hans": "在所有“上传是否认”页面的末尾作为HTML插入。 如果您想在所有此类页面中包含法律声明、联系链接、业务信息、或类似，这可能会很有用。", "zh-Hant": "在所有『上傳是否認』頁面的末尾作為HTML插入。 如果您想在所有此類頁面中包含法律聲明、聯繫鏈接、業務信息、或類似，這可能會很有用。"}
+ web_custom_header: {"zh-Hans": "在所有“上传是否认”页面的开头作为HTML插入。 如果您想在所有此类页面中包含网站徽标、个性化标题、脚本、或类似，这可能会很有用。", "zh-Hant": "在所有『上傳是否認』頁面的開頭作為HTML插入。 如果您想在所有此類頁面中包含網站徽標、個性化標題、腳本、或類似，這可能會很有用。"}
  web_forbid_on_block:
-  zh-Hans: "phpMussel应该发送<code>403</code>头随着文件上传受阻信息，​或坚持标准<code>200 OK</code>？​False（假）=发送<code>200</code>；True（真）=发送<code>403</code>【标准】。"
-  zh-Hant: "phpMussel應該發送<code>403</code>頭隨著檔案上傳受阻信息，​或堅持標準<code>200 OK</code>？​False（假）=發送<code>200</code>；True（真）=發送<code>403</code>【標準】。"
+  zh-Hans: "phpMussel应该发送<code>403</code>头随着文件上传受阻信息，或坚持标准<code>200 OK</code>？ False（假）=发送<code>200</code>；True（真）=发送<code>403</code>【标准】。"
+  zh-Hant: "phpMussel應該發送<code>403</code>頭隨著檔案上傳受阻信息，或堅持標準<code>200 OK</code>？ False（假）=發送<code>200</code>；True（真）=發送<code>403</code>【標準】。"
  web_ignore_upload_errors:
-  zh-Hans: "这个指令按说应会关闭除非它是需要为对功能的phpMussel在您的具体系统。​按说，​当是关闭，​当phpMussel检测存在元素在<code>$_FILES</code>数组，​它将尝试引发一个扫描的文件代表通过那些元素，​和，​如果他们是空或空白，​phpMussel将回报一个错误信息。​这个是正确行为为phpMussel。​然而，​为某些CMS，​空元素在<code>$_FILES</code>可以发生因之的自然的行为的那些CMS，​或错误可能会报告当没有任何，​在这种情况，​正常行为为phpMussel将会使干扰为正常行为的那些CMS。​如果这样的一个情况发生为您，​激活这个指令将指示phpMussel不尝试引发扫描为这样的空元素，​忽略他们当发现和不回报任何关联错误信息，​从而允许延续的页面请求。​False（假）=不忽略；True（真）=忽略。"
-  zh-Hant: "這個指令按說應會關閉除非它是需要為對功能的phpMussel在您的具體系統。​按說，​當是關閉，​當phpMussel檢測存在元素在<code>$_FILES</code>數組，​它將嘗試引發一個掃描的檔案代表通過那些元素，​和，​如果他們是空或空白，​phpMussel將回報一個錯誤信息。​這個是正確行為為phpMussel。​然而，​為某些CMS，​空元素在<code>$_FILES</code>可以發生因之的自然的行為的那些CMS，​或錯誤可能會報告當沒有任何，​在這種情況，​正常行為為phpMussel將會使乾擾為正常行為的那些CMS。​如果這樣的一個情況發生為您，​激活這個指令將指示phpMussel不嘗試引發掃描為這樣的空元素，​忽略他們當發現和不回報任何關聯錯誤信息，​從而允許延續的頁面請求。​False（假）=不忽略；True（真）=忽略。"
- web_magnification: {"zh-Hans": "字型放大。​标准 = 1。", "zh-Hant": "字型放大。​標準 = 1。"}
+  zh-Hans: "这个指令按说应会关闭除非它是需要为对功能的phpMussel在您的具体系统。 按说，当是关闭，当phpMussel检测存在元素在<code>$_FILES</code>数组，它将尝试引发一个扫描的文件代表通过那些元素，和，如果他们是空或空白，phpMussel将回报一个错误信息。 这个是正确行为为phpMussel。 然而，为某些CMS，空元素在<code>$_FILES</code>可以发生因之的自然的行为的那些CMS，或错误可能会报告当没有任何，在这种情况，正常行为为phpMussel将会使干扰为正常行为的那些CMS。 如果这样的一个情况发生为您，激活这个指令将指示phpMussel不尝试引发扫描为这样的空元素，忽略他们当发现和不回报任何关联错误信息，从而允许延续的页面请求。 False（假）=不忽略；True（真）=忽略。"
+  zh-Hant: "這個指令按說應會關閉除非它是需要為對功能的phpMussel在您的具體系統。 按說，當是關閉，當phpMussel檢測存在元素在<code>$_FILES</code>數組，它將嘗試引發一個掃描的檔案代表通過那些元素，和，如果他們是空或空白，phpMussel將回報一個錯誤信息。 這個是正確行為為phpMussel。 然而，為某些CMS，空元素在<code>$_FILES</code>可以發生因之的自然的行為的那些CMS，或錯誤可能會報告當沒有任何，在這種情況，正常行為為phpMussel將會使乾擾為正常行為的那些CMS。 如果這樣的一個情況發生為您，激活這個指令將指示phpMussel不嘗試引發掃描為這樣的空元素，忽略他們當發現和不回報任何關聯錯誤信息，從而允許延續的頁面請求。 False（假）=不忽略；True（真）=忽略。"
+ web_magnification: {"zh-Hans": "字型放大。 标准 = 1。", "zh-Hant": "字型放大。 標準 = 1。"}
  web_max_uploads:
-  zh-Hans: "最大允许数值的文件为扫描当文件上传扫描之前中止扫描和告诉用户他们是上传太多在同一时间！​提供保护针对一个理论攻击哪里一个攻击者尝试DDoS您的系统或CMS通过超载phpMussel以减速PHP进程到一个停止。​推荐：10。​您可能想增加或减少这个数值，​根据速度的您的硬件。​注意这个数值不交待为或包括存档内容。"
-  zh-Hant: "最大允許數值的檔案為掃描當檔案上傳掃描之前中止掃描和告訴用戶他們是上傳太多在同一時間！​提供保護針對一個理論攻擊哪裡一個攻擊者嘗試DDoS您的系統或CMS通過超載phpMussel以減速PHP進程到一個停止。​推薦：10。​您可能想增加或減少這個數值，​根據速度的您的硬件。​注意這個數值不交待為或包括存檔內容。"
+  zh-Hans: "最大允许数值的文件为扫描当文件上传扫描之前中止扫描和告诉用户他们是上传太多在同一时间！ 提供保护针对一个理论攻击哪里一个攻击者尝试DDoS您的系统或CMS通过超载phpMussel以减速PHP进程到一个停止。 推荐：10。 您可能想增加或减少这个数值，根据速度的您的硬件。 注意这个数值不交待为或包括存档内容。"
+  zh-Hant: "最大允許數值的檔案為掃描當檔案上傳掃描之前中止掃描和告訴用戶他們是上傳太多在同一時間！ 提供保護針對一個理論攻擊哪裡一個攻擊者嘗試DDoS您的系統或CMS通過超載phpMussel以減速PHP進程到一個停止。 推薦：10。 您可能想增加或減少這個數值，根據速度的您的硬件。 注意這個數值不交待為或包括存檔內容。"
  web_theme: {"zh-Hans": "用于阻止事件的主题。", "zh-Hant": "用於阻止事件的主題。"}
  web_theme_mode: {"zh-Hans": "用于阻止事件的主题模式。", "zh-Hant": "用於阻止事件的主題模式。"}
  web_unsupported_media_type_header:
-  zh-Hans: "当上传因列入黑名单的文件类型而被阻止时，phpMussel是否应该发送415标头？​如果为true（真），此设置将取代<code>forbid_on_block</code>。​False（假）=不发送【标准】；True（真）=发送。"
-  zh-Hant: "當上傳因列入黑名單的檔案類型而被阻止時，phpMussel是否應該發送415標頭？​如果為true（真），此設置將取代<code>forbid_on_block</code>。​False（假）=不發送【標準】；True（真）=發送。"
- web_uploads_log: {"zh-Hans": "应该记录所有阻止的上传的位置。​指定一个文件名，​或留空以关闭。", "zh-Hant": "應該記錄所有阻止的上傳的位置。​指定一個檔案名稱，​或留空以關閉。"}
+  zh-Hans: "当上传因列入黑名单的文件类型而被阻止时，phpMussel是否应该发送415标头？ 如果为true（真），此设置将取代<code>forbid_on_block</code>。 False（假）=不发送【标准】；True（真）=发送。"
+  zh-Hant: "當上傳因列入黑名單的檔案類型而被阻止時，phpMussel是否應該發送415標頭？ 如果為true（真），此設置將取代<code>forbid_on_block</code>。 False（假）=不發送【標準】；True（真）=發送。"
+ web_uploads_log: {"zh-Hans": "应该记录所有阻止的上传的位置。 指定一个文件名，或留空以关闭。", "zh-Hant": "應該記錄所有阻止的上傳的位置。 指定一個檔案名稱，或留空以關閉。"}
 denied: {"zh-Hans": "上传是否认！", "zh-Hant": "上傳是否認！"}
 denied_reason: {"zh-Hans": "您的上传被拒绝由于这些原因:", "zh-Hant": "您的上傳被拒绝由于这些原因:"}
 notifications_message:
@@ -63,8 +63,8 @@ scan_unauthorised_upload: {"zh-Hans": "未经授权的文件上传操控是检�
 scan_unauthorised_upload_or_misconfig: {"zh-Hans": "未经授权的文件上传操控或配置错误是检测！", "zh-Hant": "未經授權的檔案上傳操控或配置錯誤是檢測！"}
 upload_error_1: {"zh-Hans": "文件大小超过upload_max_filesize指令。", "zh-Hant": "檔案大小超過upload_max_filesize指令。"}
 upload_error_2: {"zh-Hans": "文件大小超过文件大小限制指定由文件上传信息。", "zh-Hant": "檔案大小超过檔案大小限制指定由檔案上傳信息。"}
-upload_error_34: {"zh-Hans": "上传失败！​请联系网站管理员或网站托管服务！", "zh-Hant": "上傳失敗！​請聯繫網站管理員或網站託管服務！"}
-upload_error_6: {"zh-Hans": "上传文件夹是失踪！​请联系网站管理员或网站托管服务！", "zh-Hant": "上傳檔案夾是失踪！​請聯繫網站管理員或網站託管服務！"}
-upload_error_7: {"zh-Hans": "硬盘写入错误！​请联系网站管理员或网站托管服务！", "zh-Hant": "硬盤寫入錯誤！​請聯繫網站管理員或網站託管服務！"}
-upload_error_8: {"zh-Hans": "PHP配置错误是检测！​请联系网站管理员或网站托管服务！", "zh-Hant": "PHP配置錯誤是檢測！​請聯繫網站管理員或網站託管服務！"}
+upload_error_34: {"zh-Hans": "上传失败！ 请联系网站管理员或网站托管服务！", "zh-Hant": "上傳失敗！ 請聯繫網站管理員或網站託管服務！"}
+upload_error_6: {"zh-Hans": "上传文件夹是失踪！ 请联系网站管理员或网站托管服务！", "zh-Hant": "上傳檔案夾是失踪！ 請聯繫網站管理員或網站託管服務！"}
+upload_error_7: {"zh-Hans": "硬盘写入错误！ 请联系网站管理员或网站托管服务！", "zh-Hant": "硬盤寫入錯誤！ 請聯繫網站管理員或網站託管服務！"}
+upload_error_8: {"zh-Hans": "PHP配置错误是检测！ 请联系网站管理员或网站托管服务！", "zh-Hant": "PHP配置錯誤是檢測！ 請聯繫網站管理員或網站託管服務！"}
 upload_limit_exceeded: {"zh-Hans": "超过上传限制", "zh-Hant": "超過上傳限制"}
