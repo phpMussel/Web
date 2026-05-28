@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Upload handler (last modified: 2026.04.15).
+ * This file: Upload handler (last modified: 2026.05.28).
  */
 
 namespace phpMussel\Web;
@@ -362,7 +362,7 @@ class Web
 
         /** Fallback to use if the HTML template file is missing. */
         if (!$TemplateFile) {
-            header('Content-Type: text/plain');
+            \header('Content-Type: text/plain');
             die('[phpMussel] ' . $this->Loader->ClientL10N->getString('denied') . ' ' . $TemplateData['detected']);
         }
 
@@ -370,13 +370,13 @@ class Web
             $this->Loader->Configuration['web']['unsupported_media_type_header'] &&
             !empty($this->Loader->InstanceCache['blacklist_triggered'])
         ) {
-            header('HTTP/1.0 415 Unsupported Media Type');
-            header('HTTP/1.1 415 Unsupported Media Type');
-            header('Status: 415 Unsupported Media Type');
+            \header('HTTP/1.0 415 Unsupported Media Type');
+            \header('HTTP/1.1 415 Unsupported Media Type');
+            \header('Status: 415 Unsupported Media Type');
         } elseif ($this->Loader->Configuration['web']['forbid_on_block']) {
-            header('HTTP/1.0 403 Forbidden');
-            header('HTTP/1.1 403 Forbidden');
-            header('Status: 403 Forbidden');
+            \header('HTTP/1.0 403 Forbidden');
+            \header('HTTP/1.1 403 Forbidden');
+            \header('Status: 403 Forbidden');
         }
 
         /** Include privacy policy. */
