@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2025.08.08).
+# This file: Galician language data (last modified: 2026.09.12).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -28,7 +28,7 @@ PrivacyPolicy: "Política de Privacidade"
 config:
  web: "Configuración para o controlador de carga."
  web_custom_footer: "Inseriuse como HTML na parte inferior de todas as páxinas de "carga denegada". Isto pode ser útil no caso de que queiras incluír un aviso legal, ligazón de contacto, información comercial, ou similares en todas esas páxinas."
- web_custom_header: "Inseriuse como HTML ao comezo de todas as páxinas de "carga denegada". Isto pode ser útil no caso de que queiras incluír un logotipo do sitio web, un encabezado personalizado, guións, ou similares en todas esas páxinas."
+ web_custom_header: "Inseriuse como HTML ao comezo de todas as páxinas de "carga denegada". Isto pode ser útil no caso de que queiras incluír un logotipo do sitio web, unha cabeceira personalizada, guións, ou similares en todas esas páxinas."
  web_forbid_on_block: "Debería phpMussel enviar cabeceiras 403 coa mensaxe bloqueada de carga de ficheiros ou manterse cos 200 habituais? False/Falso = Non (200); True/Verdadeiro = Si (403) [Predeterminado]."
  web_ignore_upload_errors: "En xeral, esta directiva debería estar desactivada a non ser que sexa necesaria para a correcta funcionalidade de phpMussel no seu sistema específico. Normalmente, cando está desactivado, cando phpMussel detecta a presenza de elementos na matriz <code>$_FILES</code>, intentará iniciar unha exploración dos ficheiros que representan eses elementos, e, se eses elementos están en branco ou baleiros, phpMussel devolverá unha mensaxe de erro. Este é un comportamento adecuado para phpMussel. Non obstante, para algúns CMS, os elementos baleiros en <code>$_FILES</code> poden ocorrer como resultado do comportamento natural destes CMS, ou se poden informar erros cando non os haxa, nese caso, o comportamento normal de phpMussel interferirá co comportamento normal destes CMS. Se se produce tal situación, activar esta opción indicará a phpMussel que non intente iniciar exploracións para tales elementos baleiros, que os ignore cando se atope, e que non devolva ningunha mensaxe de erro relacionada, permitindo así a continuación da solicitude da páxina. False/Falso = Desactivado; True/Verdadeiro = Activado."
  web_magnification: "Ampliación da fonte. Predeterminado = 1."
